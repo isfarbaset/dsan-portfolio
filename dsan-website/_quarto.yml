@@ -1,0 +1,132 @@
+project:
+  type: website
+
+website:
+  title: "Isfar Baset"
+
+  # navbar:
+  #   left:
+  #   website:
+  sidebar:
+    style: "floating"
+    title: "Projects"
+    search: true
+    contents:
+      - section: "DSAN 5000"
+        contents:
+
+        # - href: about.qmd
+        #   text: Home
+          
+        - href: 5000-website/index.qmd
+          text: Introduction
+
+        - href: clustering/clustering.qmd
+          text: Clustering
+
+        - href: eda/eda.ipynb
+          text: Data Exploration
+
+        - href: ./data
+          text: Data
+
+        - href: ./data/00-raw-data
+          text: Data Gathering
+
+        - href: ./data/01-modified-data
+          text: Data Cleaning
+
+        - href: eda/eda.ipynb
+          text: Data Exploration
+
+        - href: clustering/clustering.qmd
+          text: Clustering
+
+        - href: ""
+          text: Dimensionality Reduction
+
+        - href: ""
+          text: Decision Trees
+
+        - href: ""
+          text: ARM
+
+        - href: ""
+          text: Conclusions
+
+      - section: "DSAN 5100"
+        contents:
+          - 5100-website/index.qmd
+          - layout-knitr.qmd
+          - layout-jupyter.qmd
+
+      - section: "DSAN 6300"
+        contents:
+          - 6300-website/index.qmd
+          - layout-knitr.qmd
+          - layout-jupyter.qmd
+      # - href: index.qmd
+      #   text: Home
+
+      # - href: ./data
+      #   text: Data
+
+      # - href: ./introduction
+      #   text: Introduction
+
+      # - href: eda/eda.ipynb
+      #   text: Data Gathering
+
+      # - href: eda/eda.ipynb
+      #   text: Data Cleaning
+
+      # - href: eda/eda.ipynb
+      #   text: Data Exploration
+
+      # - href: clustering/clustering.qmd
+      #   text: Clustering
+
+      # - href: clustering/clustering.qmd
+      #   text: Dimensionality Reduction
+
+      # - href: clustering/clustering.qmd
+      #   text: Decision Trees
+
+      # - href: clustering/clustering.qmd
+      #   text: ARM
+
+      # - href: clustering/clustering.qmd
+      #   text: Conclusions
+
+     
+  # sidebar:
+  #   style: "floating"
+  #   search: true
+  #   contents:
+  #     - section: "Code"
+  #       contents: 
+  #       - https://github.com/anly501/dsan-5000-project-isfarbaset
+  #       text: GitHub
+  #     - section: "Basics"
+  #       contents:
+  #         - index.qmd
+  #         - basics-knitr.qmd
+  #         - basics-jupyter.qmd
+  #     - section: "Layout"
+  #       contents:
+  #         - layout.qmd
+  #         - layout-knitr.qmd
+  #         - layout-jupyter.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    # about:
+    #   links:
+    #     - icon: twitter
+    #       text: twitter
+    #       href: https://twitter.com
+    #     - icon: github
+    #       text: Github
+    #       href: https://github.com

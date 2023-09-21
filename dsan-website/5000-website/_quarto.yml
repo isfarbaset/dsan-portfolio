@@ -2,19 +2,45 @@ project:
   type: website
 
 website:
-  title: "DSAN-5000: Project"
+  title: "DSAN-5000: Introduction"
   navbar:
     left:
-      - href: index.qmd
+      - href: ../about.qmd
         text: Home
+
       - href: clustering/clustering.qmd
         text: Clustering
+
       - href: eda/eda.ipynb
         text: Data Exploration
+
+      - href: ./data
+        text: Data
+
+        - href: ./data/00-raw-data
+          text: Data Gathering
+
+        - href: ./data/01-modified-data
+          text: Data Cleaning
+
+        - href: eda/eda.ipynb
+          text: Data Exploration
+
+      - href: clustering/clustering.qmd
+        text: Clustering
+
+      - href: clustering/clustering.qmd
+        text: Dimensionality Reduction
+
+      - href: clustering/clustering.qmd
+        text: Decision Trees
+
+      - href: clustering/clustering.qmd
+        text: ARM
+
+      - href: clustering/clustering.qmd
+        text: Conclusions
 format:
   html:
     theme: cosmo
     toc: true
-
-
-
