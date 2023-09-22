@@ -3,52 +3,52 @@ project:
 
 website:
   title: "DSAN-5000"
-  # sidebar:
-    # style: floating
-    # search: true
-    # left:
+  sidebar:
+    style: floating
+    search: true
+    left:
 
-    #   - text: "Introduction"
-    #     file: index.qmd
+      - text: "Introduction"
+        file: index.qmd
 
-    #   - text: "Home"
-    #     file: ../about.qmd
+      - text: "Home"
+        file: ../about.qmd
 
-    #   - text: "Code"
-    #     file: https://github.com/anly501/dsan-5000-project-isfarbaset
+      - text: "Code"
+        file: https://github.com/anly501/dsan-5000-project-isfarbaset
 
-    #   - text: "Data"
-    #     file: https://github.com/anly501/dsan-5000-project-isfarbaset
+      - text: "Data"
+        file: https://github.com/anly501/dsan-5000-project-isfarbaset
 
-    #   - text: "Data Gathering"
-    #     file: ./data/00-raw-data
+      - text: "Data Gathering"
+        file: ./data/00-raw-data
 
-    #   - text: "Data Cleaning"
-    #     file: ./data/01-modified-data
+      - text: "Data Cleaning"
+        file: ./data/01-modified-data
 
-    #   - text: "Data Exploration"
-    #     file: eda/eda.ipynb
+      - text: "Data Exploration"
+        file: eda/eda.ipynb
 
-    #   - text: "Clustering"
-    #     file: clustering/clustering.qmd
+      - text: "Clustering"
+        file: clustering/clustering.qmd
 
-    #   - text: "Dimensionality Reduction"
-    #     file: ""
+      - text: "Dimensionality Reduction"
+        file: ""
 
-    #   - text: "Decision Trees"
-    #     file: ""
+      - text: "Decision Trees"
+        file: ""
       
-    #   - text: CLassification
-    #     file: ""
+      - text: CLassification
+        file: ""
           
-    #   - text: Regression
-    #     file: ""
+      - text: Regression
+        file: ""
 
-    #   - text: "ARM"
-    #     file: ""
+      - text: "ARM"
+        file: ""
 
-    #   - text: "Conclusions"
-    #     file: ""
+      - text: "Conclusions"
+        file: ""
 format:
   html:
     theme: cosmo
