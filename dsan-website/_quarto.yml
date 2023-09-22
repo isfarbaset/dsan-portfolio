@@ -25,6 +25,11 @@ website:
           - href: 6300-website/index.qmd
             text: Introduction
 
+      - section: "Code"
+        contents:
+        - href: https://github.com/anly501/dsan-5000-project-isfarbaset
+          text: Github classroom cloud repository
+
 format:
   html:
     theme: cosmo

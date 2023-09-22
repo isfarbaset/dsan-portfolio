@@ -4,7 +4,7 @@
     "href": "about.html",
     "title": "Isfar Baset",
     "section": "",
-    "text": "Hello! I’m originally from Dhaka, the vibrant capital city of Bangladesh. I came to the US in 2015 in pursuit of my bachelor’s degree in Computer Science and lived in West Michigan before moving to Northern Virginia in 2022. Before joining Georgetown, I worked as a Computer Engineer, and a Data Analyst.\nA relentless learner, I am currently pursuing a Master’s of Science in Data Science and Analytics at Georgetown University. As I progress in my career, my passion lies in leveraging tailored data and algorithms to solve intricate business problems and communicating complex insights to non-technical stakeholders.\nI love spending time in charming cafes and exploring new cuisines. During my downtime I enjoy reading, painting and watching movies/TV shows."
+    "text": "GU netID: iib2\nHello! I’m originally from Dhaka, the vibrant capital city of Bangladesh. I came to the US in 2015 in pursuit of my bachelor’s degree in Computer Science and lived in West Michigan before moving to Northern Virginia in 2022. Before joining Georgetown, I worked as a Computer Engineer, and a Data Analyst.\nA relentless learner, I am currently pursuing a Master’s of Science in Data Science and Analytics at Georgetown University. As I progress in my career, my passion lies in leveraging tailored data and algorithms to solve intricate business problems and communicating complex insights to non-technical stakeholders.\nI love spending time in charming cafes and exploring new cuisines. During my downtime I enjoy reading, painting and watching movies/TV shows."
   },
   {
     "objectID": "about.html#education",
@@ -18,7 +18,7 @@
     "href": "about.html#experience",
     "title": "Isfar Baset",
     "section": "Experience",
-    "text": "Experience\nData Analyst  Shift Digital, Birmingham, MI | 2021 - 2022\nComputer Engineer  Array of Engineers, Grand Rapids, MI | 2020 - 2021"
+    "text": "Experience\nData Analyst  Shift Digital, Birmingham, MI | 2021 - 2022\nComputer Engineer  Array of Engineers, Grand Rapids, MI | 2020 - 2021\n:::"
   },
   {
     "objectID": "about.html#hobbies",
@@ -194,5 +194,12 @@
     "title": "Clustering",
     "section": "",
     "text": "Build out your website tab for “clustering”"
+  },
+  {
+    "objectID": "about.html#meet-cairo",
+    "href": "about.html#meet-cairo",
+    "title": "Isfar Baset",
+    "section": "Meet Cairo",
+    "text": "Meet Cairo"
   }
 ]

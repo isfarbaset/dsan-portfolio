@@ -13,6 +13,7 @@ about:
       text: Github
       href: https://github.com/isfarbaset
 ---
+GU netID: iib2
 
 Hello! I’m originally from Dhaka, the vibrant capital city of Bangladesh. I came to the US in 2015 in pursuit of my bachelor's degree in Computer Science and lived in West Michigan before moving to Northern Virginia in 2022. Before joining Georgetown, I worked as a Computer Engineer, and a Data Analyst. 
 
@@ -36,6 +37,8 @@ Shift Digital, Birmingham, MI | 2021 - 2022
 Computer Engineer <br>
 Array of Engineers, Grand Rapids, MI | 2020 - 2021
 
-## Hobbies
-
 :::
+
+## Meet Cairo
+
+![](images/IMG_3334.JPG){.absolute top=210 left=10 width="500" height="600"}
