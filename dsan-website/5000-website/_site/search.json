@@ -2,50 +2,99 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Introduction",
+    "title": "DSAN-5000",
     "section": "",
-    "text": "See the following link for more information about the author: about me\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nHIGHLY RECOMMENDED\n\nIt is highly recommended that you build your website using .ipynb files and NOT .qmdfiles\nFunctionally the two formats are basically identical, i.e. they are just Markdown + Code\nHowever there is ONE MAJOR DIFFERENCE, i.e. .ipynb stores the code outputs in the meta-data of the file\n\nThis means you ONLY HAVE TO RUN THE CODE ONCE with .ipynb\n.qmd will run the code every time you build the website, which can be very slow\n\nThere are caching options for .qmd, however, they are “messier” that just using .ipynb\n\nNote: .qmd is fine if there is no code, in which case it is basically just a Markdown file\n\nConverting between the two\n\nYou can switch between the two formats using\nquarto convert clustering.qmd this will output a .ipynb version called clustering.ipynb\nquarto convert eda.ipynb this will output a .qmd version called eda.qmd\n\nYOU CAN RUN R CODE IN VSC WITH .ipynb, see the following link\n\nhttps://saturncloud.io/blog/how-to-use-jupyter-r-kernel-with-visual-studio-code/\n\nIt is possible, but NOT RECOMMENDED, to mix Python and R code in the same file\n\nIMPORTANT ASIDE\n\nA .ipynb file is simply a JSON file with a specialized structural format\nYou can see this by running more eda/eda.ipynb from the command line\nWhich will output the following;\n\n\nTIP FOR MAC USERS\n\ncommand+control+shift+4 is very useful on a mac.\n\nIt takes a screenshot and saves it to the clip-board\n\nThe following VSC extension allows you to paste images from the clip-board with alt+command+v.\n\ntab is your best friend when using the command line, since it does auto-completion\nopen ./path_to_file will open any file or directory from the command line"
+    "text": "See the following link for more information about the author: about me"
   },
   {
-    "objectID": "eda/eda.html",
-    "href": "eda/eda.html",
-    "title": "Data Exploration",
-    "section": "",
-    "text": "Build out your website tab for exploratory data analysis"
+    "objectID": "index.html#introduction",
+    "href": "index.html#introduction",
+    "title": "DSAN-5000",
+    "section": "Introduction:",
+    "text": "Introduction:\nThe data question I’m seeking to explore is related to Electric Vehicles: their environmental impact, market share, and performance compared to gasoline vehicles. Over the past few years, auto manufacturers have started to add EVs to their lineup in an effort to meet the rising demand. This shift in consumer demand gives rise to many interesting questions to explore."
   },
   {
-    "objectID": "eda/eda.html#quick-look-at-the-data",
-    "href": "eda/eda.html#quick-look-at-the-data",
-    "title": "Data Exploration",
-    "section": "Quick look at the data",
-    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
+    "objectID": "index.html#academic-journal-research",
+    "href": "index.html#academic-journal-research",
+    "title": "DSAN-5000",
+    "section": "Academic Journal Research:",
+    "text": "Academic Journal Research:\nThe incentive presented by the government greatly impacts the demand of EVs. Government regulation and environmental prospect, in particular will drive the adoption of transportation electrification (Yong et al. 2015). The environmental benefits of EVs immensely influence their dominance in the market. Electrifying transportation is a promising approach to alleviate the climate change issue (Yong et al. 2015).\nStudies are being carried out to analyze the impact of EVs take up, with focus on economic, environment and technical issues on power grids (Situ 2009). It will lso be intersting to observe the efforsts made by the US to promote EVs compared to the rest of the world and how swiftly these vehicles can become ubiquitous. In fact, as OEM introduce more EV model to the end consumer by 2012, the presents of electric vehicle will be widely seen and recognized (Situ 2009)."
   },
   {
-    "objectID": "eda/eda.html#basic-visualization",
-    "href": "eda/eda.html#basic-visualization",
-    "title": "Data Exploration",
-    "section": "Basic visualization",
-    "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
+    "objectID": "index.html#questions",
+    "href": "index.html#questions",
+    "title": "DSAN-5000",
+    "section": "Questions:",
+    "text": "Questions:\n10 questions looking to answer so far:\n\n\nCan EVs completely replace gasoline vehicles in the future?\nHow much has the EV market grown in the past 5 years?\nHow would competition drive car prices in the EV market?\nWhere does the US EV market stand compared to other nations?\nWhich group of people are more likely to buy EVs?\nHow will EV impact the price of gasoline?\nHow well do EVs perform compared to a gasoline car?\nWhat is the cost of ownership of a EV vs gasoline car?\nCan everyone afford EVs?\nWhat are the environmental impacts of EVs?\nHow are governments helping to promote EVs?\n\n\n\nThese pages below will later be added on the nav bar."
   },
   {
-    "objectID": "clustering/clustering.html",
-    "href": "clustering/clustering.html",
-    "title": "Clustering",
-    "section": "",
-    "text": "Build out your website tab for “clustering”"
+    "objectID": "index.html#code",
+    "href": "index.html#code",
+    "title": "DSAN-5000",
+    "section": "Code",
+    "text": "Code\ngithub"
   },
   {
-    "objectID": "index.html#education",
-    "href": "index.html#education",
-    "title": "Finley Malloc",
-    "section": "Education",
-    "text": "Education\nUniversity of California, San Diego | San Diego, CA PhD in Mathematics | Sept 2011 - June 2015\nMacalester College | St. Paul MA B.A in Economics | Sept 2007 - June 2011"
+    "objectID": "index.html#data",
+    "href": "index.html#data",
+    "title": "DSAN-5000",
+    "section": "Data",
+    "text": "Data\ngithub"
   },
   {
-    "objectID": "index.html#experience",
-    "href": "index.html#experience",
-    "title": "Finley Malloc",
-    "section": "Experience",
-    "text": "Experience\nWengo Analytics | Head Data Scientist | April 2018 - present\nGeoScynce | Chief Analyst | Spet 2012 - April 2018"
+    "objectID": "index.html#data-gathering",
+    "href": "index.html#data-gathering",
+    "title": "DSAN-5000",
+    "section": "Data Gathering",
+    "text": "Data Gathering"
+  },
+  {
+    "objectID": "index.html#data-cleaning",
+    "href": "index.html#data-cleaning",
+    "title": "DSAN-5000",
+    "section": "Data Cleaning",
+    "text": "Data Cleaning"
+  },
+  {
+    "objectID": "index.html#data-exploration",
+    "href": "index.html#data-exploration",
+    "title": "DSAN-5000",
+    "section": "Data Exploration",
+    "text": "Data Exploration"
+  },
+  {
+    "objectID": "index.html#clustering",
+    "href": "index.html#clustering",
+    "title": "DSAN-5000",
+    "section": "Clustering",
+    "text": "Clustering"
+  },
+  {
+    "objectID": "index.html#dimensionality-reduction",
+    "href": "index.html#dimensionality-reduction",
+    "title": "DSAN-5000",
+    "section": "Dimensionality Reduction",
+    "text": "Dimensionality Reduction"
+  },
+  {
+    "objectID": "index.html#decision-trees",
+    "href": "index.html#decision-trees",
+    "title": "DSAN-5000",
+    "section": "Decision Trees",
+    "text": "Decision Trees\n\nCLassification\n\n\nRegression"
+  },
+  {
+    "objectID": "index.html#arm",
+    "href": "index.html#arm",
+    "title": "DSAN-5000",
+    "section": "ARM",
+    "text": "ARM"
+  },
+  {
+    "objectID": "index.html#conclusions",
+    "href": "index.html#conclusions",
+    "title": "DSAN-5000",
+    "section": "Conclusions",
+    "text": "Conclusions"
   }
 ]

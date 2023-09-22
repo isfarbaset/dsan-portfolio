@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Isfar Baset - Introduction</title>
+<title>Isfar Baset - DSAN-5000</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,26 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="../site_libs/quarto-nav/quarto-nav.js"></script>
@@ -112,60 +131,6 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Introduction</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../clustering/clustering.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clustering</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../eda/eda.ipynb" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Exploration</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href=".././data" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href=".././data/00-raw-data" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Gathering</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href=".././data/01-modified-data" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Cleaning</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../eda/eda.ipynb" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Data Exploration</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../clustering/clustering.qmd" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clustering</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
- <span class="menu-text">Dimensionality Reduction</span>
-  </li>
-          <li class="sidebar-item">
- <span class="menu-text">Decision Trees</span>
-  </li>
-          <li class="sidebar-item">
- <span class="menu-text">ARM</span>
-  </li>
-          <li class="sidebar-item">
- <span class="menu-text">Conclusions</span>
-  </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -180,15 +145,9 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../5100-website/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">DSAN-5100: Introduction</span></a>
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
- <span class="menu-text">layout-knitr.qmd</span>
-  </li>
-          <li class="sidebar-item">
- <span class="menu-text">layout-jupyter.qmd</span>
-  </li>
       </ul>
   </li>
         <li class="sidebar-item sidebar-item-section">
@@ -203,15 +162,9 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../6300-website/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">DSAN-6300: Introduction</span></a>
+ <span class="menu-text">Introduction</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
- <span class="menu-text">layout-knitr.qmd</span>
-  </li>
-          <li class="sidebar-item">
- <span class="menu-text">layout-jupyter.qmd</span>
-  </li>
       </ul>
   </li>
     </ul>
@@ -220,14 +173,39 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction:</a></li>
+  <li><a href="#academic-journal-research" id="toc-academic-journal-research" class="nav-link" data-scroll-target="#academic-journal-research">Academic Journal Research:</a></li>
+  <li><a href="#questions" id="toc-questions" class="nav-link" data-scroll-target="#questions">Questions:</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code">Code</a></li>
+  <li><a href="#data" id="toc-data" class="nav-link" data-scroll-target="#data">Data</a></li>
+  <li><a href="#data-gathering" id="toc-data-gathering" class="nav-link" data-scroll-target="#data-gathering">Data Gathering</a></li>
+  <li><a href="#data-cleaning" id="toc-data-cleaning" class="nav-link" data-scroll-target="#data-cleaning">Data Cleaning</a></li>
+  <li><a href="#data-exploration" id="toc-data-exploration" class="nav-link" data-scroll-target="#data-exploration">Data Exploration</a></li>
+  <li><a href="#clustering" id="toc-clustering" class="nav-link" data-scroll-target="#clustering">Clustering</a></li>
+  <li><a href="#dimensionality-reduction" id="toc-dimensionality-reduction" class="nav-link" data-scroll-target="#dimensionality-reduction">Dimensionality Reduction</a></li>
+  <li><a href="#decision-trees" id="toc-decision-trees" class="nav-link" data-scroll-target="#decision-trees">Decision Trees</a>
+  <ul class="collapse">
+  <li><a href="#classification" id="toc-classification" class="nav-link" data-scroll-target="#classification">CLassification</a></li>
+  <li><a href="#regression" id="toc-regression" class="nav-link" data-scroll-target="#regression">Regression</a></li>
+  </ul></li>
+  <li><a href="#arm" id="toc-arm" class="nav-link" data-scroll-target="#arm">ARM</a></li>
+  <li><a href="#conclusions" id="toc-conclusions" class="nav-link" data-scroll-target="#conclusions">Conclusions</a>
+  <ul class="collapse">
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References:</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Introduction</h1>
+<h1 class="title">DSAN-5000</h1>
 </div>
 
 
@@ -242,56 +220,91 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>See the following link for more information about the author: <a href="../../index.html">about me</a></p>
-<p>This is a Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<p><code>HIGHLY RECOMMENDED</code></p>
+<p>See the following link for more information about the author: <a href="../index.html">about me</a></p>
+<section id="introduction" class="level2">
+<h2 class="anchored" data-anchor-id="introduction">Introduction:</h2>
+<p>The data question I’m seeking to explore is related to Electric Vehicles: their environmental impact, market share, and performance compared to gasoline vehicles. Over the past few years, auto manufacturers have started to add EVs to their lineup in an effort to meet the rising demand. This shift in consumer demand gives rise to many interesting questions to explore.</p>
+</section>
+<section id="academic-journal-research" class="level2">
+<h2 class="anchored" data-anchor-id="academic-journal-research">Academic Journal Research:</h2>
+<p>The incentive presented by the government greatly impacts the demand of EVs. Government regulation and environmental prospect, in particular will drive the adoption of transportation electrification <span class="citation" data-cites="yong2015review">(<a href="#ref-yong2015review" role="doc-biblioref">Yong et al. 2015</a>)</span>. The environmental benefits of EVs immensely influence their dominance in the market. Electrifying transportation is a promising approach to alleviate the climate change issue <span class="citation" data-cites="yong2015review">(<a href="#ref-yong2015review" role="doc-biblioref">Yong et al. 2015</a>)</span>.</p>
+<p>Studies are being carried out to analyze the impact of EVs take up, with focus on economic, environment and technical issues on power grids <span class="citation" data-cites="situ2009electric">(<a href="#ref-situ2009electric" role="doc-biblioref">Situ 2009</a>)</span>. It will lso be intersting to observe the efforsts made by the US to promote EVs compared to the rest of the world and how swiftly these vehicles can become ubiquitous. In fact, as OEM introduce more EV model to the end consumer by 2012, the presents of electric vehicle will be widely seen and recognized <span class="citation" data-cites="situ2009electric">(<a href="#ref-situ2009electric" role="doc-biblioref">Situ 2009</a>)</span>.</p>
+</section>
+<section id="questions" class="level2">
+<h2 class="anchored" data-anchor-id="questions">Questions:</h2>
+10 questions looking to answer so far:
+<ol>
 <ul>
-<li>It is <code>highly recommended</code> that you build your website using <code>.ipynb</code> files and NOT <code>.qmd</code>files</li>
-<li>Functionally the two formats are basically identical, i.e.&nbsp;they are just <code>Markdown</code> + <code>Code</code></li>
-<li>However there is <code>ONE MAJOR DIFFERENCE</code>, i.e.&nbsp;<code>.ipynb</code> stores the code outputs in the meta-data of the file
-<ul>
-<li>This means you <code>ONLY HAVE TO RUN THE CODE ONCE</code> with <code>.ipynb</code></li>
-<li><code>.qmd</code> will run the code every time you build the website, which can be very slow
-<ul>
-<li>There are <code>caching</code> options for <code>.qmd</code>, however, they are “messier” that just using <code>.ipynb</code></li>
-</ul></li>
-<li><strong>Note</strong>: <code>.qmd</code> is fine if there is no code, in which case it is basically just a <code>Markdown</code> file</li>
-</ul></li>
-<li>Converting between the two
-<ul>
-<li>You can switch between the two formats using</li>
-<li><code>quarto convert clustering.qmd</code> this will output a <code>.ipynb</code> version called <code>clustering.ipynb</code></li>
-<li><code>quarto convert eda.ipynb</code> this will output a <code>.qmd</code> version called <code>eda.qmd</code></li>
-</ul></li>
-<li>YOU CAN RUN <code>R CODE</code> IN VSC WITH <code>.ipynb</code>, see the following link
-<ul>
-<li><a href="https://saturncloud.io/blog/how-to-use-jupyter-r-kernel-with-visual-studio-code/">https://saturncloud.io/blog/how-to-use-jupyter-r-kernel-with-visual-studio-code/</a></li>
-</ul></li>
-<li>It is possible, but <code>NOT RECOMMENDED</code>, to mix Python and R code in the same file</li>
+<li>Can EVs completely replace gasoline vehicles in the future?</li>
+<li>How much has the EV market grown in the past 5 years?</li>
+<li>How would competition drive car prices in the EV market?</li>
+<li>Where does the US EV market stand compared to other nations?</li>
+<li>Which group of people are more likely to buy EVs?</li>
+<li>How will EV impact the price of gasoline?</li>
+<li>How well do EVs perform compared to a gasoline car?</li>
+<li>What is the cost of ownership of a EV vs gasoline car?</li>
+<li>Can everyone afford EVs?</li>
+<li>What are the environmental impacts of EVs?</li>
+<li>How are governments helping to promote EVs?</li>
 </ul>
-<p><code>IMPORTANT ASIDE</code></p>
-<ul>
-<li>A <code>.ipynb</code> file is simply a <code>JSON</code> file with a specialized structural format</li>
-<li>You can see this by running <code>more eda/eda.ipynb</code> from the command line</li>
-<li>Which will output the following;<br>
-<img src="images/2023-08-23-09-39-14.png" class="img-fluid" width="500"></li>
-</ul>
-<p><code>TIP FOR MAC USERS</code></p>
-<ul>
-<li><code>command+control+shift+4</code> is very useful on a mac.
-<ul>
-<li>It takes a screenshot and saves it to the clip-board</li>
-</ul></li>
-<li>The following VSC extension allows you to paste images from the clip-board with <code>alt+command+v</code>.<br>
-<img src="images/2023-08-23-09-35-05.png" class="img-fluid" width="300"></li>
-<li><code>tab</code> is your best friend when using the command line, since it does <code>auto-completion</code></li>
-<li><code>open ./path_to_file</code> will open any file or directory from the command line</li>
-</ul>
+</ol>
+<p>
+These pages below will later be added on the nav bar.
+</p>
+</section>
+<section id="code" class="level2">
+<h2 class="anchored" data-anchor-id="code">Code</h2>
+<p><a href="https://github.com/anly501/dsan-5000-project-isfarbaset">github</a></p>
+</section>
+<section id="data" class="level2">
+<h2 class="anchored" data-anchor-id="data">Data</h2>
+<p><a href="https://github.com/anly501/dsan-5000-project-isfarbaset">github</a></p>
+</section>
+<section id="data-gathering" class="level2">
+<h2 class="anchored" data-anchor-id="data-gathering">Data Gathering</h2>
+</section>
+<section id="data-cleaning" class="level2">
+<h2 class="anchored" data-anchor-id="data-cleaning">Data Cleaning</h2>
+</section>
+<section id="data-exploration" class="level2">
+<h2 class="anchored" data-anchor-id="data-exploration">Data Exploration</h2>
+</section>
+<section id="clustering" class="level2">
+<h2 class="anchored" data-anchor-id="clustering">Clustering</h2>
+</section>
+<section id="dimensionality-reduction" class="level2">
+<h2 class="anchored" data-anchor-id="dimensionality-reduction">Dimensionality Reduction</h2>
+</section>
+<section id="decision-trees" class="level2">
+<h2 class="anchored" data-anchor-id="decision-trees">Decision Trees</h2>
+<section id="classification" class="level3">
+<h3 class="anchored" data-anchor-id="classification">CLassification</h3>
+</section>
+<section id="regression" class="level3">
+<h3 class="anchored" data-anchor-id="regression">Regression</h3>
+</section>
+</section>
+<section id="arm" class="level2">
+<h2 class="anchored" data-anchor-id="arm">ARM</h2>
+</section>
+<section id="conclusions" class="level2">
+<h2 class="anchored" data-anchor-id="conclusions">Conclusions</h2>
+<section id="references" class="level3">
 
 
 
-</main> <!-- /main -->
+
+</section>
+</section>
+
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography"><h2 class="anchored quarto-appendix-heading">References:</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
+<div id="ref-situ2009electric" class="csl-entry" role="listitem">
+Situ, Lixin. 2009. <span>“Electric Vehicle Development: The Past, Present &amp; Future.”</span> In <em>2009 3rd International Conference on Power Electronics Systems and Applications (PESA)</em>, 1–3. IEEE.
+</div>
+<div id="ref-yong2015review" class="csl-entry" role="listitem">
+Yong, Jia Ying, Vigna K Ramachandaramurthy, Kang Miao Tan, and Nadarajah Mithulananthan. 2015. <span>“A Review on the State-of-the-Art Technologies of Electric Vehicle, Its Impacts and Prospects.”</span> <em>Renewable and Sustainable Energy Reviews</em> 49: 365–85.
+</div>
+</div></section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

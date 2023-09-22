@@ -1,5 +1,5 @@
 ---
-title: "DSAN-5100: Introduction"
+title: "DSAN-5100"
 ---
 
 See the following link for more information about the author: [about me](../../index.html)

@@ -14,22 +14,28 @@ about:
       href: https://github.com/isfarbaset
 ---
 
-Finley Malloc is the Chief Data Scientist at Wengo Analytics. When not innovating on data platforms, Finley enjoys spending  time unicycling and playing with her pet iguana.
+Hello! I’m originally from Dhaka, the vibrant capital city of Bangladesh. I came to the US in 2015 in pursuit of my bachelor's degree in Computer Science and lived in West Michigan before moving to Northern Virginia in 2022. Before joining Georgetown, I worked as a Computer Engineer, and a Data Analyst. 
+
+A relentless learner, I am currently pursuing a Master's of Science in Data Science and Analytics at Georgetown University. As I progress in my career, my passion lies in leveraging tailored data and algorithms to solve intricate business problems and communicating complex insights to non-technical stakeholders.
+
+I love spending time in charming cafes and exploring new cuisines. During my downtime I enjoy reading, painting and watching movies/TV shows. 
 
 ## Education
 
-University of California, San Diego | San Diego, CA
-PhD in Mathematics | Sept 2011 - June 2015
+Masters of Science in Data Science and Analytics <br>
+Georgetown University, Washington, D.C. | 2023 - 2025
 
-Macalester College | St. Paul MA
-B.A in Economics | Sept 2007 - June 2011
+Bachelors of Science in Computer Science <br>
+Grand Valley State University, Grand Rapids, MI | 2015 - 2020
 
 ## Experience
 
-Wengo Analytics | Head Data Scientist | April 2018 - present
+Data Analyst <br>
+Shift Digital, Birmingham, MI | 2021 - 2022
 
-GeoScynce | Chief Analyst | Spet 2012 - April 2018
+Computer Engineer <br>
+Array of Engineers, Grand Rapids, MI | 2020 - 2021
+
+## Hobbies
 
 :::
-
-### This content appears below the formatted about page content.

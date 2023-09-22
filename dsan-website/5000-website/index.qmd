@@ -1,43 +1,67 @@
 ---
-title: "Introduction"
+title: "DSAN-5000"
+bibliography: reference.bib
 ---
 
-See the following link for more information about the author: [about me](../../index.html)
+See the following link for more information about the author: [about me](../index.html)
 
-This is a Quarto website.
+## Introduction:
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+The data question I'm seeking to explore is related to Electric Vehicles: their environmental impact, market share, and performance compared to gasoline vehicles. Over the past few years, auto manufacturers have started to add EVs to their lineup in an effort to meet the rising demand. This shift in consumer demand gives rise to many interesting questions to explore.
 
-`HIGHLY RECOMMENDED` 
+## Academic Journal Research:
 
-* It is `highly recommended` that you build your website using `.ipynb` files and NOT `.qmd`files
-* Functionally the two formats are basically identical, i.e. they are just `Markdown` + `Code` 
-* However there is `ONE MAJOR DIFFERENCE`, i.e. `.ipynb` stores the code outputs in the meta-data of the file
-  * This means you `ONLY HAVE TO RUN THE CODE ONCE` with `.ipynb`
-  * `.qmd` will run the code every time you build the website, which can be very slow
-    * There are `caching` options for `.qmd`, however, they are "messier" that just using `.ipynb`
-  * **Note**: `.qmd` is fine if there is no code, in which case it is basically just a `Markdown` file
-* Converting between the two
-  * You can switch between the two formats using 
-  * `quarto convert clustering.qmd` this will output a `.ipynb` version called `clustering.ipynb`
-  * `quarto convert eda.ipynb` this will output a `.qmd` version called `eda.qmd`
-* YOU CAN RUN `R CODE` IN VSC WITH `.ipynb`, see the following link 
-  * [https://saturncloud.io/blog/how-to-use-jupyter-r-kernel-with-visual-studio-code/](https://saturncloud.io/blog/how-to-use-jupyter-r-kernel-with-visual-studio-code/)
-* It is possible, but `NOT RECOMMENDED`, to mix Python and R code in the same file
+The incentive presented by the government greatly impacts the demand of EVs. Government regulation and environmental prospect, in particular will drive the adoption of transportation electrification [@yong2015review]. The environmental benefits of EVs immensely influence their dominance in the market. Electrifying transportation is a promising approach to alleviate the climate change issue [@yong2015review].
+
+Studies are being carried out to analyze the impact of EVs take up, with focus on economic, environment and technical issues on power grids [@situ2009electric]. It will lso be intersting to observe the efforsts made by the US to promote EVs compared to the rest of the world and how swiftly these vehicles can become ubiquitous. In fact, as OEM introduce more EV model to the end consumer by 2012, the presents of electric vehicle will be widely seen and recognized [@situ2009electric].
+
+## Questions:
+
+10 questions looking to answer so far: <ol>
+* Can EVs completely replace gasoline vehicles in the future?
+* How much has the EV market grown in the past 5 years?
+* How would competition drive car prices in the EV market?
+* Where does the US EV market stand compared to other nations?
+* Which group of people are more likely to buy EVs?
+* How will EV impact the price of gasoline?
+* How well do EVs perform compared to a gasoline car?
+* What is the cost of ownership of a EV vs gasoline car?
+* Can everyone afford EVs?
+* What are the environmental impacts of EVs?
+* How are governments helping to promote EVs?
+
+</ol>
+
+<p>
+These pages below will later be added on the nav bar.
+</p>
 
 
-`IMPORTANT ASIDE`
+## Code 
+[github](https://github.com/anly501/dsan-5000-project-isfarbaset)
 
-*  A `.ipynb` file is simply a `JSON` file with a specialized structural format
-*  You can see this by running `more eda/eda.ipynb` from the command line
-* Which will output the following;    
-    ![](images/2023-08-23-09-39-14.png){width=500}
 
-`TIP FOR MAC USERS`
+## Data
+[github](https://github.com/anly501/dsan-5000-project-isfarbaset)
 
-* `command+control+shift+4` is very useful on a mac. 
-  * It takes a screenshot and saves it to the clip-board 
-* The following VSC extension allows you to paste images from the clip-board with `alt+command+v`.    
-    ![](images/2023-08-23-09-35-05.png){width=300}
-* `tab` is your best friend when using the command line, since it does `auto-completion` 
-* `open ./path_to_file` will open any file or directory from the command line 
+## Data Gathering
+
+## Data Cleaning
+
+## Data Exploration
+
+## Clustering
+
+## Dimensionality Reduction
+
+## Decision Trees
+### CLassification
+### Regression
+
+## ARM
+
+## Conclusions
+
+
+
+### References:
