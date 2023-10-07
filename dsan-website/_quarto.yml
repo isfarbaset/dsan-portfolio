@@ -2,35 +2,78 @@ project:
   type: website
 
 website:
-  title: "Isfar Baset"
-  sidebar:
-    style: "floating"
-    title: "Projects"
+  title: Isfar Baset
+  navbar:
+    background: primary
     search: true
-    contents:
-      - section: "DSAN 5000"
-        contents:
-          
-        - href: 5000-website/index.qmd
-          text: Introduction
+    left:
+      # - text: "Home"
+      #   file: index.qmd
+      # - text: "Tutorials"
+      #   file: tutorials.qmd
+      - text: "DSAN 5000"
+        file: 5000-website/index.qmd
+      # - text: "Fundamentals"
+      #   file: fundamentals.qmd
+      # - text: "Reference"
+      #   file: reference.qmd
 
-      - section: "DSAN 5100"
-        contents:
-        - href: 5100-website/index.qmd
-          text: Introduction
-  
+  sidebar:
+    # - title: "Tutorials"
+    #   style: "docked"
+    #   background: light
+    #   contents:
+    #     - tutorials.qmd
+    #     - tutorial-1.qmd
+    #     - tutorial-2.qmd
 
-      - section: "DSAN 6300"
-        contents:
-          - href: 6300-website/index.qmd
-            text: Introduction
+    - title: "DSAN 5000"
+      contents:
+        - text: Introduction
+          file: 5000-website/index.qmd
+        # navigation items
+        # - text: Introduction
+        #   file: 5000-website/index.qmd
+        - text: Code
+          href: https://github.com/anly501/dsan-5000-project-isfarbaset
+        
+        - text: Data
+          contents: 
+            # - text: Github Repo
+            text: Code
+            href: https://github.com/anly501/dsan-5000-project-isfarbaset
+            # - text: Modified Data
+            #   file: ../../data/01-modified-data/example.csv
 
-      - section: "Code"
-        contents:
-        - href: https://github.com/anly501/dsan-5000-project-isfarbaset
-          text: Github classroom cloud repository
+        - text: Data Gathering
 
+        - text: Data Cleaning
+
+        - text: Data Exploration
+          file: 5000-website/eda/eda.ipynb
+
+        - text: Clustering
+        - text: Dimensionality Reduction
+        - text: Decision Trees
+          contents: 
+            - text: Classification
+            - text: Regression
+        - text: ARM
+        - text: Conclusions
+
+    - title: "Fundamentals"
+      contents:
+        - fundamentals.qmd
+        # navigation items
+
+    - title: "Reference"
+      contents:
+        - reference.qmd
+        # navigation items
+    
 format:
   html:
     theme: cosmo
     toc: true
+
+

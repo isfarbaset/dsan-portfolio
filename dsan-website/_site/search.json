@@ -1,59 +1,45 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
+    "objectID": "index.html",
+    "href": "index.html",
     "title": "Isfar Baset",
     "section": "",
     "text": "GU netID: iib2\nHello! I’m originally from Dhaka, the vibrant capital city of Bangladesh. I came to the US in 2015 in pursuit of my bachelor’s degree in Computer Science and lived in West Michigan before moving to Northern Virginia in 2022. Before joining Georgetown, I worked as a Computer Engineer, and a Data Analyst.\nA relentless learner, I am currently pursuing a Master’s of Science in Data Science and Analytics at Georgetown University. As I progress in my career, my passion lies in leveraging tailored data and algorithms to solve intricate business problems and communicating complex insights to non-technical stakeholders.\nI love spending time in charming cafes and exploring new cuisines. During my downtime I enjoy reading, painting and watching movies/TV shows."
   },
   {
-    "objectID": "about.html#education",
-    "href": "about.html#education",
-    "title": "Isfar Baset",
-    "section": "Education",
-    "text": "Education\nMasters of Science in Data Science and Analytics  Georgetown University, Washington, D.C. | 2023 - 2025\nBachelors of Science in Computer Science  Grand Valley State University, Grand Rapids, MI | 2015 - 2020"
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
   },
   {
-    "objectID": "about.html#experience",
-    "href": "about.html#experience",
+    "objectID": "index.html#education",
+    "href": "index.html#education",
+    "title": "Isfar Baset",
+    "section": "Education",
+    "text": "Education\nMasters of Science in Data Science and Analytics  Georgetown University, Washington, D.C. | 2023 - 2025\nBachelors of Science in Computer Science  Grand Valley State University, Grand Rapids, MI | 2015 - 2020 new line"
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
     "title": "Isfar Baset",
     "section": "Experience",
     "text": "Experience\nData Analyst  Shift Digital, Birmingham, MI | 2021 - 2022\nComputer Engineer  Array of Engineers, Grand Rapids, MI | 2020 - 2021\n:::"
   },
   {
-    "objectID": "about.html#hobbies",
-    "href": "about.html#hobbies",
+    "objectID": "index.html#meet-cairo",
+    "href": "index.html#meet-cairo",
     "title": "Isfar Baset",
-    "section": "Hobbies",
-    "text": "Hobbies\n:::"
+    "section": "Meet Cairo",
+    "text": "Meet Cairo"
   },
   {
-    "objectID": "5100-website/index.html",
-    "href": "5100-website/index.html",
-    "title": "DSAN-5100",
+    "objectID": "5000-website/about.html",
+    "href": "5000-website/about.html",
+    "title": "About",
     "section": "",
-    "text": "See the following link for more information about the author: about me\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites.\nHIGHLY RECOMMENDED\n\nIt is highly recommended that you build your website using .ipynb files and NOT .qmdfiles\nFunctionally the two formats are basically identical, i.e. they are just Markdown + Code\nHowever there is ONE MAJOR DIFFERENCE, i.e. .ipynb stores the code outputs in the meta-data of the file\n\nThis means you ONLY HAVE TO RUN THE CODE ONCE with .ipynb\n.qmd will run the code every time you build the website, which can be very slow\n\nThere are caching options for .qmd, however, they are “messier” that just using .ipynb\n\nNote: .qmd is fine if there is no code, in which case it is basically just a Markdown file\n\nConverting between the two\n\nYou can switch between the two formats using\nquarto convert clustering.qmd this will output a .ipynb version called clustering.ipynb\nquarto convert eda.ipynb this will output a .qmd version called eda.qmd\n\nYOU CAN RUN R CODE IN VSC WITH .ipynb, see the following link\n\nhttps://saturncloud.io/blog/how-to-use-jupyter-r-kernel-with-visual-studio-code/\n\nIt is possible, but NOT RECOMMENDED, to mix Python and R code in the same file\n\nIMPORTANT ASIDE\n\nA .ipynb file is simply a JSON file with a specialized structural format\nYou can see this by running more eda/eda.ipynb from the command line\nWhich will output the following;\n\n\nTIP FOR MAC USERS\n\ncommand+control+shift+4 is very useful on a mac.\n\nIt takes a screenshot and saves it to the clip-board\n\nThe following VSC extension allows you to paste images from the clip-board with alt+command+v.\n\ntab is your best friend when using the command line, since it does auto-completion\nopen ./path_to_file will open any file or directory from the command line"
-  },
-  {
-    "objectID": "5100-website/eda/eda.html",
-    "href": "5100-website/eda/eda.html",
-    "title": "Data Exploration",
-    "section": "",
-    "text": "Build out your website tab for exploratory data analysis"
-  },
-  {
-    "objectID": "5100-website/eda/eda.html#quick-look-at-the-data",
-    "href": "5100-website/eda/eda.html#quick-look-at-the-data",
-    "title": "Data Exploration",
-    "section": "Quick look at the data",
-    "text": "Quick look at the data\n\n# Import seaborn\nimport seaborn as sns\nimport matplotlib.pyplot as plt\n\n# Apply the default theme\nsns.set_theme(style=\"whitegrid\", palette=\"pastel\")\n\n# Load an example dataset\ntips = sns.load_dataset(\"tips\")\nprint(tips)\n\n     total_bill   tip     sex smoker   day    time  size\n0         16.99  1.01  Female     No   Sun  Dinner     2\n1         10.34  1.66    Male     No   Sun  Dinner     3\n2         21.01  3.50    Male     No   Sun  Dinner     3\n3         23.68  3.31    Male     No   Sun  Dinner     2\n4         24.59  3.61  Female     No   Sun  Dinner     4\n..          ...   ...     ...    ...   ...     ...   ...\n239       29.03  5.92    Male     No   Sat  Dinner     3\n240       27.18  2.00  Female    Yes   Sat  Dinner     2\n241       22.67  2.00    Male    Yes   Sat  Dinner     2\n242       17.82  1.75    Male     No   Sat  Dinner     2\n243       18.78  3.00  Female     No  Thur  Dinner     2\n\n[244 rows x 7 columns]"
-  },
-  {
-    "objectID": "5100-website/eda/eda.html#basic-visualization",
-    "href": "5100-website/eda/eda.html#basic-visualization",
-    "title": "Data Exploration",
-    "section": "Basic visualization",
-    "text": "Basic visualization\n\n\n# Create a visualization\nsns.relplot(\n    data=tips,\n    x=\"total_bill\", y=\"tip\", col=\"time\",\n    hue=\"smoker\", style=\"smoker\", size=\"size\",\n)\n\nplt.show()"
+    "text": "About this site"
   },
   {
     "objectID": "5000-website/clustering/clustering.html",
@@ -61,13 +47,6 @@
     "title": "Clustering",
     "section": "",
     "text": "Build out your website tab for “clustering”"
-  },
-  {
-    "objectID": "6300-website/index.html",
-    "href": "6300-website/index.html",
-    "title": "DSAN-6300",
-    "section": "",
-    "text": "See the following link for more information about the author: about me\nThis is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
   },
   {
     "objectID": "5000-website/eda/eda.html",
@@ -101,22 +80,22 @@
     "objectID": "5000-website/index.html#introduction",
     "href": "5000-website/index.html#introduction",
     "title": "DSAN-5000",
-    "section": "Introduction:",
-    "text": "Introduction:\nThe data question I’m seeking to explore is related to Electric Vehicles: their environmental impact, market share, and performance compared to gasoline vehicles. Over the past few years, auto manufacturers have started to add EVs to their lineup in an effort to meet the rising demand. This shift in consumer demand gives rise to many interesting questions to explore."
+    "section": "Introduction",
+    "text": "Introduction\nThe data question I’m seeking to explore is related to Electric Vehicles: their environmental impact, market share, and performance compared to gasoline vehicles. Over the past few years, auto manufacturers have started to add EVs to their lineup in an effort to meet the rising demand. This shift in consumer demand gives rise to many interesting questions to explore."
   },
   {
     "objectID": "5000-website/index.html#academic-journal-research",
     "href": "5000-website/index.html#academic-journal-research",
     "title": "DSAN-5000",
-    "section": "Academic Journal Research:",
-    "text": "Academic Journal Research:\nThe incentive presented by the government greatly impacts the demand of EVs. Government regulation and environmental prospect, in particular will drive the adoption of transportation electrification (Yong et al. 2015). The environmental benefits of EVs immensely influence their dominance in the market. Electrifying transportation is a promising approach to alleviate the climate change issue (Yong et al. 2015).\nStudies are being carried out to analyze the impact of EVs take up, with focus on economic, environment and technical issues on power grids (Situ 2009). It will lso be intersting to observe the efforsts made by the US to promote EVs compared to the rest of the world and how swiftly these vehicles can become ubiquitous. In fact, as OEM introduce more EV model to the end consumer by 2012, the presents of electric vehicle will be widely seen and recognized (Situ 2009)."
+    "section": "Academic Journal Research",
+    "text": "Academic Journal Research\nThe incentive presented by the government greatly impacts the demand of EVs. Government regulation and environmental prospect, in particular will drive the adoption of transportation electrification (Yong et al. 2015). The environmental benefits of EVs immensely influence their dominance in the market. Electrifying transportation is a promising approach to alleviate the climate change issue (Yong et al. 2015).\nStudies are being carried out to analyze the impact of EVs take up, with focus on economic, environment and technical issues on power grids (Situ 2009). It will lso be intersting to observe the efforsts made by the US to promote EVs compared to the rest of the world and how swiftly these vehicles can become ubiquitous. In fact, as OEM introduce more EV model to the end consumer by 2012, the presents of electric vehicle will be widely seen and recognized (Situ 2009)."
   },
   {
     "objectID": "5000-website/index.html#questions",
     "href": "5000-website/index.html#questions",
     "title": "DSAN-5000",
-    "section": "Questions:",
-    "text": "Questions:\n10 questions looking to answer so far:\n\n\nCan EVs completely replace gasoline vehicles in the future?\nHow much has the EV market grown in the past 5 years?\nHow would competition drive car prices in the EV market?\nWhere does the US EV market stand compared to other nations?\nWhich group of people are more likely to buy EVs?\nHow will EV impact the price of gasoline?\nHow well do EVs perform compared to a gasoline car?\nWhat is the cost of ownership of a EV vs gasoline car?\nCan everyone afford EVs?\nWhat are the environmental impacts of EVs?\nHow are governments helping to promote EVs?\n\n\n\nThese pages below will later be added on the nav bar."
+    "section": "Questions",
+    "text": "Questions\n10 questions looking to answer so far:\n\n\nCan EVs completely replace gasoline vehicles in the future?\nHow much has the EV market grown in the past 5 years?\nHow would competition drive car prices in the EV market?\nWhere does the US EV market stand compared to other nations?\nWhich group of people are more likely to buy EVs?\nHow will EV impact the price of gasoline?\nHow well do EVs perform compared to a gasoline car?\nWhat is the cost of ownership of a EV vs gasoline car?\nCan everyone afford EVs?\nWhat are the environmental impacts of EVs?\nHow are governments helping to promote EVs?"
   },
   {
     "objectID": "5000-website/index.html#code",
@@ -187,19 +166,5 @@
     "title": "DSAN-5000",
     "section": "Conclusions",
     "text": "Conclusions"
-  },
-  {
-    "objectID": "5100-website/clustering/clustering.html",
-    "href": "5100-website/clustering/clustering.html",
-    "title": "Clustering",
-    "section": "",
-    "text": "Build out your website tab for “clustering”"
-  },
-  {
-    "objectID": "about.html#meet-cairo",
-    "href": "about.html#meet-cairo",
-    "title": "Isfar Baset",
-    "section": "Meet Cairo",
-    "text": "Meet Cairo"
   }
 ]

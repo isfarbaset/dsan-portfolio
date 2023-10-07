@@ -1,9 +1,0 @@
----
-title: "DSAN-6300"
----
-
-See the following link for more information about the author: [about me](../../index.html)
-
-This is a Quarto website.
-
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
