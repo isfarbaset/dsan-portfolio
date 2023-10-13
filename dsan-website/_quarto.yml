@@ -46,8 +46,10 @@ website:
             #   file: ../../data/01-modified-data/example.csv
 
         - text: Data Gathering
+          file: 5000-website/eda/data_gathering.qmd
 
         - text: Data Cleaning
+          file: 5000-website/eda/data_cleaning.ipynb
 
         - text: Data Exploration
           file: 5000-website/eda/eda.ipynb

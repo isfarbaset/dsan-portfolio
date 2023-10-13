@@ -16,5 +16,14 @@
   },
   "clustering/clustering.ipynb": {
     "clustering.html": "3d7434d2"
+  },
+  "eda/data_gathering.ipynb": {
+    "data_gathering.html": "da1d0226"
+  },
+  "eda/data_gathering.qmd": {
+    "data_gathering.html": "15ebf1d9"
+  },
+  "eda/data_cleaning.ipynb": {
+    "data_cleaning.html": "a86c3ed2"
   }
 }

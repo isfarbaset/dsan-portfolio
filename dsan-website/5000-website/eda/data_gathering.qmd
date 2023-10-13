@@ -1,0 +1,322 @@
+---
+title: Data Gathering
+---
+
+## Data Source: API Call
+
+Source: https://rapidapi.com/MrTuvoc/api/electricar/
+```{python}
+
+import requests
+import json
+
+url = "https://electricar.p.rapidapi.com/electricars"
+
+querystring = {"page":"1","page_size":"10"}
+
+headers = {
+	"X-RapidAPI-Key": "14d8d40c8amsh63b4f7a4468db90p1c3237jsn9e3b7c33366d",
+	"X-RapidAPI-Host": "electricar.p.rapidapi.com"
+}
+
+response = requests.get(url, headers=headers, params=querystring)
+
+data = response.json()
+print(data)
+
+# Convert the data to a JSON string
+json_string = json.dumps(data, indent=4)  # indent parameter for pretty-printing
+
+# Specify the file path where you want to save the JSON data
+file_path = "output.json"
+
+# Write the JSON string to the file
+with open(file_path, "w") as file:
+    file.write(json_string)
+
+print(f"JSON data saved to {file_path}")
+```
+
+JSON Output:
+
+[
+    {
+        "_id": "64b8150c3f35c83376286f52",
+        "VIN (1-10)": "KMHC05LH6K",
+        "County": "Snohomish",
+        "City": "Edmonds",
+        "State": "WA",
+        "Postal Code": 98026,
+        "Model Year": 2019,
+        "Make": "HYUNDAI",
+        "Model": "IONIQ",
+        "Electric Vehicle Type": "Battery Electric Vehicle (BEV)",
+        "Clean Alternative Fuel Vehicle (CAFV) Eligibility": "Clean Alternative Fuel Vehicle Eligible",
+        "Electric Range": 124,
+        "Base MSRP": 0,
+        "Legislative District": 21,
+        "DOL Vehicle ID": 167322298,
+        "Vehicle Location": "POINT (-122.33568499999996 47.803720000000055)",
+        "Electric Utility": "PUGET SOUND ENERGY INC",
+        "2020 Census Tract": 53061042003
+    },
+    {
+        "_id": "64b8150c3f35c83376286f2c",
+        "VIN (1-10)": "5YJYGDEE3L",
+        "County": "Snohomish",
+        "City": "Bothell",
+        "State": "WA",
+        "Postal Code": 98021,
+        "Model Year": 2020,
+        "Make": "TESLA",
+        "Model": "MODEL Y",
+        "Electric Vehicle Type": "Battery Electric Vehicle (BEV)",
+        "Clean Alternative Fuel Vehicle (CAFV) Eligibility": "Clean Alternative Fuel Vehicle Eligible",
+        "Electric Range": 291,
+        "Base MSRP": 0,
+        "Legislative District": 1,
+        "DOL Vehicle ID": 124338350,
+        "Vehicle Location": "POINT (-122.17945799999995 47.80258900000007)",
+        "Electric Utility": "PUGET SOUND ENERGY INC",
+        "2020 Census Tract": 53061051937
+    },
+    {
+        "_id": "64b8150c3f35c83376286f26",
+        "VIN (1-10)": "1G1RB6S58J",
+        "County": "Yakima",
+        "City": "Selah",
+        "State": "WA",
+        "Postal Code": 98942,
+        "Model Year": 2018,
+        "Make": "CHEVROLET",
+        "Model": "VOLT",
+        "Electric Vehicle Type": "Plug-in Hybrid Electric Vehicle (PHEV)",
+        "Clean Alternative Fuel Vehicle (CAFV) Eligibility": "Clean Alternative Fuel Vehicle Eligible",
+        "Electric Range": 53,
+        "Base MSRP": 0,
+        "Legislative District": 13,
+        "DOL Vehicle ID": 474699725,
+        "Vehicle Location": "POINT (-120.54187999999999 46.654175000000066)",
+        "Electric Utility": "PACIFICORP",
+        "2020 Census Tract": 53077003004
+    },
+    {
+        "_id": "64b8150c3f35c83376286f22",
+        "VIN (1-10)": "1N4AZ1CP8K",
+        "County": "Kitsap",
+        "City": "Port Orchard",
+        "State": "WA",
+        "Postal Code": 98366,
+        "Model Year": 2019,
+        "Make": "NISSAN",
+        "Model": "LEAF",
+        "Electric Vehicle Type": "Battery Electric Vehicle (BEV)",
+        "Clean Alternative Fuel Vehicle (CAFV) Eligibility": "Clean Alternative Fuel Vehicle Eligible",
+        "Electric Range": 150,
+        "Base MSRP": 0,
+        "Legislative District": 26,
+        "DOL Vehicle ID": 271008636,
+        "Vehicle Location": "POINT (-122.63926499999997 47.53730000000007)",
+        "Electric Utility": "PUGET SOUND ENERGY INC",
+        "2020 Census Tract": 53035092300
+    },
+    {
+        "_id": "64b8150c3f35c83376286f75",
+        "VIN (1-10)": "1G1RA6E41D",
+        "County": "Snohomish",
+        "City": "Monroe",
+        "State": "WA",
+        "Postal Code": 98272,
+        "Model Year": 2013,
+        "Make": "CHEVROLET",
+        "Model": "VOLT",
+        "Electric Vehicle Type": "Plug-in Hybrid Electric Vehicle (PHEV)",
+        "Clean Alternative Fuel Vehicle (CAFV) Eligibility": "Clean Alternative Fuel Vehicle Eligible",
+        "Electric Range": 38,
+        "Base MSRP": 0,
+        "Legislative District": 39,
+        "DOL Vehicle ID": 211965127,
+        "Vehicle Location": "POINT (-121.97221499999995 47.85674000000006)",
+        "Electric Utility": "PUGET SOUND ENERGY INC",
+        "2020 Census Tract": 53061052204
+    },
+    {
+        "_id": "64b8150c3f35c83376286f9a",
+        "VIN (1-10)": "5YJSA1E25H",
+        "County": "Snohomish",
+        "City": "Bothell",
+        "State": "WA",
+        "Postal Code": 98021,
+        "Model Year": 2017,
+        "Make": "TESLA",
+        "Model": "MODEL S",
+        "Electric Vehicle Type": "Battery Electric Vehicle (BEV)",
+        "Clean Alternative Fuel Vehicle (CAFV) Eligibility": "Clean Alternative Fuel Vehicle Eligible",
+        "Electric Range": 210,
+        "Base MSRP": 0,
+        "Legislative District": 1,
+        "DOL Vehicle ID": 3562576,
+        "Vehicle Location": "POINT (-122.17945799999995 47.80258900000007)",
+        "Electric Utility": "PUGET SOUND ENERGY INC",
+        "2020 Census Tract": 53061051932
+    },
+    {
+        "_id": "64b8150c3f35c83376286fa5",
+        "VIN (1-10)": "5YJ3E1EA3J",
+        "County": "Yakima",
+        "City": "Yakima",
+        "State": "WA",
+        "Postal Code": 98902,
+        "Model Year": 2018,
+        "Make": "TESLA",
+        "Model": "MODEL 3",
+        "Electric Vehicle Type": "Battery Electric Vehicle (BEV)",
+        "Clean Alternative Fuel Vehicle (CAFV) Eligibility": "Clean Alternative Fuel Vehicle Eligible",
+        "Electric Range": 215,
+        "Base MSRP": 0,
+        "Legislative District": 14,
+        "DOL Vehicle ID": 476029207,
+        "Vehicle Location": "POINT (-120.52401199999997 46.59739390000004)",
+        "Electric Utility": "PACIFICORP",
+        "2020 Census Tract": 53077000600
+    },
+    {
+        "_id": "64b8150c3f35c83376286fac",
+        "VIN (1-10)": "5YJ3E1EAXJ",
+        "County": "Island",
+        "City": "Oak Harbor",
+        "State": "WA",
+        "Postal Code": 98277,
+        "Model Year": 2018,
+        "Make": "TESLA",
+        "Model": "MODEL 3",
+        "Electric Vehicle Type": "Battery Electric Vehicle (BEV)",
+        "Clean Alternative Fuel Vehicle (CAFV) Eligibility": "Clean Alternative Fuel Vehicle Eligible",
+        "Electric Range": 215,
+        "Base MSRP": 0,
+        "Legislative District": 10,
+        "DOL Vehicle ID": 338472676,
+        "Vehicle Location": "POINT (-122.67886729999998 48.28973140000005)",
+        "Electric Utility": "PUGET SOUND ENERGY INC",
+        "2020 Census Tract": 53029971000
+    },
+    {
+        "_id": "64b8150c3f35c83376286fb0",
+        "VIN (1-10)": "WBY1Z8C38H",
+        "County": "Yakima",
+        "City": "Yakima",
+        "State": "WA",
+        "Postal Code": 98902,
+        "Model Year": 2017,
+        "Make": "BMW",
+        "Model": "I3",
+        "Electric Vehicle Type": "Plug-in Hybrid Electric Vehicle (PHEV)",
+        "Clean Alternative Fuel Vehicle (CAFV) Eligibility": "Clean Alternative Fuel Vehicle Eligible",
+        "Electric Range": 97,
+        "Base MSRP": 0,
+        "Legislative District": 14,
+        "DOL Vehicle ID": 347881089,
+        "Vehicle Location": "POINT (-120.52401199999997 46.59739390000004)",
+        "Electric Utility": "PACIFICORP",
+        "2020 Census Tract": 53077000700
+    },
+    {
+        "_id": "64b8150c3f35c83376286fb8",
+        "VIN (1-10)": "5YJ3E1EA6J",
+        "County": "Snohomish",
+        "City": "Bothell",
+        "State": "WA",
+        "Postal Code": 98012,
+        "Model Year": 2018,
+        "Make": "TESLA",
+        "Model": "MODEL 3",
+        "Electric Vehicle Type": "Battery Electric Vehicle (BEV)",
+        "Clean Alternative Fuel Vehicle (CAFV) Eligibility": "Clean Alternative Fuel Vehicle Eligible",
+        "Electric Range": 215,
+        "Base MSRP": 0,
+        "Legislative District": 21,
+        "DOL Vehicle ID": 123374772,
+        "Vehicle Location": "POINT (-122.1873 47.82024500000006)",
+        "Electric Utility": "PUGET SOUND ENERGY INC",
+        "2020 Census Tract": 53061051927
+    }
+]
+
+## Looking at Stock Prices of Tesla VS. Other Automotive Companies:
+
+```{r}
+#| vscode: {languageId: r}
+library(quantmod)
+library(plotly)
+```
+
+```{r}
+#| vscode: {languageId: r}
+
+options("getSymbols.warning4.0"=FALSE)
+options("getSymbols.yahoo.warning"=FALSE)
+
+tickers = c("STLA","GM", "TM","NSANY", "MBGYY", "BMWYY","POAHY", "TSLA" )
+
+getSymbols(tickers,auto.assign = TRUE, src="yahoo")
+
+for (i in tickers){
+  getSymbols(i,
+             from = "2016-01-01",
+             to = "2023-01-01")}
+
+x <- list(
+  title = "date"
+)
+y <- list(
+  title = "value"
+)
+
+stock <- data.frame(STLA$STLA.Adjusted,
+                    GM$GM.Adjusted,
+                    TM$TM.Adjusted,
+                    NSANY$NSANY.Adjusted,
+                    MBGYY$MBGYY.Adjusted,
+                    BMWYY$BMWYY.Adjusted,
+                    POAHY$POAHY.Adjusted,
+                    TSLA$TSLA.Adjusted)
+
+
+stock <- data.frame(stock,rownames(stock))
+
+colnames(stock) <- append(tickers,'Dates')
+head(stock)
+
+stock$Dates<-as.Date(stock$Dates,"%Y-%m-%d")
+str(stock)
+
+g <- ggplot(stock, aes(x=Dates)) +
+  geom_line(aes(y=STLA, colour="STLA"))+ 
+  geom_line(aes(y=GM, colour="GM"))+
+  geom_line(aes(y=TM, colour="TM"))+ 
+  geom_line(aes(y=NSANY, colour="NSANY"))+ 
+  geom_line(aes(y=MBGYY, colour="MBGYY"))+
+  geom_line(aes(y=BMWYY, colour="BMWYY"))+ 
+  geom_line(aes(y=POAHY, colour="POAHY"))+ 
+  geom_line(aes(y=TSLA, colour="TSLA"))+ 
+  labs(
+    title = "Stock Prices for Automotive Companies",
+    subtitle = "From 2016-2023",
+    x = "Date",
+    y = "Adjusted Closing Prices")+
+    guides(colour=guide_legend(title="Automotive Companies")) 
+
+ggplotly(g) %>%
+  layout(hovermode = "x")
+
+# Save the dataframe to a CSV file
+write.csv(stock, file = "stock.csv", row.names = FALSE)
+```
+
+Data from Bloomberg:
+
+![Alt text](../images/bloomberg_graph.png)
+
+
+
+
