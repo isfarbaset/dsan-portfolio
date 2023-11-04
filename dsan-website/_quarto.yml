@@ -54,6 +54,9 @@ website:
         - text: Data Exploration
           file: 5000-website/eda/eda.ipynb
 
+        - text: Naïve Bayes
+          file: 5000-website/eda/naive_bayes.ipynb
+
         - text: Clustering
         - text: Dimensionality Reduction
         - text: Decision Trees

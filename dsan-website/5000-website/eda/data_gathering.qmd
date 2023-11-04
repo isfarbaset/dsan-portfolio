@@ -12,7 +12,7 @@ import json
 
 url = "https://electricar.p.rapidapi.com/electricars"
 
-querystring = {"page":"1","page_size":"10"}
+querystring = {"page":"1","page_size":"100"}
 
 headers = {
 	"X-RapidAPI-Key": "14d8d40c8amsh63b4f7a4468db90p1c3237jsn9e3b7c33366d",
@@ -253,6 +253,8 @@ library(plotly)
 ```{r}
 #| vscode: {languageId: r}
 
+library(quantmod)
+
 options("getSymbols.warning4.0"=FALSE)
 options("getSymbols.yahoo.warning"=FALSE)
 
@@ -262,8 +264,8 @@ getSymbols(tickers,auto.assign = TRUE, src="yahoo")
 
 for (i in tickers){
   getSymbols(i,
-             from = "2016-01-01",
-             to = "2023-01-01")}
+             from = "2018-01-01",
+             to = Sys.Date())}
 
 x <- list(
   title = "date"
@@ -301,7 +303,7 @@ g <- ggplot(stock, aes(x=Dates)) +
   geom_line(aes(y=TSLA, colour="TSLA"))+ 
   labs(
     title = "Stock Prices for Automotive Companies",
-    subtitle = "From 2016-2023",
+    subtitle = "From 2018-2023",
     x = "Date",
     y = "Adjusted Closing Prices")+
     guides(colour=guide_legend(title="Automotive Companies")) 
