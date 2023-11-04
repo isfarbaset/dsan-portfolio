@@ -3,7 +3,7 @@ title: DSAN-5000
 bibliography: reference.bib
 ---
 
-See the following link for more information about the author: [about me](../../index.html)
+<!-- See the following link for more information about the author: [about me](../../index.html) -->
 
 ## Introduction
 

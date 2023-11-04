@@ -25,5 +25,11 @@
   },
   "eda/data_cleaning.ipynb": {
     "data_cleaning.html": "a86c3ed2"
+  },
+  "eda/naive_bayes.ipynb": {
+    "naive_bayes.html": "bddc5c08"
+  },
+  "eda/01-wiki-crawl.ipynb": {
+    "01-wiki-crawl.html": "98404a3c"
   }
 }

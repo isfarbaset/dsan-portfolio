@@ -236,14 +236,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#quick-look-at-the-data" id="toc-quick-look-at-the-data" class="nav-link active" data-scroll-target="#quick-look-at-the-data">Quick look at the data</a>
-  <ul class="collapse">
+  <li><a href="#quick-look-at-the-data" id="toc-quick-look-at-the-data" class="nav-link active" data-scroll-target="#quick-look-at-the-data">Quick look at the data</a></li>
   <li><a href="#data-understanding" id="toc-data-understanding" class="nav-link" data-scroll-target="#data-understanding">Data Understanding</a></li>
-  </ul></li>
   <li><a href="#descriptive-statistics" id="toc-descriptive-statistics" class="nav-link" data-scroll-target="#descriptive-statistics">Descriptive Statistics</a></li>
   <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data visualization</a></li>
   <li><a href="#correlation-analysis" id="toc-correlation-analysis" class="nav-link" data-scroll-target="#correlation-analysis">Correlation Analysis</a></li>
   <li><a href="#hypothesis-generation" id="toc-hypothesis-generation" class="nav-link" data-scroll-target="#hypothesis-generation">Hypothesis Generation</a></li>
+  <li><a href="#data-grouping-and-segmentation" id="toc-data-grouping-and-segmentation" class="nav-link" data-scroll-target="#data-grouping-and-segmentation">Data Grouping and Segmentation</a></li>
+  <li><a href="#identifying-outliers" id="toc-identifying-outliers" class="nav-link" data-scroll-target="#identifying-outliers">Identifying Outliers</a></li>
+  <li><a href="#report-and-discussion-of-methods-and-findings" id="toc-report-and-discussion-of-methods-and-findings" class="nav-link" data-scroll-target="#report-and-discussion-of-methods-and-findings">Report and discussion of methods and findings</a></li>
+  <li><a href="#tools-and-software" id="toc-tools-and-software" class="nav-link" data-scroll-target="#tools-and-software">Tools and Software</a></li>
   </ul>
 </nav>
     </div>
@@ -270,15 +272,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Build out your website tab for exploratory data analysis</p>
 <section id="quick-look-at-the-data" class="level2">
 <h2 class="anchored" data-anchor-id="quick-look-at-the-data">Quick look at the data</h2>
-<div class="cell" data-execution_count="71">
+<div class="cell" data-execution_count="37">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="data-understanding" class="level3">
-<h3 class="anchored" data-anchor-id="data-understanding">Data Understanding</h3>
-<div class="cell" data-execution_count="56">
+</section>
+<section id="data-understanding" class="level2">
+<h2 class="anchored" data-anchor-id="data-understanding">Data Understanding</h2>
+<div class="cell" data-execution_count="38">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply the default theme</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style<span class="op">=</span><span class="st">"whitegrid"</span>, palette<span class="op">=</span><span class="st">"pastel"</span>)</span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -287,11 +290,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(stocks)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>           STLA         GM          TM      NSANY      MBGYY      BMWYY  \
-0     11.472710  37.606457  128.369995  20.040001  15.427056  25.132996   
-1     11.945811  38.524128  130.130005  20.250000  15.544848  25.270376   
-2     12.854664  39.711697  132.160004  20.230000  15.751438  25.443905   
-3     13.551866  39.594734  133.860001  20.389999  15.934467  25.740353   
-4     13.433592  39.783672  134.770004  20.440001  16.003328  25.913887   
+0     11.472710  37.606449  128.369995  20.040001  15.427056  25.132998   
+1     11.945811  38.524120  130.130005  20.250000  15.544848  25.270374   
+2     12.854664  39.711693  132.160004  20.230000  15.751438  25.443907   
+3     13.551867  39.594738  133.860001  20.389999  15.934468  25.740351   
+4     13.433591  39.783680  134.770004  20.440001  16.003330  25.913887   
 ...         ...        ...         ...        ...        ...        ...   
 1464  18.480000  28.549999  171.610001   7.780000  15.140000  31.129999   
 1465  18.040001  27.219999  172.809998   7.800000  14.710000  31.059999   
@@ -301,10 +304,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
          POAHY        TSLA       Dates  
 0     6.742718   21.368668  2018-01-02  
-1     6.887549   21.150000  2018-01-03  
-2     7.072613   20.974667  2018-01-04  
-3     7.145029   21.105333  2018-01-05  
-4     7.161120   22.427334  2018-01-08  
+1     6.887550   21.150000  2018-01-03  
+2     7.072612   20.974667  2018-01-04  
+3     7.145028   21.105333  2018-01-05  
+4     7.161119   22.427334  2018-01-08  
 ...        ...         ...         ...  
 1464  4.440000  205.759995  2023-10-26  
 1465  4.390000  207.300003  2023-10-27  
@@ -315,7 +318,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 [1469 rows x 9 columns]</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="57">
+<div class="cell" data-execution_count="39">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>stocks.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
@@ -336,7 +339,7 @@ dtypes: float64(8), object(1)
 memory usage: 103.4+ KB</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="58">
+<div class="cell" data-execution_count="40">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>stocks[<span class="st">'Dates'</span>] <span class="op">=</span> pd.to_datetime(stocks[<span class="st">'Dates'</span>])  <span class="co"># Convert the 'Dates' column to datetime format</span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Filter the dataframe for only 2023 dates</span></span>
@@ -374,18 +377,17 @@ memory usage: 103.4+ KB</code></pre>
 </div>
 </div>
 </section>
-</section>
 <section id="descriptive-statistics" class="level2">
 <h2 class="anchored" data-anchor-id="descriptive-statistics">Descriptive Statistics</h2>
-<div class="cell" data-execution_count="59">
+<div class="cell" data-execution_count="41">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get the number of rows and columns</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(stocks_2023.index), <span class="bu">len</span>(stocks_2023.columns)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="59">
+<div class="cell-output cell-output-display" data-execution_count="41">
 <pre><code>(210, 9)</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="60">
+<div class="cell" data-execution_count="42">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Counting NaN values in all columns</span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>nan_count <span class="op">=</span> stocks_2023.isna().<span class="bu">sum</span>()</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -403,7 +405,7 @@ Dates    0
 dtype: int64</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="61">
+<div class="cell" data-execution_count="43">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"----------------------"</span>)</span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"BASIC STATISTICS: "</span>)</span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"----------------------"</span>)</span>
@@ -413,7 +415,7 @@ dtype: int64</code></pre>
 BASIC STATISTICS: 
 ----------------------</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="61">
+<div class="cell-output cell-output-display" data-execution_count="43">
 <div>
 
 
@@ -538,7 +540,7 @@ BASIC STATISTICS:
 </section>
 <section id="data-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="data-visualization">Data visualization</h2>
-<div class="cell" data-execution_count="62">
+<div class="cell" data-execution_count="44">
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Create a visualization</span></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style<span class="op">=</span><span class="st">"whitegrid"</span>, palette<span class="op">=</span><span class="st">"pastel"</span>)</span>
@@ -554,7 +556,8 @@ BASIC STATISTICS:
 <p><img src="eda_files/figure-html/cell-9-output-1.png" class="img-fluid"></p>
 </div>
 </div>
-<div class="cell" data-execution_count="63">
+<p>In 2023, TSLA’s stock price experienced a sharp rise until mid-year, followed by a decline towards the end of the year.</p>
+<div class="cell" data-execution_count="45">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a>sns.lineplot(data<span class="op">=</span>stocks_2023, x<span class="op">=</span><span class="st">'Dates'</span>, y<span class="op">=</span><span class="st">'TSLA'</span>, label<span class="op">=</span><span class="st">'TSLA'</span>)</span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>sns.lineplot(data<span class="op">=</span>stocks_2023, x<span class="op">=</span><span class="st">'Dates'</span>, y<span class="op">=</span><span class="st">'GM'</span>, label<span class="op">=</span><span class="st">'GM'</span>)</span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'TSLA vs GM Stock Price Comparison for 2023'</span>)</span>
@@ -567,10 +570,11 @@ BASIC STATISTICS:
 <p><img src="eda_files/figure-html/cell-10-output-1.png" class="img-fluid"></p>
 </div>
 </div>
+<p>Throughout 2023, TSLA’s stock price exhibited significant volatility, peaking around mid-year before declining, while GM’s stock remained relatively stable, hovering at a much lower price range. The comparison shows a stark contrast in the stock price trajectories of the two companies during this period.</p>
 </section>
 <section id="correlation-analysis" class="level2">
 <h2 class="anchored" data-anchor-id="correlation-analysis">Correlation Analysis</h2>
-<div class="cell" data-execution_count="75">
+<div class="cell" data-execution_count="46">
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># INSERT CODE TO RE-CREATE THE FOLLOWING PLOTS </span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a><span class="co"># SEE IF THERE IS ANY CORRELATION BETWEEN THE CONTINOUS VARIABLES</span></span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -586,47 +590,32 @@ BASIC STATISTICS:
 <p><img src="eda_files/figure-html/cell-11-output-2.png" class="img-fluid"></p>
 </div>
 </div>
-<div class="cell" data-execution_count="68">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the dataframe from wide to long format</span></span>
-<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># df_melted = stocks_2023.melt(id_vars=['Dates'], value_vars=['STLA', 'GM', 'TM',   'NSANY', 'MBGYY', 'BMWYY', 'POAHY', 'TSLA'], </span></span>
-<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co">#                     var_name='Brand', value_name='Stock Price')</span></span>
+<p>The scatter plot displays a positive correlation between “TSLA” and “STLA” stock values. As the “TSLA” value increases on the x-axis, the “STLA” value typically rises on the y-axis, with some variability.</p>
+<div class="cell" data-execution_count="47">
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># # Convert the dataframe from wide to long format</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a><span class="co"># # df_melted = stocks_2023.melt(id_vars=['Dates'], value_vars=['STLA', 'GM', 'TM', 'NSANY', 'MBGYY', 'BMWYY', 'POAHY', 'TSLA'], </span></span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="co"># #                     var_name='Brand', value_name='Stock Price')</span></span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df_melted)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>          Dates Brand  Stock Price
-0    2023-01-03  STLA    13.374442
-1    2023-01-04  STLA    13.805285
-2    2023-01-05  STLA    13.906119
-3    2023-01-06  STLA    14.162791
-4    2023-01-09  STLA    14.318627
-...         ...   ...          ...
-1675 2023-10-26  TSLA   205.759995
-1676 2023-10-27  TSLA   207.300003
-1677 2023-10-30  TSLA   197.360001
-1678 2023-10-31  TSLA   200.839996
-1679 2023-11-01  TSLA   205.660004
-
-[1680 rows x 3 columns]</code></pre>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a><span class="co"># print(df_melted)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-</div>
-<div class="cell" data-execution_count="72">
-<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># INSERT CODE TO RE-CREATE THE FOLLOWING PLOTS </span></span>
-<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co"># INSERT CODE</span></span>
-<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style<span class="op">=</span><span class="st">"white"</span>)</span>
-<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>corr <span class="op">=</span> stocks_2023.corr(numeric_only<span class="op">=</span><span class="va">True</span>)  <span class="co">#Compute the correlation matrix</span></span>
-<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="co"># # Generate a mask for the upper triangle</span></span>
-<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>mask <span class="op">=</span> np.triu(np.ones_like(corr, dtype<span class="op">=</span><span class="bu">bool</span>)) </span>
-<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>f, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="dv">5</span>)) <span class="co">#initialize figure</span></span>
-<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a>cmap <span class="op">=</span> sns.diverging_palette(<span class="dv">230</span>, <span class="dv">20</span>, as_cmap<span class="op">=</span><span class="va">True</span>) <span class="co">#custom diverging colormap</span></span>
-<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a><span class="co"># # Draw the heatmap with the mask and correct aspect ratio</span></span>
-<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a>sns.heatmap(corr, mask<span class="op">=</span>mask, cmap<span class="op">=</span>cmap, vmax<span class="op">=</span><span class="fl">.3</span>, center<span class="op">=</span><span class="dv">0</span>,</span>
-<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a>            square<span class="op">=</span><span class="va">True</span>, linewidths<span class="op">=</span><span class="fl">.5</span>, cbar_kws<span class="op">=</span>{<span class="st">"shrink"</span>: <span class="fl">.5</span>})</span>
-<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-execution_count="48">
+<div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># INSERT CODE TO RE-CREATE THE FOLLOWING PLOTS </span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a><span class="co"># INSERT CODE</span></span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>sns.set_theme(style<span class="op">=</span><span class="st">"white"</span>)</span>
+<span id="cb19-6"><a href="#cb19-6" aria-hidden="true" tabindex="-1"></a>corr <span class="op">=</span> stocks_2023.corr(numeric_only<span class="op">=</span><span class="va">True</span>)  <span class="co">#Compute the correlation matrix</span></span>
+<span id="cb19-7"><a href="#cb19-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a><span class="co"># # Generate a mask for the upper triangle</span></span>
+<span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a>mask <span class="op">=</span> np.triu(np.ones_like(corr, dtype<span class="op">=</span><span class="bu">bool</span>)) </span>
+<span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>f, ax <span class="op">=</span> plt.subplots(figsize<span class="op">=</span>(<span class="dv">7</span>, <span class="dv">5</span>)) <span class="co">#initialize figure</span></span>
+<span id="cb19-11"><a href="#cb19-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-12"><a href="#cb19-12" aria-hidden="true" tabindex="-1"></a>cmap <span class="op">=</span> sns.diverging_palette(<span class="dv">230</span>, <span class="dv">20</span>, as_cmap<span class="op">=</span><span class="va">True</span>) <span class="co">#custom diverging colormap</span></span>
+<span id="cb19-13"><a href="#cb19-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb19-14"><a href="#cb19-14" aria-hidden="true" tabindex="-1"></a><span class="co"># # Draw the heatmap with the mask and correct aspect ratio</span></span>
+<span id="cb19-15"><a href="#cb19-15" aria-hidden="true" tabindex="-1"></a>sns.heatmap(corr, mask<span class="op">=</span>mask, cmap<span class="op">=</span>cmap, vmax<span class="op">=</span><span class="fl">.3</span>, center<span class="op">=</span><span class="dv">0</span>,</span>
+<span id="cb19-16"><a href="#cb19-16" aria-hidden="true" tabindex="-1"></a>            square<span class="op">=</span><span class="va">True</span>, linewidths<span class="op">=</span><span class="fl">.5</span>, cbar_kws<span class="op">=</span>{<span class="st">"shrink"</span>: <span class="fl">.5</span>})</span>
+<span id="cb19-17"><a href="#cb19-17" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="eda_files/figure-html/cell-13-output-1.png" class="img-fluid"></p>
 </div>
@@ -635,6 +624,112 @@ BASIC STATISTICS:
 </section>
 <section id="hypothesis-generation" class="level2">
 <h2 class="anchored" data-anchor-id="hypothesis-generation">Hypothesis Generation</h2>
+<p>Based on the different visualizations above, an apt hypothesis to test out could be “TSLA’s significant price surge in 2023 suggests a dominant market influence, potentially driving similar trends in associated automotive stocks”</p>
+</section>
+<section id="data-grouping-and-segmentation" class="level2">
+<h2 class="anchored" data-anchor-id="data-grouping-and-segmentation">Data Grouping and Segmentation</h2>
+<div class="cell" data-execution_count="50">
+<div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> KMeans</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-6"><a href="#cb20-6" aria-hidden="true" tabindex="-1"></a>stocks_2023 <span class="op">=</span> stocks_2023.drop(<span class="st">'Dates'</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb20-7"><a href="#cb20-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-8"><a href="#cb20-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Standardizing the data (important for K-Means)</span></span>
+<span id="cb20-9"><a href="#cb20-9" aria-hidden="true" tabindex="-1"></a>scaler <span class="op">=</span> StandardScaler()</span>
+<span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a>scaled_df <span class="op">=</span> scaler.fit_transform(stocks_2023.dropna())</span>
+<span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a><span class="co"># Using K-Means clustering</span></span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>kmeans <span class="op">=</span> KMeans(n_clusters<span class="op">=</span><span class="dv">3</span>)  <span class="co"># assuming 3 clusters</span></span>
+<span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>stocks_2023[<span class="st">'Cluster'</span>] <span class="op">=</span> kmeans.fit_predict(scaled_df)</span>
+<span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualize using TSLA and another stock, e.g., 'GM'</span></span>
+<span id="cb20-17"><a href="#cb20-17" aria-hidden="true" tabindex="-1"></a>sns.lmplot(x<span class="op">=</span><span class="st">'TSLA'</span>, y<span class="op">=</span><span class="st">'GM'</span>, data<span class="op">=</span>stocks_2023, hue<span class="op">=</span><span class="st">'Cluster'</span>, fit_reg<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb20-18"><a href="#cb20-18" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stderr">
+<pre><code>/Users/isfarbaset/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)
+/Users/isfarbaset/anaconda3/lib/python3.11/site-packages/seaborn/axisgrid.py:118: UserWarning: The figure layout has changed to tight
+  self._figure.tight_layout(*args, **kwargs)</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-14-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>The visualization displays three distinct clusters of data points based on TSLA and GM stock values. Cluster 0 primarily represents data points where both TSLA and GM have lower stock values, Cluster 1 captures instances with mid-range values, and Cluster 2 comprises of higher TSLA stock values with varying GM values. The spread of the clusters suggests a potential relationship or pattern between the stock values of TSLA and GM over the period of 2023</p>
+</section>
+<section id="identifying-outliers" class="level2">
+<h2 class="anchored" data-anchor-id="identifying-outliers">Identifying Outliers</h2>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Source: https://www.datacamp.com/tutorial/naive-bayes-scikit-learn</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> show_boxplot(df):</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>    plt.rcParams[<span class="st">'figure.figsize'</span>] <span class="op">=</span> [<span class="dv">14</span>,<span class="dv">6</span>]</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>    sns.boxplot(data <span class="op">=</span> df, orient<span class="op">=</span><span class="st">"v"</span>)</span>
+<span id="cb22-6"><a href="#cb22-6" aria-hidden="true" tabindex="-1"></a>    plt.title(<span class="st">"Outliers Distribution"</span>, fontsize <span class="op">=</span> <span class="dv">16</span>)</span>
+<span id="cb22-7"><a href="#cb22-7" aria-hidden="true" tabindex="-1"></a>    plt.ylabel(<span class="st">"Range"</span>, fontweight <span class="op">=</span> <span class="st">'bold'</span>)</span>
+<span id="cb22-8"><a href="#cb22-8" aria-hidden="true" tabindex="-1"></a>    plt.xlabel(<span class="st">"Attributes"</span>, fontweight <span class="op">=</span> <span class="st">'bold'</span>)</span>
+<span id="cb22-9"><a href="#cb22-9" aria-hidden="true" tabindex="-1"></a>   </span>
+<span id="cb22-10"><a href="#cb22-10" aria-hidden="true" tabindex="-1"></a>show_boxplot(stocks_2023)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display">
+<p><img src="eda_files/figure-html/cell-15-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Here we can see the distribution of outliers for various automotive stock attributes. Most stocks, like GM, TM, NSANY, MBGYY, BMWYY, and POAHY, have a narrow range of outlier values, typically below 100. Notably, TM displays a compact outlier range between 100 and 150, while two instances of TSLA stock demonstrate a broader range of outliers, with one reaching up to 300 and another clustering around 150 to 200.</p>
+</section>
+<section id="report-and-discussion-of-methods-and-findings" class="level2">
+<h2 class="anchored" data-anchor-id="report-and-discussion-of-methods-and-findings">Report and discussion of methods and findings</h2>
+<table class="table">
+<colgroup>
+<col style="width: 27%">
+<col style="width: 66%">
+<col style="width: 6%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Topic</th>
+<th>Description</th>
+<th>Methods</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Correlation Matrix</strong></td>
+<td>The matrix depicts correlations between various stock tickers. Blue indicates positive correlation, red indicates negative correlation, and white means no correlation. For instance, “STLA” and “GM” have a strong positive correlation while “TSLA” has low to no correlation with most of the other stocks.</td>
+<td>This was done using seaborn’s correlation analysis tool</td>
+</tr>
+<tr class="even">
+<td><strong>TSLA Stock Price Fluctuation for 2023</strong></td>
+<td>The chart shows Tesla’s stock price performance throughout 2023. Tesla’s stock price has seen a significant rise from January to around March/April and then a fluctuation with a general downtrend.</td>
+<td>Matplotlib and Seaborn was used</td>
+</tr>
+<tr class="odd">
+<td><strong>TSLA vs GM Stock Price Comparison for 2023</strong></td>
+<td>This line graph compares the stock prices of Tesla (TSLA) and General Motors (GM) for 2023. While TSLA experienced significant fluctuations in its stock price, GM’s stock price remained relatively stable and lower in comparison.</td>
+<td>Matplotlib and seaborn was used</td>
+</tr>
+<tr class="even">
+<td><strong>Stock Correlation Heatmap</strong></td>
+<td>The heatmap visually represents the correlation between various stock tickers. The colors range from blue (positive correlation) to red (negative correlation) with white indicating no correlation. The vertical and horizontal labels denote the stock tickers being compared.</td>
+<td>Seaborn was used</td>
+</tr>
+<tr class="odd">
+<td><strong>Outliers Distribution</strong></td>
+<td>The box plot demonstrates the distribution of outliers for different stock tickers. It helps in identifying stocks with higher price volatility and potential risks. TSLA and TM seem to have a more extensive range compared to others like STLA and GM.</td>
+<td>Box Plot using Seaborn and Matplotlib</td>
+</tr>
+<tr class="even">
+<td><strong>Stock Price Cluster Analysis (TSLA vs GM)</strong></td>
+<td>This scatter plot showcases a cluster analysis between TSLA and GM stock prices. It suggests possible correlation patterns or trading strategies by observing how the stocks cluster together in distinct groups. The colors differentiate the clusters.</td>
+<td>Scatter Plot using Matplotlib, Seaborn and SKlearn</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="tools-and-software" class="level2">
+<h2 class="anchored" data-anchor-id="tools-and-software">Tools and Software</h2>
+<p>Python with libraries like Pandas, Matplotlib, Seaborn, Numpy and SKlearn</p>
 
 
 </section>
