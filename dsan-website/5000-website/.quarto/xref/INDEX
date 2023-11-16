@@ -31,5 +31,14 @@
   },
   "eda/01-wiki-crawl.ipynb": {
     "01-wiki-crawl.html": "98404a3c"
+  },
+  "dim-reduction/dim-reduction.ipynb": {
+    "dim-reduction.html": "7764f597"
+  },
+  "eda/datag.ipynb": {
+    "datag.html": "8f143279"
+  },
+  "eda/data_gathering-extra.ipynb": {
+    "data_gathering-extra.html": "9536a3e8"
   }
 }

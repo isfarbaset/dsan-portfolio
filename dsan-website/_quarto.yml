@@ -46,7 +46,12 @@ website:
             #   file: ../../data/01-modified-data/example.csv
 
         - text: Data Gathering
-          file: 5000-website/eda/data_gathering.qmd
+          contents:
+            - text: Initial Data Gathering
+              file: 5000-website/eda/data_gathering.ipynb
+
+            - text: Additional Data Gathering
+              file: 5000-website/eda/data_gathering-extra.ipynb
 
         - text: Data Cleaning
           file: 5000-website/eda/data_cleaning.ipynb
@@ -58,7 +63,11 @@ website:
           file: 5000-website/eda/naive_bayes.ipynb
 
         - text: Clustering
+          file: 5000-website/clustering/clustering.ipynb
+
         - text: Dimensionality Reduction
+          file: 5000-website/dim-reduction/dim-reduction.ipynb
+
         - text: Decision Trees
           contents: 
             - text: Classification

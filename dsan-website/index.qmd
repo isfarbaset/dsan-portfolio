@@ -1,6 +1,6 @@
 ---
 title: "Isfar Baset"
-image: isfar.png
+image: IMG_5160.JPG
 about:
   template: jolla
   image-width: 30em
@@ -16,7 +16,7 @@ about:
 
 <style>
   body {
-  background-image: url("https://images.unsplash.com/photo-1591696205602-2f950c417cb9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2940&q=80");
+  background-image: url("https://img.freepik.com/free-vector/abstract-grey-background_1035-9041.jpg?w=1380&t=st=1700019531~exp=1700020131~hmac=f342e575a8552652f6048702aa52651217cc0e96ad3ad876de97cb436d1999e1");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -50,6 +50,4 @@ Array of Engineers, Grand Rapids, MI | 2020 - 2021
 
 :::
 
-## Meet Cairo
-
-![](images/IMG_3334.JPG){.absolute top=210 left=10 width="500" height="600"}
+background image credit: <a href="https://img.freepik.com/free-vector/abstract-grey-background_1035-9041.jpg?w=1380&t=st=1700019531~exp=1700020131~hmac=f342e575a8552652f6048702aa52651217cc0e96ad3ad876de97cb436d1999e1">Image by Harryarts</a> on Freepik
