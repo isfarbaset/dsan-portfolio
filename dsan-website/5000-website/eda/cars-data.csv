@@ -1,0 +1,81 @@
+,city_mpg,class,combination_mpg,cylinders,displacement,drive,fuel_type,highway_mpg,make,model,transmission,year
+0,18,midsize car,21,4.0,2.2,fwd,gas,26,toyota,Camry,a,1993
+1,19,midsize car,22,4.0,2.2,fwd,gas,27,toyota,Camry,m,1993
+2,16,midsize car,19,6.0,3.0,fwd,gas,22,toyota,Camry,a,1993
+3,16,midsize car,18,6.0,3.0,fwd,gas,22,toyota,Camry,m,1993
+4,18,midsize-large station wagon,21,4.0,2.2,fwd,gas,26,toyota,Camry,a,1993
+5,23,compact car,24,4.0,1.6,fwd,gas,26,toyota,Corolla,a,1993
+6,23,compact car,26,4.0,1.6,fwd,gas,31,toyota,Corolla,m,1993
+7,23,compact car,25,4.0,1.8,fwd,gas,30,toyota,Corolla,a,1993
+8,23,compact car,26,4.0,1.8,fwd,gas,30,toyota,Corolla,m,1993
+9,23,small station wagon,25,4.0,1.8,fwd,gas,30,toyota,Corolla,a,1993
+10,21,special purpose vehicle,23,4.0,2.0,fwd,gas,26,toyota,RAV4,a,1996
+11,21,special purpose vehicle,24,4.0,2.0,fwd,gas,27,toyota,RAV4,m,1996
+12,19,special purpose vehicle,21,4.0,2.0,awd,gas,24,toyota,RAV4,a,1996
+13,19,special purpose vehicle,21,4.0,2.0,awd,gas,24,toyota,RAV4,m,1996
+14,21,special purpose vehicle,23,4.0,2.0,fwd,gas,26,toyota,RAV4,a,1997
+15,88,large car,89,,,rwd,electricity,90,tesla,Model S,a,2012
+16,94,large car,95,,,rwd,electricity,97,tesla,Model S,a,2013
+17,88,large car,89,,,rwd,electricity,90,tesla,Model S,a,2013
+18,93,large car,94,,,rwd,electricity,96,tesla,Model S,a,2013
+19,88,large car,89,,,rwd,electricity,90,tesla,Model S,a,2014
+20,131,midsize car,126,,,rwd,electricity,120,tesla,Model 3,a,2017
+21,136,midsize car,130,,,rwd,electricity,123,tesla,Model 3,a,2018
+22,120,midsize car,116,,,awd,electricity,112,tesla,Model 3,a,2018
+23,120,midsize car,116,,,awd,electricity,112,tesla,Model 3,a,2018
+24,128,midsize car,123,,,rwd,electricity,117,tesla,Model 3,a,2018
+25,90,standard sport utility vehicle,92,,,awd,electricity,94,tesla,Model X,a,2016
+26,89,standard sport utility vehicle,89,,,awd,electricity,90,tesla,Model X,a,2016
+27,91,standard sport utility vehicle,93,,,awd,electricity,95,tesla,Model X,a,2016
+28,91,standard sport utility vehicle,93,,,awd,electricity,94,tesla,Model X,a,2016
+29,81,standard sport utility vehicle,86,,,awd,electricity,92,tesla,Model X,a,2016
+30,14,standard pickup truck,15,6.0,3.9,rwd,gas,17,dodge,Ram 1500,a,1994
+31,15,standard pickup truck,17,6.0,3.9,rwd,gas,19,dodge,Ram 1500,m,1994
+32,12,standard pickup truck,13,8.0,5.2,rwd,gas,16,dodge,Ram 1500,a,1994
+33,12,standard pickup truck,14,8.0,5.2,rwd,gas,17,dodge,Ram 1500,m,1994
+34,11,standard pickup truck,12,8.0,5.9,rwd,gas,15,dodge,Ram 1500,a,1994
+35,19,compact car,21,4.0,2.4,fwd,gas,26,nissan,Altima,a,1994
+36,21,compact car,24,4.0,2.4,fwd,gas,28,nissan,Altima,m,1994
+37,18,compact car,21,4.0,2.4,fwd,gas,26,nissan,Altima,a,1995
+38,21,compact car,24,4.0,2.4,fwd,gas,28,nissan,Altima,m,1995
+39,18,compact car,21,4.0,2.4,fwd,gas,26,nissan,Altima,a,1996
+40,22,sport utility vehicle,24,4.0,2.5,fwd,gas,27,nissan,Rogue,a,2008
+41,21,sport utility vehicle,23,4.0,2.5,awd,gas,26,nissan,Rogue,a,2008
+42,22,sport utility vehicle,24,4.0,2.5,fwd,gas,27,nissan,Rogue,a,2009
+43,21,sport utility vehicle,23,4.0,2.5,awd,gas,26,nissan,Rogue,a,2009
+44,22,sport utility vehicle,24,4.0,2.5,fwd,gas,27,nissan,Rogue,a,2010
+45,106,midsize car,99,,,fwd,electricity,92,nissan,Leaf,a,2011
+46,106,midsize car,99,,,fwd,electricity,92,nissan,Leaf,a,2012
+47,129,midsize car,115,,,fwd,electricity,102,nissan,Leaf,a,2013
+48,126,midsize car,114,,,fwd,electricity,101,nissan,Leaf,a,2014
+49,126,midsize car,114,,,fwd,electricity,101,nissan,Leaf,a,2015
+50,18,subcompact car,20,6.0,2.7,rwd,gas,25,bmw,3 Series,a,1986
+51,19,subcompact car,21,6.0,2.7,rwd,gas,26,bmw,3 Series,m,1986
+52,21,subcompact car,23,4.0,1.8,,gas,24,bmw,3 Series,a,1984
+53,21,subcompact car,24,4.0,1.8,,gas,27,bmw,3 Series,m,1984
+54,18,subcompact car,20,6.0,2.7,,gas,25,bmw,3 Series,a,1984
+55,12,sport utility vehicle,14,8.0,4.4,rwd,gas,16,bmw,X5,a,2000
+56,14,sport utility vehicle,16,6.0,3.0,awd,gas,19,bmw,X5,m,2001
+57,14,sport utility vehicle,16,6.0,3.0,awd,gas,19,bmw,X5,m,2001
+58,14,sport utility vehicle,16,6.0,3.0,awd,gas,19,bmw,X5,a,2001
+59,14,sport utility vehicle,16,6.0,3.0,awd,gas,19,bmw,X5,a,2001
+60,18,midsize car,21,6.0,3.0,fwd,gas,26,infiniti,i3,a,1996
+61,19,midsize car,21,6.0,3.0,fwd,gas,24,infiniti,i3,m,1996
+62,18,midsize car,21,6.0,3.0,fwd,gas,26,infiniti,i3,a,1997
+63,19,midsize car,21,6.0,3.0,fwd,gas,24,infiniti,i3,m,1997
+64,18,midsize car,21,6.0,3.0,fwd,gas,25,infiniti,i3,a,1998
+65,15,two seater,17,6.0,3.6,rwd,gas,22,porsche,911,a,1994
+66,15,two seater,18,6.0,3.6,rwd,gas,23,porsche,911,m,1994
+67,14,two seater,16,6.0,3.6,awd,gas,21,porsche,911,m,1994
+68,15,minicompact car,17,6.0,3.6,rwd,gas,22,porsche,911,a,1994
+69,14,minicompact car,16,6.0,3.6,awd,gas,21,porsche,911,m,1994
+70,12,special purpose vehicle,14,8.0,4.5,awd,gas,17,porsche,Cayenne,a,2003
+71,12,special purpose vehicle,14,8.0,4.5,awd,gas,17,porsche,Cayenne,a,2003
+72,14,sport utility vehicle,15,6.0,3.2,awd,gas,18,porsche,Cayenne,a,2004
+73,12,sport utility vehicle,14,8.0,4.5,awd,gas,17,porsche,Cayenne,a,2004
+74,12,sport utility vehicle,14,8.0,4.5,awd,gas,17,porsche,Cayenne,a,2004
+75,68,large car,69,,,awd,electricity,71,porsche,Taycan,a,2020
+76,67,large car,68,,,awd,electricity,68,porsche,Taycan,a,2020
+77,68,large car,69,,,awd,electricity,71,porsche,Taycan,a,2020
+78,79,large car,79,,,awd,electricity,80,porsche,Taycan,a,2021
+79,75,large car,77,,,awd,electricity,81,porsche,Taycan,a,2021

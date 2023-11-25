@@ -1,0 +1,35 @@
+---
+title: DSAN-5000
+bibliography: reference.bib
+---
+
+<!-- See the following link for more information about the author: [about me](../../index.html) -->
+
+## Introduction
+
+The data question I'm seeking to explore is related to Electric Vehicles: their environmental impact, market share, and performance compared to gasoline vehicles. Over the past few years, auto manufacturers have started to add EVs to their lineup in an effort to meet the rising demand. This shift in consumer demand gives rise to many interesting questions to explore.
+
+## Academic Journal Research
+
+The incentive presented by the government greatly impacts the demand of EVs. Government regulation and environmental prospect, in particular will drive the adoption of transportation electrification [@yong2015review]. The environmental benefits of EVs immensely influence their dominance in the market. Electrifying transportation is a promising approach to alleviate the climate change issue [@yong2015review].
+
+Studies are being carried out to analyze the impact of EVs take up, with focus on economic, environment and technical issues on power grids [@situ2009electric]. It will lso be intersting to observe the efforsts made by the US to promote EVs compared to the rest of the world and how swiftly these vehicles can become ubiquitous. In fact, as OEM introduce more EV model to the end consumer by 2012, the presents of electric vehicle will be widely seen and recognized [@situ2009electric].
+
+## Questions
+
+10 questions looking to answer so far: <ol>
+* Can EVs completely replace gasoline vehicles in the future?
+* How much has the EV market grown in the past 5 years?
+* How would competition drive car prices in the EV market?
+* Where does the US EV market stand compared to other nations?
+* Which group of people are more likely to buy EVs?
+* How will EV impact the price of gasoline?
+* How well do EVs perform compared to a gasoline car?
+* What is the cost of ownership of a EV vs gasoline car?
+* Can everyone afford EVs?
+* What are the environmental impacts of EVs?
+* How are governments helping to promote EVs?
+
+
+
+### References:
