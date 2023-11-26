@@ -1,6 +1,6 @@
 ---
 title: "Isfar Baset"
-image: IMG_5160.png
+image: isfar.png
 about:
   template: jolla
   image-width: 30em
