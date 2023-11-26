@@ -65,11 +65,11 @@ website:
         - text: Naïve Bayes
           file: 5000-website/eda/naive_bayes.ipynb
 
-        - text: Clustering
-          file: 5000-website/clustering/clustering.ipynb
-
         - text: Dimensionality Reduction
           file: 5000-website/dim-reduction/dim-reduction.ipynb
+
+        - text: Clustering
+          file: 5000-website/clustering/clustering.ipynb
 
         - text: Decision Trees
           contents: 
@@ -92,6 +92,12 @@ website:
       contents:
         - text: Introduction
           file: 5100-website/index.ipynb
+
+        - text: Data Collection
+          file: 5100-website/air-quality.ipynb
+
+        - text: EDA & Hypothesis Testing
+          file: 5100-website/eda/eda.ipynb
     
 format:
   html:

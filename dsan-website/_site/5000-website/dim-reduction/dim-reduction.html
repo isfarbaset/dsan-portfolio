@@ -220,14 +220,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../5000-website/clustering/clustering.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Clustering</span></a>
+  <a href="../../5000-website/dim-reduction/dim-reduction.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Dimensionality Reduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../5000-website/dim-reduction/dim-reduction.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Dimensionality Reduction</span></a>
+  <a href="../../5000-website/clustering/clustering.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Clustering</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -263,25 +263,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#dimensionality-reduction-with-pca" id="toc-dimensionality-reduction-with-pca" class="nav-link active" data-scroll-target="#dimensionality-reduction-with-pca">Dimensionality Reduction with PCA</a></li>
-  <li><a href="#some-preliminary-cleaning" id="toc-some-preliminary-cleaning" class="nav-link" data-scroll-target="#some-preliminary-cleaning">Some preliminary cleaning</a>
+  <li><a href="#some-preliminary-cleaning" id="toc-some-preliminary-cleaning" class="nav-link active" data-scroll-target="#some-preliminary-cleaning">Some preliminary cleaning</a></li>
+  <li><a href="#dimensionality-reduction-with-pca" id="toc-dimensionality-reduction-with-pca" class="nav-link" data-scroll-target="#dimensionality-reduction-with-pca">Dimensionality Reduction with PCA</a>
   <ul class="collapse">
   <li><a href="#manual-pca-compared-to-pca-using-scikit-learn" id="toc-manual-pca-compared-to-pca-using-scikit-learn" class="nav-link" data-scroll-target="#manual-pca-compared-to-pca-using-scikit-learn">Manual PCA compared to PCA using scikit-learn</a></li>
   <li><a href="#apply-pca-with-all-components-to-examine-the-explained-variance-ratio" id="toc-apply-pca-with-all-components-to-examine-the-explained-variance-ratio" class="nav-link" data-scroll-target="#apply-pca-with-all-components-to-examine-the-explained-variance-ratio">Apply PCA with all components to examine the explained variance ratio</a></li>
+  <li><a href="#pca---reduced-dimensional-data-visualization" id="toc-pca---reduced-dimensional-data-visualization" class="nav-link" data-scroll-target="#pca---reduced-dimensional-data-visualization">PCA - Reduced Dimensional Data Visualization</a></li>
+  <li><a href="#analysis-and-interpretation-of-pca-results" id="toc-analysis-and-interpretation-of-pca-results" class="nav-link" data-scroll-target="#analysis-and-interpretation-of-pca-results">Analysis and Interpretation of PCA Results</a></li>
   </ul></li>
-  <li><a href="#analysis-and-interpretation-of-results" id="toc-analysis-and-interpretation-of-results" class="nav-link" data-scroll-target="#analysis-and-interpretation-of-results">Analysis and Interpretation of Results</a></li>
   <li><a href="#dimensionality-reduction-with-t-sne" id="toc-dimensionality-reduction-with-t-sne" class="nav-link" data-scroll-target="#dimensionality-reduction-with-t-sne">Dimensionality Reduction with t-SNE</a>
   <ul class="collapse">
   <li><a href="#perplexity-value-30" id="toc-perplexity-value-30" class="nav-link" data-scroll-target="#perplexity-value-30">Perplexity Value = 30</a></li>
-  </ul></li>
-  <li><a href="#perplexity-value-16" id="toc-perplexity-value-16" class="nav-link" data-scroll-target="#perplexity-value-16">Perplexity Value = 16</a>
-  <ul class="collapse">
+  <li><a href="#perplexity-value-16" id="toc-perplexity-value-16" class="nav-link" data-scroll-target="#perplexity-value-16">Perplexity Value = 16</a></li>
   <li><a href="#perplexity-value-1" id="toc-perplexity-value-1" class="nav-link" data-scroll-target="#perplexity-value-1">Perplexity Value = 1</a></li>
-  </ul></li>
   <li><a href="#evaluation-and-comparison" id="toc-evaluation-and-comparison" class="nav-link" data-scroll-target="#evaluation-and-comparison">Evaluation and Comparison</a></li>
-  <li><a href="#project-proposal" id="toc-project-proposal" class="nav-link" data-scroll-target="#project-proposal">Project Proposal</a></li>
-  <li><a href="#code-implementation" id="toc-code-implementation" class="nav-link" data-scroll-target="#code-implementation">Code Implementation</a></li>
-  <li><a href="#project-report" id="toc-project-report" class="nav-link" data-scroll-target="#project-report">Project Report</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -305,11 +301,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<p>The project’s objective is to explore and demonstrate the effectiveness of PCA and t-SNE in reducing the dimensionality of complex, multimodal data while preserving essential information and enhancing data visualization.</p>
-<section id="dimensionality-reduction-with-pca" class="level2">
-<h2 class="anchored" data-anchor-id="dimensionality-reduction-with-pca">Dimensionality Reduction with PCA</h2>
-<p>Apply PCA to your record dataset. Determine the optimal number of principal components to retain. Visualize the reduced-dimensional data using PCA. Analyze and interpret the results.</p>
-<div class="cell" data-execution_count="1072">
+<p>The project’s objective is to explore and demonstrate the effectiveness of PCA and t-SNE in reducing the dimensionality of complex, multimodal data while preserving essential information and enhancing data visualization. The dataset that will be used here is a record dataset containing detailed information regarding different motor vehicles. The tools and libraries are exlusively Python and it’s sckikit-learn library.</p>
+<p>Below are the python libraries used:</p>
+<div class="cell" data-execution_count="1387">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -318,13 +312,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> silhouette_samples, silhouette_score</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> linalg <span class="im">as</span> LA</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> linalg <span class="im">as</span> LA</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.manifold <span class="im">import</span> TSNE</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="1073">
+<p>Here’s a snippet of the dataset in question:</p>
+<div class="cell" data-execution_count="1388">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>record_data <span class="op">=</span> pd.read_csv(<span class="st">'../eda/cars-data.csv'</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>record_data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1073">
+<div class="cell-output cell-output-display" data-execution_count="1388">
 <div>
 
 
@@ -434,13 +431,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-</section>
 <section id="some-preliminary-cleaning" class="level2">
 <h2 class="anchored" data-anchor-id="some-preliminary-cleaning">Some preliminary cleaning</h2>
-<div class="cell" data-execution_count="1074">
+<div class="cell" data-execution_count="1389">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> record_data.copy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="1075">
+<div class="cell" data-execution_count="1390">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>nan_count <span class="op">=</span> record_data.isna().<span class="bu">sum</span>()</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nan_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -461,7 +457,7 @@ year                0
 dtype: int64</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="1076">
+<div class="cell" data-execution_count="1391">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>record_data.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
@@ -486,7 +482,7 @@ dtypes: float64(2), int64(5), object(6)
 memory usage: 8.3+ KB</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="1077">
+<div class="cell" data-execution_count="1392">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert all 'object' type columns to 'string'</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> record_data.select_dtypes(include<span class="op">=</span>[<span class="st">'object'</span>]).columns:</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    record_data[col] <span class="op">=</span> record_data[col].astype(<span class="st">'string'</span>)</span>
@@ -516,22 +512,22 @@ dtypes: float64(2), int64(5), string(6)
 memory usage: 8.3 KB</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="1078">
+<div class="cell" data-execution_count="1393">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get y </span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> record_data[<span class="st">'fuel_type'</span>].unique().tolist()</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1078">
+<div class="cell-output cell-output-display" data-execution_count="1393">
 <pre><code>['gas', 'electricity']</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="1079">
+<div class="cell" data-execution_count="1394">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Dropping non-numerical and unnecessary columns</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>record_data <span class="op">=</span> record_data.drop(columns<span class="op">=</span>[<span class="st">'Unnamed: 0'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="1080">
+<div class="cell" data-execution_count="1395">
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace continuous missing values with mean of the column. check for Nan values again.</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>cols <span class="op">=</span> [<span class="st">'displacement'</span>, <span class="st">'cylinders'</span>]</span>
@@ -555,7 +551,7 @@ year               0
 dtype: int64</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="1081">
+<div class="cell" data-execution_count="1396">
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace categorical missing values with mode of the column. check for Nan values again.</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>record_data[<span class="st">'drive'</span>] <span class="op">=</span> record_data[<span class="st">'drive'</span>].fillna(record_data[<span class="st">'drive'</span>].mode().iloc[<span class="dv">0</span>])</span>
@@ -578,7 +574,7 @@ year               0
 dtype: int64</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="1082">
+<div class="cell" data-execution_count="1397">
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using a for loop to replace categorical values with cat codes</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>cat_cols <span class="op">=</span> [<span class="st">'class'</span>, <span class="st">'drive'</span>, <span class="st">'fuel_type'</span>, <span class="st">'make'</span>, <span class="st">'model'</span>, <span class="st">'transmission'</span>]</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> cat_cols:</span>
@@ -587,7 +583,7 @@ dtype: int64</code></pre>
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the altered DataFrame</span></span>
 <span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>record_data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1082">
+<div class="cell-output cell-output-display" data-execution_count="1397">
 <div>
 
 
@@ -691,10 +687,10 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="1083">
+<div class="cell" data-execution_count="1398">
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>record_data.to_csv(<span class="st">'cardf_cleaned.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="1084">
+<div class="cell" data-execution_count="1399">
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Split the dataset in X and y. since this is unsupervised learning, we will not use the y labels. you can choose to normalize the X data by using the StandardScaler function.</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>x_cols <span class="op">=</span> [<span class="st">'city_mpg'</span>, <span class="st">'class'</span>, <span class="st">'combination_mpg'</span>, <span class="st">'cylinders'</span>, <span class="st">'displacement'</span>, <span class="st">'drive'</span>, <span class="st">'highway_mpg'</span>, <span class="st">'make'</span>, <span class="st">'model'</span>, <span class="st">'transmission'</span>, <span class="st">'year'</span> ]</span>
@@ -706,9 +702,13 @@ dtype: int64</code></pre>
 <span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Standardizing the data</span></span>
 <span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> StandardScaler().fit_transform(X)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<section id="manual-pca-compared-to-pca-using-scikit-learn" class="level3">
-<h3 class="anchored" data-anchor-id="manual-pca-compared-to-pca-using-scikit-learn">Manual PCA compared to PCA using scikit-learn</h3>
-<div class="cell" data-execution_count="1085">
+</section>
+<section id="dimensionality-reduction-with-pca" class="level1">
+<h1>Dimensionality Reduction with PCA</h1>
+<p>Application of PCA to the record dataset. Determining the optimal number of principal components to retain. Visualizing the reduced-dimensional data using PCA. Analyzing and interpreting the results.</p>
+<section id="manual-pca-compared-to-pca-using-scikit-learn" class="level2">
+<h2 class="anchored" data-anchor-id="manual-pca-compared-to-pca-using-scikit-learn">Manual PCA compared to PCA using scikit-learn</h2>
+<div class="cell" data-execution_count="1400">
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># EIGEN VALUES/VECTOR</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> linalg <span class="im">as</span> LA</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co"># w, v1 = LA.eig(cov)</span></span>
@@ -721,7 +721,7 @@ dtype: int64</code></pre>
 <span id="cb20-10"><a href="#cb20-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb20-11"><a href="#cb20-11" aria-hidden="true" tabindex="-1"></a><span class="co"># PCA CALCULATION</span></span>
 <span id="cb20-12"><a href="#cb20-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA</span>
-<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>pca <span class="op">=</span> PCA(n_components<span class="op">=</span><span class="dv">3</span>)</span>
+<span id="cb20-13"><a href="#cb20-13" aria-hidden="true" tabindex="-1"></a>pca <span class="op">=</span> PCA(n_components<span class="op">=</span><span class="dv">5</span>)</span>
 <span id="cb20-14"><a href="#cb20-14" aria-hidden="true" tabindex="-1"></a>pca.fit(X)</span>
 <span id="cb20-15"><a href="#cb20-15" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">'</span><span class="ch">\n</span><span class="st">PCA'</span>)</span>
 <span id="cb20-16"><a href="#cb20-16" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(pca.components_)</span>
@@ -790,223 +790,337 @@ PCA
  [ 0.07966178  0.2570484   0.07403653  0.58581244  0.58963214  0.04390784
    0.06502601 -0.32984041  0.23557567 -0.15747373  0.18976719]
  [ 0.15474825 -0.07259879  0.14426723  0.11616259  0.13790486  0.71788861
-   0.13611801  0.0081542  -0.5647845   0.07996448 -0.24108786]]</code></pre>
+   0.13611801  0.0081542  -0.5647845   0.07996448 -0.24108786]
+ [-0.0121606  -0.48664866 -0.01592655 -0.09652607 -0.07701273  0.44875736
+  -0.02526579 -0.32443869  0.61624425  0.2456177  -0.01250139]
+ [ 0.2131152   0.39981056  0.21205735 -0.08029589 -0.12850074 -0.15460773
+   0.20567396 -0.31385586 -0.0448943   0.747805    0.02943789]]</code></pre>
 </div>
 <div class="cell-output cell-output-stderr">
-<pre><code>/var/folders/w3/pq9m5d810bz24_jz2zl3s6pr0000gn/T/ipykernel_18364/1602907755.py:24: UserWarning: No data for colormapping provided via 'c'. Parameters 'cmap' will be ignored
+<pre><code>/var/folders/w3/pq9m5d810bz24_jz2zl3s6pr0000gn/T/ipykernel_18364/4289367140.py:24: UserWarning: No data for colormapping provided via 'c'. Parameters 'cmap' will be ignored
   ax.scatter(X[:,0],X[:,1],X[:,2],marker=".", cmap="viridis")</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="dim-reduction_files/figure-html/cell-15-output-3.png" class="img-fluid"></p>
 </div>
 </div>
+<div class="cell" data-execution_count="1401">
+<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Only taking the top 3 eigenvalues and their corresponding eigenvectors for comparison</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>top_eigenvalues <span class="op">=</span> w[:<span class="dv">5</span>]</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>top_eigenvectors <span class="op">=</span> v1[:, :<span class="dv">5</span>]</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating a DataFrame to show the top 3 principal components and their explained variance</span></span>
+<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>pca_results <span class="op">=</span> pd.DataFrame({</span>
+<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Eigenvalue'</span>: top_eigenvalues,</span>
+<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Explained Variance Ratio'</span>: pca.explained_variance_ratio_,</span>
+<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Cumulative Explained Variance'</span>: np.cumsum(pca.explained_variance_ratio_)</span>
+<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>})</span>
+<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>pca_results</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="1401">
+<div>
+
+
+<table class="dataframe table table-sm table-striped small" data-quarto-postprocess="true" data-border="1">
+<thead>
+<tr class="header">
+<th data-quarto-table-cell-role="th"></th>
+<th data-quarto-table-cell-role="th">Eigenvalue</th>
+<th data-quarto-table-cell-role="th">Explained Variance Ratio</th>
+<th data-quarto-table-cell-role="th">Cumulative Explained Variance</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">0</td>
+<td>4.311723</td>
+<td>0.387075</td>
+<td>0.387075</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">1</td>
+<td>2.363255</td>
+<td>0.212156</td>
+<td>0.599231</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">2</td>
+<td>1.326911</td>
+<td>0.119120</td>
+<td>0.718351</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">3</td>
+<td>0.000077</td>
+<td>0.081513</td>
+<td>0.799864</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">4</td>
+<td>0.007928</td>
+<td>0.072303</td>
+<td>0.872167</td>
+</tr>
+</tbody>
+</table>
+
+</div>
+</div>
+</div>
 <p>The matching results from the manual calculation and the scikit-learn PCA show that the method works correctly. The scatter plot with the main lines drawn on it helps us see and understand how the data is arranged and how PCA changes it to a different form.</p>
 </section>
-<section id="apply-pca-with-all-components-to-examine-the-explained-variance-ratio" class="level3">
-<h3 class="anchored" data-anchor-id="apply-pca-with-all-components-to-examine-the-explained-variance-ratio">Apply PCA with all components to examine the explained variance ratio</h3>
-<div class="cell" data-execution_count="1086">
-<div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply PCA with all components to examine the explained variance ratio</span></span>
-<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>pca <span class="op">=</span> PCA()</span>
-<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>pca.fit_transform(X)</span>
-<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Explained variance ratio</span></span>
-<span id="cb23-6"><a href="#cb23-6" aria-hidden="true" tabindex="-1"></a>explained_variance <span class="op">=</span> pca.explained_variance_ratio_</span>
-<span id="cb23-7"><a href="#cb23-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-8"><a href="#cb23-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting the cumulative explained variance to determine the optimal number of components</span></span>
-<span id="cb23-9"><a href="#cb23-9" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>plt.plot(np.cumsum(explained_variance))</span>
-<span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Number of Components'</span>)</span>
-<span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Cumulative Explained Variance'</span>)</span>
-<span id="cb23-13"><a href="#cb23-13" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Explained Variance by Different Principal Components'</span>)</span>
-<span id="cb23-14"><a href="#cb23-14" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
-<span id="cb23-15"><a href="#cb23-15" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
-<span id="cb23-16"><a href="#cb23-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb23-17"><a href="#cb23-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Returning the cumulative explained variance for interpretation</span></span>
-<span id="cb23-18"><a href="#cb23-18" aria-hidden="true" tabindex="-1"></a>explained_variance.cumsum()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="apply-pca-with-all-components-to-examine-the-explained-variance-ratio" class="level2">
+<h2 class="anchored" data-anchor-id="apply-pca-with-all-components-to-examine-the-explained-variance-ratio">Apply PCA with all components to examine the explained variance ratio</h2>
+<div class="cell" data-execution_count="1402">
+<div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply PCA with all components to examine the explained variance ratio</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>pca <span class="op">=</span> PCA()</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>pca.fit_transform(X)</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Explained variance ratio</span></span>
+<span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>explained_variance <span class="op">=</span> pca.explained_variance_ratio_</span>
+<span id="cb24-7"><a href="#cb24-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-8"><a href="#cb24-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotting the cumulative explained variance to determine the optimal number of components</span></span>
+<span id="cb24-9"><a href="#cb24-9" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb24-10"><a href="#cb24-10" aria-hidden="true" tabindex="-1"></a>plt.plot(np.cumsum(explained_variance))</span>
+<span id="cb24-11"><a href="#cb24-11" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Number of Components'</span>)</span>
+<span id="cb24-12"><a href="#cb24-12" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Cumulative Explained Variance'</span>)</span>
+<span id="cb24-13"><a href="#cb24-13" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Explained Variance by Different Principal Components'</span>)</span>
+<span id="cb24-14"><a href="#cb24-14" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb24-15"><a href="#cb24-15" aria-hidden="true" tabindex="-1"></a>plt.show()</span>
+<span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Returning the cumulative explained variance for interpretation</span></span>
+<span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>explained_variance.cumsum()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="dim-reduction_files/figure-html/cell-16-output-1.png" class="img-fluid"></p>
+<p><img src="dim-reduction_files/figure-html/cell-17-output-1.png" class="img-fluid"></p>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="1086">
+<div class="cell-output cell-output-display" data-execution_count="1402">
 <pre><code>array([0.38707514, 0.59923097, 0.71835139, 0.79986401, 0.87216735,
        0.94335944, 0.98469969, 0.99488691, 0.99928137, 0.9999931 ,
        1.        ])</code></pre>
 </div>
 </div>
-<p>The curve suggests that around 98% of the variance is explained by the first 7 principal components, as the curve starts to level off beyond this point.</p>
-<div class="cell" data-execution_count="1087">
-<div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Applying PCA with the optimal number of components (2 components for visualization)</span></span>
-<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>pca_optimal <span class="op">=</span> PCA(n_components<span class="op">=</span><span class="dv">2</span>)</span>
-<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>reduced_data <span class="op">=</span> pca_optimal.fit_transform(X)</span>
-<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizing the reduced-dimensional data</span></span>
-<span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a>plt.scatter(reduced_data[:, <span class="dv">0</span>], reduced_data[:, <span class="dv">1</span>])</span>
-<span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Principal Component 1'</span>)</span>
-<span id="cb25-9"><a href="#cb25-9" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Principal Component 2'</span>)</span>
-<span id="cb25-10"><a href="#cb25-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'PCA - Reduced Dimensional Data Visualization'</span>)</span>
-<span id="cb25-11"><a href="#cb25-11" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
-<span id="cb25-12"><a href="#cb25-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display">
-<p><img src="dim-reduction_files/figure-html/cell-17-output-1.png" class="img-fluid"></p>
-</div>
-</div>
-<div class="cell" data-execution_count="1088">
-<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># 'y' is your target Series with numerical codes</span></span>
-<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace 'y' with the actual Series name that contains the fuel type codes</span></span>
-<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>fuel_type_labels <span class="op">=</span> y[<span class="st">'fuel_type'</span>].<span class="bu">map</span>({<span class="dv">0</span>: <span class="st">'electricity'</span>, <span class="dv">1</span>: <span class="st">'gas'</span>}) </span>
+<p>The curve suggests that around 90% of the variance is explained by the first 4 principal components, as the curve starts to level off beyond this point.</p>
+</section>
+<section id="pca---reduced-dimensional-data-visualization" class="level2">
+<h2 class="anchored" data-anchor-id="pca---reduced-dimensional-data-visualization">PCA - Reduced Dimensional Data Visualization</h2>
+<div class="cell" data-execution_count="1403">
+<div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Applying PCA with the optimal number of components (2 components for visualization)</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>pca_optimal <span class="op">=</span> PCA(n_components<span class="op">=</span><span class="dv">2</span>)</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>reduced_data <span class="op">=</span> pca_optimal.fit_transform(X)</span>
 <span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Add the fuel type labels to the DataFrame</span></span>
-<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>pca_df[<span class="st">'fuel_type'</span>] <span class="op">=</span> fuel_type_labels</span>
-<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Now use seaborn to plot the scatter plot with hues</span></span>
-<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
-<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>pca_df, x<span class="op">=</span><span class="st">'PC1'</span>, y<span class="op">=</span><span class="st">'PC2'</span>, hue<span class="op">=</span><span class="st">'fuel_type'</span>, palette<span class="op">=</span><span class="st">'tab10'</span>)</span>
-<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'PCA - First two principal components with Fuel Type color coding'</span>)</span>
-<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Principal Component 1 (PC1)'</span>)</span>
-<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Principal Component 2 (PC2)'</span>)</span>
-<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">'Fuel Type'</span>)</span>
-<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
-<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Visualizing the reduced-dimensional data</span></span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>plt.scatter(reduced_data[:, <span class="dv">0</span>], reduced_data[:, <span class="dv">1</span>])</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Principal Component 1'</span>)</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Principal Component 2'</span>)</span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'PCA - Reduced Dimensional Data Visualization'</span>)</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
 <p><img src="dim-reduction_files/figure-html/cell-18-output-1.png" class="img-fluid"></p>
 </div>
 </div>
-</section>
-</section>
-<section id="analysis-and-interpretation-of-results" class="level2">
-<h2 class="anchored" data-anchor-id="analysis-and-interpretation-of-results">Analysis and Interpretation of Results</h2>
-<p>We were able to reduce the feature space from 11 components to 7 components by using PCA</p>
-<p>From the graph there appears to be a distinct grouping of fuel types along the first two principal components. The plot shows two clusters with different fuel types, which suggests that PCA has found a linear combination of the original variables that helps to distinguish between these two fuel types.</p>
-</section>
-<section id="dimensionality-reduction-with-t-sne" class="level2">
-<h2 class="anchored" data-anchor-id="dimensionality-reduction-with-t-sne">Dimensionality Reduction with t-SNE</h2>
-<p>Implement t-SNE on the same dataset. Explore different perplexity values and their impact. Visualize the t-SNE output to reveal patterns and clusters. Compare t-SNE results with PCA results.</p>
-<section id="perplexity-value-30" class="level3">
-<h3 class="anchored" data-anchor-id="perplexity-value-30">Perplexity Value = 30</h3>
-<div class="cell" data-execution_count="1089">
-<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.manifold <span class="im">import</span> TSNE</span>
+<div class="cell" data-execution_count="1404">
+<div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>fuel_type_labels <span class="op">=</span> y[<span class="st">'fuel_type'</span>].<span class="bu">map</span>({<span class="dv">0</span>: <span class="st">'electricity'</span>, <span class="dv">1</span>: <span class="st">'gas'</span>}) </span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> record_data</span>
-<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X.shape)</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Add the fuel type labels to the DataFrame</span></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>pca_df[<span class="st">'fuel_type'</span>] <span class="op">=</span> fuel_type_labels</span>
 <span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co"># DO DIMENSIONALITY REDUCTION</span></span>
-<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>X_embedded <span class="op">=</span> TSNE(n_components<span class="op">=</span><span class="dv">2</span>, learning_rate<span class="op">=</span><span class="st">'auto'</span>,init<span class="op">=</span><span class="st">'random'</span>, perplexity<span class="op">=</span><span class="dv">30</span>).fit_transform(X)</span>
-<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a><span class="co"># EXPLORE RESULTS</span></span>
-<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"RESULTS"</span>) </span>
-<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"shape : "</span>,X_embedded.shape)</span>
-<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"First few points : </span><span class="ch">\n</span><span class="st">"</span>,X_embedded[<span class="dv">0</span>:<span class="dv">2</span>,:])</span>
-<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a><span class="co"># PLOT </span></span>
-<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a>plt.scatter(X_embedded[:,<span class="dv">0</span>],X_embedded[:,<span class="dv">1</span>], alpha<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>(80, 12)
-RESULTS
-shape :  (80, 2)
-First few points : 
- [[-1.612843   3.388891 ]
- [-1.7408857  3.0628753]]</code></pre>
-</div>
-<div class="cell-output cell-output-display" data-execution_count="1089">
-<pre><code>&lt;matplotlib.collections.PathCollection at 0x2890c0f50&gt;</code></pre>
-</div>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a><span class="co"># use seaborn to plot the scatter plot with hues</span></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">10</span>, <span class="dv">6</span>))</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>sns.scatterplot(data<span class="op">=</span>pca_df, x<span class="op">=</span><span class="st">'PC1'</span>, y<span class="op">=</span><span class="st">'PC2'</span>, hue<span class="op">=</span><span class="st">'fuel_type'</span>, palette<span class="op">=</span><span class="st">'tab10'</span>)</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'PCA - First two principal components with Fuel Type color coding'</span>)</span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Principal Component 1 (PC1)'</span>)</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Principal Component 2 (PC2)'</span>)</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">'Fuel Type'</span>)</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="dim-reduction_files/figure-html/cell-19-output-3.png" class="img-fluid"></p>
+<p><img src="dim-reduction_files/figure-html/cell-19-output-1.png" class="img-fluid"></p>
 </div>
 </div>
-<p>The t-SNE algorithm has successfully reduced the dimensionality of the data and the resulting plot shows the data in two dimensions. Based on the plot, we can infer that the dataset has some intrinsic clusters or groupings, which could be further analyzed for patterns or similarities.</p>
+</section>
+<section id="analysis-and-interpretation-of-pca-results" class="level2">
+<h2 class="anchored" data-anchor-id="analysis-and-interpretation-of-pca-results">Analysis and Interpretation of PCA Results</h2>
+<p>Analyzing the first graph, which shows the cumulative explained variance, the curve starts to plateau after the fourth component. By the fifth component, the cumulative explained variance is close to 90%. Therefore, retaining four or five components would be optimal for balancing data dimensionality reduction and information retention.</p>
+<p>The first two principal components capture the majority of the variance in the data, as seen in the scatter plot without color coding. This indicates that most of the information can be compressed into two dimensions. When the fuel type is used as a hue in the scatter plot, there is a visible separation between electric and gas vehicles along the principal components, suggesting that PCA has managed to reduce the dimensions while still retaining the characteristics that can distinguish between the two fuel types.</p>
+<p>In conclusion, for this dataset, retaining four or five components principal components is optimal for analysis, allowing most of the variance to be explained while significantly reducing the number of dimensions (almost by half). The visualizations indicate that these components are meaningful as they help in distinguishing between electric and gas vehicles.</p>
 </section>
 </section>
-<section id="perplexity-value-16" class="level2">
-<h2 class="anchored" data-anchor-id="perplexity-value-16">Perplexity Value = 16</h2>
-<div class="cell" data-execution_count="1090">
-<div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Perplexity Value = 16</span></span>
-<span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.manifold <span class="im">import</span> TSNE</span>
-<span id="cb30-4"><a href="#cb30-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-5"><a href="#cb30-5" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> record_data</span>
-<span id="cb30-6"><a href="#cb30-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X.shape)</span>
-<span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a><span class="co"># DO DIMENSIONALITY REDUCTION</span></span>
-<span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>X_embedded <span class="op">=</span> TSNE(n_components<span class="op">=</span><span class="dv">2</span>, learning_rate<span class="op">=</span><span class="st">'auto'</span>,init<span class="op">=</span><span class="st">'random'</span>, perplexity<span class="op">=</span><span class="dv">16</span>).fit_transform(X)</span>
-<span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a><span class="co"># EXPLORE RESULTS</span></span>
-<span id="cb30-12"><a href="#cb30-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"RESULTS"</span>) </span>
-<span id="cb30-13"><a href="#cb30-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"shape : "</span>,X_embedded.shape)</span>
-<span id="cb30-14"><a href="#cb30-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"First few points : </span><span class="ch">\n</span><span class="st">"</span>,X_embedded[<span class="dv">0</span>:<span class="dv">2</span>,:])</span>
-<span id="cb30-15"><a href="#cb30-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb30-16"><a href="#cb30-16" aria-hidden="true" tabindex="-1"></a><span class="co"># PLOT </span></span>
-<span id="cb30-17"><a href="#cb30-17" aria-hidden="true" tabindex="-1"></a>plt.scatter(X_embedded[:,<span class="dv">0</span>],X_embedded[:,<span class="dv">1</span>], alpha<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<section id="dimensionality-reduction-with-t-sne" class="level1">
+<h1>Dimensionality Reduction with t-SNE</h1>
+<p>Implemention of t-SNE on the same dataset. Exploration of different perplexity values and their impact. Visualizion of the t-SNE output to reveal patterns and clusters. Comparison of t-SNE results with PCA results.</p>
+<section id="perplexity-value-30" class="level2">
+<h2 class="anchored" data-anchor-id="perplexity-value-30">Perplexity Value = 30</h2>
+<div class="cell" data-execution_count="1405">
+<div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># LOAD DATA</span></span>
+<span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> record_data.drop(<span class="st">'fuel_type'</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb28-4"><a href="#cb28-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X.shape)</span>
+<span id="cb28-5"><a href="#cb28-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-6"><a href="#cb28-6" aria-hidden="true" tabindex="-1"></a><span class="co"># DO DIMENSIONALITY REDUCTION</span></span>
+<span id="cb28-7"><a href="#cb28-7" aria-hidden="true" tabindex="-1"></a>X_embedded <span class="op">=</span> TSNE(n_components<span class="op">=</span><span class="dv">2</span>, learning_rate<span class="op">=</span><span class="st">'auto'</span>,init<span class="op">=</span><span class="st">'random'</span>, perplexity<span class="op">=</span><span class="dv">30</span>).fit_transform(X)</span>
+<span id="cb28-8"><a href="#cb28-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-9"><a href="#cb28-9" aria-hidden="true" tabindex="-1"></a><span class="co"># EXPLORE RESULTS</span></span>
+<span id="cb28-10"><a href="#cb28-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"RESULTS"</span>) </span>
+<span id="cb28-11"><a href="#cb28-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"shape : "</span>,X_embedded.shape)</span>
+<span id="cb28-12"><a href="#cb28-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"First few points : </span><span class="ch">\n</span><span class="st">"</span>,X_embedded[<span class="dv">0</span>:<span class="dv">2</span>,:])</span>
+<span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a><span class="co"># PLOT </span></span>
+<span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>plt.scatter(X_embedded[:,<span class="dv">0</span>],X_embedded[:,<span class="dv">1</span>], alpha<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>(80, 12)
+<pre><code>(80, 11)
 RESULTS
 shape :  (80, 2)
 First few points : 
- [[11.803503   2.0074852]
- [12.3616495  2.2230833]]</code></pre>
+ [[ 1.2051195 -3.1006622]
+ [ 1.4165833 -2.87457  ]]</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="1090">
-<pre><code>&lt;matplotlib.collections.PathCollection at 0x2880f1e90&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="1405">
+<pre><code>&lt;matplotlib.collections.PathCollection at 0x28a8a6450&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="dim-reduction_files/figure-html/cell-20-output-3.png" class="img-fluid"></p>
 </div>
 </div>
-<section id="perplexity-value-1" class="level3">
-<h3 class="anchored" data-anchor-id="perplexity-value-1">Perplexity Value = 1</h3>
-<div class="cell" data-execution_count="1091">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Perplexity Value = 1</span></span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.manifold <span class="im">import</span> TSNE</span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> record_data</span>
-<span id="cb33-6"><a href="#cb33-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X.shape)</span>
-<span id="cb33-7"><a href="#cb33-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-8"><a href="#cb33-8" aria-hidden="true" tabindex="-1"></a><span class="co"># DO DIMENSIONALITY REDUCTION</span></span>
-<span id="cb33-9"><a href="#cb33-9" aria-hidden="true" tabindex="-1"></a>X_embedded <span class="op">=</span> TSNE(n_components<span class="op">=</span><span class="dv">2</span>, learning_rate<span class="op">=</span><span class="st">'auto'</span>,init<span class="op">=</span><span class="st">'random'</span>, perplexity<span class="op">=</span><span class="dv">1</span>).fit_transform(X)</span>
-<span id="cb33-10"><a href="#cb33-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-11"><a href="#cb33-11" aria-hidden="true" tabindex="-1"></a><span class="co"># EXPLORE RESULTS</span></span>
-<span id="cb33-12"><a href="#cb33-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"RESULTS"</span>) </span>
-<span id="cb33-13"><a href="#cb33-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"shape : "</span>,X_embedded.shape)</span>
-<span id="cb33-14"><a href="#cb33-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"First few points : </span><span class="ch">\n</span><span class="st">"</span>,X_embedded[<span class="dv">0</span>:<span class="dv">2</span>,:])</span>
-<span id="cb33-15"><a href="#cb33-15" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-16"><a href="#cb33-16" aria-hidden="true" tabindex="-1"></a><span class="co"># PLOT </span></span>
-<span id="cb33-17"><a href="#cb33-17" aria-hidden="true" tabindex="-1"></a>plt.scatter(X_embedded[:,<span class="dv">0</span>],X_embedded[:,<span class="dv">1</span>], alpha<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="perplexity-value-16" class="level2">
+<h2 class="anchored" data-anchor-id="perplexity-value-16">Perplexity Value = 16</h2>
+<div class="cell" data-execution_count="1406">
+<div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Perplexity Value = 16</span></span>
+<span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="co"># LOAD DATA</span></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> record_data.drop(<span class="st">'fuel_type'</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb31-5"><a href="#cb31-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X.shape)</span>
+<span id="cb31-6"><a href="#cb31-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-7"><a href="#cb31-7" aria-hidden="true" tabindex="-1"></a><span class="co"># DO DIMENSIONALITY REDUCTION</span></span>
+<span id="cb31-8"><a href="#cb31-8" aria-hidden="true" tabindex="-1"></a>X_embedded <span class="op">=</span> TSNE(n_components<span class="op">=</span><span class="dv">2</span>, learning_rate<span class="op">=</span><span class="st">'auto'</span>,init<span class="op">=</span><span class="st">'random'</span>, perplexity<span class="op">=</span><span class="dv">16</span>).fit_transform(X)</span>
+<span id="cb31-9"><a href="#cb31-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-10"><a href="#cb31-10" aria-hidden="true" tabindex="-1"></a><span class="co"># EXPLORE RESULTS</span></span>
+<span id="cb31-11"><a href="#cb31-11" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"RESULTS"</span>) </span>
+<span id="cb31-12"><a href="#cb31-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"shape : "</span>,X_embedded.shape)</span>
+<span id="cb31-13"><a href="#cb31-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"First few points : </span><span class="ch">\n</span><span class="st">"</span>,X_embedded[<span class="dv">0</span>:<span class="dv">2</span>,:])</span>
+<span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a><span class="co"># PLOT </span></span>
+<span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>plt.scatter(X_embedded[:,<span class="dv">0</span>],X_embedded[:,<span class="dv">1</span>], alpha<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>(80, 12)
+<pre><code>(80, 11)
 RESULTS
 shape :  (80, 2)
 First few points : 
- [[ 73.21266   -12.721464 ]
- [ 68.35985   -15.8237915]]</code></pre>
+ [[-5.9813023  4.654429 ]
+ [-5.8530436  5.1955423]]</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="1091">
-<pre><code>&lt;matplotlib.collections.PathCollection at 0x287922b90&gt;</code></pre>
+<div class="cell-output cell-output-display" data-execution_count="1406">
+<pre><code>&lt;matplotlib.collections.PathCollection at 0x150444550&gt;</code></pre>
 </div>
 <div class="cell-output cell-output-display">
 <p><img src="dim-reduction_files/figure-html/cell-21-output-3.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
+<section id="perplexity-value-1" class="level2">
+<h2 class="anchored" data-anchor-id="perplexity-value-1">Perplexity Value = 1</h2>
+<div class="cell" data-execution_count="1407">
+<div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Perplexity Value = 1</span></span>
+<span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="co"># LOAD DATA</span></span>
+<span id="cb34-4"><a href="#cb34-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-5"><a href="#cb34-5" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> record_data.drop(<span class="st">'fuel_type'</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb34-6"><a href="#cb34-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(X.shape)</span>
+<span id="cb34-7"><a href="#cb34-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-8"><a href="#cb34-8" aria-hidden="true" tabindex="-1"></a><span class="co"># DO DIMENSIONALITY REDUCTION</span></span>
+<span id="cb34-9"><a href="#cb34-9" aria-hidden="true" tabindex="-1"></a>X_embedded <span class="op">=</span> TSNE(n_components<span class="op">=</span><span class="dv">2</span>, learning_rate<span class="op">=</span><span class="st">'auto'</span>,init<span class="op">=</span><span class="st">'random'</span>, perplexity<span class="op">=</span><span class="dv">1</span>).fit_transform(X)</span>
+<span id="cb34-10"><a href="#cb34-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-11"><a href="#cb34-11" aria-hidden="true" tabindex="-1"></a><span class="co"># EXPLORE RESULTS</span></span>
+<span id="cb34-12"><a href="#cb34-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"RESULTS"</span>) </span>
+<span id="cb34-13"><a href="#cb34-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"shape : "</span>,X_embedded.shape)</span>
+<span id="cb34-14"><a href="#cb34-14" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"First few points : </span><span class="ch">\n</span><span class="st">"</span>,X_embedded[<span class="dv">0</span>:<span class="dv">2</span>,:])</span>
+<span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a><span class="co"># PLOT </span></span>
+<span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a>plt.scatter(X_embedded[:,<span class="dv">0</span>],X_embedded[:,<span class="dv">1</span>], alpha<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-stdout">
+<pre><code>(80, 11)
+RESULTS
+shape :  (80, 2)
+First few points : 
+ [[-48.516888 -15.93984 ]
+ [-52.88673  -22.104866]]</code></pre>
+</div>
+<div class="cell-output cell-output-display" data-execution_count="1407">
+<pre><code>&lt;matplotlib.collections.PathCollection at 0x15047e650&gt;</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="dim-reduction_files/figure-html/cell-22-output-3.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Analysis and Interpretation of t-SNE Results</p>
+<p>With a perplexity value of 30, the t-SNE algorithm has successfully reduced the dimensionality of the data and the resulting plot shows the data in two dimensions. Based on the plots, we can infer that the dataset has some intrinsic clusters or groupings, which could be further analyzed for patterns or similarities. A lower perplexity of 16 means the model pays more attention to local structure, which can result in tighter clusters that may reveal more local groupings or subclusters within the data. Here, the clusters appear more compact and less dispersed, reflecting a focus on local similarities. For the perplexity level of 1, the t-SNE algorithm is primarily focusing on the local relationships between very close neighbors, which can lead to a more fragmented distribution of points with many small clusters that may not accurately reflect the overall structure of the data. The resulting visualization is much more scattered and less cohesive than those with higher perplexity values, making it difficult to derive any insight from the data.</p>
+<p>Overall, t-SNE efficiently reduced the dimensions from 11 to 2. We can see clear groupings have formed with the perplexity values of 16 and 30.</p>
 </section>
 <section id="evaluation-and-comparison" class="level2">
 <h2 class="anchored" data-anchor-id="evaluation-and-comparison">Evaluation and Comparison</h2>
-<p>Evaluate the effectiveness of PCA and t-SNE in terms of preserving data structure and information. Compare the visualization capabilities of PCA and t-SNE. Discuss the trade-offs and scenarios where one technique may outperform the other.</p>
-</section>
-<section id="project-proposal" class="level2">
-<h2 class="anchored" data-anchor-id="project-proposal">Project Proposal</h2>
-<p>A brief proposal outlining your project’s objectives, dataset selection, and the tools or libraries you plan to use (e.g., Python, scikit-learn).</p>
-</section>
-<section id="code-implementation" class="level2">
-<h2 class="anchored" data-anchor-id="code-implementation">Code Implementation</h2>
-<p>Python code for implementing PCA and t-SNE on the selected dataset. Code should include parameter tuning for t-SNE (perplexity) and visualization of the results.</p>
-</section>
-<section id="project-report" class="level2">
-<h2 class="anchored" data-anchor-id="project-report">Project Report</h2>
-<p>A comprehensive project report detailing the steps taken, results obtained, and your analysis. Include visualizations, comparisons, and insights gained from the dimensionality reduction techniques.</p>
-<p>References Used: <br> - https://towardsdatascience.com/principal-component-analysis-for-dimensionality-reduction-115a3d157bad</p>
+<p>Evaluation of the effectiveness of PCA and t-SNE in terms of preserving data structure and information, comparison of the visualization capabilities of PCA and t-SNE. and the trade-offs and scenarios where one technique may outperform the other:</p>
+<table class="table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 40%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th>PCA</th>
+<th>t-SNE</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Preservation of Structure and Information</strong></td>
+<td>Preserves global structure and variance.</td>
+<td>Preserves local structure and relationships.</td>
+</tr>
+<tr class="even">
+<td><strong>Visualization</strong></td>
+<td>Clear, interpretable axes representing transformed features.</td>
+<td>Complex, with no interpretable axes and coordinates.</td>
+</tr>
+<tr class="odd">
+<td><strong>Computation</strong></td>
+<td>Fast and deterministic.</td>
+<td>Slow and stochastic.</td>
+</tr>
+<tr class="even">
+<td><strong>Use Case</strong></td>
+<td>Suitable for large datasets and initial analysis.</td>
+<td>Suitable for detailed exploration on smaller datasets.</td>
+</tr>
+<tr class="odd">
+<td><strong>Effectiveness</strong></td>
+<td>Best for datasets with linear relationships.</td>
+<td>Best for datasets with non-linear relationships.</td>
+</tr>
+<tr class="even">
+<td><strong>Interpretability</strong></td>
+<td>Components directly relate to original features.</td>
+<td>Components have no direct relationship to features.</td>
+</tr>
+<tr class="odd">
+<td><strong>Scenarios</strong></td>
+<td>Used for dimensionality reduction and feature extraction.</td>
+<td>Used for clustering and data visualization.</td>
+</tr>
+<tr class="even">
+<td><strong>Trade-offs</strong></td>
+<td>Poor at capturing non-linear relationships, therefore the approach might oversimplify.</td>
+<td>May not preserve global structure and is sensitive to hyperparameters.</td>
+</tr>
+</tbody>
+</table>
+<p>References Used: <br> - https://towardsdatascience.com/principal-component-analysis-for-dimensionality-reduction-115a3d157bad <br> - https://www.datacamp.com/tutorial/introduction-t-sne <br> - https://towardsdatascience.com/how-t-sne-outperforms-pca-in-dimensionality-reduction-7a3975e8cbdb <br> - https://www.geeksforgeeks.org/difference-between-pca-vs-t-sne/</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

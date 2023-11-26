@@ -220,14 +220,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../5000-website/clustering/clustering.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Clustering</span></a>
+  <a href="../../5000-website/dim-reduction/dim-reduction.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dimensionality Reduction</span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../5000-website/dim-reduction/dim-reduction.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Dimensionality Reduction</span></a>
+  <a href="../../5000-website/clustering/clustering.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Clustering</span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -263,23 +263,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction">Introduction</a></li>
-  <li><a href="#theory" id="toc-theory" class="nav-link" data-scroll-target="#theory">Theory</a>
+  <li><a href="#introduction" id="toc-introduction" class="nav-link active" data-scroll-target="#introduction"><strong>Introduction</strong></a></li>
+  <li><a href="#theory" id="toc-theory" class="nav-link" data-scroll-target="#theory"><strong>Theory</strong></a>
   <ul class="collapse">
-  <li><a href="#kmean" id="toc-kmean" class="nav-link" data-scroll-target="#kmean">KMEAN</a></li>
-  <li><a href="#dbscan" id="toc-dbscan" class="nav-link" data-scroll-target="#dbscan">DBSCAN</a></li>
-  <li><a href="#hierchical-clustering" id="toc-hierchical-clustering" class="nav-link" data-scroll-target="#hierchical-clustering">Hierchical Clustering</a></li>
+  <li><a href="#kmeans" id="toc-kmeans" class="nav-link" data-scroll-target="#kmeans">KMEANS:</a></li>
+  <li><a href="#dbscan" id="toc-dbscan" class="nav-link" data-scroll-target="#dbscan">DBSCAN:</a></li>
+  <li><a href="#hierarchical-clustering" id="toc-hierarchical-clustering" class="nav-link" data-scroll-target="#hierarchical-clustering">Hierarchical Clustering:</a></li>
   </ul></li>
-  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods">Methods</a>
+  <li><a href="#methods" id="toc-methods" class="nav-link" data-scroll-target="#methods"><strong>Methods:</strong></a></li>
+  <li><a href="#data-selection" id="toc-data-selection" class="nav-link" data-scroll-target="#data-selection">Data selection</a></li>
+  <li><a href="#kmeans-1" id="toc-kmeans-1" class="nav-link" data-scroll-target="#kmeans-1">KMEANS</a></li>
+  <li><a href="#dbscan-1" id="toc-dbscan-1" class="nav-link" data-scroll-target="#dbscan-1">DBSCAN</a></li>
+  <li><a href="#hierchical-clustering" id="toc-hierchical-clustering" class="nav-link" data-scroll-target="#hierchical-clustering">Hierchical Clustering</a>
   <ul class="collapse">
-  <li><a href="#data-selection" id="toc-data-selection" class="nav-link" data-scroll-target="#data-selection">Data Selection</a></li>
-  <li><a href="#feature-selection" id="toc-feature-selection" class="nav-link" data-scroll-target="#feature-selection">Feature Selection</a></li>
-  <li><a href="#hyper-parameter-tuning" id="toc-hyper-parameter-tuning" class="nav-link" data-scroll-target="#hyper-parameter-tuning">Hyper-parameter tuning</a></li>
-  <li><a href="#final-results" id="toc-final-results" class="nav-link" data-scroll-target="#final-results">FInal Results</a></li>
-  </ul></li>
-  <li><a href="#results" id="toc-results" class="nav-link" data-scroll-target="#results">Results</a></li>
-  <li><a href="#conslusions" id="toc-conslusions" class="nav-link" data-scroll-target="#conslusions">Conslusions</a></li>
+  <li><a href="#method-complete-and-distance-metric-euclidean" id="toc-method-complete-and-distance-metric-euclidean" class="nav-link" data-scroll-target="#method-complete-and-distance-metric-euclidean">Method = Complete and Distance metric = Euclidean</a></li>
+  <li><a href="#method-complete-and-distance-metric-manhattan" id="toc-method-complete-and-distance-metric-manhattan" class="nav-link" data-scroll-target="#method-complete-and-distance-metric-manhattan">Method = Complete and Distance metric = Manhattan</a></li>
+  <li><a href="#method-average-and-distance-metric-euclidean" id="toc-method-average-and-distance-metric-euclidean" class="nav-link" data-scroll-target="#method-average-and-distance-metric-euclidean">Method = Average and Distance metric = Euclidean</a></li>
+  <li><a href="#method-single-and-distance-metric-euclidean" id="toc-method-single-and-distance-metric-euclidean" class="nav-link" data-scroll-target="#method-single-and-distance-metric-euclidean">Method = Single and Distance metric = Euclidean</a></li>
+  <li><a href="#final-results" id="toc-final-results" class="nav-link" data-scroll-target="#final-results"><strong>Final Results</strong></a></li>
+  <li><a href="#kmeans-2" id="toc-kmeans-2" class="nav-link" data-scroll-target="#kmeans-2">KMEANS</a></li>
+  <li><a href="#dbscan-2" id="toc-dbscan-2" class="nav-link" data-scroll-target="#dbscan-2">DBSCAN</a></li>
+  <li><a href="#hierchical-clustering-1" id="toc-hierchical-clustering-1" class="nav-link" data-scroll-target="#hierchical-clustering-1">Hierchical Clustering</a></li>
+  <li><a href="#conclusion" id="toc-conclusion" class="nav-link" data-scroll-target="#conclusion"><strong>Conclusion</strong></a></li>
   <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references">References</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -303,14 +310,38 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<section id="introduction" class="level2">
-<h2 class="anchored" data-anchor-id="introduction">Introduction</h2>
-<p>Provided brief summary (1 to 2 paragraphs) about your feature data , and what you are trying to achieve with your clustering analysis.</p>
+<section id="introduction" class="level1">
+<h1><strong>Introduction</strong></h1>
+<p>The feature data ‘X’ consists of various details about cars, excluding the type of fuel they use, which is represented by the target variable, y. These details include how many miles a car can travel on a gallon of fuel in the city or on the highway, the size of the car’s engine, the year it was made, and whether it has an automatic or manual transmission, amongst others.</p>
+<p>The goal of the clustering analysis is to sort cars into groups based on these features. By doing this, we hope to find patterns or similar characteristics among cars. This can help us understand what types of cars are more alike and could also help predict the type of fuel a car uses based on its features. This information can be valuable for automobile manufacturers who want to understand what kinds of cars to make, or for buyers who are looking for a new car that fits certain criteria.</p>
 </section>
-<section id="theory" class="level2">
-<h2 class="anchored" data-anchor-id="theory">Theory</h2>
-<p>Write a brief technical write up about how EACH clustering method works (KMEAN, DBSAN, hierarchical clustering). Also include details on model selection methods that you use (elbow, silhouette, etc). Don’t go “too deep”, around 2 to 4 paragraphs, per method, is fine. Write it in a way that a boss with a non-technical background would understand. Describe the method from a “big picture” point of view, how it works and what it is supposed to do. Do this “in your own words”.</p>
-<div class="cell" data-execution_count="79">
+<section id="theory" class="level1">
+<h1><strong>Theory</strong></h1>
+<section id="kmeans" class="level2">
+<h2 class="anchored" data-anchor-id="kmeans">KMEANS:</h2>
+<p>In the automotive dataset, we can aim to distinguish between two predominant types of fuel consumption across various car makes and models. K-Means clustering is a suitable method for identifying these distinct groups. To begin, we need to determine the optimal number of clusters, denoted by ‘k’. This number represents the groups we intend to identify within our data.</p>
+<p>The K-Means algorithm starts by randomly selecting ‘k’ centroids, which are the initial points around which clusters are formed. Each data point is then assigned to the nearest centeroid based on a distance metric, and the centroids are recalculated as the mean of all points in the cluster. This process continues, reassigning data points to clusters and recalculating centroids, until the cluster assignments no longer change significantly, indicating that the clusters have stabilized.</p>
+<p>When determining the value of ‘k’, we can utilize the elbow method as a more systematic strategy than simple trial and error. By plotting the variance in the clusters against different values of ‘k’, we look for the ‘elbow’ in the graph - a point where the rate of decrease in variance sharply changes. The value of ‘k’ at this elbow point is often considered an indicator of the optimal number of clusters, as it suggests a balance between minimizing variance and the number of clusters.</p>
+</section>
+<section id="dbscan" class="level2">
+<h2 class="anchored" data-anchor-id="dbscan">DBSCAN:</h2>
+<p>DBSCAN is a clustering algorithm that’s effective for data with complex shapes and varying densities, unlike K-Means which works best with spherical clusters. It starts by checking how many points are within a certain distance, called ‘epsilon’, from a random point. If there are enough points within this radius, a cluster forms around that point. The process continues as DBSCAN searches for more points to add to the cluster, expanding based on the density of points. Points that don’t belong to any cluster are marked as outliers. This method is good for identifying clusters that aren’t obvious and separating them from random noise in the data.</p>
+<p>The silhouette method is a way to determine how well data is clustered. It calculates a score for each data point to see how similar it is to its own cluster compared to other clusters. This score ranges from -1 (meaning the data might be in the wrong cluster) to +1 (indicating the data is well placed in its own cluster). A higher average score across all data points suggests better clustering. By comparing these scores for different numbers of clusters, we can choose the best number of clusters for the data. This method helps to visually understand and assess the separation and quality of the clusters formed.</p>
+</section>
+<section id="hierarchical-clustering" class="level2">
+<h2 class="anchored" data-anchor-id="hierarchical-clustering">Hierarchical Clustering:</h2>
+<p>In hierarchical clustering, each data point is initially treated as a single cluster. For example, every row in a DataFrame is considered an individual cluster, and the algorithm searches for rows with the most similar attributes to gather together. The clustering results are organized and visualized using dendrograms, which offer a bottom-up view of the separation of different clusters.</p>
+<p>Various distance metrics are used to determine the similarity between data points, with Euclidean distance being the most commonly used. In this notebook, we will explore different distance metrics and interpret their effectiveness in clustering analysis.</p>
+</section>
+</section>
+<section id="methods" class="level1">
+<h1><strong>Methods:</strong></h1>
+</section>
+<section id="data-selection" class="level1">
+<h1>Data selection</h1>
+<div class="cell" data-execution_count="205">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -320,12 +351,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> silhouette_samples, silhouette_score</span>
 <span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.decomposition <span class="im">import</span> PCA</span>
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> linalg <span class="im">as</span> LA</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
-<div class="cell" data-execution_count="80">
+<div class="cell" data-execution_count="206">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>record_data <span class="op">=</span> pd.read_csv(<span class="st">'../eda/cars-data.csv'</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>record_data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="80">
+</details>
+<div class="cell-output cell-output-display" data-execution_count="206">
 <div>
 
 
@@ -435,10 +470,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="81">
+<div class="cell" data-execution_count="207">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>nan_count <span class="op">=</span> record_data.isna().<span class="bu">sum</span>()</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nan_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Unnamed: 0          0
 city_mpg            0
@@ -456,8 +494,11 @@ year                0
 dtype: int64</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="82">
+<div class="cell" data-execution_count="208">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>record_data.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 80 entries, 0 to 79
@@ -481,13 +522,16 @@ dtypes: float64(2), int64(5), object(6)
 memory usage: 8.3+ KB</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="83">
+<div class="cell" data-execution_count="209">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert all 'object' type columns to 'string'</span></span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> record_data.select_dtypes(include<span class="op">=</span>[<span class="st">'object'</span>]).columns:</span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    record_data[col] <span class="op">=</span> record_data[col].astype(<span class="st">'string'</span>)</span>
 <span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Verify the changes</span></span>
 <span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a>record_data.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 80 entries, 0 to 79
@@ -511,21 +555,29 @@ dtypes: float64(2), int64(5), string(6)
 memory usage: 8.3 KB</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="84">
+<div class="cell" data-execution_count="210">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get y </span></span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-3"><a href="#cb9-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> record_data[<span class="st">'fuel_type'</span>].unique().tolist()</span>
 <span id="cb9-4"><a href="#cb9-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb9-5"><a href="#cb9-5" aria-hidden="true" tabindex="-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="84">
+</details>
+<div class="cell-output cell-output-display" data-execution_count="210">
 <pre><code>['gas', 'electricity']</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="85">
+<div class="cell" data-execution_count="211">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb11"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Dropping non-numerical and unnecessary columns</span></span>
 <span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a>record_data <span class="op">=</span> record_data.drop(columns<span class="op">=</span>[<span class="st">'Unnamed: 0'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
-<div class="cell" data-execution_count="86">
+<div class="cell" data-execution_count="212">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace continuous missing values with mean of the column. check for Nan values again.</span></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>cols <span class="op">=</span> [<span class="st">'displacement'</span>, <span class="st">'cylinders'</span>]</span>
@@ -533,6 +585,7 @@ memory usage: 8.3 KB</code></pre>
 <span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a>nan_count <span class="op">=</span> record_data.isna().<span class="bu">sum</span>()</span>
 <span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nan_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>city_mpg           0
 class              0
@@ -549,13 +602,16 @@ year               0
 dtype: int64</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="87">
+<div class="cell" data-execution_count="213">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb14"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace categorical missing values with mode of the column. check for Nan values again.</span></span>
 <span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>record_data[<span class="st">'drive'</span>] <span class="op">=</span> record_data[<span class="st">'drive'</span>].fillna(record_data[<span class="st">'drive'</span>].mode().iloc[<span class="dv">0</span>])</span>
 <span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>nan_count <span class="op">=</span> record_data.isna().<span class="bu">sum</span>()</span>
 <span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nan_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>city_mpg           0
 class              0
@@ -572,7 +628,9 @@ year               0
 dtype: int64</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="88">
+<div class="cell" data-execution_count="214">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb16"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using a for loop to replace categorical values with cat codes</span></span>
 <span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>cat_cols <span class="op">=</span> [<span class="st">'class'</span>, <span class="st">'drive'</span>, <span class="st">'fuel_type'</span>, <span class="st">'make'</span>, <span class="st">'model'</span>, <span class="st">'transmission'</span>]</span>
 <span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> cat_cols:</span>
@@ -581,7 +639,8 @@ dtype: int64</code></pre>
 <span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb16-7"><a href="#cb16-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the altered DataFrame</span></span>
 <span id="cb16-8"><a href="#cb16-8" aria-hidden="true" tabindex="-1"></a>record_data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="88">
+</details>
+<div class="cell-output cell-output-display" data-execution_count="214">
 <div>
 
 
@@ -685,7 +744,9 @@ dtype: int64</code></pre>
 </div>
 </div>
 </div>
-<div class="cell" data-execution_count="89">
+<div class="cell" data-execution_count="215">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Split the dataset in X and y. since this is unsupervised learning, we will not use the y labels. you can choose to normalize the X data by using the StandardScaler function.</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>x_cols <span class="op">=</span> [<span class="st">'city_mpg'</span>, <span class="st">'class'</span>, <span class="st">'combination_mpg'</span>, <span class="st">'cylinders'</span>, <span class="st">'displacement'</span>, <span class="st">'drive'</span>, <span class="st">'highway_mpg'</span>, <span class="st">'make'</span>, <span class="st">'model'</span>, <span class="st">'transmission'</span>, <span class="st">'year'</span> ]</span>
@@ -696,11 +757,15 @@ dtype: int64</code></pre>
 <span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-9"><a href="#cb17-9" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-10"><a href="#cb17-10" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> StandardScaler().fit_transform(X)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
-<section id="kmean" class="level3">
-<h3 class="anchored" data-anchor-id="kmean">KMEAN</h3>
-<div class="cell" data-execution_count="90">
-<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import relevent libraries for clustering. we will use KMeans, AgglomerativeClustering, MeanShift, Birch, and DBSCAN</span></span>
+</section>
+<section id="kmeans-1" class="level1">
+<h1>KMEANS</h1>
+<div class="cell" data-execution_count="216">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co"># import relevent libraries for clustering. we will use KMeans, hierarchical clustering and DBSCAN</span></span>
 <span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
 <span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> warnings</span>
@@ -711,16 +776,24 @@ dtype: int64</code></pre>
 <span id="cb18-9"><a href="#cb18-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn <span class="im">import</span> cluster, datasets, mixture</span>
 <span id="cb18-10"><a href="#cb18-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.neighbors <span class="im">import</span> kneighbors_graph</span>
 <span id="cb18-11"><a href="#cb18-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.preprocessing <span class="im">import</span> StandardScaler</span>
-<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> itertools <span class="im">import</span> cycle, islice</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb18-12"><a href="#cb18-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> itertools <span class="im">import</span> cycle, islice</span>
+<span id="cb18-13"><a href="#cb18-13" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
-<div class="cell" data-execution_count="91">
+<div class="cell" data-execution_count="217">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># code modified from: https://medium.com/nerd-for-tech/k-means-clustering-using-python-2150769bd0b9</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
-<div class="cell" data-execution_count="92">
+<div class="cell" data-execution_count="218">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#get the value from the features in array format</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>features_value <span class="op">=</span> X</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>features_value</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="92">
+</details>
+<div class="cell-output cell-output-display" data-execution_count="218">
 <pre><code>array([[-0.62883646, -0.73831341, -0.61329244, -1.17319439, -0.9119434 ,
          0.13303802, -0.5762842 ,  1.25937568, -0.97618706, -0.55809982,
         -0.90149708],
@@ -963,7 +1036,9 @@ dtype: int64</code></pre>
          1.75554694]])</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="93">
+<div class="cell" data-execution_count="219">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb22"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">#finding the optimal number of k for clustering using elbow method</span></span>
 <span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> KMeans</span>
 <span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.spatial.distance <span class="im">import</span> cdist</span>
@@ -980,6 +1055,7 @@ dtype: int64</code></pre>
 <span id="cb22-14"><a href="#cb22-14" aria-hidden="true" tabindex="-1"></a>    distortions.append(<span class="bu">sum</span>(np.<span class="bu">min</span>(cdist(features_value,</span>
 <span id="cb22-15"><a href="#cb22-15" aria-hidden="true" tabindex="-1"></a>    km.cluster_centers_, <span class="st">'euclidean'</span>),axis<span class="op">=</span><span class="dv">1</span>)) <span class="op">/</span></span>
 <span id="cb22-16"><a href="#cb22-16" aria-hidden="true" tabindex="-1"></a>    features_value.shape[<span class="dv">0</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stderr">
 <pre><code>/Users/isfarbaset/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
   super()._check_params_vs_input(X, default_n_init=10)
@@ -1003,18 +1079,23 @@ dtype: int64</code></pre>
   super()._check_params_vs_input(X, default_n_init=10)</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="94">
+<div class="cell" data-execution_count="220">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Plotting the inertia result to find the elbow</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>plt.plot(K, inertia, <span class="st">'bx-'</span>)</span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'k'</span>)</span>
 <span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'inertia'</span>)</span>
 <span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'Elbow Method For Optimal k'</span>)</span>
 <span id="cb24-6"><a href="#cb24-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display">
 <p><img src="clustering_files/figure-html/cell-17-output-1.png" class="img-fluid"></p>
 </div>
 </div>
-<div class="cell" data-execution_count="95">
+<div class="cell" data-execution_count="221">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb25"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.DataFrame({</span>
 <span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Cluster'</span>: <span class="bu">list</span>(K),</span>
 <span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>    <span class="st">'Distortion'</span>: distortions,</span>
@@ -1023,24 +1104,30 @@ dtype: int64</code></pre>
 <span id="cb25-6"><a href="#cb25-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb25-7"><a href="#cb25-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the DataFrame</span></span>
 <span id="cb25-8"><a href="#cb25-8" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>   Cluster  Distortion     Inertia
 0        1    3.253657  880.000000
 1        2    2.569123  571.256625
 2        3    2.247452  431.099415
-3        4    2.070557  366.611791
-4        5    1.944560  315.472570
-5        6    1.784091  278.940236
-6        7    1.667732  243.883631
-7        8    1.548023  204.809253
+3        4    2.074792  367.225073
+4        5    1.948127  321.355477
+5        6    1.801716  286.223699
+6        7    1.645764  231.957900
+7        8    1.543608  206.472799
 8        9    1.448900  182.052608
-9       10    1.351605  168.195316</code></pre>
+9       10    1.327757  166.045786</code></pre>
 </div>
 </div>
-<div class="cell" data-execution_count="96">
+<div class="cell" data-execution_count="222">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># plot distortion and inertia for kmeans, you can either plot them seperately or use fig, ax = plt.subplots(1, 2) to plot them in the same figure. Suggest the optimal number of clusters based on the plot.</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
-<div class="cell" data-execution_count="97">
+<div class="cell" data-execution_count="223">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Creating subplots</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a>fig, ax <span class="op">=</span> plt.subplots(<span class="dv">1</span>, <span class="dv">2</span>, figsize<span class="op">=</span>(<span class="dv">15</span>, <span class="dv">5</span>))</span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a></span>
@@ -1058,14 +1145,18 @@ dtype: int64</code></pre>
 <span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-16"><a href="#cb28-16" aria-hidden="true" tabindex="-1"></a>plt.tight_layout()</span>
 <span id="cb28-17"><a href="#cb28-17" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display">
 <p><img src="clustering_files/figure-html/cell-20-output-1.png" class="img-fluid"></p>
 </div>
 </div>
+<p>Based on the plots, the optimal number of clusters seems to be 2. Beyond 2 clusters, both distortion and inertia rates slow down significantly.</p>
 </section>
-<section id="dbscan" class="level3">
-<h3 class="anchored" data-anchor-id="dbscan">DBSCAN</h3>
-<div class="cell" data-execution_count="98">
+<section id="dbscan-1" class="level1">
+<h1>DBSCAN</h1>
+<div class="cell" data-execution_count="224">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb29"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb29-1"><a href="#cb29-1" aria-hidden="true" tabindex="-1"></a><span class="co"># perform DBSCAN clustering. use the eps and min_samples parameters to find the optimal number of clusters. plot the number of clusters vs the silhouette score. Suggest the optimal number of clusters based on the plot.</span></span>
 <span id="cb29-2"><a href="#cb29-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb29-3"><a href="#cb29-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> sklearn.cluster</span>
@@ -1124,8 +1215,11 @@ dtype: int64</code></pre>
 <span id="cb29-56"><a href="#cb29-56" aria-hidden="true" tabindex="-1"></a>        plt.show()</span>
 <span id="cb29-57"><a href="#cb29-57" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb29-58"><a href="#cb29-58" aria-hidden="true" tabindex="-1"></a>    <span class="cf">return</span> opt_labels</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
-<div class="cell" data-execution_count="99">
+<div class="cell" data-execution_count="225">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb30"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb30-1"><a href="#cb30-1" aria-hidden="true" tabindex="-1"></a><span class="co"># UTILITY PLOTTING FUNCTION</span></span>
 <span id="cb30-2"><a href="#cb30-2" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> plot(X,color_vector):</span>
 <span id="cb30-3"><a href="#cb30-3" aria-hidden="true" tabindex="-1"></a>    fig, ax <span class="op">=</span> plt.subplots()</span>
@@ -1137,11 +1231,16 @@ dtype: int64</code></pre>
 <span id="cb30-9"><a href="#cb30-9" aria-hidden="true" tabindex="-1"></a>    plt.show()</span>
 <span id="cb30-10"><a href="#cb30-10" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-11"><a href="#cb30-11" aria-hidden="true" tabindex="-1"></a><span class="co"># plot(X,y)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
-<div class="cell" data-execution_count="100">
+<div class="cell" data-execution_count="226">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co"># DBSCAN</span></span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a>opt_labels<span class="op">=</span>maximize_silhouette(X,algo<span class="op">=</span><span class="st">"dbscan"</span>,nmax<span class="op">=</span><span class="dv">15</span>, i_plot<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a>plot(X,opt_labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb31-4"><a href="#cb31-4" aria-hidden="true" tabindex="-1"></a>plot(X,opt_labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>OPTIMAL PARAMETER = 3.0</code></pre>
 </div>
@@ -1152,76 +1251,238 @@ dtype: int64</code></pre>
 <p><img src="clustering_files/figure-html/cell-23-output-3.png" class="img-fluid"></p>
 </div>
 </div>
-</section>
-<section id="hierchical-clustering" class="level3">
-<h3 class="anchored" data-anchor-id="hierchical-clustering">Hierchical Clustering</h3>
-<div class="cell" data-execution_count="101">
-<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform Agglomerative Clustering</span></span>
-<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a><span class="co"># AGGLOMERATIVE CLUSTERING</span></span>
-<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a>opt_labels<span class="op">=</span>maximize_silhouette(X,algo<span class="op">=</span><span class="st">"ag"</span>,nmax<span class="op">=</span><span class="dv">15</span>, i_plot<span class="op">=</span><span class="va">True</span>)</span>
-<span id="cb33-5"><a href="#cb33-5" aria-hidden="true" tabindex="-1"></a>plot(X,opt_labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-execution_count="239">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb33"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb33-1"><a href="#cb33-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the silhouette score for the optimal parameter</span></span>
+<span id="cb33-2"><a href="#cb33-2" aria-hidden="true" tabindex="-1"></a>opt_silhouette <span class="op">=</span> silhouette_score(X, opt_labels)</span>
+<span id="cb33-3"><a href="#cb33-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb33-4"><a href="#cb33-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Final silhouette score with eps= 3: </span><span class="sc">{</span>opt_silhouette<span class="sc">}</span><span class="ss">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
-<pre><code>OPTIMAL PARAMETER = 15</code></pre>
+<pre><code>Final silhouette score with eps= 3: 0.34308414158319966</code></pre>
+</div>
+</div>
+<div class="cell" data-execution_count="228">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> DBSCAN</span>
+<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> silhouette_score</span>
+<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a>opt_eps <span class="op">=</span> <span class="dv">2</span> <span class="co"># trying a different eps value</span></span>
+<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>opt_dbscan <span class="op">=</span> DBSCAN(eps<span class="op">=</span>opt_eps)</span>
+<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>opt_labels <span class="op">=</span> opt_dbscan.fit_predict(X)</span>
+<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-8"><a href="#cb35-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the silhouette score for the optimal parameter</span></span>
+<span id="cb35-9"><a href="#cb35-9" aria-hidden="true" tabindex="-1"></a>opt_silhouette <span class="op">=</span> silhouette_score(X, opt_labels)</span>
+<span id="cb35-10"><a href="#cb35-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-11"><a href="#cb35-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the final silhouette score</span></span>
+<span id="cb35-12"><a href="#cb35-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Final silhouette score with eps=</span><span class="sc">{</span>opt_eps<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>opt_silhouette<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb35-13"><a href="#cb35-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb35-14"><a href="#cb35-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the final clustering</span></span>
+<span id="cb35-15"><a href="#cb35-15" aria-hidden="true" tabindex="-1"></a>plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], c<span class="op">=</span>opt_labels, cmap<span class="op">=</span><span class="st">'viridis'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb35-16"><a href="#cb35-16" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="ss">f'DBSCAN Clustering with eps=</span><span class="sc">{</span>opt_eps<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb35-17"><a href="#cb35-17" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Feature 1'</span>)</span>
+<span id="cb35-18"><a href="#cb35-18" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Feature 2'</span>)</span>
+<span id="cb35-19"><a href="#cb35-19" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Final silhouette score with eps=2: 0.30574008709460676</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-24-output-2.png" class="img-fluid"></p>
+<p><img src="clustering_files/figure-html/cell-25-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>We can colude that 3 is indeed the optimal parameter as determined by the silhouette analysis since lowering the parameters to two did not form any clear clusters. The score is also higher for 3 parameters compared to 2 parameters.</p>
+</section>
+<section id="hierchical-clustering" class="level1">
+<h1>Hierchical Clustering</h1>
+<div class="cell" data-execution_count="230">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb37"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb37-1"><a href="#cb37-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Perform Agglomerative Clustering</span></span>
+<span id="cb37-2"><a href="#cb37-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb37-3"><a href="#cb37-3" aria-hidden="true" tabindex="-1"></a><span class="co"># AGGLOMERATIVE CLUSTERING</span></span>
+<span id="cb37-4"><a href="#cb37-4" aria-hidden="true" tabindex="-1"></a>opt_labels<span class="op">=</span>maximize_silhouette(X,algo<span class="op">=</span><span class="st">"ag"</span>,nmax<span class="op">=</span><span class="dv">12</span>, i_plot<span class="op">=</span><span class="va">True</span>)</span>
+<span id="cb37-5"><a href="#cb37-5" aria-hidden="true" tabindex="-1"></a>plot(X,opt_labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>OPTIMAL PARAMETER = 12</code></pre>
 </div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-24-output-3.png" class="img-fluid"></p>
+<p><img src="clustering_files/figure-html/cell-26-output-2.png" class="img-fluid"></p>
 </div>
-</div>
-<div class="cell" data-execution_count="102">
-<div class="sourceCode cell-code" id="cb35"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb35-1"><a href="#cb35-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create linkage for agglomerative clustering, and the dendrogram for the linkage. Suggest the optimal number of clusters based on the dendrogram.</span></span>
-<span id="cb35-2"><a href="#cb35-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-3"><a href="#cb35-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.cluster.hierarchy <span class="im">import</span> linkage, dendrogram</span>
-<span id="cb35-4"><a href="#cb35-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb35-5"><a href="#cb35-5" aria-hidden="true" tabindex="-1"></a>complete_clustering <span class="op">=</span> linkage(X, method<span class="op">=</span><span class="st">"complete"</span>, metric<span class="op">=</span><span class="st">"euclidean"</span>)</span>
-<span id="cb35-6"><a href="#cb35-6" aria-hidden="true" tabindex="-1"></a>average_clustering <span class="op">=</span> linkage(X, method<span class="op">=</span><span class="st">"average"</span>, metric<span class="op">=</span><span class="st">"euclidean"</span>)</span>
-<span id="cb35-7"><a href="#cb35-7" aria-hidden="true" tabindex="-1"></a>single_clustering <span class="op">=</span> linkage(X, method<span class="op">=</span><span class="st">"single"</span>, metric<span class="op">=</span><span class="st">"euclidean"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
-<div class="cell" data-execution_count="103">
-<div class="sourceCode cell-code" id="cb36"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb36-1"><a href="#cb36-1" aria-hidden="true" tabindex="-1"></a>dendrogram(complete_clustering)</span>
-<span id="cb36-2"><a href="#cb36-2" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display">
-<p><img src="clustering_files/figure-html/cell-26-output-1.png" class="img-fluid"></p>
+<p><img src="clustering_files/figure-html/cell-26-output-3.png" class="img-fluid"></p>
+</div>
+</div>
+<p>This does provide us with an informative answer since the total feature set to begin with is 12.</p>
+<p>### Plot the clusters for Agglomerative Clustering</p>
+<div class="cell" data-execution_count="231">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb39"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb39-1"><a href="#cb39-1" aria-hidden="true" tabindex="-1"></a><span class="co"># create linkage for agglomerative clustering, and the dendrogram for the linkage. Suggest the optimal number of clusters based on the dendrogram.</span></span>
+<span id="cb39-2"><a href="#cb39-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-3"><a href="#cb39-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.cluster.hierarchy <span class="im">import</span> linkage, dendrogram</span>
+<span id="cb39-4"><a href="#cb39-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb39-5"><a href="#cb39-5" aria-hidden="true" tabindex="-1"></a>complete_clustering <span class="op">=</span> linkage(X, method<span class="op">=</span><span class="st">"complete"</span>, metric<span class="op">=</span><span class="st">"euclidean"</span>)</span>
+<span id="cb39-6"><a href="#cb39-6" aria-hidden="true" tabindex="-1"></a>average_clustering <span class="op">=</span> linkage(X, method<span class="op">=</span><span class="st">"average"</span>, metric<span class="op">=</span><span class="st">"euclidean"</span>)</span>
+<span id="cb39-7"><a href="#cb39-7" aria-hidden="true" tabindex="-1"></a>single_clustering <span class="op">=</span> linkage(X, method<span class="op">=</span><span class="st">"single"</span>, metric<span class="op">=</span><span class="st">"euclidean"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+</div>
+<section id="method-complete-and-distance-metric-euclidean" class="level3">
+<h3 class="anchored" data-anchor-id="method-complete-and-distance-metric-euclidean">Method = Complete and Distance metric = Euclidean</h3>
+<div class="cell" data-execution_count="232">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb40"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb40-1"><a href="#cb40-1" aria-hidden="true" tabindex="-1"></a>dendrogram(complete_clustering)</span>
+<span id="cb40-2"><a href="#cb40-2" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="clustering_files/figure-html/cell-28-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 </section>
+<section id="method-complete-and-distance-metric-manhattan" class="level3">
+<h3 class="anchored" data-anchor-id="method-complete-and-distance-metric-manhattan">Method = Complete and Distance metric = Manhattan</h3>
+<div class="cell" data-execution_count="233">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb41"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb41-1"><a href="#cb41-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> scipy.cluster.hierarchy <span class="im">import</span> linkage, dendrogram</span>
+<span id="cb41-2"><a href="#cb41-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-3"><a href="#cb41-3" aria-hidden="true" tabindex="-1"></a>complete_clustering <span class="op">=</span> linkage(X, method<span class="op">=</span><span class="st">"complete"</span>, metric<span class="op">=</span><span class="st">"cityblock"</span>)</span>
+<span id="cb41-4"><a href="#cb41-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb41-5"><a href="#cb41-5" aria-hidden="true" tabindex="-1"></a>dendrogram(complete_clustering)</span>
+<span id="cb41-6"><a href="#cb41-6" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="clustering_files/figure-html/cell-29-output-1.png" class="img-fluid"></p>
+</div>
+</div>
 </section>
-<section id="methods" class="level2">
-<h2 class="anchored" data-anchor-id="methods">Methods</h2>
-<p>In this section, describe your coding workflow; If you are not using Quarto, then provide links to the relevant code in this section. If you are using Quarto (recommended), then include your code in-line using the “code folding” option, so that users can toggle the code on/off as needed. The notebook should also be hosted on Github. You can always do the entire thing in .ipynb then render it to HTML using Quarto at the end.</p>
-<section id="data-selection" class="level3">
-<h3 class="anchored" data-anchor-id="data-selection">Data Selection</h3>
-<p>If you have not done so already, create either a numeric record feature dataset AND/OR a text feature dataset from your existing data. Remove the labels (targets) as needed so that it is suitable for clustering. If you have labels, you can use them at the end, to check if the clustering predictions coincided with the existing labels in the data-set. In general this may or may-not be true. But these labels should not be used as part of the clustering analysis.</p>
+<section id="method-average-and-distance-metric-euclidean" class="level3">
+<h3 class="anchored" data-anchor-id="method-average-and-distance-metric-euclidean">Method = Average and Distance metric = Euclidean</h3>
+<div class="cell" data-execution_count="234">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb42"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb42-1"><a href="#cb42-1" aria-hidden="true" tabindex="-1"></a>dendrogram(average_clustering)</span>
+<span id="cb42-2"><a href="#cb42-2" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="clustering_files/figure-html/cell-30-output-1.png" class="img-fluid"></p>
+</div>
+</div>
 </section>
-<section id="feature-selection" class="level3">
-<h3 class="anchored" data-anchor-id="feature-selection">Feature Selection</h3>
-<p>(optional) If you want, you can perform filter based feature selection on your data-set as a pre-processing step before clustering You can also use optimal feature sets obtained during previous assignments</p>
+<section id="method-single-and-distance-metric-euclidean" class="level3">
+<h3 class="anchored" data-anchor-id="method-single-and-distance-metric-euclidean">Method = Single and Distance metric = Euclidean</h3>
+<div class="cell" data-execution_count="235">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb43"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb43-1"><a href="#cb43-1" aria-hidden="true" tabindex="-1"></a>dendrogram(single_clustering)</span>
+<span id="cb43-2"><a href="#cb43-2" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="clustering_files/figure-html/cell-31-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Which distance metric seems to works best in which cases and why?</p>
+<blockquote class="blockquote">
+<p>We can observe here that the dendrogram using Complete Linkage with Euclidean Distance shows distinct and meaningful clusters without the chaining effect. This dendrogram presents a clear hierarchy with well-defined clusters, suggesting that this metric may be the best out of the ones provided for clustering the given dataset, especially for distinguishing between different fuel types. The optimal numbe rof parameters based on the denfogram visualization is 3.</p>
+</blockquote>
 </section>
-<section id="hyper-parameter-tuning" class="level3">
-<h3 class="anchored" data-anchor-id="hyper-parameter-tuning">Hyper-parameter tuning</h3>
-<p>For each of the three clustering algorithms, perform any relevant parameter tuning in an attempt to achieve the optimal clustering results e.g.&nbsp;For k-means, Use Elbow and Silhouette methods to illustrate the ideal number of clusters. Visualize your results. Also, when relevant, explore different choices of distance metric for the algorithm. Which distance metric seems to works best in which cases and why?</p>
+<section id="final-results" class="level2">
+<h2 class="anchored" data-anchor-id="final-results"><strong>Final Results</strong></h2>
 </section>
-<section id="final-results" class="level3">
-<h3 class="anchored" data-anchor-id="final-results">FInal Results</h3>
-<p>Once you have everything “dialed in”, re-do the analysis one last time with the optimal parameter choice to get your “final results”.</p>
+<section id="kmeans-2" class="level2">
+<h2 class="anchored" data-anchor-id="kmeans-2">KMEANS</h2>
+<div class="cell" data-execution_count="236">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb44"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb44-1"><a href="#cb44-1" aria-hidden="true" tabindex="-1"></a><span class="co"># KMEANS</span></span>
+<span id="cb44-2"><a href="#cb44-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> sklearn.cluster.KMeans(n_clusters<span class="op">=</span><span class="dv">2</span>).fit(X)</span>
+<span id="cb44-3"><a href="#cb44-3" aria-hidden="true" tabindex="-1"></a>labels<span class="op">=</span>model.predict(X)</span>
+<span id="cb44-4"><a href="#cb44-4" aria-hidden="true" tabindex="-1"></a>plot(X,labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stderr">
+<pre><code>/Users/isfarbaset/anaconda3/lib/python3.11/site-packages/sklearn/cluster/_kmeans.py:1412: FutureWarning: The default value of `n_init` will change from 10 to 'auto' in 1.4. Set the value of `n_init` explicitly to suppress the warning
+  super()._check_params_vs_input(X, default_n_init=10)</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="clustering_files/figure-html/cell-32-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>We can see very distinct clusterings for two groups formed. The purple datapoints are more compact &amp; dense while the yellow data points are more spread out.</p>
 </section>
+<section id="dbscan-2" class="level2">
+<h2 class="anchored" data-anchor-id="dbscan-2">DBSCAN</h2>
+<div class="cell" data-execution_count="237">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb46"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb46-1"><a href="#cb46-1" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.cluster <span class="im">import</span> DBSCAN</span>
+<span id="cb46-2"><a href="#cb46-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.metrics <span class="im">import</span> silhouette_score</span>
+<span id="cb46-3"><a href="#cb46-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-4"><a href="#cb46-4" aria-hidden="true" tabindex="-1"></a>opt_eps <span class="op">=</span> <span class="dv">3</span> <span class="co"># optimal eps value found from silhouette analysis</span></span>
+<span id="cb46-5"><a href="#cb46-5" aria-hidden="true" tabindex="-1"></a>opt_dbscan <span class="op">=</span> DBSCAN(eps<span class="op">=</span>opt_eps)</span>
+<span id="cb46-6"><a href="#cb46-6" aria-hidden="true" tabindex="-1"></a>opt_labels <span class="op">=</span> opt_dbscan.fit_predict(X)</span>
+<span id="cb46-7"><a href="#cb46-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-8"><a href="#cb46-8" aria-hidden="true" tabindex="-1"></a><span class="co"># Calculate the silhouette score for the optimal parameter</span></span>
+<span id="cb46-9"><a href="#cb46-9" aria-hidden="true" tabindex="-1"></a>opt_silhouette <span class="op">=</span> silhouette_score(X, opt_labels)</span>
+<span id="cb46-10"><a href="#cb46-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-11"><a href="#cb46-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the final silhouette score</span></span>
+<span id="cb46-12"><a href="#cb46-12" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f"Final silhouette score with eps=</span><span class="sc">{</span>opt_eps<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>opt_silhouette<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb46-13"><a href="#cb46-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb46-14"><a href="#cb46-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Plot the final clustering</span></span>
+<span id="cb46-15"><a href="#cb46-15" aria-hidden="true" tabindex="-1"></a>plt.scatter(X[:, <span class="dv">0</span>], X[:, <span class="dv">1</span>], c<span class="op">=</span>opt_labels, cmap<span class="op">=</span><span class="st">'viridis'</span>, alpha<span class="op">=</span><span class="fl">0.5</span>)</span>
+<span id="cb46-16"><a href="#cb46-16" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="ss">f'DBSCAN Clustering with eps=</span><span class="sc">{</span>opt_eps<span class="sc">}</span><span class="ss">'</span>)</span>
+<span id="cb46-17"><a href="#cb46-17" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">'Feature 1'</span>)</span>
+<span id="cb46-18"><a href="#cb46-18" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">'Feature 2'</span>)</span>
+<span id="cb46-19"><a href="#cb46-19" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-stdout">
+<pre><code>Final silhouette score with eps=3: 0.34308414158319966</code></pre>
+</div>
+<div class="cell-output cell-output-display">
+<p><img src="clustering_files/figure-html/cell-33-output-2.png" class="img-fluid"></p>
+</div>
+</div>
+<p>A silhouette score close to 1 indicates very distinct clusters, so a score of 0.343 implies that while there is some cluster structure, there’s room for improvement. The graph illustrates two very distinct groupings between the purple and yellow points</p>
 </section>
-<section id="results" class="level2">
-<h2 class="anchored" data-anchor-id="results">Results</h2>
-<p>Using your “final results”, discuss, illustrate, and compare the results of your various clustering analysis methods. Which method seemed to work the best and why, which was easier to use or preferable, etc. Can you make connections between the optimal cluster predictions, after parameter tuning, with any of the labels in the data set. Do they coincide? Why or why not? Did the clustering results provide any new insights into your data? Explore the results, and create as many meaningful visualizations as you need. Be creative, and experiment with different image aesthetics. Ensure all visualizations are professional, ascetically pleasing, labeled, captioned, use color, are clear, and support your discussion and goals.</p>
+<section id="hierchical-clustering-1" class="level2">
+<h2 class="anchored" data-anchor-id="hierchical-clustering-1">Hierchical Clustering</h2>
+<div class="cell" data-execution_count="238">
+<details>
+<summary>Code</summary>
+<div class="sourceCode cell-code" id="cb48"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a href="#cb48-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Hierchical</span></span>
+<span id="cb48-2"><a href="#cb48-2" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> sklearn.cluster.AgglomerativeClustering(n_clusters<span class="op">=</span><span class="dv">3</span>).fit(X)</span>
+<span id="cb48-3"><a href="#cb48-3" aria-hidden="true" tabindex="-1"></a>labels<span class="op">=</span>model.labels_</span>
+<span id="cb48-4"><a href="#cb48-4" aria-hidden="true" tabindex="-1"></a>plot(X,labels)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output cell-output-display">
+<p><img src="clustering_files/figure-html/cell-34-output-1.png" class="img-fluid"></p>
+</div>
+</div>
+<p>Based on this graph, we can observe that the green group is clearly separate, suggesting strong similarity among its points. The purple and yellow groups overlap a bit, indicating they’re not as clearly defined. This clustering tells us that the data likely has a natural grouping, especially for the green group, and that the second feature is probably more important for grouping than the first.</p>
+<p>Which method seemed to work the best and why: &gt; Kmeans seemed to have worked best since it creates two distict groups using the optimal paramter of 2 which was the result obtained of the elbow method of hyperparameter tuning.</p>
+<p>Which was easier to use or preferable: &gt; All three of them were easy to use, thanks to python’s schikit-learn library making the algorithms very accessible. Kmeans and DBSCAN was more intuitive to use when compared to hierchical agglomerative clustering.</p>
+<p>Did the clustering results provide any new insights into your data: &gt; From the way the clusters are arranged, it can be observe that there is a clear distinction between the two clusters along the Feature 2 (x_2) axis, but not as much along the Feature 1 (x_1) axis. The separation suggests that the clustering algorithms were able to find a division in the data, possibly around a significant difference in the values of Feature 2. This might imply that Feature 2 is a key variable in differentiating the data points into two groups.</p>
 </section>
-<section id="conslusions" class="level2">
-<h2 class="anchored" data-anchor-id="conslusions">Conslusions</h2>
-<p>In this section, the goal is to summarize &amp; wrap-up the report. It explains what was found, in a way that would make sense to a general readership. This area is non-technical. Technical descriptions of what you did should be in the methods or results sections, not conclusions. The Conclusions should focus on key and important findings and how these findings affect real-life and real people.</p>
+<section id="conclusion" class="level2">
+<h2 class="anchored" data-anchor-id="conclusion"><strong>Conclusion</strong></h2>
+<p>We’ve completed an in-depth analysis of our dataset and identified clear groupings which align with our initial goal of investigating the fuel types used by vehicles, such as electric and gas. The results show a distinct separation between these groups. By further examining the size of these clusters, we’ll be able to discern the more common type of vehicle on the road, thus gaining insight into the prevalence of each fuel type. This can be beneficial information for automotive manufacturers to gain insight into the demand of a particular fuel type and adjust production capacity accordingly. If we did not have previous knowledge about the variation in fuel types beforehand, these clustering analysis mechanisms would sufficiently have revealed the existence of two primary categories of cars distinguished by a significant feature.</p>
 </section>
 <section id="references" class="level2">
 <h2 class="anchored" data-anchor-id="references">References</h2>
-<p>Reference all non-original content. Ideally (but optionally) use .bibtex combined with Quarto to provide in-line internal citations See the following link for an example: https://drive.google.com/open?</p>
+<ul>
+<li>https://medium.com/nerd-for-tech/k-means-clustering-using-python-2150769bd0b9 <br></li>
+<li>https://www.geeksforgeeks.org/hierarchical-clustering-in-data-mining/ <br></li>
+<li>https://jfh.georgetown.domains/dsan5000/slides-and-labs/_site/content/slides/clustering/notes.html#run-with-true-number-of-clusters <br></li>
+<li>https://towardsdatascience.com/k-means-dbscan-gmm-agglomerative-clustering-mastering-the-popular-models-in-a-segmentation-c891a3818e29 <br></li>
+<li>https://www.youtube.com/watch?v=4b5d3muPQmA <br></li>
+<li>https://www.youtube.com/watch?v=RDZUdRSDOok</li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

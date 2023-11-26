@@ -1,0 +1,2888 @@
+{
+    "payload": {
+        "categories": [
+            {
+                "ID": "1228373604840",
+                "name": "Sale + Must-Have Prices",
+                "seoURL": "/catalog/catalog.jsp?CN=Assortment:Must%20Have%20Price%20and%20on%20Sale&BL=y&cc=salemusthave-TN1.0-S-SaleMusthave",
+                "type": "Catalog",
+                "categories": [
+                    {
+                        "ID": "1396240210925",
+                        "name": "Sale + Must-Have Prices",
+                        "seoURL": "/catalog/catalog.jsp?CN=Assortment:Must%20Have%20Price%20and%20on%20Sale&BL=y&cc=sale-TN2.0-S-MustHavePrices",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1572926320548",
+                        "name": "Home ",
+                        "seoURL": "/catalog/for-the-home.jsp?CN=Activity:For%20the%20Home+Assortment:Must%20Have%20Price%20and%20on%20Sale&BL=y&cc=sale-TN2.0-S-Sale-Home",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1800032444568",
+                        "name": "Womens & Juniors ",
+                        "seoURL": "/catalog/juniors.jsp?CN=Gender:Womens+Gender:Juniors+Assortment:Must%20Have%20Price%20and%20on%20Sale&BL=y&cc=sale-TN2.0-S-Sale-Womens",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1402967498314",
+                        "name": "Mens ",
+                        "seoURL": "/catalog/mens.jsp?CN=Gender:Mens+Assortment:Must%20Have%20Price%20and%20on%20Sale&BL=y&cc=sale-TN2.0-S-Sale-Mens",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1841279257456",
+                        "name": "Kids ",
+                        "seoURL": "/catalog/kids-clothing.jsp?CN=AgeAppropriate:Kids+Department:Clothing+Assortment:Must%20Have%20Price%20and%20on%20Sale&BL=y&cc=sale-TN2.0-S-Sale-Kids",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1135924591868",
+                        "name": "Toys ",
+                        "seoURL": "/catalog/toys.jsp?CN=Department:Toys+Assortment:Must%20Have%20Price%20and%20on%20Sale&BL=y&cc=sale-TN2.0-S-Sale-Toys",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1974012670970",
+                        "name": "Shoes",
+                        "seoURL": "/catalog/shoes.jsp?CN=Department:Shoes+Assortment:Must%20Have%20Price%20and%20on%20Sale&BL=y&cc=sale-TN2.0-S-Sale-Shoes",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1100124251624",
+                                "name": "Women's",
+                                "seoURL": "/catalog/womens-shoes.jsp?CN=Gender:Womens+Department:Shoes+Assortment:Must%20Have%20Price%20and%20on%20Sale&BL=y&cc=sale-TN3.0-S-shoeswomens",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1281724172955",
+                                "name": "Men's",
+                                "seoURL": "/catalog/mens-shoes.jsp?CN=Gender:Mens+Department:Shoes+Assortment:Must%20Have%20Price%20and%20on%20Sale&BL=y&cc=sale-TN3.0-S-Sale-ShoesMens",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1847051438436",
+                                "name": "Kids'",
+                                "seoURL": "/catalog/kids-shoes.jsp?CN=AgeAppropriate:Kids+Department:Shoes+Assortment:Must%20Have%20Price%20and%20on%20Sale&BL=y&cc=sale-TN3.0-S-Sale-ShoesKidsBaby",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1855902278278",
+                        "name": "Beauty | SEPHORA",
+                        "seoURL": "/catalog/sephora.jsp?CN=Partnership:Sephora+Assortment:Must%20Have%20Price%20and%20on%20Sale&BL=y&cc=sale-TN2.0-S-Sale-beauty",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1043871192179",
+                        "name": "Jewelry & Accessories ",
+                        "seoURL": "/catalog/jewelry.jsp?CN=Department:Accessories+Department:Jewelry+Assortment:Must%20Have%20Price%20and%20on%20Sale&BL=y&cc=sale-TN2.0-S-Sale-JewelryAcc",
+                        "type": "Catalog"
+                    }
+                ]
+            },
+            {
+                "ID": "1210211435093",
+                "name": "Holiday Gift Shop",
+                "seoURL": "/catalog/gift-ideas-holiday.jsp?CN=Feature:Gift%20Ideas+Occasion:Holiday&cc=giftingideas-TN1.0-S-giftingideas",
+                "type": "Catalog",
+                "categories": [
+                    {
+                        "ID": "1506214764826",
+                        "name": "Shop All Holiday Gifts",
+                        "seoURL": "/catalog/gift-ideas-holiday.jsp?CN=Feature:Gift%20Ideas+Occasion:Holiday&cc=giftingideas-TN2.0-S-shopallholidaygifts",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1301072991649",
+                                "name": "Gifts for Her",
+                                "seoURL": "/catalog/gift-ideas-holiday-for-women.jsp?CN=Feature:Gift%20Ideas+Occasion:Holiday+PersonaTheme:for%20Women&cc=giftingideas-TN2.0-S-giftsforher",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1531686433546",
+                                "name": "Gifts for Him",
+                                "seoURL": "/catalog/gift-ideas-holiday-for-men.jsp?CN=Feature:Gift%20Ideas+Occasion:Holiday+PersonaTheme:for%20Men&cc=giftingideas-TN2.0-S-giftsforhim",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1520376031756",
+                                "name": "Gifts for Baby & Kids",
+                                "seoURL": "/catalog/gift-ideas-holiday-for-boys.jsp?CN=Feature:Gift%20Ideas+Occasion:Holiday+PersonaTheme:for%20Girls+PersonaTheme:for%20Boys&BL=y&cc=giftingideas-TN2.0-S-giftsforkidsbaby",
+                                "type": "Catalog",
+                                "categories": []
+                            },
+                            {
+                                "ID": "1976129932481",
+                                "name": "Gifts for Pets",
+                                "seoURL": "/catalog/gift-ideas-holiday-pet.jsp?CN=Feature:Gift%20Ideas+Occasion:Holiday+PersonaTheme:Pet&cc=giftingideas-TN2.0-S-giftsforpets",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1508028775376",
+                        "name": "Shop by Price",
+                        "seoURL": "/catalog/gift-ideas.jsp?CN=Feature:Gift%20Ideas+MerchPricing:Under%20%24100&BL=y&cc=giftingideas-TN2.0-S-shopbyprice",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1487695092705",
+                                "name": "$15 and Under",
+                                "seoURL": "/catalog/gift-ideas-holiday.jsp?CN=Feature:Gift%20Ideas+Occasion:Holiday+MerchPricing:Under%20%2415+MerchPricing:%2415.00&BL=y&cc=giftingideas-TN2.0-S-15andunder",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1231545651977",
+                                "name": "$25 and Under",
+                                "seoURL": "/catalog/gift-ideas-holiday.jsp?CN=Feature:Gift%20Ideas+Occasion:Holiday+MerchPricing:%2425.00+MerchPricing:Under%20%2425&BL=y&cc=giftingideas-TN2.0-S-25andunder",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1458649807122",
+                                "name": "$50 and Under",
+                                "seoURL": "/catalog/gift-ideas-holiday.jsp?CN=Feature:Gift%20Ideas+Occasion:Holiday+MerchPricing:Under%20%2450+MerchPricing:%2450.00&BL=y&cc=giftingideas-TN2.0-S-50andunder",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1943873008655",
+                        "name": "Holiday Gift Finder",
+                        "seoURL": "/feature/holiday-gift-quiz.jsp&cc=giftingideas-TN2.0-S-giftfinder",
+                        "type": "Internal-link"
+                    },
+                    {
+                        "ID": "1191453711763",
+                        "name": "Cards, Gift Bags & Wrapping Paper",
+                        "seoURL": "/catalog/gift-wrap-party-supplies.jsp?CN=Category:Cards+Category:Gift%20Wrap+Department:Party%20Supplies&BL=y&cc=giftingideas-TN2.0-S-wrappingpaper",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1512588751203",
+                        "name": "Holiday Decor",
+                        "seoURL": "/catalog/christmas-for-the-home.jsp?CN=Occasion:Christmas+Activity:For%20the%20Home&cc=giftingideas-TN2.0-S-decor",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1571486134686",
+                        "name": "Stocking Stuffers",
+                        "seoURL": "/catalog/stocking-stuffers.jsp?CN=Trend:Stocking%20Stuffers&cc=giftingideas-TN2.0-S-stockingstuffers",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1567294601845",
+                        "name": "Toy Shop",
+                        "seoURL": "/catalog/toys.jsp?CN=Department:Toys&cc=giftingideas-TN2.0-S-toygifts",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1850916061846",
+                        "name": "Novelty Gifts",
+                        "seoURL": "/catalog/novelty-gift-ideas-holiday.jsp?CN=Trend:Novelty+Feature:Gift%20Ideas+Occasion:Holiday&cc=giftingideas-TN2.0-S-novelty",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1115963856853",
+                        "name": "Festive Finds",
+                        "seoURL": "/catalog.jsp?CN=Assortment:Festive%20Finds&BL=y&cc=giftingideas-TN2.0-S-festivefinds",
+                        "type": "External"
+                    },
+                    {
+                        "ID": "1078217874328",
+                        "name": "Cozy Gifts",
+                        "seoURL": "/catalog/cozy.jsp?CN=Trend:Cozy&cc=giftingideas-TN2.0-S-cozy",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1294851808610",
+                        "name": "Jammies for Your Family ",
+                        "seoURL": "/catalog/family-pajamas.jsp?CN=Trend:Family%20Pajamas&cc=giftingideas-TN2.0-S-jfyf",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1143496308593",
+                        "name": "White Elephant",
+                        "seoURL": "/catalog.jsp?CN=Assortment:White%20Elephant%20Gifts&BL=y&cc=giftingideas-TN2.0-S-whiteelephant",
+                        "type": "External"
+                    },
+                    {
+                        "ID": "1035592604489",
+                        "name": "Gift Cards",
+                        "seoURL": "/catalog/gift-cards.jsp?CN=Department:Gift%20Cards&cc=giftingideas-TN2.0-S-giftcards",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1975041046686",
+                        "name": "Shop Home Gifts",
+                        "seoURL": "/catalog/gift-ideas-holiday-for-the-home.jsp?CN=Feature:Gift%20Ideas+Occasion:Holiday+Activity:For%20the%20Home&cc=giftingideas-TN2.0-S-forthehomegifts",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1720996378968",
+                        "name": "Shop Beauty Gifts",
+                        "seoURL": "/catalog/gift-ideas-beauty.jsp?CN=Feature:Gift%20Ideas+Department:Beauty&cc=giftingideas-TN2.0-S-beautygifts",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1092043081586",
+                        "name": "Shop Tech Gifts",
+                        "seoURL": "/catalog/gift-ideas-electronics.jsp?CN=Feature:Gift%20Ideas+Department:Electronics&cc=giftingideas-TN2.0-S-electronics",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1057769680828",
+                        "name": "Shop Jewelry & Accessories Gifts",
+                        "seoURL": "/catalog/gift-ideas-accessories.jsp?CN=Feature:Gift%20Ideas+Department:Jewelry+Department:Accessories&BL=y&cc=giftingideas-TN2.0-S-jewlreygifts",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1346398791815",
+                        "name": "Shop Clothing Gifts",
+                        "seoURL": "/catalog/gift-ideas-clothing.jsp?CN=Feature:Gift%20Ideas+Department:Clothing&cc=giftingideas-TN2.0-S-clothinggifts",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1315890873570",
+                        "name": "Gifts By Occasion",
+                        "seoURL": null,
+                        "type": "Header",
+                        "categories": [
+                            {
+                                "ID": "1727124190848",
+                                "name": "Wedding Gifts",
+                                "seoURL": "/catalog/gift-ideas-wedding.jsp?CN=Feature:Gift%20Ideas+Occasion:Wedding&cc=giftingideas-TN2.0-S-weddinggifts",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1038282659780",
+                                "name": "Anniversary Gifts",
+                                "seoURL": "/catalog/anniversary.jsp?CN=Occasion:Anniversary&cc=giftingideas-TN2.0-S-anniversarygifts",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1720310652623",
+                                "name": "Baby Shower Gifts",
+                                "seoURL": "/catalog/baby-shower-baby.jsp?CN=Occasion:Baby%20Shower+AgeAppropriate:Kids+AgeAppropriate:Baby&BL=y&cc=giftingideas-TN2.0-S-babyshowergifts",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1716884317097",
+                        "name": "Gift Baskets & Sets",
+                        "seoURL": "/catalog/gift-baskets-sets-food-beverage-kitchen-dining.jsp?CN=Product:Gift%20Baskets%20%26%20Sets+Category:Food%20%26%20Beverage+Department:Kitchen%20%26%20Dining&cc=giftingideas-TN2.0-S-giftbaskets",
+                        "type": "Catalog"
+                    }
+                ]
+            },
+            {
+                "ID": "1657648622251",
+                "name": "Home",
+                "seoURL": "/sale-event/for-the-home.jsp?cc=for_thehome-TN1.0-S-forthehome",
+                "type": "Category",
+                "categories": [
+                    {
+                        "ID": "1405600214379",
+                        "name": "CLEARANCE",
+                        "seoURL": "/catalog/clearance-for-the-home.jsp?CN=Promotions:Clearance+Activity:For%20the%20Home&cc=for_thehome-TN2.0-S-Clearance",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1192321145735",
+                        "name": "Shop All Home",
+                        "seoURL": "/catalog.jsp?CN=Activity:For%20the%20Home&cc=for_thehome-TN2.0-S-shopallhome",
+                        "type": "External"
+                    },
+                    {
+                        "ID": "1705940653044",
+                        "name": "Halloween Decor",
+                        "seoURL": "/catalog/halloween-for-the-home.jsp?CN=Occasion:Halloween+Activity:For%20the%20Home&cc=for_thehome-TN2.0-S-halloweendecor",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1978004198077",
+                        "name": "Fall Decor",
+                        "seoURL": "/catalog/fall-for-the-home.jsp?CN=Occasion:Fall+Activity:For%20the%20Home&cc=for_thehome-TN2.0-S-falldecor",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1521101291407",
+                        "name": "Holiday Decor",
+                        "seoURL": "/catalog/christmas-for-the-home.jsp?CN=Occasion:Christmas+Activity:For%20the%20Home&cc=for_thehome-TN2.0-S-Holidaydecor",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1359579272825",
+                        "name": "Home Trends",
+                        "seoURL": "/catalog.jsp?CN=Assortment:Home%20Trends&cc=for_thehome-TN2.0-S-hometrends",
+                        "type": "External"
+                    },
+                    {
+                        "ID": "1226770931469",
+                        "name": "Patio & Outdoor Living",
+                        "seoURL": "/sale-event/outdoorliving.jsp?cc=for_thehome-TN2.0-S-patiooutdoor",
+                        "type": "Category"
+                    },
+                    {
+                        "ID": "1184274328848",
+                        "name": "Bedding",
+                        "seoURL": "/catalog/bedding-bed-bath.jsp?CN=Category:Bedding+Department:Bed%20%26%20Bath&cc=for_thehome-TN2.0-S-shopallbedding",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1391883010033",
+                                "name": "Comforters & Bedding Sets",
+                                "seoURL": "/catalog/comforters-bedding-bed-bath.jsp?CN=Product:Comforters+Category:Bedding+Department:Bed%20%26%20Bath&cc=for_thehome-TN3.0-S-comforters",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1150519806006",
+                                "name": "Quilts",
+                                "seoURL": "/catalog/quilts-coverlets-bedding-bed-bath.jsp?CN=Product:Quilts%20%26%20Coverlets+Category:Bedding+Department:Bed%20%26%20Bath&cc=for_thehome-TN3.0-S-quilts",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1664333481398",
+                                "name": "Bedspreads",
+                                "seoURL": "/catalog/bedspreads-bedding-bed-bath.jsp?CN=Product:Bedspreads+Category:Bedding+Department:Bed%20%26%20Bath&cc=for_thehome-TN3.0-S-bedspreads",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1644964919431",
+                                "name": "Duvet Covers",
+                                "seoURL": "/catalog/duvet-covers-bedding-bed-bath.jsp?CN=Product:Duvet%20Covers+Category:Bedding+Department:Bed%20%26%20Bath&cc=for_thehome-TN3.0-S-duvetcovers",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1510030365242",
+                                "name": "Sheets",
+                                "seoURL": "/catalog/sheets-bedding-bed-bath.jsp?CN=Product:Sheets+Category:Bedding+Department:Bed%20%26%20Bath&cc=for_thehome-TN3.0-S-sheets",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1972716046892",
+                                "name": "Blankets & Throws",
+                                "seoURL": "/catalog/blankets-throws-bedding-bed-bath.jsp?CN=Product:Blankets%20%26%20Throws+Category:Bedding+Department:Bed%20%26%20Bath&cc=for_thehome-TN3.0-S-blanketsthrows",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1206184484646",
+                                "name": "Bed Pillows",
+                                "seoURL": "/catalog/bed-pillows-pillows-bed-bath.jsp?CN=Product:Bed%20Pillows+Category:Pillows+Department:Bed%20%26%20Bath&cc=for_thehome-TN3.0-S-bedpillows",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1067961010924",
+                                "name": "Mattress Pads & Toppers",
+                                "seoURL": "/catalog/mattress-pads-toppers-bed-bath.jsp?CN=Category:Mattress%20Pads%20%26%20Toppers+Department:Bed%20%26%20Bath&cc=for_thehome-TN3.0-S-topperspads",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1102117820463",
+                        "name": "Kitchen and Dining",
+                        "seoURL": "/catalog/kitchen-dining.jsp?CN=Department:Kitchen%20%26%20Dining&cc=for_thehome-TN2.0-S-Kitchen",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1327883196267",
+                                "name": "Kitchen Appliances",
+                                "seoURL": "/catalog/small-appliances-kitchen-dining.jsp?CN=Category:Small%20Appliances+Department:Kitchen%20%26%20Dining&cc=for_thehome-TN3.0-S-KitchenAppliances",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1740759671963",
+                                "name": "Dinnerware & Serveware",
+                                "seoURL": "/catalog/dinnerware-serveware-kitchen-dining.jsp?CN=Category:Dinnerware%20%26%20Serveware+Department:Kitchen%20%26%20Dining&cc=for_thehome-TN3.0-S-dinnerwareservware",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1501042566362",
+                                "name": "Drinkware",
+                                "seoURL": "/catalog/drinkware-glassware-kitchen-dining.jsp?CN=Category:Drinkware%20%26%20Glassware+Department:Kitchen%20%26%20Dining&cc=for_thehome-TN3.0-S-Drinkware",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1967759626148",
+                                "name": "Barware",
+                                "seoURL": "/catalog/the-home-bar-kitchen-dining.jsp?CN=Activity:The%20Home%20Bar+Department:Kitchen%20%26%20Dining&cc=for_thehome-TN3.0-S-barware",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1599043075424",
+                                "name": "Bakeware",
+                                "seoURL": "/catalog/baking-cookware-bakeware-kitchen-dining.jsp?CN=Activity:Baking+Category:Cookware%20%26%20Bakeware+Department:Kitchen%20%26%20Dining&cc=for_thehome-TN3.0-S-Bakeware",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1590299117942",
+                                "name": "Cookware",
+                                "seoURL": "/catalog/cooking-cookware-bakeware-kitchen-dining.jsp?CN=Activity:Cooking+Category:Cookware%20%26%20Bakeware+Department:Kitchen%20%26%20Dining&cc=for_thehome-TN3.0-S-Cookware",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1883761894989",
+                                "name": "Cooking Utensils",
+                                "seoURL": "/catalog/cooking-utensils-tools-kitchen-dining.jsp?CN=Category:Cooking%20Utensils%20%26%20Tools+Department:Kitchen%20%26%20Dining&cc=for_thehome-TN3.0-S-CookingUtensils",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1285037074854",
+                                "name": "Cutlery & Knives",
+                                "seoURL": "/catalog/cutlery-knives-kitchen-dining.jsp?CN=Category:Cutlery%20%26%20Knives+Department:Kitchen%20%26%20Dining&cc=for_thehome-TN3.0-S-CutleryKnives",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1357860332654",
+                                "name": "Food Storage",
+                                "seoURL": "/catalog/food-storage-kitchen-dining.jsp?CN=Category:Food%20Storage+Department:Kitchen%20%26%20Dining&cc=for_thehome-TN3.0-S-FoodStorage",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1453510880758",
+                                "name": "Kitchen Towels",
+                                "seoURL": "/catalog/kitchen-linens-kitchen-dining.jsp?CN=Category:Kitchen%20Linens+Department:Kitchen%20%26%20Dining&cc=for_thehome-TN3.0-S-KitchenTowels",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1023364832916",
+                                "name": "Tableware",
+                                "seoURL": "/catalog/dinnerware-serveware-kitchen-dining.jsp?CN=Category:Flatware+Category:Kitchen%20Linens+Category:Table%20Linens+Category:Drinkware%20%26%20Glassware+Category:Dinnerware%20%26%20Serveware+Department:Kitchen%20%26%20Dining&cc=for_thehome-TN3.0-S-TablewareServeware",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1538216482322",
+                        "name": "Bath",
+                        "seoURL": "/catalog/bathroom-bed-bath.jsp?CN=Category:Bathroom+Department:Bed%20%26%20Bath&cc=for_thehome-TN2.0-S-shopallbath",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1551624961051",
+                                "name": "Bath Towels",
+                                "seoURL": "/catalog/bath-towels-bathroom-bed-bath.jsp?CN=Product:Bath%20Towels+Category:Bathroom+Department:Bed%20%26%20Bath&cc=for_thehome-TN3.0-S-bathtowels",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1541354290490",
+                                "name": "Bath Rugs",
+                                "seoURL": "/catalog/bath-rugs-mats-bathroom-bed-bath.jsp?CN=Product:Bath%20Rugs%20%26%20Mats+Category:Bathroom+Department:Bed%20%26%20Bath&cc=for_thehome-TN3.0-S-bathrugs",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1161899566316",
+                                "name": "Shower Curtains",
+                                "seoURL": "/catalog/shower-curtains-accessories-bathroom-bed-bath.jsp?CN=Product:Shower%20Curtains%20%26%20Accessories+Category:Bathroom+Department:Bed%20%26%20Bath&cc=for_thehome-TN3.0-S-showercurtains",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1270970187173",
+                                "name": "Bath Accessories",
+                                "seoURL": "/catalog/bath-accessories-bathroom-bed-bath.jsp?CN=Product:Bath%20Accessories+Category:Bathroom+Department:Bed%20%26%20Bath&cc=for_thehome-TN3.0-S-bathaccessories",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1710404399404",
+                        "name": "Vacuums & Floor Care",
+                        "seoURL": "/catalog/vacuums-floor-care-storage-cleaning.jsp?CN=Category:Vacuums%20%26%20Floor%20Care+Department:Storage%20%26%20Cleaning&cc=for_thehome-TN2.0-S-VacuumsFloorCare",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1178725681491",
+                        "name": "Storage & Cleaning",
+                        "seoURL": "/catalog/cleaning-supplies-storage-cleaning.jsp?CN=Category:Storage%20%26%20Organization+Category:Cleaning%20Supplies+Department:Storage%20%26%20Cleaning&BL=y&cc=for_thehome-TN2.0-S-StorageCleaning",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1079463466977",
+                        "name": "Heating, Cooling & Air Quality",
+                        "seoURL": "/catalog/heating-cooling-home-improvement.jsp?CN=Category:Heating%20%26%20Cooling+Department:Home%20Improvement&cc=for_thehome-TN2.0-S-HeatingCooling",
+                        "type": "Catalog",
+                        "categories": []
+                    },
+                    {
+                        "ID": "1403863288737",
+                        "name": "Home Decor",
+                        "seoURL": "/catalog/home-decor.jsp?CN=Department:Home%20Decor&cc=for_thehome-TN2.0-S-HomeDecor",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1572997292327",
+                                "name": "Artificial Plants",
+                                "seoURL": "/catalog/artificial-flowers-plants-home-decor.jsp?CN=Category:Artificial%20Flowers%20%26%20Plants+Department:Home%20Decor&cc=for_thehome-TN3.0-S-ArtificialPlants",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1130046670655",
+                                "name": "Decorative Accents",
+                                "seoURL": "/catalog/decorative-accents-home-decor.jsp?CN=Category:Decorative%20Accents+Department:Home%20Decor&cc=for_thehome-TN3.0-S-DecorativeAccents",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1142292531205",
+                                "name": "Candles",
+                                "seoURL": "/catalog/candles-home-decor.jsp?CN=Category:Candles+Department:Home%20Decor&cc=for_thehome-TN3.0-S-Candles",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1379957414650",
+                                "name": "Lamps & Lights",
+                                "seoURL": "/catalog/lighting.jsp?CN=Department:Lighting&cc=for_thehome-TN3.0-S-LampsLights",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1274050853620",
+                                "name": "Frames & Albums",
+                                "seoURL": "/catalog/picture-frames-photo-albums-home-decor.jsp?CN=Category:Picture%20Frames%20%26%20Photo%20Albums+Department:Home%20Decor&cc=for_thehome-TN3.0-S-PictureFrames",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1438270940066",
+                                "name": "Throw Pillows",
+                                "seoURL": "/catalog/throw-pillows-decorative-pillows-chair-pads-home-decor.jsp?CN=Product:Throw%20Pillows+Category:Decorative%20Pillows%20%26%20Chair%20Pads+Department:Home%20Decor&cc=for_thehome-TN3.0-S-ThrowPillows",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1388412203904",
+                                "name": "Wall Decor",
+                                "seoURL": "/catalog/wall-decor-home-decor.jsp?CN=Category:Wall%20Decor+Department:Home%20Decor&cc=for_thehome-TN3.0-S-WallArt",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1405887694412",
+                        "name": "Rugs",
+                        "seoURL": "/catalog/rugs-home-decor.jsp?CN=Category:Rugs+Department:Home%20Decor&cc=for_thehome-TN2.0-S-AllRugs",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1885526865168",
+                                "name": "Area Rugs",
+                                "seoURL": "/catalog/area-rugs-rugs-home-decor.jsp?CN=Silhouette:Area%20Rugs+Category:Rugs+Department:Home%20Decor&cc=for_thehome-TN3.0-S-AreaRugs",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1620966027113",
+                                "name": "Kitchen Rugs",
+                                "seoURL": "/catalog/kitchen-rugs-home-decor.jsp?CN=Room:Kitchen+Category:Rugs+Department:Home%20Decor&cc=for_thehome-TN3.0-S-KitchenRugs",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1373364427339",
+                        "name": "Curtains",
+                        "seoURL": "/catalog/window-treatments-home-decor.jsp?CN=Category:Window%20Treatments+Department:Home%20Decor&cc=for_thehome-TN2.0-S-CurtainsBlinds",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1619172190235",
+                                "name": "Blackout Curtains",
+                                "seoURL": "/catalog/blackouts-curtains-drapes-window-treatments-home-decor.jsp?CN=Feature:Blackouts+Product:Curtains%20%26%20Drapes+Category:Window%20Treatments+Department:Home%20Decor&cc=for_thehome-TN3.0-S-BlackoutCurtains",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1314640822603",
+                                "name": "Blinds & Shades",
+                                "seoURL": "/catalog/blinds-shades-window-treatments-home-decor.jsp?CN=Product:Blinds%20%26%20Shades+Category:Window%20Treatments+Department:Home%20Decor&cc=for_thehome-TN3.0-S-blindsshades",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1233529636240",
+                                "name": "Sheer Curtains",
+                                "seoURL": "/catalog/sheers-curtains-drapes-window-treatments-home-decor.jsp?CN=Feature:Sheers+Product:Curtains%20%26%20Drapes+Category:Window%20Treatments+Department:Home%20Decor&cc=for_thehome-TN3.0-S-Sheercurtains",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1248418159489",
+                                "name": "Curtain Rods & Hardware",
+                                "seoURL": "/catalog/curtain-rods-hardware-window-treatments-home-decor.jsp?CN=Product:Curtain%20Rods%20%26%20Hardware+Category:Window%20Treatments+Department:Home%20Decor&cc=for_thehome-TN3.0-S-rodshardware",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1945428956992",
+                        "name": "Furniture",
+                        "seoURL": "/catalog/furniture.jsp?CN=Department:Furniture&cc=for_thehome-TN2.0-S-shopallfurniture",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1879712071620",
+                                "name": "Bedroom Furniture",
+                                "seoURL": "/catalog/bedroom-furniture.jsp?CN=Room:Bedroom+Department:Furniture&cc=for_thehome-TN3.0-S-BedroomFurniture",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1493524644751",
+                                "name": "Living Room Furniture",
+                                "seoURL": "/catalog/living-room-furniture.jsp?CN=Room:Living%20Room+Department:Furniture&cc=for_thehome-TN3.0-S-LivingRoomFurniture",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1488247019291",
+                                "name": "Kitchen & Dining Furniture",
+                                "seoURL": "/catalog/dining-room-furniture.jsp?CN=Room:Dining Room+Department:Furniture&cc=for_thehome-TN3.0-S-KitchenDiningFurniture",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1189545214717",
+                        "name": "Pet",
+                        "seoURL": "/catalog/pet-supplies.jsp?CN=Department:Pet%20Supplies&cc=for_thehome-TN2.0-S-PetSupplies",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1750368674357",
+                        "name": "Kids Room ",
+                        "seoURL": "/catalog/kids-room.jsp?CN=Room:Kids%27%20Room&icid=fh-kidsroomshopnow&kls_sbp=30049039765656566183003335774968811104?&cc=for_thehome-TN2.0-S-kidsroomtrends",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1306002646878",
+                        "name": "Personal Care",
+                        "seoURL": "/catalog/health-personal-care.jsp?CN=Department:Health%20%26%20Personal%20Care&cc=for_thehome-TN2.0-S-personalcare",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1057056672102",
+                        "name": "Irons & Clothing Care",
+                        "seoURL": "/catalog/irons-clothing-care-storage-cleaning.jsp?CN=Category:Irons%20%26%20Clothing%20Care+Department:Storage%20%26%20Cleaning&cc=for_thehome-TN2.0-S-IronsClothingCare",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1130228665563",
+                        "name": "Electronics",
+                        "seoURL": "/catalog/electronics.jsp?CN=Department:Electronics&cc=for_thehome-TN2.0-S-Electronics",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1265919713152",
+                        "name": "Luggage",
+                        "seoURL": "/catalog/luggage-suitcases.jsp?CN=Department:Luggage%20%26%20Suitcases&cc=for_thehome-TN2.0-S-Luggage",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1748953937734",
+                        "name": "Home Closeouts",
+                        "seoURL": "/catalog/sale.jsp?CN=Promotions:Sale+Activity:For%20the%20Home+Assortment:Closeout%20Deals&cc=for_thehome-TN2.0-S-HomeCloseouts",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1998449013505",
+                        "name": "Limited Time Brands",
+                        "seoURL": "/catalog/for-the-home-discovery.jsp?CN=Activity:For%20the%20Home+PersonaTheme:Discovery&cc=for_thehome-TN2.0-S-discovery",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1910945403680",
+                        "name": "Diversity, Equity & Inclusion",
+                        "seoURL": "/feature/diversityandinclusion.jsp?=for_thehome-TN2.0-S-diversityinclusion",
+                        "type": "Internal-link"
+                    }
+                ]
+            },
+            {
+                "ID": "1747990155096",
+                "name": "Women",
+                "seoURL": "/sale-event/womens-clothing.jsp?cc=wms-TN1.0-S-women",
+                "type": "Category",
+                "categories": [
+                    {
+                        "ID": "1751169496254",
+                        "name": "New @ Kohl's",
+                        "seoURL": "/catalog/catalog.jsp?CN=Assortment:Womens%20Contemporary%20Brands&BL=y&cc=wms-TN2.0-S-contemporarybrands",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1648825407665",
+                        "name": "Women's Clothing",
+                        "seoURL": "/catalog/womens-clothing.jsp?CN=Gender:Womens+Department:Clothing&cc=wms-TN2.0-S-womensclothing",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1892815633386",
+                        "name": "Juniors' Clothing",
+                        "seoURL": "/catalog/juniors-clothing.jsp?CN=Gender:Juniors+Department:Clothing&cc=wms-TN2.0-S-juniorsclothing",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1141874478443",
+                        "name": "Plus Size",
+                        "seoURL": "/catalog/womens-plus-clothing.jsp?CN=Gender:Womens+SizeRange:Plus+Department:Clothing&cc=wms-TN2.0-S-plusclothing",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1676220857564",
+                        "name": "Petites",
+                        "seoURL": "/catalog/womens-petite-clothing.jsp?CN=Gender:Womens+SizeRange:Petite+Department:Clothing&cc=wms-TN2.0-S-petiteclothing",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1157348885515",
+                        "name": "Maternity",
+                        "seoURL": "/catalog/womens-maternity-clothing.jsp?CN=Gender:Womens+Feature:Maternity+Department:Clothing&cc=wms-TN2.0-S-maternity",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1883150801312",
+                        "name": "Shop Women's Deals",
+                        "seoURL": "/catalog/womens-clothing.jsp?CN=Gender:Womens+Department:Shoes+Department:Accessories+Department:Clothing+Assortment:Lowest%20Prices%20of%20the%20Season&cc=wms-TN2.0-S-octlps",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1656908206470",
+                        "name": "Up to 50% off Active Brands",
+                        "seoURL": "/catalog/sale-womens-flx.jsp?CN=Promotions:Clearance+Promotions:Sale+Gender:Womens+Brand:adidas+Brand:Nike+Brand:Under%20Armour+Brand:Champion+Brand:FLX+Brand:Tek%20Gear&BL=y&cc=wms-TN2.0-S-activedeals-50off",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1091737645142",
+                        "name": "40% off Women's Levi's Clothing, Select Styles.",
+                        "seoURL": "/catalog/sale-womens-levis-clothing.jsp?CN=Promotions:Sale+Gender:Womens+Brand:Levi%27s+Department:Clothing+MerchPercentOff:40%25%20off&BL=y&cc=wms-TN2.0-S-levisdeals",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1174790229575",
+                        "name": "CLEARANCE",
+                        "seoURL": "/catalog/clearance-womens.jsp?CN=Promotions:Clearance+Gender:Womens&cc=wms-TN2.0-S-clearance",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1487096089806",
+                        "name": "Shoes",
+                        "seoURL": "/catalog/womens-shoes.jsp?CN=Gender:Womens+Department:Shoes&cc=wms-TN2.0-S-shoes",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1021788113364",
+                        "name": "Jewelry",
+                        "seoURL": "/catalog/womens-watches.jsp?CN=Gender:Womens+Department:Jewelry+Department:Watches&BL=y&cc=wms-TN2.0-S-jewelry",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1622387452555",
+                        "name": "Handbags & Accessories",
+                        "seoURL": "/catalog/womens-accessories.jsp?CN=Gender:Womens+Department:Accessories&cc=wms-TN2.0-S-handbagsaccessories",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1152288538436",
+                        "name": "Tops",
+                        "seoURL": "/catalog/womens-tops-clothing.jsp?CN=Gender:Womens+Category:Tops+Department:Clothing&cc=wms-TN2.0-S-topssweaters",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1911397181916",
+                                "name": "Sweaters & Cardigans",
+                                "seoURL": "/catalog/womens-sweaters-tops-clothing.jsp?CN=Gender:Womens+Product:Sweaters+Category:Tops+Department:Clothing&cc=wms-TN3.0-S-sweaterscardigans",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1913445617886",
+                                "name": "Shirts & Blouses",
+                                "seoURL": "/catalog/womens-shirts-blouses-tops-clothing.jsp?CN=Gender:Womens+Product:Shirts%20%26%20Blouses+Category:Tops+Department:Clothing&cc=wms-TN3.0-S-shirtsblouses",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1473305300795",
+                                "name": "Graphic Tees",
+                                "seoURL": "/catalog/womens-graphic-tees-tops-clothing.jsp?CN=Gender:Womens+Silhouette:Graphic%20Tees+Category:Tops+Department:Clothing&cc=wms-TN3.0-S-graphictees",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1955541144004",
+                                "name": "Hoodies & Sweatshirts",
+                                "seoURL": "/catalog/womens-hoodies-sweatshirts-tops-clothing.jsp?CN=Gender:Womens+Silhouette:Hoodies%20%26%20Sweatshirts+Category:Tops+Department:Clothing&cc=wms-TN3.0-S-hoodiessweatshirts",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1220871235922",
+                                "name": "Tees & Tank Tops",
+                                "seoURL": "/catalog/womens-tshirts-tops-clothing.jsp?CN=Gender:Womens+Silhouette:T-Shirts+Category:Tops+Department:Clothing&cc=wms-TN3.0-S-teestanks",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1749582915189",
+                        "name": "Coats & Jackets",
+                        "seoURL": "/catalog/womens-outerwear-clothing.jsp?CN=Gender:Womens+Category:Outerwear+Department:Clothing&cc=wms-TN2.0-S-womensouterwear",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1448998518492",
+                                "name": "Winter Coats",
+                                "seoURL": "/catalog/womens-winter-coats-jackets-outerwear-clothing.jsp?CN=Gender:Womens+Occasion:Winter+Product:Coats%20%26%20Jackets+Category:Outerwear+Department:Clothing&cc=wms-TN3.0-S-wintercoats",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1322039154494",
+                                "name": "Fleece Jackets",
+                                "seoURL": "/catalog/womens-fleece-outerwear-clothing.jsp?CN=Gender:Womens+Material:Fleece+Category:Outerwear+Department:Clothing&cc=wms-TN3.0-S-fleecejackets",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1258678387143",
+                                "name": "Wind & Rain Jackets",
+                                "seoURL": "/catalog/womens-raincoat-outerwear-clothing.jsp?CN=Gender:Womens+Silhouette:Raincoat+Category:Outerwear+Department:Clothing&cc=wms-TN3.0-S-windandraincoats",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1686585726157",
+                        "name": "Bottoms",
+                        "seoURL": "/catalog/womens-bottoms-clothing.jsp?CN=Gender:Womens+Category:Bottoms+Department:Clothing&cc=wms-TN2.0-S-bottoms",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1197507452765",
+                                "name": "Pants",
+                                "seoURL": "/catalog/womens-pants-bottoms-clothing.jsp?CN=Gender:Womens+Product:Pants+Category:Bottoms+Department:Clothing&cc=wms-TN3.0-S-pants",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1923303107568",
+                                "name": "Jeans",
+                                "seoURL": "/catalog/womens-jeans-bottoms-clothing.jsp?CN=Gender:Womens+Product:Jeans+Category:Bottoms+Department:Clothing&cc=wms-TN3.0-S-jeans",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1478921341498",
+                                "name": "Leggings",
+                                "seoURL": "/catalog/womens-leggings-bottoms-clothing.jsp?CN=Gender:Womens+LegOpening:Leggings+Category:Bottoms+Department:Clothing&cc=wms-TN3.0-S-leggings",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1718723946254",
+                                "name": "Cargo Bottoms",
+                                "seoURL": "/catalog/womens-cargo-bottoms-clothing.jsp?CN=Gender:Womens+Silhouette:Cargo+Category:Bottoms+Department:Clothing&cc=wms-TN3.0-S-cargobottoms",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1410596320085",
+                                "name": "Crops & Capris",
+                                "seoURL": "/catalog/womens-crops-capris-bottoms-clothing.jsp?CN=Gender:Womens+Product:Crops%20%26%20Capris+Category:Bottoms+Department:Clothing&cc=wms-TN3.0-S-cropscapris",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1805829550872",
+                                "name": "Skirts & Skorts",
+                                "seoURL": "/catalog/womens-skirts-skorts-bottoms-clothing.jsp?CN=Gender:Womens+Product:Skirts%20%26%20Skorts+Category:Bottoms+Department:Clothing&cc=wms-TN3.0-S-skirtsskorts",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1703556598184",
+                        "name": "Dresses & Jumpsuits",
+                        "seoURL": "/catalog/womens-dresses-clothing.jsp?CN=Gender:Womens+Category:Dresses+Department:Clothing&cc=wms-TN2.0-S-dressesjumpsuits",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1994366434665",
+                        "name": "Activewear",
+                        "seoURL": "/catalog/womens-active-clothing.jsp?CN=Gender:Womens+Occasion:Active+Department:Clothing&cc=wms-TN2.0-S-activewear",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1554818054738",
+                                "name": "Loungewear",
+                                "seoURL": "/catalog/womens-athleisure-clothing.jsp?CN=Gender:Womens+Feature:Athleisure+Department:Clothing&cc=wms-TN3.0-S-loungewear",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1770503680642",
+                                "name": "Active Fleece",
+                                "seoURL": "/catalog/womens-active-fleece-clothing.jsp?CN=Gender:Womens+Occasion:Active+Material:Fleece+Department:Clothing&cc=wms-TN3.0-S-activefleece",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1779620865801",
+                                "name": "Active Matching Sets",
+                                "seoURL": "/catalog/catalog.jsp?CN=Assortment:Womens%20Active%20Matching%20sets&cc=wms-TN2.0-S-activeoutfits",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1877507266586",
+                        "name": "Pajamas & Robes",
+                        "seoURL": "/catalog/womens-sleepwear-clothing.jsp?CN=Gender:Womens+Category:Sleepwear+Department:Clothing&cc=wms-TN2.0-S-pajamasrobes",
+                        "type": "Catalog",
+                        "categories": []
+                    },
+                    {
+                        "ID": "1335766179596",
+                        "name": "Intimates",
+                        "seoURL": "/catalog/womens-underwear-clothing.jsp?CN=Gender:Womens+Category:Underwear+Department:Clothing&cc=wms-TN2.0-S-intimates",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1036567037774",
+                                "name": "Bras",
+                                "seoURL": "/catalog/womens-bras-underwear-clothing.jsp?CN=Gender:Womens+Product:Bras+Category:Underwear+Department:Clothing&cc=wms-TN3.0-S-bras",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1408147008903",
+                                "name": "Panties",
+                                "seoURL": "/catalog/womens-panties-underwear-clothing.jsp?CN=Gender:Womens+Product:Panties+Category:Underwear+Department:Clothing&cc=wms-TN3.0-S-panties",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1418278502790",
+                                "name": "Lingerie",
+                                "seoURL": "/catalog/lingerie-underwear-clothing.jsp?CN=Product:Lingerie+Category:Underwear+Department:Clothing&cc=wms-TN3.0-S-lingerie",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1348720019693",
+                                "name": "Shapewear",
+                                "seoURL": "/catalog/womens-shapewear-underwear-clothing.jsp?CN=Gender:Womens+Feature:Shapewear+Category:Underwear+Department:Clothing&cc=wms-TN3.0-S-shapewear",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1521711668505",
+                        "name": "Swimwear",
+                        "seoURL": "/catalog/womens-swimsuits-clothing.jsp?CN=Gender:Womens+Category:Swimsuits+Department:Clothing&cc=wms-TN2.0-S-swimwear",
+                        "type": "Catalog",
+                        "categories": []
+                    },
+                    {
+                        "ID": "1701240591811",
+                        "name": "Beauty",
+                        "seoURL": "/catalog/sephora.jsp?CN=Partnership:Sephora&cc=wms-TN2.0-S-beauty",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1434244973444",
+                        "name": "Sports Fan",
+                        "seoURL": "/catalog/sports-fan.jsp?CN=Occasion:Sports%20Fan&cc=wms-TN2.0-S-sportsfan",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1746504185641",
+                                "name": "NFL",
+                                "seoURL": "/catalog/womens-nfl-sports-fan.jsp?CN=Gender:Womens+SportsLeague:NFL+Occasion:Sports%20Fan&cc=wms-TN3.0-S-sportsfan-nfl",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1479028386820",
+                                "name": "NBA",
+                                "seoURL": "/catalog/womens-nba-sports-fan.jsp?CN=Gender:Womens+SportsLeague:NBA+Occasion:Sports%20Fan&cc=wms-TN3.0-S-sportsfan-nba",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1611682597093",
+                                "name": "MLB",
+                                "seoURL": "/catalog/womens-mlb-sports-fan.jsp?CN=Gender:Womens+SportsLeague:MLB+Occasion:Sports%20Fan&cc=wms-TN3.0-S-sportsfanmlb",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1020950878435",
+                                "name": "NCAA",
+                                "seoURL": "/catalog/womens-ncaa-sports-fan.jsp?CN=Gender:Womens+SportsLeague:NCAA+Occasion:Sports%20Fan&cc=wms-TN3.0-S-sportsfan-ncaa",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1327846334741",
+                        "name": "Limited Time Brands",
+                        "seoURL": "/catalog/juniors-discovery.jsp?CN=Gender:Womens+Gender:Juniors+PersonaTheme:Discovery&BL=y&cc=wms-TN2.0-S-discover",
+                        "type": "Catalog",
+                        "categories": []
+                    },
+                    {
+                        "ID": "1402366935686",
+                        "name": "Shop The Social Edit",
+                        "seoURL": "/catalog.jsp?CN=Assortment:Social%20Edit&BL=ycc=wms-TN2.0-S-socialedit",
+                        "type": "External"
+                    },
+                    {
+                        "ID": "1161480854665",
+                        "name": "Shop by Brand",
+                        "seoURL": "/catalog/womens-clothing.jsp?CN=Gender:Womens+Department:Clothing+Seller:Kohls&BL=y&cc=wms-TN2.0-S-womensbrands",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1498962309911",
+                        "name": "New Arrivals",
+                        "seoURL": "/catalog/womens-premise-clothing.jsp?CN=Gender:Womens+Brand:Croft%20%26%20Barrow+Brand:DRAPER%20JAMES%20RSVP+Brand:LC%20Lauren%20Conrad+Brand:INTEMPO+Brand:Nine%20West+Brand:Simply%20Vera%20Vera%20Wang+Brand:Sonoma%20Goods%20For%20Life+Brand:SO+Brand:Truth+Brand:For%20The%20Republic+Brand:Industry+Brand:philosophy+Brand:Chelsea%20%26%20Theodore+Brand:Catherine%20Malandrino+Brand:Carmen%20Marc%20Valvo+Brand:T%20Tahari+Brand:Elie%20Elie%20Tahari+Brand:Magaschoni+Brand:Premise+Department:Clothing&BL=y&S=2&cc=wms-TN2.0-S-newarrivals",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1649819667500",
+                        "name": "Wear to Work",
+                        "seoURL": "/catalog/womens-career.jsp?CN=Gender:Womens+Occasion:Career&cc=wms-TN2.0-S-weartowork",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1516595948199",
+                        "name": "The Essentials Shop",
+                        "seoURL": "/catalog.jsp?CN=Assortment:Womens%20Core%20Basics&cc=wms-TN2.0-S-essentialsshop",
+                        "type": "External"
+                    },
+                    {
+                        "ID": "1393045600541",
+                        "name": "Wedding Shop",
+                        "seoURL": "/catalog/wedding.jsp?CN=Occasion:Wedding&cc=wms-TN2.0-S-weddingshop",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1420650618528",
+                        "name": "Halloween Shop",
+                        "seoURL": "/catalog/halloween.jsp?CN=Occasion:Halloween&cc=wms-TN2.0-S-halloween",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1621969965945",
+                        "name": "Fall Shop",
+                        "seoURL": "/catalog/womens-fall.jsp?CN=Gender:Womens+Occasion:Fall&cc=wms-TN2.0-S-fallshop",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1139417494006",
+                        "name": "Veterans Day",
+                        "seoURL": "/catalog.jsp?CN=Assortment:Veterans%20Day&BL=y&cc=wms-TN2.0-S-veteransday",
+                        "type": "External"
+                    },
+                    {
+                        "ID": "1424886738301",
+                        "name": "Shop by Outfit",
+                        "seoURL": "/sale-event/womens-clothing.jsp?cc=wms-TN2.0-S-outfitbar",
+                        "type": "Category"
+                    },
+                    {
+                        "ID": "1622970208420",
+                        "name": "Holiday Shop",
+                        "seoURL": null,
+                        "type": "Header",
+                        "categories": [
+                            {
+                                "ID": "1522449563666",
+                                "name": "Gifts for Her",
+                                "seoURL": "/catalog/gift-ideas-holiday-for-women.jsp?CN=Feature:Gift%20Ideas+Occasion:Holiday+PersonaTheme:for%20Women&cc=wms-TN3.0-S-giftsforher",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1089639132612",
+                                "name": "Party Ready",
+                                "seoURL": "/catalog.jsp?CN=Assortment:Womens%202023%20Holiday%20Party%20Styles&BL=y&cc=wms-TN3.0-S-partyready",
+                                "type": "External"
+                            },
+                            {
+                                "ID": "1746087814093",
+                                "name": "Cozy Clothing",
+                                "seoURL": "/catalog/womens-cozy.jsp?CN=Gender:Womens+Trend:Cozy&cc=wms-TN3.0-S-cozyclothing",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1159424503982",
+                                "name": "Ugly Christmas",
+                                "seoURL": "/catalog/ugly-christmas-sweaters.jsp?CN=Trend:Ugly%20Christmas%20Sweaters&cc=wms-TN3.0-S-uglychristmas",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1100001935231",
+                                "name": "Jammies for your Family",
+                                "seoURL": "/catalog/family-pajamas.jsp?CN=Trend:Family%20Pajamas&cc=wms-TN3.0-S-jfyf",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1965326684853",
+                                "name": "Stocking Stuffers",
+                                "seoURL": "/catalog/stocking-stuffers-for-women.jsp?CN=Trend:Stocking%20Stuffers+PersonaTheme:for%20Women&cc=wms-TN3.0-S-stockingstuffers",
+                                "type": "Catalog"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "ID": "1831764890130",
+                "name": "Men",
+                "seoURL": "/sale-event/mens-clothing.jsp?cc=mens-TN1.0-S-men",
+                "type": "Category",
+                "categories": [
+                    {
+                        "ID": "1494638331200",
+                        "name": "Men's Clothing",
+                        "seoURL": "/catalog/mens-clothing.jsp?CN=Gender:Mens+Department:Clothing&cc=mens-TN2.0-S-mensclothing",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1699028048289",
+                        "name": "Big & Tall Clothing",
+                        "seoURL": "/catalog/mens-big-tall-clothing.jsp?CN=Gender:Mens+SizeRange:Big%20%26%20Tall+Department:Clothing&cc=mens-TN2.0-S-btshopallclothing",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1638030406074",
+                        "name": "Shop Men's Deals",
+                        "seoURL": "/catalog/mens.jsp?CN=Gender:Mens+Assortment:Lowest%20Prices%20of%20the%20Season&BL=y&cc=mens-TN2.0-S-octlps",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1306786862396",
+                        "name": "Up to 50% off Active Brands. Select Styles",
+                        "seoURL": "/catalog/sale-mens-flx.jsp?CN=Promotions:Clearance+Promotions:Sale+Gender:Mens+Brand:adidas+Brand:Nike+Brand:Under%20Armour+Brand:Champion+Brand:FLX+Brand:Tek%20Gear&BL=y&cc=mens-TN2.0-S-upto50activedeals",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1156004704265",
+                        "name": "Starting at 39.99 Men\u2019s Levi\u2019s jeans. Select Styles",
+                        "seoURL": "/catalog/sale-mens-levis-clothing.jsp?CN=Promotions:Sale+Gender:Mens+Brand:Levi%27s+Department:Clothing+MerchPricing:%2439.99+MerchPricing:%2449.99&BL=y &cc=mens-TN2.0-S-menslevisexception",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1549194534745",
+                        "name": " CLEARANCE",
+                        "seoURL": "/catalog/mens-clearance.jsp?CN=Gender:Mens+Promotions:Clearance&cc=mens-TN2.0-S-clearance",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1555055726233",
+                        "name": "Men's Coats & Jackets",
+                        "seoURL": "/catalog/mens-outerwear-clothing.jsp?CN=Gender:Mens+Category:Outerwear+Department:Clothing&cc=mens-TN2.0-S-outerwear",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1847243883468",
+                        "name": "Shop by Brand",
+                        "seoURL": "/catalog/mens-clothing.jsp?CN=Gender:Mens+Department:Clothing+Seller:Kohls&cc=mens-TN2.0-S-shopallbrands",
+                        "type": "Catalog",
+                        "categories": []
+                    },
+                    {
+                        "ID": "1666580787167",
+                        "name": "Sports Fan Shop",
+                        "seoURL": "/catalog/sports-fan.jsp?CN=Occasion:Sports%20Fan&cc=mens-TN2.0-S-sportsfanshop",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1324065596324",
+                                "name": "MLB",
+                                "seoURL": "/catalog/mlb.jsp?CN=SportsLeague:MLB&cc=mens-TN3.0-S-MLB",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1457411179014",
+                                "name": "NBA",
+                                "seoURL": "/catalog/nba.jsp?CN=SportsLeague:NBA&cc=mens-TN3.0-S-NBA",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1338795630882",
+                                "name": "NCAA",
+                                "seoURL": "/catalog/ncaa.jsp?CN=SportsLeague:NCAA&cc=mens-TN3.0-S-NCAA",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1655929137012",
+                                "name": "NFL",
+                                "seoURL": "/catalog/nfl.jsp?CN=SportsLeague:NFL&cc=mens-TN3.0-S-NFL",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1895502313578",
+                        "name": "Shop by Outfit",
+                        "seoURL": "/catalog/mens-clothing.jsp?CN=Gender:Mens+Department:Clothing+SellerType:Kohls&=mens-TN2.0-S-Outfit",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1250980461544",
+                        "name": "Get Inspired",
+                        "seoURL": null,
+                        "type": "Header",
+                        "categories": [
+                            {
+                                "ID": "1605636563982",
+                                "name": "Holiday Gift Shop",
+                                "seoURL": "/catalog/gift-ideas-holiday-for-men.jsp?CN=Feature:Gift%20Ideas+Occasion:Holiday+PersonaTheme:for%20Men&cc=mens-TN3.0-S-holidaygiftshop",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1973011664430",
+                                "name": "Outdoor Shop",
+                                "seoURL": "/catalog/mens-outdoor-clothing.jsp?CN=Gender:Mens+Activity:Outdoor+Department:Clothing&cc=mens-TN3.0-S-outdoorshop",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1953075283674",
+                                "name": "Business Casual",
+                                "seoURL": "/catalog/mens-career.jsp?CN=Gender:Mens+Occasion:Career&cc=mens-TN3.0-S-businesscasual",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1924714837642",
+                                "name": "Golf Shop",
+                                "seoURL": "/catalog/mens-golf.jsp?CN=Gender:Mens+Activity:Golf&cc=mens-TN3.0-S-golfshop",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1064319666560",
+                                "name": "Workwear",
+                                "seoURL": "catalog/mens-work-safety-clothing.jsp?CN=Gender:Mens+Occasion:Work%20%26%20Safety+Department:Clothing&cc=mens-TN3.0-S-Workwear",
+                                "type": "External"
+                            },
+                            {
+                                "ID": "1578509149201",
+                                "name": "Sustainability Shop",
+                                "seoURL": " /catalog/mens-certified-nontoxic.jsp?CN=Gender:Mens+Feature:Sustainably%20Sourced+Feature:Organic+Feature:Water%20Conscious+Feature:Certified%20Nontoxic&cc=mens-TN3.0-S-trends-Sustainable",
+                                "type": "External"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1221087302688",
+                        "name": "Men's Activewear",
+                        "seoURL": "/catalog/mens-active-clothing.jsp?CN=Gender:Mens+Occasion:Active+Department:Clothing&cc=mens-TN2.0-S-mensactive",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1816067430465",
+                                "name": "adidas",
+                                "seoURL": "/catalog/mens-adidas.jsp?CN=Gender:Mens+Brand:adidas&cc=mens-TN3.0-S-adidas",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1764205658165",
+                                "name": "Champion",
+                                "seoURL": "/catalog/mens-champion.jsp?CN=Gender:Mens+Brand:Champion&cc=mens-TN3.0-S-Champion",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1077986203942",
+                                "name": "Nike",
+                                "seoURL": "/catalog/mens-nike.jsp?CN=Gender:Mens+Brand:Nike&cc=mens-TN3.0-S-Nike",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1992751819749",
+                                "name": "Tek Gear",
+                                "seoURL": "/catalog/mens-tek-gear.jsp?CN=Gender:Mens+Brand:Tek%20Gear&cc=mens-TN3.0-S-TekGear",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1107673590784",
+                                "name": "Under Armour",
+                                "seoURL": "/catalog/mens-under-armour.jsp?CN=Gender:Mens+Brand:Under%20Armour&cc=mens-TN3.0-S-UA",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1310974050055",
+                        "name": "Men's Tops",
+                        "seoURL": "/catalog/mens-tops-clothing.jsp?CN=Gender:Mens+Category:Tops+Department:Clothing&cc=mens-TN2.0-S-menstops",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1323760073074",
+                                "name": "Casual Button-Down Shirts",
+                                "seoURL": "/catalog/mens-button-down-shirts-tops-clothing.jsp?CN=Gender:Mens+Silhouette:Button-Down%20Shirts+Category:Tops+Department:Clothing&cc=mens-TN3.0-S-buttondownshirts",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1155988638085",
+                                "name": "Dress Shirts",
+                                "seoURL": "/catalog/mens-dress-shirts-tops-clothing.jsp?CN=Gender:Mens+Silhouette:Dress%20Shirts+Category:Tops+Department:Clothing&cc=mens-TN3.0-S-dressshirts",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1038640942685",
+                                "name": "Graphic Tees",
+                                "seoURL": "/catalog/mens-graphic-tees-tops-clothing.jsp?CN=Gender:Mens+Silhouette:Graphic%20Tees+Category:Tops+Department:Clothing&cc=mens-TN3.0-S-graphictees",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1325907900510",
+                                "name": "Hoodies & Sweatshirts",
+                                "seoURL": "/catalog/mens-hoodies-sweatshirts-tops-clothing.jsp?CN=Gender:Mens+Silhouette:Hoodies%20%26%20Sweatshirts+Category:Tops+Department:Clothing&cc=mens-TN3.0-S-hoodiessweatshirts",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1711034957835",
+                                "name": "Polos",
+                                "seoURL": "/catalog/mens-polos-tops-clothing.jsp?CN=Gender:Mens+Silhouette:Polos+Category:Tops+Department:Clothing&cc=mens-TN3.0-S-polos",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1601964982598",
+                                "name": "Shirts & Tees",
+                                "seoURL": "/catalog/mens-tops-tees-tops-clothing.jsp?CN=Gender:Mens+Product:Tops%20%26%20Tees+Category:Tops+Department:Clothing&cc=mens-TN3.0-S-shirtstees",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1154725867279",
+                                "name": "Sweaters",
+                                "seoURL": "/catalog/mens-tops-clothing.jsp?CN=Gender:Mens+Category:Tops+Department:Clothing+Product:Sweaters&cc=mens-TN3.0-S-sweaters",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1376199818162",
+                                "name": "Tank Tops",
+                                "seoURL": "/catalog/mens-tank-tops-tops-clothing.jsp?CN=Gender:Mens+Silhouette:Tank%20Tops+Category:Tops+Department:Clothing&cc=mens-TN3.0-S-tanktops",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1483033311745",
+                        "name": "Men's Bottoms",
+                        "seoURL": "/catalog/mens-bottoms-clothing.jsp?CN=Gender:Mens+Category:Bottoms+Department:Clothing&cc=mens-TN2.0-S-mensbottoms",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1418829834098",
+                                "name": "Casual Pants",
+                                "seoURL": "/catalog/mens-casual-pants-bottoms-clothing.jsp?CN=Gender:Mens+Occasion:Casual+Product:Pants+Category:Bottoms+Department:Clothing&cc=mens-TN3.0-S-casualpants",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1315055784716",
+                                "name": "Dress Pants",
+                                "seoURL": "/catalog/mens-dress-pants-bottoms-clothing.jsp?CN=Gender:Mens+Occasion:Dress+Product:Pants+Category:Bottoms+Department:Clothing&cc=mens-TN3.0-S-dresspants",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1429397941100",
+                                "name": "Jeans",
+                                "seoURL": "/catalog/mens-jeans-bottoms-clothing.jsp?CN=Gender:Mens+Product:Jeans+Category:Bottoms+Department:Clothing&cc=mens-TN3.0-S-jeans",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1323812699769",
+                                "name": "Joggers",
+                                "seoURL": "/catalog/mens-jogger-pants-bottoms-clothing.jsp?CN=Gender:Mens+LegOpening:Jogger+Product:Pants+Category:Bottoms+Department:Clothing&cc=mens-TN3.0-S-joggers",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1688807027771",
+                                "name": "Shorts",
+                                "seoURL": "/catalog/mens-shorts-bottoms-clothing.jsp?CN=Gender:Mens+Product:Shorts+Category:Bottoms+Department:Clothing&cc=mens-TN3.0-S-shorts",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1815745263742",
+                        "name": "Men's Dress Clothing",
+                        "seoURL": "/catalog/mens-dress-clothing.jsp?CN=Gender:Mens+Occasion:Dress+Department:Clothing&cc=mens-TN2.0-S-dressclothesshop",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1504192496861",
+                                "name": "Blazers & Sport Coats ",
+                                "seoURL": "/catalog/mens-blazers-suit-jackets-tops-clothing.jsp?CN=Gender:Mens+Product:Blazers%20%26%20Suit%20Jackets+Category:Tops+Department:Clothing&cc=mens-TN3.0-S-blazerssportcoats",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1506608192043",
+                                "name": "Suits ",
+                                "seoURL": "/catalog/mens-dress-suits-clothing.jsp?CN=Gender:Mens+Occasion:Dress+Category:Suits+Department:Clothing&cc=mens-TN3.0-S-suits",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1912605328664",
+                        "name": "Men's Underwear",
+                        "seoURL": "/catalog/mens-socks-hosiery-clothing.jsp?CN=Gender:Mens+Category:Socks%20%26%20Hosiery+Category:Underwear+Department:Clothing&cc=mens-TN2.0-S-mensbasics",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1155155718797",
+                                "name": "Boxers & Briefs",
+                                "seoURL": "/catalog/mens-boxers-briefs-underwear-clothing.jsp?CN=Gender:Mens+Product:Boxers%20%26%20Briefs+Category:Underwear+Department:Clothing&cc=mens-TN3.0-S-underwear",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1995421958759",
+                                "name": "Socks",
+                                "seoURL": "/catalog/mens-socks-hosiery-clothing.jsp?CN=Gender:Mens+Category:Socks%20%26%20Hosiery+Department:Clothing&cc=mens-TN3.0-S-socks",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1339468473921",
+                                "name": "Undershirts",
+                                "seoURL": "/catalog/mens-undershirts-underwear-clothing.jsp?CN=Gender:Mens+Product:Undershirts+Category:Underwear+Department:Clothing&cc=mens-TN3.0-S-undershirts",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1170552019396",
+                                "name": "Thermal Underwear",
+                                "seoURL": "/catalog/mens-thermal-underwear-underwear-clothing.jsp?CN=Gender:Mens+Product:Thermal%20Underwear+Category:Underwear+Department:Clothing&cc=mens-TN3.0-S-thermalunderwear",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1809024446310",
+                        "name": "Pajamas & Robes",
+                        "seoURL": "/catalog/mens-sleepwear-clothing.jsp?CN=Gender:Mens+Category:Sleepwear+Department:Clothing&cc=mens-TN2.0-S-pajamasrobes",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1174117556091",
+                                "name": "Jammies for your Family",
+                                "seoURL": "/catalog/family-pajamas.jsp?CN=Trend:Family%20Pajamas&cc=mens-TN3.0-S-JFYF",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1450592076535",
+                        "name": "Men's Swimwear",
+                        "seoURL": "/catalog/mens-swimsuits-clothing.jsp?CN=Gender:Mens+Category:Swimsuits+Department:Clothing&cc=mens-TN2.0-S-swimwear",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1580339050467",
+                        "name": "Men's Shoes",
+                        "seoURL": "/catalog/mens-shoes.jsp?CN=Gender:Mens+Department:Shoes&cc=mens-TN2.0-S-shoes",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1002774715833",
+                        "name": "Men's Accessories",
+                        "seoURL": "/catalog/mens-accessories.jsp?CN=Gender:Mens+Department:Accessories&cc=mens-TN2.0-S-accessories",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1375455570022",
+                                "name": "Jewelry & Watches",
+                                "seoURL": "/catalog/mens-jewelry.jsp?CN=Gender:Mens+Department:Jewelry&cc=mens-TN3.0-S-JewelryWatches",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1043594491169",
+                                "name": "Belts",
+                                "seoURL": "/catalog/mens-belts-accessories.jsp?CN=Gender:Mens+Product:Belts+Department:Accessories&cc=mens-TN3.0-S-Belts",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1664384931241",
+                        "name": "Men's Cologne & Grooming",
+                        "seoURL": "/catalog/for-men-health-personal-care.jsp?CN=PersonaTheme:for%20Men+Department:Beauty+Department:Health%20%26%20Personal%20Care&cc=mens-TN2.0-S-groomingshop",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1922583801091",
+                        "name": "Limited Time Brands",
+                        "seoURL": "/catalog/mens-discovery.jsp?CN=Gender:Mens+PersonaTheme:Discovery&cc=mens-TN2.0-S-discover",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1219936369685",
+                        "name": "Veteran's Day & More",
+                        "seoURL": "/feature/diversityandinclusion.jsp?=for_thehome-TN2.0-S-diversityinclusion&cc=mens-TN2.0-S-DEI",
+                        "type": "Internal-link"
+                    },
+                    {
+                        "ID": "1836500177669",
+                        "name": "Buy Online, Pick Up in Store",
+                        "seoURL": "/catalog/mens.jsp?CN=Gender:Mens+InStoreOnline:Pick%20Up%20in%20Store&BL=y&cc=mens-TN2.0-S-bopus",
+                        "type": "Catalog"
+                    }
+                ]
+            },
+            {
+                "ID": "1764833122055",
+                "name": "Kids, Baby & Toys",
+                "seoURL": "/sale-event/kids-clothing.jsp?cc=kids-TN1.0-S-kids",
+                "type": "Category",
+                "categories": [
+                    {
+                        "ID": "1853200184018",
+                        "name": "CLEARANCE",
+                        "seoURL": "/catalog/clearance-kids-clothing.jsp?CN=Promotions:Clearance+AgeAppropriate:Kids+Department:Clothing&cc=kids-TN2.0-S-clearance",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1516917871848",
+                                "name": "Clearance Toys",
+                                "seoURL": "/catalog/clearance-toys.jsp?CN=Promotions:Clearance+Department:Toys&cc=kids-TN3.0-S-toysclearance",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1350123477884",
+                        "name": "Shop All Toys",
+                        "seoURL": "/catalog/toys.jsp?CN=Department:Toys&cc=kids-TN2.0-S-shopalltoys",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1290347246100",
+                        "name": "Shop Kids' Deals",
+                        "seoURL": "/catalog/kids-shoes.jsp?CN=AgeAppropriate:Kids+Department:Clothing+Department:Accessories+Department:Shoes+Assortment:Lowest%20Prices%20of%20the%20Season&BL=y&cc=kids-TN2.0-S-kidssale",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1853632999040",
+                        "name": "Shop Baby Deals",
+                        "seoURL": "/catalog/kids-baby-clothing.jsp?CN=AgeAppropriate:Kids+ChildAgeRange:Baby+Department:Clothing+Assortment:Lowest%20Prices%20of%20the%20Season&BL=y&cc=kids-TN2.0-S-babysale",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1781274474510",
+                        "name": "30% off LEGO Sets. Select styles.",
+                        "seoURL": "/catalog/sale-lego-toys.jsp?CN=Promotions:Sale+Brand:LEGO+Department:Toys&cc=kids-TN2.0-S-bricktober",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1090710570196",
+                        "name": "Up to 50% off Active Brands",
+                        "seoURL": "/catalog/sale-flx-kids.jsp?CN=Promotions:Clearance+Promotions:Sale+Brand:adidas+Brand:Nike+Brand:Under%20Armour+Brand:Champion+Brand:Tek%20Gear+Brand:FLX+AgeAppropriate:Kids&BL=y&cc=kids-TN2.0-S-activedeals",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1334652163347",
+                        "name": "50% off Carter's Clothing. Select styles.",
+                        "seoURL": "/catalog/carters-kids.jsp?CN=Brand:Carter%27s+AgeAppropriate:Kids+Assortment:Lowest%20Prices%20of%20the%20Season&BL=y&cc=kids-TN2.0-S-lps-carters",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1018155885061",
+                        "name": "Holiday",
+                        "seoURL": null,
+                        "type": "Header",
+                        "categories": [
+                            {
+                                "ID": "1620381265215",
+                                "name": "Halloween",
+                                "seoURL": "/catalog/halloween-kids.jsp?CN=Occasion:Halloween+AgeAppropriate:Kids&cc=kids-TN3.0-S-halloween",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1698694181209",
+                                "name": "Gifts for Kids & Baby",
+                                "seoURL": "/catalog/gift-ideas-holiday-for-boys.jsp?CN=Feature:Gift%20Ideas+Occasion:Holiday+PersonaTheme:for%20Girls+PersonaTheme:for%20Boys&BL=y&cc=kids-TN3.0-S-kidsgiftideas",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1106719162330",
+                                "name": "Jammies for your Family",
+                                "seoURL": "/catalog/family-pajamas.jsp?CN=Trend:Family%20Pajamas&cc=kids-TN3.0-S-jfyf",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1716316779121",
+                        "name": "Get Inspired",
+                        "seoURL": null,
+                        "type": "Header",
+                        "categories": [
+                            {
+                                "ID": "1963967947671",
+                                "name": "The Tween Shop",
+                                "seoURL": "/catalog.jsp?CN=Assortment:Tween&cc=kids-TN3.0-S-thetweenshop",
+                                "type": "External"
+                            },
+                            {
+                                "ID": "1648389770627",
+                                "name": " NEW: Crayola x Kohl's",
+                                "seoURL": "/catalog.jsp?CN=Assortment:Crayola%20x%20kohls&cc=kids-TN2.0-S-getinspired-crayola",
+                                "type": "External"
+                            },
+                            {
+                                "ID": "1425877077476",
+                                "name": "Character Shop",
+                                "seoURL": "/catalog/character.jsp?CN=PersonaTheme:Character&cc=kids-TN3.0-S-charactershop",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1509980862696",
+                                "name": "Sustainable and Organic",
+                                "seoURL": "/catalog/organic-kids.jsp?CN=Feature:Sustainably%20Sourced+Feature:Organic+AgeAppropriate:Kids&BL=y&cc=kids-TN2.0-S-sustainable-and-organic",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1334915917968",
+                        "name": "Girls' Clothes",
+                        "seoURL": "/catalog/girls-kids-clothing.jsp?CN=Gender:Girls+AgeAppropriate:Kids+Department:Clothing&cc=kids-TN2.0-S-shopgirlsclothes",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1859332379185",
+                                "name": "Tween Girls",
+                                "seoURL": "/catalog/girls.jsp?CN=Gender:Girls+Assortment:Tween&cc=kids-TN3.0-S-tweengirl",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1556420497282",
+                                "name": "Big Girls (7-16)",
+                                "seoURL": "/catalog/girls-kids-big-kids-clothing.jsp?CN=Gender:Girls+AgeAppropriate:Kids+ChildAgeRange:Big%20Kids+Department:Clothing&cc=kids-TN3.0-S-biggirls",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1787677942039",
+                                "name": "Little Girls (4-6x)",
+                                "seoURL": "/catalog/girls-kids-little-kids-clothing.jsp?CN=Gender:Girls+AgeAppropriate:Kids+ChildAgeRange:Little%20Kids+Department:Clothing&cc=kids-TN3.0-S-littlegirls",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1997234890134",
+                                "name": "Toddler Girls (12M-5T)",
+                                "seoURL": "/catalog/girls-kids-toddlers-clothing.jsp?CN=Gender:Girls+AgeAppropriate:Kids+ChildAgeRange:Toddlers+Department:Clothing&cc=kids-TN3.0-S-toddlergirls",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1762589675158",
+                                "name": "Baby Girls (0-24M)",
+                                "seoURL": "/catalog/girls-kids-baby-clothing.jsp?CN=Gender:Girls+AgeAppropriate:Kids+ChildAgeRange:Baby+Department:Clothing&cc=kids-TN3.0-S-babygirls",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1777506558062",
+                        "name": "Boys' Clothes",
+                        "seoURL": "/catalog/boys-kids-clothing.jsp?CN=Gender:Boys+AgeAppropriate:Kids+Department:Clothing&cc=kids-TN2.0-S-shopboysclothes",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1622081780008",
+                                "name": "Tween Boys",
+                                "seoURL": "/catalog/boys.jsp?CN=Gender:Boys+Assortment:Tween&cc=kids-TN3.0-S-tweenboy",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1129925188486",
+                                "name": "Big Boys (8-20)",
+                                "seoURL": "/catalog/boys-kids-big-kids-clothing.jsp?CN=Gender:Boys+AgeAppropriate:Kids+ChildAgeRange:Big%20Kids+Department:Clothing&cc=kids-TN3.0-S-bigboys",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1386921058334",
+                                "name": "Little Boys (4-7)",
+                                "seoURL": "/catalog/boys-kids-little-kids-clothing.jsp?CN=Gender:Boys+AgeAppropriate:Kids+ChildAgeRange:Little%20Kids+Department:Clothing&cc=kids-TN3.0-S-littleboys",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1039236970786",
+                                "name": "Toddler Boys (12M-5T)",
+                                "seoURL": "/catalog/boys-kids-toddlers-clothing.jsp?CN=Gender:Boys+AgeAppropriate:Kids+ChildAgeRange:Toddlers+Department:Clothing&cc=kids-TN3.0-S-toddlerboys",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1840202256798",
+                                "name": "Baby Boys (0-12M)",
+                                "seoURL": "/catalog/boys-kids-baby-clothing.jsp?CN=Gender:Boys+AgeAppropriate:Kids+ChildAgeRange:Baby+Department:Clothing&cc=kids-TN3.0-S-babyboys",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1861454932651",
+                        "name": "Gender Neutral",
+                        "seoURL": "/catalog/neutral-kids.jsp?CN=Gender:Neutral+AgeAppropriate:Kids&cc=kids-TN2.0-S-genderneutral",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1503925005135",
+                        "name": "Adaptive Clothes",
+                        "seoURL": "/catalog/adaptive-kids.jsp?CN=Feature:Adaptive+AgeAppropriate:Kids&cc=kids-TN2.0-S-adaptive",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1311291105767",
+                        "name": "Shop By Category",
+                        "seoURL": "/catalog/kids-shoes.jsp?CN=AgeAppropriate:Kids+Department:Clothing+Department:Accessories+Department:Shoes&BL=y&cc=kids-TN2.0-S-shopbycategory",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1842674507734",
+                                "name": "Tops",
+                                "seoURL": "/catalog/kids-tops-clothing.jsp?CN=AgeAppropriate:Kids+Category:Tops+Department:Clothing&cc=kids-TN3.0-S-tops",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1568092744521",
+                                "name": "Bottoms",
+                                "seoURL": "/catalog/kids-bottoms-clothing.jsp?CN=AgeAppropriate:Kids+Category:Bottoms+Department:Clothing&cc=kids-TN3.0-S-bottoms",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1880903229576",
+                                "name": "Coats & Jackets",
+                                "seoURL": "/catalog/kids-coats-jackets-outerwear-clothing.jsp?CN=AgeAppropriate:Kids+Product:Coats%20%26%20Jackets+Category:Outerwear+Department:Clothing&cc=kids-TN3.0-S-coatsandjackets",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1994109826680",
+                                "name": "Dresses",
+                                "seoURL": "/catalog/girls-kids-dresses-clothing.jsp?CN=Gender:Girls+AgeAppropriate:Kids+Category:Dresses+Department:Clothing&cc=kids-TN3.0-S-dresses",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1210060395551",
+                                "name": "Clothing Sets",
+                                "seoURL": "/catalog/kids-clothing-sets-clothing.jsp?CN=AgeAppropriate:Kids+Category:Clothing%20Sets+Department:Clothing&cc=kids-TN3.0-S-clothingsets",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1087021044418",
+                                "name": "Baby One-Pieces & Bodysuits",
+                                "seoURL": "/catalog/bodysuits-kids-baby-onepiece-clothing.jsp?CN=Silhouette:Bodysuits+AgeAppropriate:Kids+ChildAgeRange:Baby+Category:One-Piece+Department:Clothing&cc=kids-TN3.0-S-babyonepieces",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1057651615252",
+                                "name": "Pajamas",
+                                "seoURL": "/catalog/kids-sleepwear-clothing.jsp?CN=AgeAppropriate:Kids+Category:Sleepwear+Department:Clothing&cc=kids-TN3.0-S-pajamas",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1088826786043",
+                                "name": "Dresswear",
+                                "seoURL": "/catalog/dressy-kids-clothing.jsp?CN=Occasion:Dressy+AgeAppropriate:Kids+Department:Clothing&cc=kids-TN3.0-S-dresswear",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1349125389357",
+                                "name": "Socks & Underwear",
+                                "seoURL": "/catalog/kids-underwear-clothing.jsp?CN=AgeAppropriate:Kids+Category:Socks%20%26%20Hosiery+Category:Underwear+Department:Clothing&BL=y&cc=kids-TN3.0-S-socksandunderwear",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1355664160873",
+                                "name": "Shoes",
+                                "seoURL": "/catalog/kids-shoes.jsp?CN=AgeAppropriate:Kids+Department:Shoes&cc=kids-TN3.0-S-shoes",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1139723987182",
+                                "name": "Accessories",
+                                "seoURL": "/catalog/kids-accessories.jsp?CN=AgeAppropriate:Kids+Department:Accessories&cc=kids-TN3.0-S-accessories",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1100299953280",
+                        "name": "Shop By Brand",
+                        "seoURL": "/catalog/kids.jsp?CN=AgeAppropriate:Kids+Seller:Kohls&BL=y&cc=kids-TN2.0-S-shopbybrandtotal",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1178137439982",
+                        "name": "Veteran's Day & More",
+                        "seoURL": "/feature/diversityandinclusion.jsp??cc=kids-TN2.0-S-DEI",
+                        "type": "Internal-link"
+                    },
+                    {
+                        "ID": "1146079278828",
+                        "name": "Toys",
+                        "seoURL": "/catalog/toys.jsp?CN=Department:Toys&cc=kids-TN2.0-S-toybox",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1061538895259",
+                                "name": "0-24 Months (Baby)",
+                                "seoURL": "/catalog/baby-toys.jsp?CN=AgeAppropriate:Baby+Department:Toys&cc=kids-TN3.0-S-toys0to24months",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1732915982482",
+                                "name": "2 Years (Toddler)",
+                                "seoURL": "/catalog.jsp?CN=AgeLevelAppropriateRange:2%20Years&BL=y&cc=kids-TN3.0-S-toys2years",
+                                "type": "External"
+                            },
+                            {
+                                "ID": "1798349015517",
+                                "name": "3-4 Years (Preschool)",
+                                "seoURL": "/catalog.jsp?CN=AgeLevelAppropriateRange:3-4%20Years&BL=y&cc=kids-TN3.0-S-toys3to4years",
+                                "type": "External"
+                            },
+                            {
+                                "ID": "1272569021590",
+                                "name": "5-7 Years",
+                                "seoURL": "/catalog.jsp?CN=AgeLevelAppropriateRange:5-7%20Years&BL=y&cc=kids-TN3.0-S-toys5to7years",
+                                "type": "External"
+                            },
+                            {
+                                "ID": "1292112288505",
+                                "name": "8-11 Years",
+                                "seoURL": "/catalog.jsp?CN=AgeLevelAppropriateRange:8-11%20Years&BL=y&cc=kids-TN3.0-S-toys8to11years",
+                                "type": "External"
+                            },
+                            {
+                                "ID": "1670111347623",
+                                "name": "12+ Years",
+                                "seoURL": "/catalog.jsp?CN=AgeLevelAppropriateRange:12-14%20Years&BL=y&cc=kids-TN3.0-S-toys12to14years",
+                                "type": "External"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1811659787154",
+                        "name": "Shop All Baby Gear",
+                        "seoURL": "/catalog/baby-gear.jsp?CN=Department:Baby%20Gear&cc=baby-TN2.0-S-shopbabygear",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1620299519636",
+                                "name": "Car Seats",
+                                "seoURL": "/catalog/car-seats-baby-gear.jsp?CN=Category:Car%20Seats+Department:Baby%20Gear&cc=kids-TN3.0-S-carseats",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1673130022206",
+                                "name": "Strollers & Travel Systems",
+                                "seoURL": "/catalog/strollers-baby-gear.jsp?CN=Category:Strollers+Department:Baby%20Gear&cc=kids-TN3.0-S-Strollers-&-Travel-Systems",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1459317601229",
+                                "name": "Gear & Activities",
+                                "seoURL": "/catalog/baby-activity-baby-gear.jsp?CN=Category:Baby%20Activity+Department:Baby%20Gear&cc=kids-TN3.0-S-gear&activities",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1822351281307",
+                                "name": "Nursery Furniture",
+                                "seoURL": "/catalog/nursery-furniture-baby-gear.jsp?CN=Category:Nursery%20Furniture+Department:Baby%20Gear&cc=kids-TN3.0-S-nursery-furniture",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1684974291876",
+                                "name": "Nursing & Feeding",
+                                "seoURL": "/catalog/food-preparation-baby-gear.jsp?CN=Category:Nursing+Category:Bottle%20Feeding+Category:Food%20Preparation+Department:Baby%20Gear&cc=kids-TN3.0-S-Nursing-&-Feeding",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1439661210003",
+                                "name": "Bath & Diapers",
+                                "seoURL": "/catalog/diapering-baby-gear.jsp?CN=Category:Bath+Category:Diapering+Department:Baby%20Gear&BL=y&cc=kids-TN3.0-S-bath&diapers",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1666995972528",
+                        "name": "Kohl's Cares",
+                        "seoURL": "/catalog/kohl-s-cares.jsp?CN=Feature:Kohl%27s%20Cares&cc=toys-TN2.0-S-kohlscares",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1442471707178",
+                        "name": "Limited Time Brands",
+                        "seoURL": "/catalog/kids-discovery.jsp?CN=AgeAppropriate:Kids+PersonaTheme:Discovery&cc=kids-TN2.0-S-limitedtimebrands",
+                        "type": "Catalog",
+                        "categories": []
+                    }
+                ]
+            },
+            {
+                "ID": "1644777932562",
+                "name": "Shoes",
+                "seoURL": "/sale-event/shoes.jsp?cc=shoes-TN1.0-S-shoes",
+                "type": "Category",
+                "categories": [
+                    {
+                        "ID": "1446481174364",
+                        "name": "Shop Shoe Deals",
+                        "seoURL": "/catalog/shoes.jsp?CN=Department:Shoes+Assortment:Lowest%20Prices%20of%20the%20Season&cc=shoes-TN2.0-S-lps-shopall",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1972112991680",
+                        "name": "Up to 30% off Skechers",
+                        "seoURL": "/catalog/sale-skechers-shoes.jsp?CN=Promotions:Sale+Brand:Skechers+Department:Shoes+Assortment:Lowest%20Prices%20of%20the%20Season&cc=shoes-TN2.0-S-lps-skechers",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1338314236501",
+                        "name": "Up to 30% off Active Shoes",
+                        "seoURL": "/catalog/sale-nike-shoes.jsp?CN=Promotions:Sale+Brand:ASICS+Brand:adidas+Brand:New%20Balance+Brand:Under%20Armour+Brand:Nike+Department:Shoes+Assortment:Lowest%20Prices%20of%20the%20Season&cc=shoes-TN2.0-S-lps-active",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1251164468701",
+                        "name": "$39.99 & Under SO & Sonoma Goods for Life Boots & Shoes",
+                        "seoURL": "/catalog/sonoma-goods-for-life-shoes.jsp?CN=Brand:SO+Brand:Sonoma%20Goods%20For%20Life+Department:Shoes+MerchPricing:Under%20%2440&cc=shoes-TN2.0-S-lps-sosonoma",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1625985318638",
+                        "name": "Save on Koolaburra by UGG",
+                        "seoURL": "/catalog/sale-koolaburra-by-ugg-shoes.jsp?CN=Promotions:Sale+Brand:Koolaburra%20by%20UGG+Department:Shoes+Assortment:Lowest%20Prices%20of%20the%20Season&cc=shoes-TN2.0-S-lps-koolaburra",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1322793922833",
+                        "name": "Shoe Closeout Deals",
+                        "seoURL": "/catalog/sale-shoes.jsp?CN=Promotions:Sale+Department:Shoes+Assortment:Closeout%20Deals&cc=shoes-TN2.0-S-closeouts",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1919333168366",
+                        "name": "Kids' Shoes",
+                        "seoURL": "/catalog/kids-shoes.jsp?CN=AgeAppropriate:Kids+Department:Shoes&cc=shoes-TN2.0-S-KidsShoes",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1456084125902",
+                                "name": "Girls' Shoes",
+                                "seoURL": "/catalog/girls-kids-shoes.jsp?CN=Gender:Girls+AgeAppropriate:Kids+Department:Shoes&cc=shoes-TN3.0-S-Girls",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1038935811690",
+                                "name": "Boys' Shoes",
+                                "seoURL": "/catalog/boys-kids-shoes.jsp?CN=Gender:Boys+AgeAppropriate:Kids+Department:Shoes&cc=shoes-TN3.0-S-Boys",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1780686984421",
+                                "name": "Toddler Shoes",
+                                "seoURL": "/catalog/kids-toddlers-shoes.jsp?CN=AgeAppropriate:Kids+ChildAgeRange:Toddlers+Department:Shoes&cc=shoes-TN3.0-S-Toddler",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1736878578906",
+                                "name": "Baby Shoes",
+                                "seoURL": "/catalog/baby-shoes.jsp?CN=ChildAgeRange:Baby+Department:Shoes&cc=shoes-TN3.0-S-Baby",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1675079534228",
+                                "name": "Kids' Adaptive Shoes",
+                                "seoURL": "/catalog/adaptive-kids-shoes.jsp?CN=Feature:Adaptive+AgeAppropriate:Kids+Department:Shoes&cc=shoes-TN3.0-S-kidsadaptive",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1611697386030",
+                                "name": "Kids' Boots",
+                                "seoURL": "/catalog/kids-boots-shoes.jsp?CN=AgeAppropriate:Kids+Product:Boots+Department:Shoes&cc=shoes-TN3.0-S-Kidsboots",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1023490804716",
+                                "name": "Kids' Athletic Shoes & Sneakers",
+                                "seoURL": "/catalog/kids-athletic-shoes-sneakers-shoes.jsp?CN=AgeAppropriate:Kids+Product:Athletic%20Shoes%20%26%20Sneakers+Department:Shoes&cc=shoes-TN3.0-S-KidsAthShoes",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1025983459174",
+                                "name": "Kids' Dress Shoes",
+                                "seoURL": "/catalog/dress-kids-shoes.jsp?CN=Occasion:Dress+AgeAppropriate:Kids+Department:Shoes&cc=shoes-TN3.0-S-KidsDressShoes",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1428976013345",
+                                "name": "Kids' Sandals",
+                                "seoURL": "/catalog/kids-sandals-shoes.jsp?CN=AgeAppropriate:Kids+Product:Sandals+Department:Shoes&cc=shoes-TN3.0-S-Kidssandals",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1035971539234",
+                                "name": "Kids' Slippers",
+                                "seoURL": "/catalog/kids-slippers-shoes.jsp?CN=AgeAppropriate:Kids+Product:Slippers+Department:Shoes&cc=shoes-TN3.0-S-KidsSlippers",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1575916438183",
+                        "name": "Women's Shoes",
+                        "seoURL": "/catalog/womens-shoes.jsp?CN=Gender:Womens+Department:Shoes&cc=shoes-TN2.0-S-WomensShoes",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1483290976152",
+                                "name": "Athletic Shoes & Sneakers",
+                                "seoURL": "/catalog/womens-athletic-shoes-sneakers-shoes.jsp?CN=Gender:Womens+Product:Athletic%20Shoes%20%26%20Sneakers+Department:Shoes&cc=shoes-TN3.0-S-WomensAthletic",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1716843076407",
+                                "name": "Boots",
+                                "seoURL": "/catalog/womens-boots-shoes.jsp?CN=Gender:Womens+Product:Boots+Department:Shoes&cc=shoes-TN3.0-S-WomensBoots",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1889810931127",
+                                "name": "Casual Sneakers",
+                                "seoURL": "/catalog/womens-casual-athletic-shoes-sneakers-shoes.jsp?CN=Gender:Womens+Occasion:Casual+Product:Athletic%20Shoes%20%26%20Sneakers+Department:Shoes&cc=shoes-TN3.0-S-womenscasualsneakers",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1140502892851",
+                                "name": "Comfort Shoes",
+                                "seoURL": "/catalog/womens-comfort-shoes.jsp?CN=Gender:Womens+Feature:Comfort+Department:Shoes&cc=shoes-TN3.0-S-WomensComfort",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1498721201448",
+                                "name": "Flats",
+                                "seoURL": "/catalog/womens-flats-shoes.jsp?CN=Gender:Womens+Product:Flats+Department:Shoes&cc=shoes-TN3.0-S-WomensFlats",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1249596961343",
+                                "name": "Heels & Pumps",
+                                "seoURL": "/catalog/womens-pumps-heels-shoes.jsp?CN=Gender:Womens+Product:Pumps%20%26%20Heels+Department:Shoes&cc=shoes-TN3.0-S-WomensHeels",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1315028779295",
+                                "name": "Platforms",
+                                "seoURL": "/catalog/womens-platforms-shoes.jsp?CN=Gender:Womens+Silhouette:Platforms+Department:Shoes&cc=shoes-TN3.0-S-Platforms",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1022953997794",
+                                "name": "Sandals",
+                                "seoURL": "/catalog/womens-sandals-shoes.jsp?CN=Gender:Womens+Product:Sandals+Department:Shoes&cc=shoes-TN3.0-S-WomensSandals",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1797869807167",
+                                "name": "Slippers",
+                                "seoURL": "/catalog/womens-slippers-shoes.jsp?CN=Gender:Womens+Product:Slippers+Department:Shoes&cc=shoes-TN3.0-S-WomensSlippers",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1930918024189",
+                                "name": "Hiking & Outdoor Shoes",
+                                "seoURL": "/catalog/womens-outdoor-shoes.jsp?CN=Gender:Womens+Activity:Outdoor+Department:Shoes&cc=shoes-TN3.0-S-womenshikingoutdoor",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1219429652514",
+                                "name": "Work Shoes & Boots",
+                                "seoURL": "/catalog/womens-work-safety-shoes.jsp?CN=Gender:Womens+Occasion:Work%20%26%20Safety+Department:Shoes&cc=shoes-TN3.0-S-womensworkshoes",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1378833429908",
+                        "name": "Men's Shoes",
+                        "seoURL": "/catalog/mens-shoes.jsp?CN=Gender:Mens+Department:Shoes&cc=shoes-TN2.0-S-MensShoes",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1447280454682",
+                                "name": "Athletic Shoes & Sneakers",
+                                "seoURL": "/catalog/mens-athletic-shoes-sneakers-shoes.jsp?CN=Gender:Mens+Product:Athletic%20Shoes%20%26%20Sneakers+Department:Shoes&cc=shoes-TN3.0-S-MensAthletic",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1407263714513",
+                                "name": "Boots",
+                                "seoURL": "/catalog/mens-boots-shoes.jsp?CN=Gender:Mens+Product:Boots+Department:Shoes&cc=shoes-TN3.0-S-MensBoots",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1075235517454",
+                                "name": "Casual Sneakers",
+                                "seoURL": "/catalog/mens-casual-athletic-shoes-sneakers-shoes.jsp?CN=Gender:Mens+Occasion:Casual+Product:Athletic%20Shoes%20%26%20Sneakers+Department:Shoes&cc=shoes-TN3.0-S-MensCasualsneakers",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1549012327723",
+                                "name": "Dress Shoes",
+                                "seoURL": "/catalog/mens-dress-shoes.jsp?CN=Gender:Mens+Occasion:Dress+Department:Shoes&cc=shoes-TN3.0-S-MensDress",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1222906452906",
+                                "name": "Sandals",
+                                "seoURL": "/catalog/mens-sandals-shoes.jsp?CN=Gender:Mens+Product:Sandals+Department:Shoes&cc=shoes-TN3.0-S-MensSandals",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1104426020996",
+                                "name": "Slippers",
+                                "seoURL": "/catalog/mens-slippers-shoes.jsp?CN=Gender:Mens+Product:Slippers+Department:Shoes&cc=shoes-TN3.0-S-MensSlippers",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1422419772146",
+                                "name": "Hiking & Outdoor Shoes",
+                                "seoURL": "/catalog/mens-outdoor-shoes.jsp?CN=Gender:Mens+Activity:Outdoor+Department:Shoes&cc=shoes-TN3.0-S-menshikingboots",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1494931843254",
+                                "name": "Work Boots & Shoes",
+                                "seoURL": "/catalog/mens-work-safety-shoes.jsp?CN=Gender:Mens+Occasion:Work%20%26%20Safety+Department:Shoes&cc=shoes-TN3.0-S-MensWorkShoes",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1780725942976",
+                        "name": "New Arrivals",
+                        "seoURL": "/catalog.jsp?CN=Assortment:Shoes%20New%20Arrivals&cc=shoes-TN2.0-S-newarrivals",
+                        "type": "External"
+                    },
+                    {
+                        "ID": "1439044602220",
+                        "name": "Trending Now:",
+                        "seoURL": "/catalog.jsp?CN=Assortment:Shoe%20Trends&cc=shoes-TN2.0-S-trendingnow",
+                        "type": "External",
+                        "categories": [
+                            {
+                                "ID": "1522244258597",
+                                "name": "High Tops & Platform Sneakers",
+                                "seoURL": "/catalog/platforms-athletic-shoes-sneakers-shoes.jsp?CN=Silhouette:High%20Tops+Silhouette:Platforms+Product:Athletic%20Shoes%20%26%20Sneakers+Department:Shoes&cc=shoes-TN3.0-S-trend-hightopsplatforms",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1926914475644",
+                                "name": "Western Boots",
+                                "seoURL": "/catalog/western-boots-shoes.jsp?CN=Silhouette:Western+Product:Boots+Department:Shoes&cc=shoes-TN3.0-S-trend-western",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1269015395804",
+                                "name": "Polished Casual Shoes",
+                                "seoURL": "/catalog.jsp?CN=Assortment:Polished%20Casual%20Shoes&cc=shoes-TN3.0-S-trend-polishedcasual",
+                                "type": "External"
+                            },
+                            {
+                                "ID": "1820564273230",
+                                "name": "Cozy Boots & Slippers",
+                                "seoURL": "/catalog/cozy-shoes.jsp?CN=Trend:Cozy+Department:Shoes&cc=shoes-TN3.0-S-trend-cozy",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1854985749111",
+                        "name": "Wide-Width Shoes",
+                        "seoURL": "/catalog/wide-shoes.jsp?CN=SizeRange:Wide+Department:Shoes&cc=shoes-TN2.0-S-WideWidth",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1313780707884",
+                        "name": "Shoe Care & Inserts",
+                        "seoURL": "/catalog/shoe-accessories-shoes.jsp?CN=Product:Shoe%20Accessories+Department:Shoes&cc=shoes-TN2.0-S-careandinserts",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1756704209637",
+                        "name": "Shoe Brands",
+                        "seoURL": null,
+                        "type": "Header",
+                        "categories": [
+                            {
+                                "ID": "1382017707303",
+                                "name": "NEW! Taft 365",
+                                "seoURL": "/catalog/taft-365-shoes.jsp?CN=Brand:Taft%20365+Department:Shoes&cc=shoes-TN3.0-S-taft365",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1054647032457",
+                                "name": "adidas",
+                                "seoURL": "/catalog/adidas-shoes.jsp?CN=Brand:adidas+Department:Shoes&cc=shoes-TN3.0-S-Adidas",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1768933507018",
+                                "name": "Clarks",
+                                "seoURL": "/catalog/clarks-shoes.jsp?CN=Brand:Clarks+Department:Shoes&cc=shoes-TN3.0-S-Clarks",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1259671653009",
+                                "name": "Cole Haan",
+                                "seoURL": "/catalog/cole-haan-shoes.jsp?CN=Brand:Cole%20Haan+Department:Shoes&cc=shoes-TN3.0-S-colehaan",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1329977990924",
+                                "name": "Converse",
+                                "seoURL": "/catalog/converse-shoes.jsp?CN=Brand:Converse+Department:Shoes&cc=shoes-TN3.0-S-Converse",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1883755455100",
+                                "name": "Crocs",
+                                "seoURL": "/catalog/crocs-shoes.jsp?CN=Brand:Crocs+Department:Shoes&cc=shoes-TN3.0-S-Crocs",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1883747309644",
+                                "name": "Dr. Scholl's",
+                                "seoURL": "/catalog/dr-scholls-shoes.jsp?CN=Brand:Dr.%20Scholl%27s+Department:Shoes&cc=shoes-TN3.0-S-drscholls",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1767312063247",
+                                "name": "Easy Spirit",
+                                "seoURL": "/catalog/easy-spirit-shoes.jsp?CN=Brand:Easy%20Spirit+Department:Shoes&cc=shoes-TN3.0-S-Easyspirit",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1586799626225",
+                                "name": "Koolaburra by UGG",
+                                "seoURL": "/catalog/koolaburra-by-ugg-shoes.jsp?CN=Brand:Koolaburra%20by%20UGG+Department:Shoes&cc=shoes-TN3.0-S-koolaburra",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1944874052094",
+                                "name": "New Balance",
+                                "seoURL": "/catalog/new-balance-shoes.jsp?CN=Brand:New%20Balance+Department:Shoes&cc=shoes-TN3.0-S-Newbalance",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1962664053655",
+                                "name": "Nike",
+                                "seoURL": "/catalog/nike-shoes.jsp?CN=Brand:Nike+Department:Shoes&cc=shoes-TN3.0-S-Nike",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1027763998687",
+                                "name": "Skechers",
+                                "seoURL": "/catalog/skechers-shoes.jsp?CN=Brand:Skechers+Department:Shoes&cc=shoes-TN3.0-S-Skechers",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1928450134132",
+                                "name": "Under Armour",
+                                "seoURL": "/catalog/under-armour-shoes.jsp?CN=Brand:Under%20Armour+Department:Shoes&cc=shoes-TN3.0-S-UnderArmour",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1062221917106",
+                                "name": "Vans",
+                                "seoURL": "/catalog/vans-shoes.jsp?CN=Brand:Vans+Department:Shoes&cc=shoes-TN3.0-S-Vans",
+                                "type": "Catalog"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "ID": "1408213944296",
+                "name": "Beauty | SEPHORA",
+                "seoURL": "/sale-event/sephora-at-kohls.jsp?cc=Sephora-TN1.0-S-Sephora",
+                "type": "Category",
+                "imageURL": {
+                    "bg-white": "https://media.kohlsimg.com/is/image/kohls/Sephora_W?fmt=png8-alpha",
+                    "bg-dark": "https://media.kohlsimg.com/is/image/kohls/Sephora_B"
+                },
+                "categories": [
+                    {
+                        "ID": "1237255558119",
+                        "name": "Sale",
+                        "seoURL": "/catalog/sale-sephora.jsp?CN=Promotions:Sale+Partnership:Sephora&cc=Sephora-TN2.0-S-Sale",
+                        "type": "Catalog",
+                        "categories": []
+                    },
+                    {
+                        "ID": "1342728734601",
+                        "name": "Beauty Insiders Earn 5x Points on Sephora Collection Eyeliners",
+                        "seoURL": "/catalog/sephora-sephora-collection-eyeliner.jsp?CN=Partnership:Sephora+Brand:SEPHORA%20COLLECTION+Product:Eyeliner&cc=Sephora-TN2.0-S-SCEyelinerPME",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1247687837736",
+                        "name": "Shop All Holiday Gifts",
+                        "seoURL": "/catalog/sephora-gift-ideas.jsp?CN=Partnership:Sephora+Feature:Gift%20Ideas&cc=Sephora-TN2.0-S-ShopAllHolidayGifts",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1922793337464",
+                                "name": "Limited Edition Gift Sets",
+                                "seoURL": "/catalog.jsp?CN=Assortment:Sephora%20Holiday%20Gift%20Sets&BL=y&icid=GiftIdeas-Sephora-VN-GiftSets&pfm=browse%20Visual%20Nav&cc=Sephora-TN3.0-S-LimitedEditionGiftSets",
+                                "type": "External"
+                            },
+                            {
+                                "ID": "1312449028418",
+                                "name": "Stocking Stuffers",
+                                "seoURL": "/catalog/sephora-stocking-stuffers.jsp?CN=Partnership:Sephora+Trend:Stocking%20Stuffers&cc=Sephora-TN3.0-S-StockingStuffers",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1030143059734",
+                                "name": "Sephora Favorites Sets",
+                                "seoURL": "/catalog/sephora-sephora-favorites.jsp?CN=Partnership:Sephora+Brand:Sephora%20Favorites&cc=Sephora-TN3.0-S-SephoraFavoritesSets",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1623863924445",
+                        "name": "Shop All Sephora",
+                        "seoURL": "/catalog/sephora.jsp?CN=Partnership:Sephora&cc=Sephora-TN2.0-S-shopallsephorabeauty",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1903515179847",
+                        "name": "Shop Brands A-Z",
+                        "seoURL": "/feature/sephorabrands.jsp?cc=Sephora-TN2.0-S-shopbrandsa-z",
+                        "type": "Internal-link"
+                    },
+                    {
+                        "ID": "1764302285107",
+                        "name": "Makeup",
+                        "seoURL": "/catalog/sephora-makeup.jsp?CN=Partnership:Sephora+Category:Makeup&cc=Sephora-TN2.0-S-totalmakeup",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1572409859197",
+                                "name": "Value & Gift Sets",
+                                "seoURL": "/catalog/sephora-sets-makeup.jsp?CN=Partnership:Sephora+Silhouette:Sets+Category:Makeup&cc=Sephora-TN3.0-S-makeupGiftSets",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1658058086080",
+                                "name": "Face & Cheek",
+                                "seoURL": "/catalog/sephora-makeup.jsp?CN=Partnership:Sephora+Category:Makeup+BodyType:Cheek+BodyType:Face&BL=y&cc=Sephora-TN3.0-S-makeupfaceandcheek",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1765992879313",
+                                "name": "Eye",
+                                "seoURL": "/catalog/sephora-makeup.jsp?CN=Partnership:Sephora+Category:Makeup+BodyType:Eyes&BL=y&cc=Sephora-TN3.0-S-makeupeye",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1308535537865",
+                                "name": "Lip",
+                                "seoURL": "/catalog/sephora-makeup.jsp?CN=Partnership:Sephora+Category:Makeup+BodyType:Lips&BL=y&cc=Sephora-TN3.0-S-makeuplip",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1499185481584",
+                                "name": "Sephora Collection",
+                                "seoURL": "/catalog/sephora-sephora-collection-makeup.jsp?CN=Partnership:Sephora+Brand:SEPHORA%20COLLECTION+Category:Makeup&cc=Sephora-TN3.0-S-MakeupSephoraCollection",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1107757401173",
+                        "name": "Brushes & Tools",
+                        "seoURL": "/catalog/sephora-makeup-brushes-brushes-tools.jsp?CN=Partnership:Sephora+Product:Sponges%20%26%20Applicators+Product:Makeup%20Brushes+Category:Brushes%20%26%20Tools&BL=y&cc=Sephora-TN2.0-S-makeupbrushesandtools",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1740182828111",
+                        "name": "Bath & Body",
+                        "seoURL": "/catalog/sephora-bath-body.jsp?CN=Partnership:Sephora+Category:Bath%20%26%20Body&cc=Sephora-TN2.0-S-totalbathandbody",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1963030209618",
+                                "name": "Sol de Janeiro",
+                                "seoURL": "/catalog/sephora-sol-de-janeiro.jsp?CN=Partnership:Sephora+Brand:Sol%20de%20Janeiro&cc=Sephora-TN3.0-SDJ",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1336518523363",
+                                "name": "Body Wash & Shower Gel",
+                                "seoURL": "/catalog/sephora-body-wash-shower-gel-bath-body.jsp?CN=Partnership:Sephora+Product:Body%20Wash%20%26%20Shower%20Gel+Category:Bath%20%26%20Body&cc=Sephora-TN3.0-showergelbodywash",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1803143422524",
+                                "name": "Lotions & Creams",
+                                "seoURL": "/catalog/sephora-body-cream-bath-body.jsp?CN=Partnership:Sephora+Product:Body%20%26%20Hand%20Lotion+Product:Body%20Cream+Category:Bath%20%26%20Body&BL=y&cc=Sephora-TN3.0-lotionsandcreams",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1246705754982",
+                                "name": "Body Treatments",
+                                "seoURL": "/catalog/sephora-exfoliators-peels-bath-body.jsp?CN=Partnership:Sephora+Product:Body%20Exfoliators%20%26%20Scrubs+Product:Body%20Oil+Product:Body%20Wash%20%26%20Shower%20Gel+Product:Cellulite%20Treatments+Product:Exfoliators%20%26%20Peels+Category:Bath%20%26%20Body&BL=y&cc=Sephora-TN3.0-bodytreatments",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1521338525679",
+                        "name": "Skincare",
+                        "seoURL": "/catalog/sephora-skincare.jsp?CN=Partnership:Sephora+Category:Skincare&cc=Sephora-TN2.0-S-totalskincare",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1360305399507",
+                                "name": "Value & Gift Sets",
+                                "seoURL": "/catalog/sephora-sets-skincare.jsp?CN=Partnership:Sephora+Silhouette:Sets+Category:Skincare&cc=Sephora-TN3.0-S-skincareGiftSets",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1414825277747",
+                                "name": "Moisturizers",
+                                "seoURL": "/catalog/sephora-moisturizers-skincare.jsp?CN=Partnership:Sephora+Product:Moisturizers+Category:Skincare&cc=Sephora-TN3.0-S-skincaremoisturizers",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1152755408832",
+                                "name": "Cleansers",
+                                "seoURL": "/catalog/sephora-cleansers-skincare.jsp?CN=Partnership:Sephora+Product:Cleansers+Category:Skincare&cc=Sephora-TN3.0-S-skincarecleansers",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1424749233029",
+                                "name": "Treatments & Masks",
+                                "seoURL": "/catalog/sephora-treatments-skincare.jsp?CN=Partnership:Sephora+Product:Face%20Masks+Product:Serums+Product:Treatments+Category:Skincare&BL=y&cc=Sephora-TN3.0-S-skincaretreatmentsandmasks",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1812532093897",
+                                "name": "Men's Grooming",
+                                "seoURL": "/catalog/sephora-for-men.jsp?CN=Partnership:Sephora+PersonaTheme:for%20Men&cc=Sephora-TN3.0-S-mensgrooming",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1734356621236",
+                        "name": "Fragrances",
+                        "seoURL": "/catalog/sephora-fragrances.jsp?CN=Partnership:Sephora+Category:Fragrances&cc=Sephora-TN2.0-S-totalfragrances",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1998452725735",
+                                "name": "Value & Gift Sets",
+                                "seoURL": "/catalog/sephora-sets-fragrances.jsp?CN=Partnership:Sephora+Silhouette:Sets+Category:Fragrances&cc=Sephora-TN3.0-S-fragrancesGiftSets",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1788060695949",
+                                "name": "Perfume",
+                                "seoURL": "/catalog/sephora-perfume-fragrances.jsp?CN=Partnership:Sephora+Product:Perfume+Category:Fragrances&cc=Sephora-TN3.0-S-fragrancesperfume",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1986531522825",
+                                "name": "Cologne",
+                                "seoURL": "/catalog/sephora-cologne-fragrances.jsp?CN=Partnership:Sephora+Product:Cologne+Category:Fragrances&cc=Sephora-TN3.0-S-fragrancescologne",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1554496157948",
+                                "name": "Rollerballs & Travel Size",
+                                "seoURL": "/catalog/sephora-mini-fragrances.jsp?CN=Partnership:Sephora+Silhouette:Mini+Category:Fragrances&cc=Sephora-TN3.0-S-fragrancesrollerballsandtravelsize",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1477901938209",
+                                "name": "Fragrance Sample Sets",
+                                "seoURL": "/catalog/catalog.jsp?CN=Assortment:Fragrance%20Sampler%20Sets&cc=Sephora-TN3.0-S-fragrancesamplesets",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1645429256430",
+                        "name": "Hair",
+                        "seoURL": "/catalog/sephora-hair-care.jsp?CN=Partnership:Sephora+Category:Hair%20Care&cc=Sephora-TN2.0-S-totalhair",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1949985569686",
+                                "name": "Value & Gift Sets",
+                                "seoURL": "/catalog/sephora-sets-hair-care.jsp?CN=Partnership:Sephora+Silhouette:Sets+Category:Hair%20Care&cc=Sephora-TN3.0-S-hairGiftSets",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1473416200055",
+                                "name": "Shampoo & Conditioner",
+                                "seoURL": "/catalog/sephora-conditioner-hair-care.jsp?CN=Partnership:Sephora+Product:Dry%20Shampoo+Product:Shampoo+Product:Conditioner+Category:Hair%20Care&BL=y&cc=Sephora-TN3.0-S-hairshampooandconditioner",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1955551484381",
+                                "name": "Treatments & Masks",
+                                "seoURL": "/catalog/sephora-hair-treatments-hair-care.jsp?CN=Partnership:Sephora+Product:Hair%20Treatments+Category:Hair%20Care&cc=Sephora-TN3.0-S-hairtreatment",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1785315973980",
+                                "name": "Styling",
+                                "seoURL": "/catalog/sephora-hair-styling-products-hair-care.jsp?CN=Partnership:Sephora+Product:Hair%20Styling%20Products+Category:Hair%20Care&cc=Sephora-TN3.0-S-hairstyling",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1614013544186",
+                                "name": "Tools",
+                                "seoURL": "/catalog/sephora-curling-irons-wands-hair-care.jsp?CN=Partnership:Sephora+Product:Flat%20Irons+Product:Hair%20Brushes%20%26%20Combs+Product:Hair%20Dryers+Product:Curling%20Irons%20%26%20Wands+Category:Hair%20Care&BL=y&cc=Sephora-TN3.0-S-hairtools",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1238562750989",
+                        "name": "Best Sellers",
+                        "seoURL": "/catalog.jsp?CN=Assortment:Sephora%20Best%20Sellers&cc=Sephora-TN2.0-S-BestSellers",
+                        "type": "External"
+                    },
+                    {
+                        "ID": "1667518651168",
+                        "name": "New Arrivals",
+                        "seoURL": "/catalog.jsp?CN=Assortment:Sephora%20New%20Arrivals&BL=y&cc=Sephora-TN2.0-S-JustArrived",
+                        "type": "External",
+                        "categories": []
+                    },
+                    {
+                        "ID": "1473498074860",
+                        "name": "Value & Gift Sets",
+                        "seoURL": "/catalog/sephora-sets.jsp?CN=Partnership:Sephora+Silhouette:Sets&cc=Sephora-TN3.0-S-valuegiftsets",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1850012992896",
+                        "name": "Minis & Travel Size",
+                        "seoURL": "/catalog/sephora-mini.jsp?CN=Partnership:Sephora+Silhouette:Mini&cc=Sephora-TN2.0-S-minisizes",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1827753231896",
+                        "name": "Sephora Collection: Sephora Quality. Great Value.",
+                        "seoURL": "/catalog/sephora-sephora-collection.jsp?CN=Partnership:Sephora+Brand:SEPHORA%20COLLECTION&cc=Sephora-TN2.0-S-SephoraCollection",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1843646066494",
+                        "name": "Find Your Sephora at Kohl's Store",
+                        "seoURL": "https://m.kohls.com/explore/sephora-atkohls.m.shtml",
+                        "type": "External"
+                    },
+                    {
+                        "ID": "1299062914545",
+                        "name": "Sign Up for Beauty Insider",
+                        "seoURL": "/feature/beautyrewards.jsp?cc=Sephora-TN2.0-S-beautyinsiders",
+                        "type": "Internal-link"
+                    }
+                ]
+            },
+            {
+                "ID": "1874951127963",
+                "name": "Jewelry & Accessories",
+                "seoURL": "/sale-event/jewelry.jsp?cc=jewelry_accessories-TN1.0-S-jewelryaccessories",
+                "type": "Category",
+                "categories": [
+                    {
+                        "ID": "1856056279398",
+                        "name": "Shop Jewelry & Accessories Deals",
+                        "seoURL": "/catalog/watches.jsp?CN=Department:Accessories+Department:Jewelry+Department:Luggage%20%26%20Suitcases+Department:Watches+Assortment:Lowest%20Prices%20of%20the%20Season&BL=y&cc=jewelry_accessories-TN2.0-S-deals",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1746691147856",
+                        "name": "70% Off Fine Jewelry Closeout Deals. Select styles.",
+                        "seoURL": "/catalog.jsp?CN=Assortment:Jewelry%20Closeout%20Deals&BL=y&cc=jewelry_accessories-TN2.0-S-jewelrycloseout",
+                        "type": "External"
+                    },
+                    {
+                        "ID": "1764271719662",
+                        "name": "Halloween Jewelry & Accessories",
+                        "seoURL": "/catalog/halloween-jewelry.jsp?CN=Occasion:Halloween+Department:Accessories+Department:Jewelry&BL=y&cc=jewelry_accessories-TN2.0-S-halloween",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1422863705557",
+                        "name": "Jewelry",
+                        "seoURL": "/catalog/jewelry.jsp?CN=Department:Jewelry&cc=jewelry_accessories-TN2.0-S-totaljewelry",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1113105088780",
+                                "name": "Earrings",
+                                "seoURL": "/catalog/earrings-jewelry.jsp?CN=Category:Earrings+Department:Jewelry&cc=jewelry_accessories-TN3.0-S-earrings",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1934968806141",
+                                "name": "Necklaces",
+                                "seoURL": "/catalog/necklaces-jewelry.jsp?CN=Category:Necklaces+Department:Jewelry&cc=jewelry_accessories-TN3.0-S-necklaces",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1656810155072",
+                                "name": "Rings",
+                                "seoURL": "/catalog/rings-jewelry.jsp?CN=Category:Rings+Department:Jewelry&cc=jewelry_accessories-TN3.0-S-rings",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1597244959454",
+                                "name": "Bracelets",
+                                "seoURL": "/catalog/bracelets-jewelry.jsp?CN=Category:Bracelets+Department:Jewelry&cc=jewelry_accessories-TN3.0-S-bracelets",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1477187682975",
+                        "name": "Fine Jewelry",
+                        "seoURL": "/catalog/fine-jewelry.jsp?CN=Trend:Fine+Department:Jewelry&cc=jewelry_accessories-TN2.0-S-finejewelry",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1457217711130",
+                        "name": "Men's Jewelry",
+                        "seoURL": "/catalog/mens-jewelry.jsp?CN=Gender:Mens+Department:Jewelry&cc=jewelry_accessories-TN2.0-S-mensjewelry",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1672949354102",
+                        "name": "Engagement & Wedding Rings",
+                        "seoURL": "/catalog/engagement-rings-rings-jewelry.jsp?CN=Product:Engagement%20Rings+Category:Rings+Department:Jewelry&cc=jewelry_accessories-TN2.0-S-weddingengagement",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1382600950555",
+                        "name": "Men's Watches",
+                        "seoURL": "/catalog/mens-watches.jsp?CN=Gender:Mens+Department:Watches&cc=jewelry_accessories-TN2.0-S-menswatches",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1574001020615",
+                        "name": "Women's Watches",
+                        "seoURL": "/catalog/womens-watches.jsp?CN=Gender:Womens+Department:Watches&cc=jewelry_accessories-TN2.0-S-womenswatches",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1777960212085",
+                        "name": "Kids' Jewelry",
+                        "seoURL": "/catalog/kids-jewelry.jsp?CN=AgeAppropriate:Kids+Department:Jewelry&cc=jewelry_accessories-TN2.0-S-kidsjewelry",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1182319482499",
+                        "name": "Handbags",
+                        "seoURL": "/catalog/womens-handbags-purses-accessories.jsp?CN=Gender:Womens+Product:Handbags%20%26%20Purses+Department:Accessories&cc=jewelry_accessories-TN2.0-S-handbags",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1053352703816",
+                                "name": "Crossbody Bags",
+                                "seoURL": "/catalog/womens-crossbody-handbags-purses-accessories.jsp?CN=Gender:Womens+Silhouette:Crossbody+Product:Handbags%20%26%20Purses+Department:Accessories&cc=jewelry_accessories-TN3.0-S-crossbodys",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1796190546503",
+                                "name": "Shoulder Bags",
+                                "seoURL": "/catalog/womens-shoulder-bags-handbags-purses-accessories.jsp?CN=Gender:Womens+Silhouette:Shoulder%20Bags+Product:Handbags%20%26%20Purses+Department:Accessories&cc=jewelry_accessories-TN3.0-S-shoulderbags",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1131557368066",
+                                "name": "Totes",
+                                "seoURL": "/catalog/womens-totes-handbags-purses-accessories.jsp?CN=Gender:Womens+Silhouette:Totes+Product:Handbags%20%26%20Purses+Department:Accessories&cc=jewelry_accessories-TN3.0-S-totes",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1065273633820",
+                                "name": "Satchels",
+                                "seoURL": "/catalog/womens-satchels-handbags-purses-accessories.jsp?CN=Gender:Womens+Silhouette:Satchels+Product:Handbags%20%26%20Purses+Department:Accessories&cc=jewelry_accessories-TN3.0-S-Satchels",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1724887986067",
+                                "name": "Wallets",
+                                "seoURL": "/catalog/womens-wallets-accessories.jsp?CN=Gender:Womens+Product:Wallets+Department:Accessories&cc=jewelry_accessories-TN3.0-S-wallets",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1119552236613",
+                        "name": "Luggage & Travel",
+                        "seoURL": "/catalog/luggage-suitcases.jsp?CN=Department:Luggage%20%26%20Suitcases&cc=jewelry_accessories-TN2.0-S-luggage",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1781698519448",
+                        "name": "Backpacks",
+                        "seoURL": "/catalog/backpacks-accessories.jsp?CN=Product:Backpacks+Department:Accessories&cc=jewelry_accessories-TN2.0-S-Backpacks",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1803704150125",
+                        "name": "Women's Accessories",
+                        "seoURL": "/catalog/womens-accessories.jsp?CN=Gender:Womens+Department:Accessories&cc=jewelry_accessories-TN2.0-S-womensaccessories",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1817361499734",
+                        "name": "Men's Accessories",
+                        "seoURL": "/catalog/mens-accessories.jsp?CN=Gender:Mens+Department:Accessories&cc=jewelry_accessories-TN2.0-S-MensAccessories",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1027238083796",
+                        "name": "Cold Weather Accessories",
+                        "seoURL": "/catalog/winter-hats-accessories.jsp?CN=Occasion:Winter+Product:Gloves%20%26%20Mittens+Product:Scarves%20%26%20Wraps+Product:Hats+Department:Accessories&BL=y&cc=jewelry_accessories-TN2.0-S-cwa",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1708584207920",
+                        "name": "Slippers",
+                        "seoURL": "/catalog/slippers-shoes.jsp?CN=Product:Slippers+Department:Shoes&cc=jewelry_accessories-TN2.0-S-slippers",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1530516042811",
+                        "name": "Sunglasses",
+                        "seoURL": "/catalog/sunglasses-eyewear-accessories.jsp?CN=Product:Sunglasses%20%26%20Eyewear+Department:Accessories&cc=jewelry_accessories-TN2.0-S-sunglasses",
+                        "type": "Catalog",
+                        "categories": []
+                    },
+                    {
+                        "ID": "1385826769059",
+                        "name": "Limited-Time Brands",
+                        "seoURL": "/catalog/discovery-jewelry.jsp?CN=PersonaTheme:Discovery+Department:Accessories+Department:Jewelry&BL=y &cc=jewelry_accessories-TN2.0-S-discover",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1173223833448",
+                        "name": "Diversity, Equity & Inclusion",
+                        "seoURL": "/feature/diversityandinclusion.jsp?&cc=jewelry_accessories-TN2.0-S-DEI",
+                        "type": "Internal-link"
+                    },
+                    {
+                        "ID": "1235490881163",
+                        "name": "Veteran's Day",
+                        "seoURL": "/catalog.jsp?CN=Assortment:Veterans%20Day&BL=y&cc=jewelry_accessories-TN2.0-S-veteransday",
+                        "type": "External"
+                    }
+                ]
+            },
+            {
+                "ID": "1818430327805",
+                "name": "Clearance & Closeouts",
+                "seoURL": "/catalog/clearance.jsp?CN=Promotions:Clearance&cc=sale-TN1.0-S-Clearance",
+                "type": "Catalog",
+                "categories": [
+                    {
+                        "ID": "1580100242556",
+                        "name": "Shop All Clearance",
+                        "seoURL": "/catalog/clearance.jsp?CN=Promotions:Clearance&cc=sale-TN2.0-S-Clearance-ShopAll",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1100822191306",
+                        "name": "Home Clearance",
+                        "seoURL": "/catalog/clearance-for-the-home.jsp?CN=Promotions:Clearance+Activity:For%20the%20Home&cc=sale-TN2.0-S-Clearance-Home",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1591825242361",
+                        "name": "Womens Clearance",
+                        "seoURL": "/catalog/clearance-womens.jsp?CN=Promotions:Clearance+Gender:Womens&cc=sale-TN2.0-S-Clearance-Womens",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1179244219931",
+                        "name": "Mens Clearance",
+                        "seoURL": "/catalog/clearance-mens.jsp?CN=Promotions:Clearance+Gender:Mens&cc=sale-TN2.0-S-Clearance-Mens",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1472114516297",
+                        "name": "Girls Clearance",
+                        "seoURL": "/catalog/girls-clearance-kids.jsp?CN=Gender:Girls+Promotions:Clearance+AgeAppropriate:Kids&cc=sale-TN2.0-S-Clearance-KidsGirls",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1790481985166",
+                        "name": "Boys Clearance",
+                        "seoURL": "/catalog/boys-clearance-kids.jsp?CN=Gender:Boys+Promotions:Clearance+AgeAppropriate:Kids&cc=sale-TN2.0-S-Clearance-KidsBoys",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1990926876915",
+                        "name": "Shoes Clearance",
+                        "seoURL": "/catalog/clearance-shoes.jsp?CN=Promotions:Clearance+Department:Shoes&cc=sale-TN2.0-S-Clearance-Shoes",
+                        "type": "Catalog"
+                    },
+                    {
+                        "ID": "1919053773045",
+                        "name": "Shop by Price",
+                        "seoURL": "/catalog/clearance.jsp?CN=Promotions:Clearance&cc=clearancecloseouts-&cc=sale-TN2.0-S-shopbyprice",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1521145094469",
+                                "name": "$5 & Under",
+                                "seoURL": "/catalog/clearance.jsp?CN=Promotions:Clearance+MerchPricing:Under%20%245+MerchPricing:%245.00&BL=y&cc=sale-TN2.0-S-shopbyprice-5under",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1713508597116",
+                                "name": "$10 & Under",
+                                "seoURL": "/catalog/clearance.jsp?CN=Promotions:Clearance+MerchPricing:Under%20%2410+MerchPricing:%2410.00&BL=y&cc=sale-TN2.0-S-shopbyprice-10under",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1827915501698",
+                                "name": "$25 & Under",
+                                "seoURL": "/catalog/clearance.jsp?CN=Promotions:Clearance+MerchPricing:Under%20%2425+MerchPricing:%2425.00&BL=y&cc=sale-TN2.0-S-shopbyprice-25under",
+                                "type": "Catalog"
+                            }
+                        ]
+                    },
+                    {
+                        "ID": "1245698098920",
+                        "name": "Closeouts",
+                        "seoURL": "/catalog/sale.jsp?CN=Promotions:Sale+Assortment:Closeout%20Deals&BL=y&cc=sale-TN2.0-S-closeouts",
+                        "type": "Catalog",
+                        "categories": [
+                            {
+                                "ID": "1676917529305",
+                                "name": "Home",
+                                "seoURL": "/catalog/sale-for-the-home.jsp?CN=Promotions:Sale+Activity:For%20the%20Home+Assortment:Closeout%20Deals&BL=y&cc=sale-TN2.0-S-closeouts-home",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1013966571373",
+                                "name": "Womens",
+                                "seoURL": "/catalog/sale-womens.jsp?CN=Promotions:Sale+Gender:Womens+Assortment:Closeout%20Deals&BL=y&cc=sale-TN2.0-S-closeouts-womens",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1709836014569",
+                                "name": "Mens",
+                                "seoURL": "/catalog/sale-mens.jsp?CN=Promotions:Sale+Gender:Mens+Assortment:Closeout%20Deals&BL=y&cc=sale-TN2.0-S-closeouts-mens",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1002709150393",
+                                "name": "Kids",
+                                "seoURL": "/catalog/sale.jsp?CN=Promotions:Sale+AgeAppropriate:Kids+Assortment:Closeout%20Deals&BL=y&cc=sale-TN2.0-S-closeouts-kids",
+                                "type": "Catalog"
+                            },
+                            {
+                                "ID": "1792378727055",
+                                "name": "Shoes",
+                                "seoURL": "/catalog/sale-shoes.jsp?CN=Promotions:Sale+Department:Shoes+Assortment:Closeout%20Deals&BL=y&cc=sale-TN2.0-S-closeouts-shoes",
+                                "type": "Catalog"
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}
