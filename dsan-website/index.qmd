@@ -1,10 +1,11 @@
 ---
 title: "Isfar Baset"
-image: isfar.png
+image: ib4.png
+page-layout: full
 about:
-  template: jolla
-  image-width: 30em
-  image-shape: round
+  template: marquee
+  # image-width: 30em
+  # image-shape: round
   links:
     - icon: linkedin
       text: LinkedIn
@@ -12,24 +13,28 @@ about:
     - icon: github
       text: Github
       href: https://github.com/isfarbaset
+    # - icon: instagram
+    #   text: Instagram
+    #   href: https://www.instagram.com/is.far/
 ---
 
 <style>
-  body {
-  background-image: url("https://img.freepik.com/premium-photo/scientific-molecule-background-with-flow-waves-medicine-science-technology-chemistry-wallpaper-o_230610-906.jpg?w=2000");
+  /* body {
+  background-image: url("https://images.freeimages.com/image/previews/fa5/spiraling-abstract-backdrop-5690801.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-}
+} */
   
 </style>
 
-GU netID: iib2
-
 Hello! I’m originally from Dhaka, the vibrant capital city of Bangladesh. I came to the US in 2015 in pursuit of my bachelor's degree in Computer Science and lived in West Michigan before moving to Northern Virginia in 2022. Before joining Georgetown, I worked as a Computer Engineer, and a Data Analyst. 
 
-A relentless learner, I am currently pursuing a Master's of Science in Data Science and Analytics at Georgetown University. As I progress in my career, my passion lies in leveraging tailored data and algorithms to solve intricate business problems and communicating complex insights to non-technical stakeholders.
+I am currently pursuing a Master's of Science in Data Science & Analytics at Georgetown University. As I progress in my career, my passion lies in leveraging tailored data and algorithms to solve intricate business problems and communicating complex insights to non-technical stakeholders.
 
 I love spending time in charming cafes and exploring new cuisines. During my downtime I enjoy reading, painting and watching movies/TV shows. 
+
+
+GU netID: iib2
 
 ## Education
 
@@ -38,7 +43,6 @@ Georgetown University, Washington, D.C. | 2023 - 2025
 
 Bachelors of Science in Computer Science <br>
 Grand Valley State University, Grand Rapids, MI | 2015 - 2020
-new line
 
 ## Experience
 
@@ -47,7 +51,3 @@ Shift Digital, Birmingham, MI | 2021 - 2022
 
 Computer Engineer <br>
 Array of Engineers, Grand Rapids, MI | 2020 - 2021
-
-:::
-
-background image credit: <a href="https://img.freepik.com/premium-photo/scientific-molecule-background-with-flow-waves-medicine-science-technology-chemistry-wallpaper-o_230610-906.jpg?w=2000">Freepik</a>
