@@ -201,5 +201,12 @@
     "title": "EDA and Hypothesis Testing",
     "section": "",
     "text": "# Combine the datasets\ncombined_data &lt;- rbind(VA, MD)\n\nboxplot(overall_aqi ~ area, data = combined_data, \n        names = c(\"VA\", \"MD\"),\n        main = \"Comparison of Overall AQI\",\n        xlab = \"State\",\n        ylab = \"AQI\")\n\n\n\n\nThe box plot comparison indicates that Maryland has a higher median Air Quality Index (AQI) and greater variability in AQI values than Virginia, with Virginia exhibiting an outlier that indicates an occasional AQI reading significantly higher than typical values. Both states have similar symmetry around their medians, suggesting a comparable distribution shape for AQI readings."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "5100 Semester Project",
+    "section": "",
+    "text": "Alt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text\n\n\n\n\n\nAlt text"
   }
 ]

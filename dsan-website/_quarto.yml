@@ -72,9 +72,8 @@ website:
           file: 5000-website/clustering/clustering.ipynb
 
         - text: Decision Trees
-          contents: 
-            - text: Classification
-            - text: Regression
+          file: 5000-website/decision-tree/classification-and-regression.ipynb
+
         - text: ARM
         - text: Conclusions
 
@@ -103,5 +102,3 @@ format:
   html:
     theme: cosmo
     toc: true
-
-

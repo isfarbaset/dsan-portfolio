@@ -140,13 +140,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </header>
 
-<div class="cell" data-execution_count="9">
+<div class="cell" data-execution_count="36">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <section id="for-one-car-model" class="level3">
 <h3 class="anchored" data-anchor-id="for-one-car-model">For one car model:</h3>
-<div class="cell" data-execution_count="4">
+<div class="cell" data-execution_count="37">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>model <span class="op">=</span> <span class="st">'camry'</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>api_url <span class="op">=</span> <span class="st">'https://api.api-ninjas.com/v1/cars?model=</span><span class="sc">{}</span><span class="st">'</span>.<span class="bu">format</span>(model)</span>
@@ -162,42 +162,84 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="multiple-car-models" class="level3">
 <h3 class="anchored" data-anchor-id="multiple-car-models">Multiple car models:</h3>
-<div class="cell" data-execution_count="11">
+<div class="cell" data-execution_count="38">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Lists of car models for each manufacturer</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>toyota_models <span class="op">=</span> [<span class="st">'Camry'</span>, <span class="st">'Corolla'</span>, <span class="st">'RAV4'</span>]</span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>tesla_models <span class="op">=</span> [<span class="st">'Model S'</span>, <span class="st">'Model 3'</span>, <span class="st">'Model X'</span>]</span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>stla_models <span class="op">=</span> [<span class="st">'Ram 1500'</span>, <span class="st">'Jeep Wrangler'</span>, <span class="st">'Fiat 500'</span>] </span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>gm_models <span class="op">=</span> [<span class="st">'Chevrolet Silverado'</span>, <span class="st">'GMC Sierra'</span>, <span class="st">'Cadillac Escalade'</span>]</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>nissan_models <span class="op">=</span> [<span class="st">'Altima'</span>, <span class="st">'Rogue'</span>, <span class="st">'Leaf'</span>]</span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>mercedes_models <span class="op">=</span> [<span class="st">'C-Class'</span>, <span class="st">'E-Class'</span>, <span class="st">'S-Class'</span>]</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>bmw_models <span class="op">=</span> [<span class="st">'3 Series'</span>, <span class="st">'X5'</span>, <span class="st">'i3'</span>]</span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>porsche_models <span class="op">=</span> [<span class="st">'911'</span>, <span class="st">'Cayenne'</span>, <span class="st">'Taycan'</span>]</span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine all lists into one</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>all_models <span class="op">=</span> toyota_models <span class="op">+</span> tesla_models <span class="op">+</span> stla_models <span class="op">+</span> gm_models <span class="op">+</span> nissan_models <span class="op">+</span> mercedes_models <span class="op">+</span> bmw_models <span class="op">+</span> porsche_models</span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co"># Dictionary to store data for all models</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>all_data <span class="op">=</span> {}</span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop through each model and make the API call</span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> model <span class="kw">in</span> all_models:</span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>    api_url <span class="op">=</span> <span class="ss">f'https://api.api-ninjas.com/v1/cars?model=</span><span class="sc">{</span>model<span class="sc">}</span><span class="ss">'</span></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> requests.get(api_url, headers<span class="op">=</span>{<span class="st">'X-Api-Key'</span>: <span class="st">'rtsVUhXvel9N968aGEoMeg==zciz73lsmuFNEOQM'</span>})</span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> response.status_code <span class="op">==</span> requests.codes.ok:</span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Add the response data to the dictionary</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>        all_data[model] <span class="op">=</span> response.json()</span>
-<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
-<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Error for </span><span class="sc">{</span>model<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>response<span class="sc">.</span>status_code<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>response<span class="sc">.</span>text<span class="sc">}</span><span class="ss">"</span>)</span>
-<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the dictionary to a JSON string</span></span>
-<span id="cb4-29"><a href="#cb4-29" aria-hidden="true" tabindex="-1"></a>json_data <span class="op">=</span> json.dumps(all_data, indent<span class="op">=</span><span class="dv">4</span>)</span>
-<span id="cb4-30"><a href="#cb4-30" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-31"><a href="#cb4-31" aria-hidden="true" tabindex="-1"></a><span class="co"># Write the JSON data to a file</span></span>
-<span id="cb4-32"><a href="#cb4-32" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'cars.json'</span>, <span class="st">'w'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
-<span id="cb4-33"><a href="#cb4-33" aria-hidden="true" tabindex="-1"></a>    <span class="bu">file</span>.write(json_data)</span>
-<span id="cb4-34"><a href="#cb4-34" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-35"><a href="#cb4-35" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"JSON data saved to car_models_data.json"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>toyota_models <span class="op">=</span> [<span class="st">'Camry'</span>, <span class="st">'Corolla'</span>, <span class="st">'RAV4'</span>, <span class="st">'Highlander'</span>, <span class="st">'Prius'</span>, <span class="st">'Tacoma'</span>, <span class="st">'Tundra'</span>, <span class="st">'Yaris'</span>, <span class="st">'Avalon'</span>, <span class="st">'4Runner'</span>, <span class="st">'Supra'</span>, <span class="st">'Sienna'</span>]</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>tesla_models <span class="op">=</span> [<span class="st">'Model S'</span>, <span class="st">'Model 3'</span>, <span class="st">'Model X'</span>, <span class="st">'Model Y'</span>, <span class="st">'Roadster'</span>, <span class="st">'Cybertruck'</span>]</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>stla_models <span class="op">=</span> [<span class="st">'Ram 1500'</span>, <span class="st">'Jeep Wrangler'</span>, <span class="st">'Fiat 500'</span>, <span class="st">'Dodge Charger'</span>, <span class="st">'Chrysler Pacifica'</span>, <span class="st">'Alfa Romeo Giulia'</span>, <span class="st">'Maserati Ghibli'</span>, <span class="st">'Lancia Ypsilon'</span>]</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a>gm_models <span class="op">=</span> [<span class="st">'Chevrolet Silverado'</span>, <span class="st">'GMC Sierra'</span>, <span class="st">'Cadillac Escalade'</span>, <span class="st">'Chevrolet Tahoe'</span>, <span class="st">'Buick Enclave'</span>, <span class="st">'GMC Yukon'</span>, <span class="st">'Chevrolet Camaro'</span>, <span class="st">'Chevrolet Malibu'</span>, <span class="st">'Chevrolet Equinox'</span>]</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>nissan_models <span class="op">=</span> [<span class="st">'Altima'</span>, <span class="st">'Rogue'</span>, <span class="st">'Leaf'</span>, <span class="st">'Sentra'</span>, <span class="st">'Pathfinder'</span>, <span class="st">'Murano'</span>, <span class="st">'Maxima'</span>, <span class="st">'Frontier'</span>, <span class="st">'Juke'</span>, <span class="st">'Xterra'</span>]</span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>mercedes_models <span class="op">=</span> [<span class="st">'C-Class'</span>, <span class="st">'E-Class'</span>, <span class="st">'S-Class'</span>, <span class="st">'GLC'</span>, <span class="st">'GLE'</span>, <span class="st">'A-Class'</span>, <span class="st">'CLS'</span>, <span class="st">'GLS'</span>, <span class="st">'GLA'</span>, <span class="st">'GLB'</span>]</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>bmw_models <span class="op">=</span> [<span class="st">'3 Series'</span>, <span class="st">'X5'</span>, <span class="st">'i3'</span>, <span class="st">'5 Series'</span>, <span class="st">'X3'</span>, <span class="st">'X1'</span>, <span class="st">'2 Series'</span>, <span class="st">'Z4'</span>, <span class="st">'7 Series'</span>, <span class="st">'i8'</span>]</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>porsche_models <span class="op">=</span> [<span class="st">'911'</span>, <span class="st">'Cayenne'</span>, <span class="st">'Taycan'</span>, <span class="st">'Panamera'</span>, <span class="st">'Macan'</span>, <span class="st">'718 Boxster'</span>, <span class="st">'718 Cayman'</span>, <span class="st">'Carrera GT'</span>]</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>ford_models <span class="op">=</span> [<span class="st">'F-150'</span>, <span class="st">'Mustang'</span>, <span class="st">'Explorer'</span>, <span class="st">'Focus'</span>, <span class="st">'Fiesta'</span>, <span class="st">'Ranger'</span>, <span class="st">'Escape'</span>, <span class="st">'Bronco'</span>]</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>audi_models <span class="op">=</span> [<span class="st">'A4'</span>, <span class="st">'A6'</span>, <span class="st">'Q5'</span>, <span class="st">'Q7'</span>, <span class="st">'A3'</span>, <span class="st">'A8'</span>, <span class="st">'Q3'</span>, <span class="st">'TT'</span>, <span class="st">'R8'</span>]</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>toyota_models <span class="op">=</span> [<span class="st">'Camry'</span>, <span class="st">'Corolla'</span>, <span class="st">'RAV4'</span>, <span class="st">'Highlander'</span>, <span class="st">'Prius'</span>, <span class="st">'Tacoma'</span>, <span class="st">'Tundra'</span>, <span class="st">'Yaris'</span>, <span class="st">'Avalon'</span>, <span class="st">'4Runner'</span>, <span class="st">'Supra'</span>, <span class="st">'Sienna'</span>, <span class="st">'Land Cruiser'</span>, <span class="st">'C-HR'</span>]</span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>tesla_models <span class="op">=</span> [<span class="st">'Model S'</span>, <span class="st">'Model 3'</span>, <span class="st">'Model X'</span>, <span class="st">'Model Y'</span>, <span class="st">'Roadster'</span>, <span class="st">'Cybertruck'</span>, <span class="st">'Semi'</span>]</span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>stla_models <span class="op">=</span> [<span class="st">'Ram 1500'</span>, <span class="st">'Jeep Wrangler'</span>, <span class="st">'Fiat 500'</span>, <span class="st">'Dodge Charger'</span>, <span class="st">'Chrysler Pacifica'</span>, <span class="st">'Alfa Romeo Giulia'</span>, <span class="st">'Maserati Ghibli'</span>, <span class="st">'Lancia Ypsilon'</span>, <span class="st">'Dodge Challenger'</span>]</span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>gm_models <span class="op">=</span> [<span class="st">'Chevrolet Silverado'</span>, <span class="st">'GMC Sierra'</span>, <span class="st">'Cadillac Escalade'</span>, <span class="st">'Chevrolet Tahoe'</span>, <span class="st">'Buick Enclave'</span>, <span class="st">'GMC Yukon'</span>, <span class="st">'Chevrolet Camaro'</span>, <span class="st">'Chevrolet Malibu'</span>, <span class="st">'Chevrolet Equinox'</span>, <span class="st">'Cadillac CT5'</span>]</span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>nissan_models <span class="op">=</span> [<span class="st">'Altima'</span>, <span class="st">'Rogue'</span>, <span class="st">'Leaf'</span>, <span class="st">'Sentra'</span>, <span class="st">'Pathfinder'</span>, <span class="st">'Murano'</span>, <span class="st">'Maxima'</span>, <span class="st">'Frontier'</span>, <span class="st">'Juke'</span>, <span class="st">'Xterra'</span>, <span class="st">'Versa'</span>, <span class="st">'Armada'</span>]</span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>mercedes_models <span class="op">=</span> [<span class="st">'C-Class'</span>, <span class="st">'E-Class'</span>, <span class="st">'S-Class'</span>, <span class="st">'GLC'</span>, <span class="st">'GLE'</span>, <span class="st">'A-Class'</span>, <span class="st">'CLS'</span>, <span class="st">'GLS'</span>, <span class="st">'GLA'</span>, <span class="st">'GLB'</span>, <span class="st">'AMG GT'</span>, <span class="st">'SLC'</span>]</span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>bmw_models <span class="op">=</span> [<span class="st">'3 Series'</span>, <span class="st">'X5'</span>, <span class="st">'i3'</span>, <span class="st">'5 Series'</span>, <span class="st">'X3'</span>, <span class="st">'X1'</span>, <span class="st">'2 Series'</span>, <span class="st">'Z4'</span>, <span class="st">'7 Series'</span>, <span class="st">'i8'</span>, <span class="st">'1 Series'</span>, <span class="st">'6 Series'</span>]</span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a>porsche_models <span class="op">=</span> [<span class="st">'911'</span>, <span class="st">'Cayenne'</span>, <span class="st">'Taycan'</span>, <span class="st">'Panamera'</span>, <span class="st">'Macan'</span>, <span class="st">'718 Boxster'</span>, <span class="st">'718 Cayman'</span>, <span class="st">'Carrera GT'</span>, <span class="st">'Panamera'</span>]</span>
+<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a>ford_models <span class="op">=</span> [<span class="st">'F-150'</span>, <span class="st">'Mustang'</span>, <span class="st">'Explorer'</span>, <span class="st">'Focus'</span>, <span class="st">'Fiesta'</span>, <span class="st">'Ranger'</span>, <span class="st">'Escape'</span>, <span class="st">'Bronco'</span>, <span class="st">'Edge'</span>, <span class="st">'Expedition'</span>]</span>
+<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a>audi_models <span class="op">=</span> [<span class="st">'A4'</span>, <span class="st">'A6'</span>, <span class="st">'Q5'</span>, <span class="st">'Q7'</span>, <span class="st">'A3'</span>, <span class="st">'A8'</span>, <span class="st">'Q3'</span>, <span class="st">'TT'</span>, <span class="st">'R8'</span>, <span class="st">'A5'</span>, <span class="st">'Q8'</span>]</span>
+<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a>honda_models <span class="op">=</span> [<span class="st">'Civic'</span>, <span class="st">'Accord'</span>, <span class="st">'CR-V'</span>, <span class="st">'Pilot'</span>, <span class="st">'Fit'</span>, <span class="st">'HR-V'</span>, <span class="st">'Odyssey'</span>, <span class="st">'Ridgeline'</span>]</span>
+<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a>volkswagen_models <span class="op">=</span> [<span class="st">'Golf'</span>, <span class="st">'Passat'</span>, <span class="st">'Tiguan'</span>, <span class="st">'Jetta'</span>, <span class="st">'Arteon'</span>, <span class="st">'Atlas'</span>, <span class="st">'Beetle'</span>, <span class="st">'Polo'</span>]</span>
+<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a>hyundai_models <span class="op">=</span> [<span class="st">'Sonata'</span>, <span class="st">'Elantra'</span>, <span class="st">'Tucson'</span>, <span class="st">'Santa Fe'</span>, <span class="st">'Kona'</span>, <span class="st">'Veloster'</span>, <span class="st">'Ioniq'</span>, <span class="st">'Palisade'</span>]</span>
+<span id="cb4-25"><a href="#cb4-25" aria-hidden="true" tabindex="-1"></a>kia_models <span class="op">=</span> [<span class="st">'Sorento'</span>, <span class="st">'Optima'</span>, <span class="st">'Sportage'</span>, <span class="st">'Soul'</span>, <span class="st">'Forte'</span>, <span class="st">'Telluride'</span>, <span class="st">'Stinger'</span>, <span class="st">'Niro'</span>]</span>
+<span id="cb4-26"><a href="#cb4-26" aria-hidden="true" tabindex="-1"></a>mazda_models <span class="op">=</span> [<span class="st">'MX-5'</span>, <span class="st">'CX-5'</span>, <span class="st">'Mazda3'</span>, <span class="st">'Mazda6'</span>, <span class="st">'CX-30'</span>]</span>
+<span id="cb4-27"><a href="#cb4-27" aria-hidden="true" tabindex="-1"></a>subaru_models <span class="op">=</span> [<span class="st">'Outback'</span>, <span class="st">'Forester'</span>, <span class="st">'Impreza'</span>, <span class="st">'BRZ'</span>, <span class="st">'Ascent'</span>]</span>
+<span id="cb4-28"><a href="#cb4-28" aria-hidden="true" tabindex="-1"></a></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="39">
+<div class="sourceCode cell-code" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Expanded lists of electric and hybrid vehicles</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>toyota_models <span class="op">+=</span> [<span class="st">'Prius Prime'</span>, <span class="st">'RAV4 Prime'</span>, <span class="st">'Mirai'</span>]</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>tesla_models <span class="op">+=</span> [<span class="st">'Model 3 Long Range'</span>, <span class="st">'Model 3 Performance'</span>, <span class="st">'Model S Plaid'</span>, <span class="st">'Model X Long Range'</span>]</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>gm_models <span class="op">+=</span> [<span class="st">'Chevrolet Bolt EV'</span>, <span class="st">'Chevrolet Bolt EUV'</span>, <span class="st">'GMC Hummer EV'</span>, <span class="st">'Cadillac Lyriq'</span>]</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>nissan_models <span class="op">+=</span> [<span class="st">'Ariya'</span>, <span class="st">'Leaf e+'</span>, <span class="st">'e-NV200'</span>]</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>bmw_models <span class="op">+=</span> [<span class="st">'i4'</span>, <span class="st">'iX'</span>, <span class="st">'i8 Roadster'</span>, <span class="st">'330e'</span>, <span class="st">'530e'</span>]</span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>mercedes_models <span class="op">+=</span> [<span class="st">'EQS'</span>, <span class="st">'EQA'</span>, <span class="st">'EQB'</span>, <span class="st">'EQC'</span>, <span class="st">'EQV'</span>]</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>audi_models <span class="op">+=</span> [<span class="st">'e-tron'</span>, <span class="st">'e-tron GT'</span>, <span class="st">'Q4 e-tron'</span>, <span class="st">'A7 Sportback e'</span>]</span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>porsche_models <span class="op">+=</span> [<span class="st">'Taycan Turbo'</span>, <span class="st">'Taycan Turbo S'</span>, <span class="st">'Taycan 4S'</span>, <span class="st">'Panamera E-Hybrid'</span>]</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>ford_models <span class="op">+=</span> [<span class="st">'Mustang Mach-E'</span>, <span class="st">'F-150 Lightning'</span>, <span class="st">'Escape Plug-In Hybrid'</span>]</span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>volkswagen_models <span class="op">+=</span> [<span class="st">'ID.3'</span>, <span class="st">'ID.4'</span>, <span class="st">'e-Golf'</span>, <span class="st">'Touareg Hybrid'</span>]</span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>hyundai_models <span class="op">+=</span> [<span class="st">'Kona Electric'</span>, <span class="st">'Ioniq Electric'</span>, <span class="st">'Tucson Plug-In Hybrid'</span>]</span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>kia_models <span class="op">+=</span> [<span class="st">'Niro EV'</span>, <span class="st">'Soul EV'</span>, <span class="st">'Sorento Plug-In Hybrid'</span>]</span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>volvo_models <span class="op">=</span> [<span class="st">'XC40 Recharge'</span>, <span class="st">'C40 Recharge'</span>, <span class="st">'S90 Plug-In Hybrid'</span>]</span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a>jaguar_models <span class="op">=</span> [<span class="st">'I-PACE'</span>]</span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>lucid_models <span class="op">=</span> [<span class="st">'Lucid Air'</span>]</span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a>rivian_models <span class="op">=</span> [<span class="st">'R1T'</span>, <span class="st">'R1S'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
+<div class="cell" data-execution_count="40">
+<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Combine all lists into one</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>all_models <span class="op">=</span> toyota_models <span class="op">+</span> tesla_models <span class="op">+</span> stla_models <span class="op">+</span> gm_models <span class="op">+</span> nissan_models <span class="op">+</span> mercedes_models <span class="op">+</span> bmw_models <span class="op">+</span> porsche_models <span class="op">+</span> ford_models <span class="op">+</span> audi_models <span class="op">+</span> honda_models <span class="op">+</span> volkswagen_models <span class="op">+</span> hyundai_models <span class="op">+</span> kia_models <span class="op">+</span> mazda_models <span class="op">+</span> subaru_models <span class="op">+</span> volvo_models <span class="op">+</span> jaguar_models <span class="op">+</span> lucid_models <span class="op">+</span> rivian_models</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Dictionary to store data for all models</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>all_data <span class="op">=</span> {}</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Loop through each model and make the API call</span></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> model <span class="kw">in</span> all_models:</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>    api_url <span class="op">=</span> <span class="ss">f'https://api.api-ninjas.com/v1/cars?model=</span><span class="sc">{</span>model<span class="sc">}</span><span class="ss">'</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>    response <span class="op">=</span> requests.get(api_url, headers<span class="op">=</span>{<span class="st">'X-Api-Key'</span>: <span class="st">'rtsVUhXvel9N968aGEoMeg==zciz73lsmuFNEOQM'</span>})</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> response.status_code <span class="op">==</span> requests.codes.ok:</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Add the response data to the dictionary</span></span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>        all_data[model] <span class="op">=</span> response.json()</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>        <span class="bu">print</span>(<span class="ss">f"Error for </span><span class="sc">{</span>model<span class="sc">}</span><span class="ss">: </span><span class="sc">{</span>response<span class="sc">.</span>status_code<span class="sc">}</span><span class="ss"> </span><span class="sc">{</span>response<span class="sc">.</span>text<span class="sc">}</span><span class="ss">"</span>)</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the dictionary to a JSON string</span></span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>json_data <span class="op">=</span> json.dumps(all_data, indent<span class="op">=</span><span class="dv">4</span>)</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-21"><a href="#cb6-21" aria-hidden="true" tabindex="-1"></a><span class="co"># Write the JSON data to a file</span></span>
+<span id="cb6-22"><a href="#cb6-22" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'cars.json'</span>, <span class="st">'w'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb6-23"><a href="#cb6-23" aria-hidden="true" tabindex="-1"></a>    <span class="bu">file</span>.write(json_data)</span>
+<span id="cb6-24"><a href="#cb6-24" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-25"><a href="#cb6-25" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"JSON data saved to car_models_data.json"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>JSON data saved to car_models_data.json</code></pre>
 </div>
@@ -205,28 +247,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="read-data-from-json-file-and-save-as-a-dataframe" class="level2">
 <h2 class="anchored" data-anchor-id="read-data-from-json-file-and-save-as-a-dataframe">Read Data from JSON File and Save as a Dataframe</h2>
-<div class="cell" data-execution_count="13">
-<div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the JSON file</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">'cars.json'</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(file_path, <span class="st">'r'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> json.load(<span class="bu">file</span>)</span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the JSON data to a pandas DataFrame</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>df_list <span class="op">=</span> []</span>
-<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> model, records <span class="kw">in</span> data.items():</span>
-<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> record <span class="kw">in</span> records:</span>
-<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Add the model name to each record</span></span>
-<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>        record[<span class="st">'model'</span>] <span class="op">=</span> model</span>
-<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>        df_list.append(record)</span>
-<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Create DataFrame from the list of dictionaries</span></span>
-<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>cars_df <span class="op">=</span> pd.DataFrame(df_list)</span>
-<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>cars_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="13">
+<div class="cell" data-execution_count="41">
+<div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the JSON file</span></span>
+<span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a>file_path <span class="op">=</span> <span class="st">'cars.json'</span></span>
+<span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(file_path, <span class="st">'r'</span>) <span class="im">as</span> <span class="bu">file</span>:</span>
+<span id="cb8-7"><a href="#cb8-7" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> json.load(<span class="bu">file</span>)</span>
+<span id="cb8-8"><a href="#cb8-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-9"><a href="#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert the JSON data to a pandas DataFrame</span></span>
+<span id="cb8-10"><a href="#cb8-10" aria-hidden="true" tabindex="-1"></a>df_list <span class="op">=</span> []</span>
+<span id="cb8-11"><a href="#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> model, records <span class="kw">in</span> data.items():</span>
+<span id="cb8-12"><a href="#cb8-12" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> record <span class="kw">in</span> records:</span>
+<span id="cb8-13"><a href="#cb8-13" aria-hidden="true" tabindex="-1"></a>        <span class="co"># Add the model name to each record</span></span>
+<span id="cb8-14"><a href="#cb8-14" aria-hidden="true" tabindex="-1"></a>        record[<span class="st">'model'</span>] <span class="op">=</span> model</span>
+<span id="cb8-15"><a href="#cb8-15" aria-hidden="true" tabindex="-1"></a>        df_list.append(record)</span>
+<span id="cb8-16"><a href="#cb8-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-17"><a href="#cb8-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Create DataFrame from the list of dictionaries</span></span>
+<span id="cb8-18"><a href="#cb8-18" aria-hidden="true" tabindex="-1"></a>cars_df <span class="op">=</span> pd.DataFrame(df_list)</span>
+<span id="cb8-19"><a href="#cb8-19" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-20"><a href="#cb8-20" aria-hidden="true" tabindex="-1"></a>cars_df</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output cell-output-display" data-execution_count="41">
 <div>
 
 
@@ -340,91 +382,91 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>...</td>
 </tr>
 <tr class="odd">
-<td data-quarto-table-cell-role="th">75</td>
-<td>68</td>
-<td>large car</td>
-<td>69</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>awd</td>
-<td>electricity</td>
-<td>71</td>
-<td>porsche</td>
-<td>Taycan</td>
-<td>a</td>
-<td>2020</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">76</td>
-<td>67</td>
-<td>large car</td>
-<td>68</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>awd</td>
-<td>electricity</td>
-<td>68</td>
-<td>porsche</td>
-<td>Taycan</td>
-<td>a</td>
-<td>2020</td>
-</tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">77</td>
-<td>68</td>
-<td>large car</td>
-<td>69</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>awd</td>
-<td>electricity</td>
-<td>71</td>
-<td>porsche</td>
-<td>Taycan</td>
-<td>a</td>
-<td>2020</td>
-</tr>
-<tr class="even">
-<td data-quarto-table-cell-role="th">78</td>
-<td>79</td>
-<td>large car</td>
-<td>79</td>
-<td>NaN</td>
-<td>NaN</td>
-<td>awd</td>
-<td>electricity</td>
+<td data-quarto-table-cell-role="th">714</td>
 <td>80</td>
-<td>porsche</td>
-<td>Taycan</td>
+<td>small sport utility vehicle</td>
+<td>76</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>4wd</td>
+<td>electricity</td>
+<td>72</td>
+<td>jaguar</td>
+<td>I-PACE</td>
 <td>a</td>
 <td>2021</td>
 </tr>
-<tr class="odd">
-<td data-quarto-table-cell-role="th">79</td>
-<td>75</td>
-<td>large car</td>
-<td>77</td>
+<tr class="even">
+<td data-quarto-table-cell-role="th">715</td>
+<td>89</td>
+<td>small sport utility vehicle</td>
+<td>85</td>
 <td>NaN</td>
 <td>NaN</td>
-<td>awd</td>
+<td>4wd</td>
 <td>electricity</td>
-<td>81</td>
-<td>porsche</td>
-<td>Taycan</td>
+<td>82</td>
+<td>jaguar</td>
+<td>I-PACE</td>
 <td>a</td>
-<td>2021</td>
+<td>2023</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">716</td>
+<td>79</td>
+<td>small sport utility vehicle</td>
+<td>76</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>4wd</td>
+<td>electricity</td>
+<td>72</td>
+<td>jaguar</td>
+<td>I-PACE</td>
+<td>a</td>
+<td>2023</td>
+</tr>
+<tr class="even">
+<td data-quarto-table-cell-role="th">717</td>
+<td>74</td>
+<td>standard pickup truck</td>
+<td>70</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>4wd</td>
+<td>electricity</td>
+<td>66</td>
+<td>rivian</td>
+<td>R1T</td>
+<td>a</td>
+<td>2022</td>
+</tr>
+<tr class="odd">
+<td data-quarto-table-cell-role="th">718</td>
+<td>73</td>
+<td>standard sport utility vehicle</td>
+<td>69</td>
+<td>NaN</td>
+<td>NaN</td>
+<td>4wd</td>
+<td>electricity</td>
+<td>65</td>
+<td>rivian</td>
+<td>R1S</td>
+<td>a</td>
+<td>2022</td>
 </tr>
 </tbody>
 </table>
 
-<p>80 rows × 12 columns</p>
+<p>719 rows × 12 columns</p>
 </div>
 </div>
 </div>
 <section id="save-output" class="level3">
 <h3 class="anchored" data-anchor-id="save-output">Save Output</h3>
-<div class="cell" data-execution_count="15">
-<div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a>cars_df.to_csv(<span class="st">'cars-data.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell" data-execution_count="42">
+<div class="sourceCode cell-code" id="cb9"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a>cars_df.to_csv(<span class="st">'cars-data.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 
 
