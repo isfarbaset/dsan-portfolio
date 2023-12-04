@@ -1,5 +1,5 @@
 ---
-title: "Isfar Baset"
+title: "👋🏼 Isfar Baset"
 image: ib4.png
 page-layout: full
 about:
@@ -13,9 +13,9 @@ about:
     - icon: github
       text: Github
       href: https://github.com/isfarbaset
-    # - icon: instagram
-    #   text: Instagram
-    #   href: https://www.instagram.com/is.far/
+    - icon: instagram
+      text: Instagram
+      href: https://www.instagram.com/is.far/
 ---
 
 <style>
@@ -36,18 +36,37 @@ I love spending time in charming cafes and exploring new cuisines. During my dow
 
 GU netID: iib2
 
-## Education
+## 🎓 Education
 
-Masters of Science in Data Science and Analytics <br>
-Georgetown University, Washington, D.C. | 2023 - 2025
+**Masters of Science in Data Science & Analytics** <br>
+*Georgetown University, Washington, D.C. | 2023 - 2025*
 
-Bachelors of Science in Computer Science <br>
-Grand Valley State University, Grand Rapids, MI | 2015 - 2020
+**Bachelors of Science in Computer Science** <br>
+*Grand Valley State University, Grand Rapids, MI | 2015 - 2020*
 
-## Experience
+## 💼 Experience
 
-Data Analyst <br>
-Shift Digital, Birmingham, MI | 2021 - 2022
+**Data Analyst** <br>
+*Shift Digital, Birmingham, MI | 2021 - 2022*
 
-Computer Engineer <br>
-Array of Engineers, Grand Rapids, MI | 2020 - 2021
+✔️ Guided and directed data stewardship and consumption initiatives for two of the company’s largest clients. 
+
+✔️ Drove data architecture/design solutions for complex business problems and led data design and integration efforts alongside C-level executives.
+
+✔️ Applied emerging technology solutions to increase data processing efficiency and effectiveness by 50% using groundbreaking platforms such as Databricks. 
+
+✔️ Created an automated framework to extract, transform, and load data across twelve different clients, resulting in a 15-hour-per-week reduction in company time spent on deriving key financial insights.
+
+Skills: Marketing Analytics · Business Process · PySpark · Data Analysis · Azure Databricks · Process Improvement · Python (Programming Language) · SQL <br><br> 
+
+
+**Computer Engineer** <br>
+*Array of Engineers, Grand Rapids, MI | 2020 - 2021*
+
+✔️ Generated software verification and validation procedures using Dynamic Object-Oriented Requirements System (DOORS) and Ansys SCADE Suite for a major aerospace client developing embedded avionic software for the Airbus 350.
+
+✔️ Achieved 100% completion of all assignments on or ahead of schedule by demonstrating a methodical, detail-oriented, and thorough approach while adhering to compressed timelines.
+
+✔️ Designed and developed features for web applications using the AngularJS framework.
+
+✔️ Participated in design and code reviews using GitHub to identify and eliminate problems early in the development process.

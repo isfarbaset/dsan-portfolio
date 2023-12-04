@@ -75,7 +75,10 @@ website:
           file: 5000-website/decision-tree/classification-and-regression.ipynb
 
         - text: ARM
+          file: 5000-website/ARM/arm.ipynb
+
         - text: Conclusions
+          file: 5000-website/conclusions.ipynb
 
     - title: "Fundamentals"
       contents:
