@@ -153,7 +153,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>python -m pip install wikipedia_sections</code></pre>
 <section id="import" class="level3">
 <h3 class="anchored" data-anchor-id="import">Import</h3>
-<div class="cell" data-execution_count="7">
+<div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># conda install -c conda-forge wikipedia</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># conda install -c conda-forge wordcloud</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># python -m pip install wikipedia_sections</span></span>
@@ -168,7 +168,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.feature_extraction.text <span class="im">import</span> CountVectorizer</span>
 <span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<div class="cell" data-execution_count="8">
+<div class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># RUN THE FOLLOWING IF YOU HAVEN'T DOWNLOADED THESE BEFORE</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>nltk.download(<span class="st">'vader_lexicon'</span>)</span>
 <span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>nltk.download(<span class="st">'punkt'</span>)</span>
@@ -188,14 +188,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 [nltk_data]     /Users/isfarbaset/nltk_data...
 [nltk_data]   Package omw-1.4 is already up-to-date!</code></pre>
 </div>
-<div class="cell-output cell-output-display" data-execution_count="8">
+<div class="cell-output cell-output-display" data-execution_count="2">
 <pre><code>True</code></pre>
 </div>
 </div>
 </section>
 <section id="set-user-parameters" class="level3">
 <h3 class="anchored" data-anchor-id="set-user-parameters">Set user parameters</h3>
-<div class="cell" data-execution_count="9">
+<div class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># PARAMETERS </span></span>
 <span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>label_list<span class="op">=</span>[<span class="st">'electric vehicle'</span>,<span class="st">'gasoline vehicle'</span>,<span class="st">'hybrid vehicle'</span>]</span>
 <span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>max_num_pages<span class="op">=</span><span class="dv">25</span></span>
@@ -214,7 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="define-text-cleaning-function" class="level3">
 <h3 class="anchored" data-anchor-id="define-text-cleaning-function">Define text cleaning function</h3>
-<div class="cell" data-execution_count="10">
+<div class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb7"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="kw">def</span> clean_string(text):</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># #FILTER OUT UNWANTED CHAR</span></span>
 <span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a>    new_text<span class="op">=</span><span class="st">""</span></span>
@@ -254,7 +254,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="preform-a-wikipedia-crawl" class="level3">
 <h3 class="anchored" data-anchor-id="preform-a-wikipedia-crawl">Preform a wikipedia crawl</h3>
-<div class="cell" data-execution_count="11">
+<div class="cell" data-execution_count="5">
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#INITIALIZE </span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>corpus<span class="op">=</span>[]  <span class="co"># list of strings (input variables X)</span></span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>targets<span class="op">=</span>[] <span class="co"># list of targets (labels or response variables Y)</span></span>
@@ -318,65 +318,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb8-61"><a href="#cb8-61" aria-hidden="true" tabindex="-1"></a>        <span class="cf">except</span>:</span>
 <span id="cb8-62"><a href="#cb8-62" aria-hidden="true" tabindex="-1"></a>            <span class="bu">print</span>(<span class="st">"WARNING: SOMETHING WENT WRONG:"</span>, title)<span class="op">;</span>  </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Pages for label = electric vehicle : ['Electric vehicle', 'Electric vehicle battery', 'History of the electric vehicle', 'Hybrid electric vehicle', 'Battery electric vehicle', 'Plug-in electric vehicle', 'List of production battery electric vehicles', 'Electric car use by country', 'Neighborhood Electric Vehicle', 'Electric vehicle conversion', 'Aptera (solar electric vehicle)', 'Hybrid vehicle', 'Electric car', 'Electric vehicle charging network', 'Plug-in hybrid', 'Capacitor electric vehicle', 'Hybrid vehicle drivetrain', 'Grumman LLV', 'Charging station', 'Electric vehicle warning sounds', 'Fuel cell vehicle', 'Plug-in electric vehicles in the United States', 'Government incentives for plug-in electric vehicles', 'London Electric Vehicle Company', 'Electric vehicle industry in China']
+<pre><code>Pages for label = electric vehicle : ['Electric vehicle', 'History of the electric vehicle', 'Battery electric vehicle', 'Electric vehicle battery', 'Hybrid electric vehicle', 'Electric car use by country', 'Plug-in electric vehicle', 'List of production battery electric vehicles', 'Neighborhood Electric Vehicle', 'Hybrid vehicle drivetrain', 'Aptera (solar electric vehicle)', 'Citroën Ami (electric vehicle)', 'Electric car', 'Electric vehicle conversion', 'Hybrid vehicle', 'Plug-in hybrid', 'Capacitor electric vehicle', 'Charging station', 'Grumman LLV', 'London Electric Vehicle Company', 'Electric vehicle industry in China', 'Fuel cell vehicle', 'Plug-in electric vehicles in China', 'Electric Vehicle Company', 'Electric vehicle warning sounds']
      Electric vehicle
-     Electric vehicle battery
      History of the electric vehicle
-     Hybrid electric vehicle
      Battery electric vehicle
+     Electric vehicle battery
+     Hybrid electric vehicle
+     Electric car use by country
      Plug-in electric vehicle
 WARNING: SOMETHING WENT WRONG: Plug-in electric vehicle
      List of production battery electric vehicles
-     Electric car use by country
      Neighborhood Electric Vehicle
-     Electric vehicle conversion
+     Hybrid vehicle drivetrain
      Aptera (solar electric vehicle)
-     Hybrid vehicle
+     Citroën Ami (electric vehicle)
      Electric car
-     Electric vehicle charging network
+     Electric vehicle conversion
+     Hybrid vehicle
      Plug-in hybrid
      Capacitor electric vehicle
-     Hybrid vehicle drivetrain
-     Grumman LLV
      Charging station
 WARNING: SOMETHING WENT WRONG: Charging station
-     Electric vehicle warning sounds
-     Fuel cell vehicle
-WARNING: SOMETHING WENT WRONG: Fuel cell vehicle
-     Plug-in electric vehicles in the United States
-     Government incentives for plug-in electric vehicles
-WARNING: SOMETHING WENT WRONG: Government incentives for plug-in electric vehicles
+     Grumman LLV
      London Electric Vehicle Company
      Electric vehicle industry in China
-Pages for label = gasoline vehicle : ['Petrol engine', 'Flexible-fuel vehicle', 'Alternative fuel vehicle', 'Gasoline', 'Miles per gallon gasoline equivalent', 'Electric vehicle', 'Natural gas vehicle', 'Hydrogen internal combustion engine vehicle', 'Common ethanol fuel mixtures', 'Hybrid electric vehicle', 'Gasoline pump', 'Gasoline gallon equivalent', 'Filling station', 'Bi-fuel vehicle', 'Green vehicle', 'Idle (engine)', 'Super ultra-low emission vehicle', 'Fuel efficiency', 'Fuel economy in automobiles', 'Exhaust gas', 'United States vehicle emission standards', 'History of the automobile', 'Low-speed pre-ignition', 'Top Tier Detergent Gasoline', 'Hybrid vehicle']
+     Fuel cell vehicle
+WARNING: SOMETHING WENT WRONG: Fuel cell vehicle
+     Plug-in electric vehicles in China
+     Electric Vehicle Company
+     Electric vehicle warning sounds
+Pages for label = gasoline vehicle : ['Petrol engine', 'Flexible-fuel vehicle', 'Gasoline', 'Alternative fuel vehicle', 'Electric vehicle', 'Miles per gallon gasoline equivalent', 'Hybrid electric vehicle', 'Natural gas vehicle', 'Bi-fuel vehicle', 'Gasoline pump', 'Common ethanol fuel mixtures', 'Hydrogen internal combustion engine vehicle', 'Filling station', 'Idle (engine)', 'Gasoline gallon equivalent', 'Low-speed pre-ignition', 'History of the automobile', 'Exhaust gas', 'Monroney sticker', 'Green vehicle', 'Hydrogen vehicle', 'Ford-Utilimaster FFV', 'Automotive engine', 'Fuel efficiency', 'United States vehicle emission standards']
      Petrol engine
      Flexible-fuel vehicle
-     Alternative fuel vehicle
      Gasoline
-     Miles per gallon gasoline equivalent
+     Alternative fuel vehicle
      Electric vehicle
-     Natural gas vehicle
-     Hydrogen internal combustion engine vehicle
-     Common ethanol fuel mixtures
+     Miles per gallon gasoline equivalent
      Hybrid electric vehicle
-     Gasoline pump
-     Gasoline gallon equivalent
-     Filling station
+     Natural gas vehicle
      Bi-fuel vehicle
-     Green vehicle
+     Gasoline pump
+     Common ethanol fuel mixtures
+     Hydrogen internal combustion engine vehicle
+     Filling station
      Idle (engine)
-     Super ultra-low emission vehicle
-     Fuel efficiency
-     Fuel economy in automobiles
-WARNING: SOMETHING WENT WRONG: Fuel economy in automobiles
+     Gasoline gallon equivalent
+     Low-speed pre-ignition
+     History of the automobile
      Exhaust gas
 WARNING: SOMETHING WENT WRONG: Exhaust gas
+     Monroney sticker
+     Green vehicle
+     Hydrogen vehicle
+     Ford-Utilimaster FFV
+     Automotive engine
+     Fuel efficiency
      United States vehicle emission standards
-     History of the automobile
-     Low-speed pre-ignition
-     Top Tier Detergent Gasoline
-     Hybrid vehicle
-Pages for label = hybrid vehicle : ['Hybrid vehicle', 'Hybrid electric vehicle', 'Hybrid vehicle drivetrain', 'Plug-in hybrid', 'List of hybrid vehicles', 'Hybrid vehicle (disambiguation)', 'Hydraulic hybrid vehicle', 'Audi hybrid vehicles', 'Hybrid', 'Electric vehicle', 'Compressed-air vehicle', 'Green vehicle', 'Toyota Prius Plug-in Hybrid', 'Toyota Highlander', 'Plug-in electric vehicle', 'Mild hybrid', 'Electric vehicle warning sounds', 'Hybrid Synergy Drive', 'Human–electric hybrid vehicle', 'Ford Fusion Hybrid', 'Hybrid electric vehicles in the United States', 'Alternative fuel vehicle', 'Toyota concept vehicles (2000–2009)', 'Partial zero-emissions vehicle', 'Solar vehicle']
+Pages for label = hybrid vehicle : ['Hybrid vehicle', 'Hybrid electric vehicle', 'Hybrid vehicle drivetrain', 'Plug-in hybrid', 'List of hybrid vehicles', 'Hybrid vehicle (disambiguation)', 'Hydraulic hybrid vehicle', 'Electric vehicle', 'Audi hybrid vehicles', 'Mild hybrid', 'Toyota Prius Plug-in Hybrid', 'Ford Fusion Hybrid', 'Plug-in electric vehicle', 'Compressed-air vehicle', 'Hybrid Synergy Drive', 'Toyota Highlander', 'Green vehicle', 'Electric vehicle warning sounds', 'Vehicle classification by propulsion system', 'Toyota concept vehicles (2000–2009)', 'Hybrid', 'Battery electric vehicle', 'Alternative fuel vehicle', 'Ford Escape', 'Hybrid Air Vehicles']
      Hybrid vehicle
      Hybrid electric vehicle
      Hybrid vehicle drivetrain
@@ -385,34 +383,35 @@ Pages for label = hybrid vehicle : ['Hybrid vehicle', 'Hybrid electric vehicle',
      Hybrid vehicle (disambiguation)
 WARNING: SOMETHING WENT WRONG: Hybrid vehicle (disambiguation)
      Hydraulic hybrid vehicle
-     Audi hybrid vehicles
-     Hybrid
-WARNING: SOMETHING WENT WRONG: Hybrid
      Electric vehicle
-     Compressed-air vehicle
-     Green vehicle
+     Audi hybrid vehicles
+     Mild hybrid
      Toyota Prius Plug-in Hybrid
-     Toyota Highlander
-WARNING: SOMETHING WENT WRONG: Toyota Highlander
+     Ford Fusion Hybrid
      Plug-in electric vehicle
 WARNING: SOMETHING WENT WRONG: Plug-in electric vehicle
-     Mild hybrid
-     Electric vehicle warning sounds
+     Compressed-air vehicle
      Hybrid Synergy Drive
-     Human–electric hybrid vehicle
-     Ford Fusion Hybrid
-     Hybrid electric vehicles in the United States
-     Alternative fuel vehicle
+     Toyota Highlander
+WARNING: SOMETHING WENT WRONG: Toyota Highlander
+     Green vehicle
+     Electric vehicle warning sounds
+     Vehicle classification by propulsion system
      Toyota concept vehicles (2000–2009)
 WARNING: SOMETHING WENT WRONG: Toyota concept vehicles (2000–2009)
-     Partial zero-emissions vehicle
-     Solar vehicle</code></pre>
+     Hybrid
+WARNING: SOMETHING WENT WRONG: Hybrid
+     Battery electric vehicle
+     Alternative fuel vehicle
+     Ford Escape
+WARNING: SOMETHING WENT WRONG: Ford Escape
+     Hybrid Air Vehicles</code></pre>
 </div>
 </div>
 </section>
 <section id="save-results" class="level3">
 <h3 class="anchored" data-anchor-id="save-results">Save results</h3>
-<div class="cell" data-execution_count="12">
+<div class="cell" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#SANITY CHECKS AND PRINT TO FILE </span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"number of text chunks = "</span>,<span class="bu">len</span>(corpus))</span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">"number of targets = "</span>,<span class="bu">len</span>(targets))</span>
@@ -425,8 +424,8 @@ WARNING: SOMETHING WENT WRONG: Toyota concept vehicles (2000–2009)
 <span id="cb10-10"><a href="#cb10-10" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df)</span>
 <span id="cb10-11"><a href="#cb10-11" aria-hidden="true" tabindex="-1"></a>df.to_csv(<span class="st">'ev-wiki-crawl-results.csv'</span>,index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>number of text chunks =  1225
-number of targets =  1225
+<pre><code>number of text chunks =  1173
+number of targets =  1173
                                                    text             label  \
 0     electric motive power started 1827 hungarian p...  electric vehicle   
 1     first mass produced appeared america early 190...  electric vehicle   
@@ -434,11 +433,11 @@ number of targets =  1225
 3     1900 28 percent car road electric ev popular e...  electric vehicle   
 4     seldom marketed woman luxury car may stigma am...  electric vehicle   
 ...                                                 ...               ...   
-1220  pathfinder pathfinder plus uav demonstrated ai...    hybrid vehicle   
-1221  spacecraft operating within orbit mar used sol...    hybrid vehicle   
-1222  swiss project called solartaxi circumnavigated...    hybrid vehicle   
-1223  limit using photovoltaic pv cell vehicle power...    hybrid vehicle   
-1224  however cost solar cell declined 99 decade cos...    hybrid vehicle   
+1168  best known best selling steam powered car stan...    hybrid vehicle   
+1169  wind powered vehicle well known long time real...    hybrid vehicle   
+1170  wood gas used power car ordinary internal comb...    hybrid vehicle   
+1171  hybrid air vehicle formed 2007 roger munk jeff...    hybrid vehicle   
+1172  hav 304 developed military lemv project follow...    hybrid vehicle   
 
       sentiment  
 0       -0.7506  
@@ -447,13 +446,13 @@ number of targets =  1225
 3        0.9169  
 4        0.9231  
 ...         ...  
-1220     0.4939  
-1221    -0.0258  
-1222     0.4404  
-1223     0.1280  
-1224    -0.2732  
+1168     0.9413  
+1169     0.4404  
+1170    -0.0347  
+1171     0.6808  
+1172    -0.4939  
 
-[1225 rows x 3 columns]</code></pre>
+[1173 rows x 3 columns]</code></pre>
 </div>
 </div>
 

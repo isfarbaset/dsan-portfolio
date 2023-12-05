@@ -152,6 +152,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>The project’s objective is to explore and demonstrate the effectiveness of PCA and t-SNE in reducing the dimensionality of complex, multimodal data while preserving essential information and enhancing data visualization. The dataset that will be used here is a record dataset containing detailed information regarding different motor vehicles. The tools and libraries are exlusively Python and it’s scikit-learn library.</p>
 <p>Below are the python libraries used:</p>
 <div class="cell" data-execution_count="1387">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> seaborn <span class="im">as</span> sns</span>
@@ -163,12 +165,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> linalg <span class="im">as</span> LA</span>
 <span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.manifold <span class="im">import</span> TSNE</span>
 <span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> sklearn.model_selection <span class="im">import</span> train_test_split</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <p>Here’s a snippet of the dataset in question:</p>
 <div class="cell" data-execution_count="1388">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>record_data <span class="op">=</span> pd.read_csv(<span class="st">'../eda/cars-data.csv'</span>)</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>record_data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display" data-execution_count="1388">
 <div>
 
@@ -282,12 +288,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="some-preliminary-cleaning" class="level2">
 <h2 class="anchored" data-anchor-id="some-preliminary-cleaning">Some preliminary cleaning</h2>
 <div class="cell" data-execution_count="1389">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> record_data.copy()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <div class="cell" data-execution_count="1390">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>nan_count <span class="op">=</span> record_data.isna().<span class="bu">sum</span>()</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nan_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>Unnamed: 0          0
 city_mpg            0
@@ -306,7 +318,10 @@ dtype: int64</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="1391">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb6"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>record_data.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 80 entries, 0 to 79
@@ -331,12 +346,15 @@ memory usage: 8.3+ KB</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="1392">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb8"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Convert all 'object' type columns to 'string'</span></span>
 <span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> record_data.select_dtypes(include<span class="op">=</span>[<span class="st">'object'</span>]).columns:</span>
 <span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a>    record_data[col] <span class="op">=</span> record_data[col].astype(<span class="st">'string'</span>)</span>
 <span id="cb8-4"><a href="#cb8-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb8-5"><a href="#cb8-5" aria-hidden="true" tabindex="-1"></a><span class="co"># Verify the changes</span></span>
 <span id="cb8-6"><a href="#cb8-6" aria-hidden="true" tabindex="-1"></a>record_data.info()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 80 entries, 0 to 79
@@ -361,21 +379,29 @@ memory usage: 8.3 KB</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="1393">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb10"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get y </span></span>
 <span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a>y <span class="op">=</span> record_data[<span class="st">'fuel_type'</span>].unique().tolist()</span>
 <span id="cb10-4"><a href="#cb10-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb10-5"><a href="#cb10-5" aria-hidden="true" tabindex="-1"></a>y</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display" data-execution_count="1393">
 <pre><code>['gas', 'electricity']</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="1394">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Dropping non-numerical and unnecessary columns</span></span>
 <span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a>record_data <span class="op">=</span> record_data.drop(columns<span class="op">=</span>[<span class="st">'Unnamed: 0'</span>])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <div class="cell" data-execution_count="1395">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb13"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace continuous missing values with mean of the column. check for Nan values again.</span></span>
 <span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a>cols <span class="op">=</span> [<span class="st">'displacement'</span>, <span class="st">'cylinders'</span>]</span>
@@ -383,6 +409,7 @@ memory usage: 8.3 KB</code></pre>
 <span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a>nan_count <span class="op">=</span> record_data.isna().<span class="bu">sum</span>()</span>
 <span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nan_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>city_mpg           0
 class              0
@@ -400,12 +427,15 @@ dtype: int64</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="1396">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb15"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Replace categorical missing values with mode of the column. check for Nan values again.</span></span>
 <span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>record_data[<span class="st">'drive'</span>] <span class="op">=</span> record_data[<span class="st">'drive'</span>].fillna(record_data[<span class="st">'drive'</span>].mode().iloc[<span class="dv">0</span>])</span>
 <span id="cb15-4"><a href="#cb15-4" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb15-5"><a href="#cb15-5" aria-hidden="true" tabindex="-1"></a>nan_count <span class="op">=</span> record_data.isna().<span class="bu">sum</span>()</span>
 <span id="cb15-6"><a href="#cb15-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(nan_count)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>city_mpg           0
 class              0
@@ -423,6 +453,8 @@ dtype: int64</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="1397">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb17"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Using a for loop to replace categorical values with cat codes</span></span>
 <span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>cat_cols <span class="op">=</span> [<span class="st">'class'</span>, <span class="st">'drive'</span>, <span class="st">'fuel_type'</span>, <span class="st">'make'</span>, <span class="st">'model'</span>, <span class="st">'transmission'</span>]</span>
 <span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> col <span class="kw">in</span> cat_cols:</span>
@@ -431,6 +463,7 @@ dtype: int64</code></pre>
 <span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb17-7"><a href="#cb17-7" aria-hidden="true" tabindex="-1"></a><span class="co"># Display the altered DataFrame</span></span>
 <span id="cb17-8"><a href="#cb17-8" aria-hidden="true" tabindex="-1"></a>record_data.head()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display" data-execution_count="1397">
 <div>
 
@@ -536,9 +569,14 @@ dtype: int64</code></pre>
 </div>
 </div>
 <div class="cell" data-execution_count="1398">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb18"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a>record_data.to_csv(<span class="st">'cardf_cleaned.csv'</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 <div class="cell" data-execution_count="1399">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb19"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Split the dataset in X and y. since this is unsupervised learning, we will not use the y labels. you can choose to normalize the X data by using the StandardScaler function.</span></span>
 <span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>x_cols <span class="op">=</span> [<span class="st">'city_mpg'</span>, <span class="st">'class'</span>, <span class="st">'combination_mpg'</span>, <span class="st">'cylinders'</span>, <span class="st">'displacement'</span>, <span class="st">'drive'</span>, <span class="st">'highway_mpg'</span>, <span class="st">'make'</span>, <span class="st">'model'</span>, <span class="st">'transmission'</span>, <span class="st">'year'</span> ]</span>
@@ -549,6 +587,7 @@ dtype: int64</code></pre>
 <span id="cb19-8"><a href="#cb19-8" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb19-9"><a href="#cb19-9" aria-hidden="true" tabindex="-1"></a><span class="co"># Standardizing the data</span></span>
 <span id="cb19-10"><a href="#cb19-10" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> StandardScaler().fit_transform(X)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 </div>
 </section>
 <section id="dimensionality-reduction-with-pca" class="level1">
@@ -557,6 +596,8 @@ dtype: int64</code></pre>
 <section id="manual-pca-compared-to-pca-using-scikit-learn" class="level2">
 <h2 class="anchored" data-anchor-id="manual-pca-compared-to-pca-using-scikit-learn">Manual PCA compared to PCA using scikit-learn</h2>
 <div class="cell" data-execution_count="1400">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb20"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co"># EIGEN VALUES/VECTOR</span></span>
 <span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> numpy <span class="im">import</span> linalg <span class="im">as</span> LA</span>
 <span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a><span class="co"># w, v1 = LA.eig(cov)</span></span>
@@ -592,6 +633,7 @@ dtype: int64</code></pre>
 <span id="cb20-33"><a href="#cb20-33" aria-hidden="true" tabindex="-1"></a><span class="co"># ax.quiver(0,0,0,v2[0,1],v2[1,1],v2[2,1])</span></span>
 <span id="cb20-34"><a href="#cb20-34" aria-hidden="true" tabindex="-1"></a><span class="co"># ax.quiver(0,0,0,v2[0,2],v2[1,2],v2[2,2])</span></span>
 <span id="cb20-35"><a href="#cb20-35" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>
 COV EIGENVALUES: [4.31172312e+00 2.36325475e+00 1.32691097e+00 7.68388326e-05
@@ -653,6 +695,8 @@ PCA
 </div>
 </div>
 <div class="cell" data-execution_count="1401">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb23"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Only taking the top 3 eigenvalues and their corresponding eigenvectors for comparison</span></span>
 <span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>top_eigenvalues <span class="op">=</span> w[:<span class="dv">5</span>]</span>
 <span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>top_eigenvectors <span class="op">=</span> v1[:, :<span class="dv">5</span>]</span>
@@ -665,6 +709,7 @@ PCA
 <span id="cb23-10"><a href="#cb23-10" aria-hidden="true" tabindex="-1"></a>})</span>
 <span id="cb23-11"><a href="#cb23-11" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb23-12"><a href="#cb23-12" aria-hidden="true" tabindex="-1"></a>pca_results</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display" data-execution_count="1401">
 <div>
 
@@ -720,6 +765,8 @@ PCA
 <section id="apply-pca-with-all-components-to-examine-the-explained-variance-ratio" class="level2">
 <h2 class="anchored" data-anchor-id="apply-pca-with-all-components-to-examine-the-explained-variance-ratio">Apply PCA with all components to examine the explained variance ratio</h2>
 <div class="cell" data-execution_count="1402">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply PCA with all components to examine the explained variance ratio</span></span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>pca <span class="op">=</span> PCA()</span>
 <span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>pca.fit_transform(X)</span>
@@ -738,6 +785,7 @@ PCA
 <span id="cb24-16"><a href="#cb24-16" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb24-17"><a href="#cb24-17" aria-hidden="true" tabindex="-1"></a><span class="co"># Returning the cumulative explained variance for interpretation</span></span>
 <span id="cb24-18"><a href="#cb24-18" aria-hidden="true" tabindex="-1"></a>explained_variance.cumsum()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display">
 <p><img src="dim-reduction_files/figure-html/cell-17-output-1.png" class="img-fluid"></p>
 </div>
@@ -752,6 +800,8 @@ PCA
 <section id="pca---reduced-dimensional-data-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="pca---reduced-dimensional-data-visualization">PCA - Reduced Dimensional Data Visualization</h2>
 <div class="cell" data-execution_count="1403">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb26"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Applying PCA with the optimal number of components (2 components for visualization)</span></span>
 <span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a>pca_optimal <span class="op">=</span> PCA(n_components<span class="op">=</span><span class="dv">2</span>)</span>
 <span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a>reduced_data <span class="op">=</span> pca_optimal.fit_transform(X)</span>
@@ -764,11 +814,14 @@ PCA
 <span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">'PCA - Reduced Dimensional Data Visualization'</span>)</span>
 <span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
 <span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display">
 <p><img src="dim-reduction_files/figure-html/cell-18-output-1.png" class="img-fluid"></p>
 </div>
 </div>
 <div class="cell" data-execution_count="1404">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb27"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a>fuel_type_labels <span class="op">=</span> y[<span class="st">'fuel_type'</span>].<span class="bu">map</span>({<span class="dv">0</span>: <span class="st">'electricity'</span>, <span class="dv">1</span>: <span class="st">'gas'</span>}) </span>
 <span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a><span class="co"># Add the fuel type labels to the DataFrame</span></span>
@@ -783,6 +836,7 @@ PCA
 <span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>plt.legend(title<span class="op">=</span><span class="st">'Fuel Type'</span>)</span>
 <span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
 <span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-display">
 <p><img src="dim-reduction_files/figure-html/cell-19-output-1.png" class="img-fluid"></p>
 </div>
@@ -801,6 +855,8 @@ PCA
 <section id="perplexity-value-30" class="level2">
 <h2 class="anchored" data-anchor-id="perplexity-value-30">Perplexity Value = 30</h2>
 <div class="cell" data-execution_count="1405">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb28"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb28-1"><a href="#cb28-1" aria-hidden="true" tabindex="-1"></a><span class="co"># LOAD DATA</span></span>
 <span id="cb28-2"><a href="#cb28-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-3"><a href="#cb28-3" aria-hidden="true" tabindex="-1"></a>X <span class="op">=</span> record_data.drop(<span class="st">'fuel_type'</span>, axis<span class="op">=</span><span class="dv">1</span>)</span>
@@ -816,6 +872,7 @@ PCA
 <span id="cb28-13"><a href="#cb28-13" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb28-14"><a href="#cb28-14" aria-hidden="true" tabindex="-1"></a><span class="co"># PLOT </span></span>
 <span id="cb28-15"><a href="#cb28-15" aria-hidden="true" tabindex="-1"></a>plt.scatter(X_embedded[:,<span class="dv">0</span>],X_embedded[:,<span class="dv">1</span>], alpha<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>(80, 11)
 RESULTS
@@ -835,6 +892,8 @@ First few points :
 <section id="perplexity-value-16" class="level2">
 <h2 class="anchored" data-anchor-id="perplexity-value-16">Perplexity Value = 16</h2>
 <div class="cell" data-execution_count="1406">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb31"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb31-1"><a href="#cb31-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Perplexity Value = 16</span></span>
 <span id="cb31-2"><a href="#cb31-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb31-3"><a href="#cb31-3" aria-hidden="true" tabindex="-1"></a><span class="co"># LOAD DATA</span></span>
@@ -851,6 +910,7 @@ First few points :
 <span id="cb31-14"><a href="#cb31-14" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb31-15"><a href="#cb31-15" aria-hidden="true" tabindex="-1"></a><span class="co"># PLOT </span></span>
 <span id="cb31-16"><a href="#cb31-16" aria-hidden="true" tabindex="-1"></a>plt.scatter(X_embedded[:,<span class="dv">0</span>],X_embedded[:,<span class="dv">1</span>], alpha<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>(80, 11)
 RESULTS
@@ -870,6 +930,8 @@ First few points :
 <section id="perplexity-value-1" class="level2">
 <h2 class="anchored" data-anchor-id="perplexity-value-1">Perplexity Value = 1</h2>
 <div class="cell" data-execution_count="1407">
+<details>
+<summary>Code</summary>
 <div class="sourceCode cell-code" id="cb34"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb34-1"><a href="#cb34-1" aria-hidden="true" tabindex="-1"></a><span class="co">### Perplexity Value = 1</span></span>
 <span id="cb34-2"><a href="#cb34-2" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-3"><a href="#cb34-3" aria-hidden="true" tabindex="-1"></a><span class="co"># LOAD DATA</span></span>
@@ -887,6 +949,7 @@ First few points :
 <span id="cb34-15"><a href="#cb34-15" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb34-16"><a href="#cb34-16" aria-hidden="true" tabindex="-1"></a><span class="co"># PLOT </span></span>
 <span id="cb34-17"><a href="#cb34-17" aria-hidden="true" tabindex="-1"></a>plt.scatter(X_embedded[:,<span class="dv">0</span>],X_embedded[:,<span class="dv">1</span>], alpha<span class="op">=</span><span class="fl">0.5</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output cell-output-stdout">
 <pre><code>(80, 11)
 RESULTS

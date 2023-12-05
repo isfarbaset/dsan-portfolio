@@ -558,11 +558,11 @@
 556,19,subcompact car,21,4.0,2.0,fwd,gas,24,volkswagen,Beetle,a,1998
 557,20,subcompact car,23,4.0,2.0,fwd,gas,27,volkswagen,Beetle,m,1998
 558,29,subcompact car,33,4.0,1.9,fwd,diesel,40,volkswagen,Beetle,a,1999
-559,104,small sport utility vehicle,97,,,rwd,gas,89,volkswagen,ID.4,a,2021
-560,104,small sport utility vehicle,97,,,rwd,gas,89,volkswagen,ID.4,a,2021
-561,107,small sport utility vehicle,99,,,rwd,gas,91,volkswagen,ID.4,a,2021
-562,102,small sport utility vehicle,97,,,awd,gas,90,volkswagen,ID.4,a,2021
-563,98,small sport utility vehicle,93,,,awd,gas,88,volkswagen,ID.4,a,2021
+559,104,small sport utility vehicle,97,,,rwd,electricity,89,volkswagen,ID.4,a,2021
+560,104,small sport utility vehicle,97,,,rwd,electricity,89,volkswagen,ID.4,a,2021
+561,107,small sport utility vehicle,99,,,rwd,electricity,91,volkswagen,ID.4,a,2021
+562,102,small sport utility vehicle,97,,,awd,electricity,90,volkswagen,ID.4,a,2021
+563,98,small sport utility vehicle,93,,,awd,electricity,88,volkswagen,ID.4,a,2021
 564,126,compact car,116,,,fwd,electricity,105,volkswagen,e-Golf,a,2015
 565,126,compact car,116,,,fwd,electricity,105,volkswagen,e-Golf,a,2016
 566,126,compact car,119,,,fwd,electricity,111,volkswagen,e-Golf,a,2017

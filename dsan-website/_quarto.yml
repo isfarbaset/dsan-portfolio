@@ -50,11 +50,18 @@ website:
 
         - text: Data Gathering
           contents:
-            - text: Initial Data Gathering
-              file: 5000-website/eda/data_gathering.ipynb
 
-            - text: Additional Data Gathering
-              file: 5000-website/eda/data_gathering-extra.ipynb
+            - text: Yahoo
+              file: 5000-website/eda/yahoo.ipynb
+
+            - text: Rapid API
+              file: 5000-website/eda/rapid-api.ipynb
+
+            - text: Cars API
+              file: 5000-website/eda/cars-api.ipynb
+
+            - text: News API 
+              file: 5000-website/eda/news-api.ipynb
 
         - text: Data Cleaning
           file: 5000-website/eda/data_cleaning.ipynb

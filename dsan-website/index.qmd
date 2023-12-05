@@ -39,15 +39,18 @@ GU netID: iib2
 ## 🎓 Education
 
 **Masters of Science in Data Science & Analytics** <br>
-*Georgetown University, Washington, D.C. | 2023 - 2025*
+***Georgetown University, Washington, D.C.*** <br>
+*2023 - 2025*
 
 **Bachelors of Science in Computer Science** <br>
-*Grand Valley State University, Grand Rapids, MI | 2015 - 2020*
+***Grand Valley State University, Grand Rapids, MI*** <br>
+*2015 - 2020*
 
 ## 💼 Experience
 
 **Data Analyst** <br>
-*Shift Digital, Birmingham, MI | 2021 - 2022*
+***Shift Digital, Birmingham, MI*** <br>
+*2021 - 2022*
 
 ✔️ Guided and directed data stewardship and consumption initiatives for two of the company’s largest clients. 
 
@@ -61,7 +64,8 @@ Skills: Marketing Analytics · Business Process · PySpark · Data Analysis · A
 
 
 **Computer Engineer** <br>
-*Array of Engineers, Grand Rapids, MI | 2020 - 2021*
+***Array of Engineers, Grand Rapids, MI*** <br>
+*2020 - 2021*
 
 ✔️ Generated software verification and validation procedures using Dynamic Object-Oriented Requirements System (DOORS) and Ansys SCADE Suite for a major aerospace client developing embedded avionic software for the Airbus 350.
 
