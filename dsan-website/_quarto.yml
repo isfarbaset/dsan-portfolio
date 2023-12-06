@@ -52,25 +52,28 @@ website:
           contents:
 
             - text: Yahoo
-              file: 5000-website/eda/yahoo.ipynb
+              file: 5000-website/data-gathering/yahoo.ipynb
 
             - text: Rapid API
-              file: 5000-website/eda/rapid-api.ipynb
+              file: 5000-website/data-gathering/rapid-api.ipynb
 
             - text: Cars API
-              file: 5000-website/eda/cars-api.ipynb
+              file: 5000-website/data-gathering/cars-api.ipynb
 
             - text: News API 
-              file: 5000-website/eda/news-api.ipynb
+              file: 5000-website/data-gathering/news-api.ipynb
+
+            - text: Wikipedia 
+              file: 5000-website/data-gathering/wikipedia.ipynb
 
         - text: Data Cleaning
-          file: 5000-website/eda/data_cleaning.ipynb
+          file: 5000-website/data-cleaning/data_cleaning.ipynb
 
         - text: Data Exploration
           file: 5000-website/eda/eda.ipynb
 
         - text: Naïve Bayes
-          file: 5000-website/eda/naive_bayes.ipynb
+          file: 5000-website/naive-bayes/naive_bayes.ipynb
 
         - text: Dimensionality Reduction
           file: 5000-website/dim-reduction/dim-reduction.ipynb

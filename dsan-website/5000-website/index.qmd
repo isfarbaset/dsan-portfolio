@@ -9,6 +9,26 @@ bibliography: reference.bib
 
 The data question I'm seeking to explore is related to Electric Vehicles: their environmental impact, market share, and performance compared to gasoline vehicles. Over the past few years, auto manufacturers have started to add EVs to their lineup in an effort to meet the rising demand. This shift in consumer demand gives rise to many interesting questions to explore.
 
+## Data Analyses Procedure
+
+To answer some of the questions arising from the gradual dominance of electric vehicles in the market, several data processing steps will be taken. The tabs on the left list out the steps of taken form the data storytelling jourey. I start off my doing some inital research to formulate questions to start off. The journals used for the inital research and the questions formed based on it, are listed below. Here's what to expect from each subsequent section in the report:
+
+**Data Gathering**: contains the various sources that were used to collect the relevant datasets to answer some of the questions. The data sources inclue *Yahoo Finance*, *Rapid API*, *Cars API*, and *News API*. Details of the text data and the record data from these sources are discussed in details.
+
+**Data Cleaning**: The data collected from the various sources were in raw structures. This tab details out the steps taken to shape the raw data files into a cleaner version which could then be used for analysis purposes. 
+
+**Data Exploration**: This tab lists out the exploratory data analysis carried out based on the data collected from the sources. Python and R were used to formulate visualisations and conclusions to extract interesting insights from the data that was collected
+
+**Naïve Bayes**: Here record data and text data are classified according the Naïve Bayes theorem. The text data used for this classfication purpose is collected from web scraping wikipedia and looking for content that contains the keywords 'electric vehicle' and 'gasoline-powered'. The objective of carrying out the Naïve Bayes algorithm was to analyze how well the text content can be classified into two distinct groups. 
+
+**Dimensionality Reduction**:
+
+**Clustering**
+
+**Decision Trees**:
+
+**ARM**:
+
 ## Academic Journal Research
 
 The incentive presented by the government greatly impacts the demand of EVs. Government regulation and environmental prospect, in particular will drive the adoption of transportation electrification [@yong2015review]. The environmental benefits of EVs immensely influence their dominance in the market. Electrifying transportation is a promising approach to alleviate the climate change issue [@yong2015review].
