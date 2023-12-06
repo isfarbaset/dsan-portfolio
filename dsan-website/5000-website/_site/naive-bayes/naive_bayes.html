@@ -117,11 +117,26 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </ul></li>
   <li><a href="#feature-selection-for-text-data" id="toc-feature-selection-for-text-data" class="nav-link" data-scroll-target="#feature-selection-for-text-data">Feature selection for text data</a>
   <ul class="collapse">
+  <li><a href="#import-python-packages" id="toc-import-python-packages" class="nav-link" data-scroll-target="#import-python-packages">Import python packages</a></li>
+  <li><a href="#load-file-and-create-indexes-based-on-string-labels" id="toc-load-file-and-create-indexes-based-on-string-labels" class="nav-link" data-scroll-target="#load-file-and-create-indexes-based-on-string-labels">Load file, and create indexes based on string labels</a></li>
   <li><a href="#vectorize" id="toc-vectorize" class="nav-link" data-scroll-target="#vectorize">Vectorize</a></li>
   <li><a href="#partition-data" id="toc-partition-data" class="nav-link" data-scroll-target="#partition-data">Partition Data</a></li>
   <li><a href="#utility-function" id="toc-utility-function" class="nav-link" data-scroll-target="#utility-function">Utility function</a></li>
-  <li><a href="#search-1-remove-features-from-high-to-low" id="toc-search-1-remove-features-from-high-to-low" class="nav-link" data-scroll-target="#search-1-remove-features-from-high-to-low">Search-1: Remove features from high to low</a></li>
-  <li><a href="#variancethreshold" id="toc-variancethreshold" class="nav-link" data-scroll-target="#variancethreshold">VarianceThreshold</a></li>
+  <li><a href="#print-sentiment-value-associated-to-text" id="toc-print-sentiment-value-associated-to-text" class="nav-link" data-scroll-target="#print-sentiment-value-associated-to-text">Print sentiment value associated to text</a></li>
+  <li><a href="#double-check-shapes" id="toc-double-check-shapes" class="nav-link" data-scroll-target="#double-check-shapes">Double check shapes</a></li>
+  <li><a href="#swap-keys-and-values-value-ley" id="toc-swap-keys-and-values-value-ley" class="nav-link" data-scroll-target="#swap-keys-and-values-value-ley">swap keys and values (value –&gt; ley)</a></li>
+  <li><a href="#check-vocab-key-value-pairs" id="toc-check-vocab-key-value-pairs" class="nav-link" data-scroll-target="#check-vocab-key-value-pairs">Check vocab key-value pairs</a></li>
+  <li><a href="#remap-dictionary-to-correspond-to-new-column-numbers" id="toc-remap-dictionary-to-correspond-to-new-column-numbers" class="nav-link" data-scroll-target="#remap-dictionary-to-correspond-to-new-column-numbers">REMAP DICTIONARY TO CORRESPOND TO NEW COLUMN NUMBERS</a></li>
+  <li><a href="#train" id="toc-train" class="nav-link" data-scroll-target="#train">Train</a></li>
+  <li><a href="#search-1-remove-features-from-high-to-low" id="toc-search-1-remove-features-from-high-to-low" class="nav-link" data-scroll-target="#search-1-remove-features-from-high-to-low">Search-1: Remove features from high to low</a>
+  <ul class="collapse">
+  <li><a href="#tility-function-to-save-results" id="toc-tility-function-to-save-results" class="nav-link" data-scroll-target="#tility-function-to-save-results">TILITY FUNCTION TO SAVE RESULTS</a></li>
+  <li><a href="#utility-function-to-plot-results" id="toc-utility-function-to-plot-results" class="nav-link" data-scroll-target="#utility-function-to-plot-results">UTILITY FUNCTION TO PLOT RESULTS</a></li>
+  </ul></li>
+  <li><a href="#variancethreshold" id="toc-variancethreshold" class="nav-link" data-scroll-target="#variancethreshold">VarianceThreshold</a>
+  <ul class="collapse">
+  <li><a href="#check-results" id="toc-check-results" class="nav-link" data-scroll-target="#check-results">CHECK RESULTS</a></li>
+  </ul></li>
   <li><a href="#naïve-bayes-nb-with-labeled-text-data" id="toc-naïve-bayes-nb-with-labeled-text-data" class="nav-link" data-scroll-target="#naïve-bayes-nb-with-labeled-text-data">Naïve Bayes (NB) with Labeled Text Data</a>
   <ul class="collapse">
   <li><a href="#confusion-matrix" id="toc-confusion-matrix" class="nav-link" data-scroll-target="#confusion-matrix">Confusion matrix</a></li>
@@ -133,10 +148,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#preparing-data-for-naïve-bayes-1" id="toc-preparing-data-for-naïve-bayes-1" class="nav-link" data-scroll-target="#preparing-data-for-naïve-bayes-1">Preparing Data for Naïve Bayes:</a></li>
   </ul></li>
-  <li><a href="#feature-selection-for-text-data-1" id="toc-feature-selection-for-text-data-1" class="nav-link" data-scroll-target="#feature-selection-for-text-data-1">Feature selection for text data</a>
+  <li><a href="#feature-selection-for-record-data" id="toc-feature-selection-for-record-data" class="nav-link" data-scroll-target="#feature-selection-for-record-data">Feature selection for record data</a>
   <ul class="collapse">
+  <li><a href="#covert-categorical-variable-to-numerical-codes" id="toc-covert-categorical-variable-to-numerical-codes" class="nav-link" data-scroll-target="#covert-categorical-variable-to-numerical-codes">Covert categorical variable to numerical codes</a></li>
+  <li><a href="#make-is-the-target-variable" id="toc-make-is-the-target-variable" class="nav-link" data-scroll-target="#make-is-the-target-variable">“Make” is the target variable</a></li>
+  <li><a href="#re-order-column-so-it-is-sorted-from-high-freq-terms-to-low" id="toc-re-order-column-so-it-is-sorted-from-high-freq-terms-to-low" class="nav-link" data-scroll-target="#re-order-column-so-it-is-sorted-from-high-freq-terms-to-low">RE-ORDER COLUMN SO IT IS SORTED FROM HIGH FREQ TERMS TO LOW</a></li>
+  <li><a href="#naive-bayes-training-function" id="toc-naive-bayes-training-function" class="nav-link" data-scroll-target="#naive-bayes-training-function">Naive Bayes training function</a></li>
+  <li><a href="#intialize-relevant-arrays" id="toc-intialize-relevant-arrays" class="nav-link" data-scroll-target="#intialize-relevant-arrays">Intialize relevant arrays</a></li>
+  <li><a href="#grid-search-function" id="toc-grid-search-function" class="nav-link" data-scroll-target="#grid-search-function">Grid Search function</a></li>
+  <li><a href="#utility-function-to-plot-results-1" id="toc-utility-function-to-plot-results-1" class="nav-link" data-scroll-target="#utility-function-to-plot-results-1">Utility function to plot results</a></li>
+  <li><a href="#utility-function-to-train-and-evaluate-naive-bayes-model" id="toc-utility-function-to-train-and-evaluate-naive-bayes-model" class="nav-link" data-scroll-target="#utility-function-to-train-and-evaluate-naive-bayes-model">Utility function to train and evaluate Naive Bayes Model</a></li>
   <li><a href="#naïve-bayes-nb-with-labeled-record-data" id="toc-naïve-bayes-nb-with-labeled-record-data" class="nav-link" data-scroll-target="#naïve-bayes-nb-with-labeled-record-data">Naïve Bayes (NB) with Labeled Record Data</a>
   <ul class="collapse">
+  <li><a href="#calculate-accuray-and-f1-score" id="toc-calculate-accuray-and-f1-score" class="nav-link" data-scroll-target="#calculate-accuray-and-f1-score">Calculate Accuray and F1 Score:</a></li>
   <li><a href="#confusion-matrix-1" id="toc-confusion-matrix-1" class="nav-link" data-scroll-target="#confusion-matrix-1">Confusion matrix</a></li>
   <li><a href="#compute-distance-matrix-1" id="toc-compute-distance-matrix-1" class="nav-link" data-scroll-target="#compute-distance-matrix-1">Compute distance matrix</a></li>
   <li><a href="#pca-1" id="toc-pca-1" class="nav-link" data-scroll-target="#pca-1">PCA</a></li>
@@ -178,6 +202,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="feature-selection-for-text-data" class="level1">
 <h1>Feature selection for text data</h1>
+<section id="import-python-packages" class="level3">
+<h3 class="anchored" data-anchor-id="import-python-packages">Import python packages</h3>
 <div class="cell" data-execution_count="4">
 <details>
 <summary>Code</summary>
@@ -192,6 +218,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
+</section>
+<section id="load-file-and-create-indexes-based-on-string-labels" class="level3">
+<h3 class="anchored" data-anchor-id="load-file-and-create-indexes-based-on-string-labels">Load file, and create indexes based on string labels</h3>
 <div class="cell" data-execution_count="10">
 <details>
 <summary>Code</summary>
@@ -227,6 +256,7 @@ number of text chunks =  1225
 ['electric motive power started 1827 hungarian priest nyos jedlik built first crude viable electric motor used stator rotor commutator next year used power small car 1835 professor sibrandus stratingh university groningen netherlands built small scale electric car sometime 1832 1839 robert anderson scotland invented first crude electric carriage powered non rechargeable primary cell american blacksmith inventor thomas davenport built toy electric locomotive powered primitive electric motor 1835 1838 scotsman named robert davidson built electric locomotive attained speed four mile per hour km england patent granted 1840 use rail conductor electric current similar american patent issued lilley colten 1847', 'first mass produced appeared america early 1900s 1902 studebaker automobile company entered automotive business though also entered gasoline vehicle market 1904 however advent cheap assembly line car ford motor company popularity electric car declined significantly due lack electricity grid limitation storage battery time electric car gain much popularity however electric train gained immense popularity due economy achievable speed 20th century electric rail transport became commonplace due advance development electric locomotive time general purpose commercial use reduced specialist role platform truck forklift truck ambulance tow tractor urban delivery vehicle iconic british milk float', '20th century uk world largest user electric road vehicle electrified train used coal transport motor use valuable oxygen mine switzerland lack natural fossil resource forced rapid electrification rail network one earliest rechargeable battery nickel iron battery favored edison use electric car ev among earliest automobile preeminence light powerful internal combustion engine ice electric automobile held many vehicle land speed distance record early 1900s produced baker electric columbia electric detroit electric others one point history outsold gasoline powered vehicle']</code></pre>
 </div>
 </div>
+</section>
 <section id="vectorize" class="level3">
 <h3 class="anchored" data-anchor-id="vectorize">Vectorize</h3>
 <div class="cell" data-execution_count="11">
@@ -378,6 +408,9 @@ y_test.shape        : (245,)</code></pre>
 Index(['text', 'label', 'sentiment'], dtype='object')</code></pre>
 </div>
 </div>
+</section>
+<section id="print-sentiment-value-associated-to-text" class="level3">
+<h3 class="anchored" data-anchor-id="print-sentiment-value-associated-to-text">Print sentiment value associated to text</h3>
 <div class="cell" data-execution_count="18">
 <details>
 <summary>Code</summary>
@@ -468,6 +501,9 @@ th century uk world largest user electric road vehicle electrified train used co
 <span id="cb21-18"><a href="#cb21-18" aria-hidden="true" tabindex="-1"></a>(x,vocab0)<span class="op">=</span>vectorize(reviews,MAX_FEATURES<span class="op">=</span><span class="dv">10000</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
+</section>
+<section id="double-check-shapes" class="level3">
+<h3 class="anchored" data-anchor-id="double-check-shapes">Double check shapes</h3>
 <div class="cell" data-execution_count="22">
 <details>
 <summary>Code</summary>
@@ -478,6 +514,9 @@ th century uk world largest user electric road vehicle electrified train used co
 <pre><code>(1225, 7140) (1225,)</code></pre>
 </div>
 </div>
+</section>
+<section id="swap-keys-and-values-value-ley" class="level3">
+<h3 class="anchored" data-anchor-id="swap-keys-and-values-value-ley">swap keys and values (value –&gt; ley)</h3>
 <div class="cell" data-execution_count="23">
 <details>
 <summary>Code</summary>
@@ -485,6 +524,9 @@ th century uk world largest user electric road vehicle electrified train used co
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>vocab1 <span class="op">=</span> <span class="bu">dict</span>([(value, key) <span class="cf">for</span> key, value <span class="kw">in</span> vocab0.items()])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
+</section>
+<section id="check-vocab-key-value-pairs" class="level3">
+<h3 class="anchored" data-anchor-id="check-vocab-key-value-pairs">Check vocab key-value pairs</h3>
 <div class="cell" data-execution_count="24">
 <details>
 <summary>Code</summary>
@@ -535,6 +577,9 @@ th century uk world largest user electric road vehicle electrified train used co
 [5 rows x 7140 columns]</code></pre>
 </div>
 </div>
+</section>
+<section id="remap-dictionary-to-correspond-to-new-column-numbers" class="level3">
+<h3 class="anchored" data-anchor-id="remap-dictionary-to-correspond-to-new-column-numbers">REMAP DICTIONARY TO CORRESPOND TO NEW COLUMN NUMBERS</h3>
 <div class="cell" data-execution_count="27">
 <details>
 <summary>Code</summary>
@@ -625,6 +670,9 @@ Length: 7140, dtype: float64</code></pre>
 [940, 19, 1073, 1042, 312, 196, 932, 967, 184, 749]</code></pre>
 </div>
 </div>
+</section>
+<section id="train" class="level3">
+<h3 class="anchored" data-anchor-id="train">Train</h3>
 <div class="cell" data-execution_count="31">
 <details>
 <summary>Code</summary>
@@ -755,6 +803,8 @@ Length: 7140, dtype: float64</code></pre>
 20 10000 7140 95.71428571428572 84.48979591836735</code></pre>
 </div>
 </div>
+<section id="tility-function-to-save-results" class="level3">
+<h3 class="anchored" data-anchor-id="tility-function-to-save-results">TILITY FUNCTION TO SAVE RESULTS</h3>
 <div class="cell" data-execution_count="34">
 <details>
 <summary>Code</summary>
@@ -765,6 +815,9 @@ Length: 7140, dtype: float64</code></pre>
 <span id="cb44-5"><a href="#cb44-5" aria-hidden="true" tabindex="-1"></a>    out.to_csv(path_root<span class="op">+</span><span class="st">".csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
+</section>
+<section id="utility-function-to-plot-results" class="level3">
+<h3 class="anchored" data-anchor-id="utility-function-to-plot-results">UTILITY FUNCTION TO PLOT RESULTS</h3>
 <div class="cell" data-execution_count="35">
 <details>
 <summary>Code</summary>
@@ -823,6 +876,7 @@ Length: 7140, dtype: float64</code></pre>
 </div>
 </div>
 <p>From the images we can conclude that there’s a trade-off between test accuracy and runtime; higher accuracies demand more processing time. As the number of features increases, initially there’s a spike in test accuracy, which stabilizes and then slightly drops after peaking. The runtime generally rises with the number of features, but with several fluctuations.Training accuracy is consistently higher than test accuracy, indicating potential overfitting with more features.</p>
+</section>
 </section>
 <section id="variancethreshold" class="level2">
 <h2 class="anchored" data-anchor-id="variancethreshold">VarianceThreshold</h2>
@@ -898,6 +952,8 @@ THRESHOLD = 0.2229304686265751 6
 THRESHOLD = 0.2314733458759969 6</code></pre>
 </div>
 </div>
+<section id="check-results" class="level3">
+<h3 class="anchored" data-anchor-id="check-results">CHECK RESULTS</h3>
 <div class="cell" data-execution_count="39">
 <details>
 <summary>Code</summary>
@@ -919,6 +975,7 @@ THRESHOLD = 0.2314733458759969 6</code></pre>
 </div>
 </div>
 <p>From the images, as test accuracies increase, runtime for training and evaluation generally rises. Using more features initially leads to fluctuating train-test accuracy differences, but stabilizes as features approach 1000. Overall accuracy for both training and test sets tends to increase with more features, despite some fluctuations. Training and evaluation time spikes around 200 features, then gradually decreases and remains relatively stable.</p>
+</section>
 </section>
 <section id="naïve-bayes-nb-with-labeled-text-data" class="level2">
 <h2 class="anchored" data-anchor-id="naïve-bayes-nb-with-labeled-text-data">Naïve Bayes (NB) with Labeled Text Data</h2>
@@ -1136,8 +1193,8 @@ F1 Score: 0.4899780925165164</code></pre>
 <h2 class="anchored" data-anchor-id="preparing-data-for-naïve-bayes-1">Preparing Data for Naïve Bayes:</h2>
 </section>
 </section>
-<section id="feature-selection-for-text-data-1" class="level1">
-<h1>Feature selection for text data</h1>
+<section id="feature-selection-for-record-data" class="level1">
+<h1>Feature selection for record data</h1>
 <div class="cell" data-execution_count="45">
 <details>
 <summary>Code</summary>
@@ -1481,6 +1538,8 @@ Name: count, dtype: int64</code></pre>
 </div>
 </div>
 </div>
+<section id="covert-categorical-variable-to-numerical-codes" class="level3">
+<h3 class="anchored" data-anchor-id="covert-categorical-variable-to-numerical-codes">Covert categorical variable to numerical codes</h3>
 <div class="cell" data-execution_count="77">
 <details>
 <summary>Code</summary>
@@ -1537,6 +1596,9 @@ Name: count, dtype: int64</code></pre>
 Name: count, dtype: int64</code></pre>
 </div>
 </div>
+</section>
+<section id="make-is-the-target-variable" class="level3">
+<h3 class="anchored" data-anchor-id="make-is-the-target-variable">“Make” is the target variable</h3>
 <div class="cell" data-execution_count="52">
 <details>
 <summary>Code</summary>
@@ -1562,6 +1624,9 @@ Name: count, dtype: int64</code></pre>
 <pre><code>100</code></pre>
 </div>
 </div>
+</section>
+<section id="re-order-column-so-it-is-sorted-from-high-freq-terms-to-low" class="level3">
+<h3 class="anchored" data-anchor-id="re-order-column-so-it-is-sorted-from-high-freq-terms-to-low">RE-ORDER COLUMN SO IT IS SORTED FROM HIGH FREQ TERMS TO LOW</h3>
 <div class="cell" data-execution_count="55">
 <details>
 <summary>Code</summary>
@@ -1671,6 +1736,9 @@ dtype: int64</code></pre>
 [60, 77, 89, 88, 0, 30, 12, 76, 39, 66]</code></pre>
 </div>
 </div>
+</section>
+<section id="naive-bayes-training-function" class="level3">
+<h3 class="anchored" data-anchor-id="naive-bayes-training-function">Naive Bayes training function</h3>
 <div class="cell" data-execution_count="59">
 <details>
 <summary>Code</summary>
@@ -1725,6 +1793,9 @@ dtype: int64</code></pre>
 11.25 0.0 0.0015300000000024738 0.00019600000000252749</code></pre>
 </div>
 </div>
+</section>
+<section id="intialize-relevant-arrays" class="level3">
+<h3 class="anchored" data-anchor-id="intialize-relevant-arrays">Intialize relevant arrays</h3>
 <div class="cell" data-execution_count="60">
 <details>
 <summary>Code</summary>
@@ -1739,6 +1810,9 @@ dtype: int64</code></pre>
 <span id="cb86-9"><a href="#cb86-9" aria-hidden="true" tabindex="-1"></a>    eval_time<span class="op">=</span>[]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
+</section>
+<section id="grid-search-function" class="level3">
+<h3 class="anchored" data-anchor-id="grid-search-function">Grid Search function</h3>
 <div class="cell" data-execution_count="61">
 <details>
 <summary>Code</summary>
@@ -1808,6 +1882,9 @@ dtype: int64</code></pre>
 <span id="cb89-5"><a href="#cb89-5" aria-hidden="true" tabindex="-1"></a>    out.to_csv(path_root<span class="op">+</span><span class="st">".csv"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
+</section>
+<section id="utility-function-to-plot-results-1" class="level3">
+<h3 class="anchored" data-anchor-id="utility-function-to-plot-results-1">Utility function to plot results</h3>
 <div class="cell" data-execution_count="63">
 <details>
 <summary>Code</summary>
@@ -1846,6 +1923,9 @@ dtype: int64</code></pre>
 <span id="cb90-33"><a href="#cb90-33" aria-hidden="true" tabindex="-1"></a>    plt.show()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 </div>
+</section>
+<section id="utility-function-to-train-and-evaluate-naive-bayes-model" class="level3">
+<h3 class="anchored" data-anchor-id="utility-function-to-train-and-evaluate-naive-bayes-model">Utility function to train and evaluate Naive Bayes Model</h3>
 <div class="cell" data-execution_count="64">
 <details>
 <summary>Code</summary>
@@ -1901,8 +1981,10 @@ dtype: int64</code></pre>
 </div>
 </div>
 <p>The images show that as the number of features increases, test accuracy remains relatively constant while training accuracy is higher. The runtime for both training (blue) and evaluation (red) also increases, with evaluation time seeing a sharper rise at around 13.5 features.</p>
+</section>
 <section id="naïve-bayes-nb-with-labeled-record-data" class="level2">
 <h2 class="anchored" data-anchor-id="naïve-bayes-nb-with-labeled-record-data">Naïve Bayes (NB) with Labeled Record Data</h2>
+<p>The record data used in this section is the automobile dataset collected from Rapid API.</p>
 <div class="cell" data-execution_count="66">
 <details>
 <summary>Code</summary>
@@ -1941,6 +2023,8 @@ ERRORS: [ 0  2  8  0  0  0  5  0  0  0  0  0  7  3 10  0  9  8  0  0]</code></pr
 </div>
 </div>
 <p>Overfitting is when a model performs well on training data but poorly on testing data Under-fitting is when a model performs poorly on both. This model has a training accuracy of 83.75% and a testing accuracy of 60%. This significant drop suggests the model might be overfitting since it’s not generalizing well to unseen data.</p>
+<section id="calculate-accuray-and-f1-score" class="level3">
+<h3 class="anchored" data-anchor-id="calculate-accuray-and-f1-score">Calculate Accuray and F1 Score:</h3>
 <div class="cell" data-execution_count="67">
 <details>
 <summary>Code</summary>
@@ -1983,6 +2067,7 @@ Unique classes in y_pred: [ 3  5 11 13]
 Number of unique classes in y_pred: 4</code></pre>
 </div>
 </div>
+</section>
 <section id="confusion-matrix-1" class="level3">
 <h3 class="anchored" data-anchor-id="confusion-matrix-1">Confusion matrix</h3>
 <div class="cell" data-execution_count="72">
@@ -2151,7 +2236,7 @@ Number of unique classes in y_pred: 4</code></pre>
 </section>
 <section id="conclusion" class="level1">
 <h1>Conclusion</h1>
-<p>For text and record data related t electric vehicles, the model is trained on the training dataset and then its accuracy is evaluated on both the training and testing datasets. The testing accuracy indicates how well the model performs on unseen data.</p>
+<p>For text and record data surrounding electric vehicles, the model is trained on the training dataset and then its accuracy is evaluated on both the training and testing datasets. The testing accuracy indicates how well the model performs on unseen data. The models performs quite well in classifying the different taget values.</p>
 <p>The project findings will be documented in a report with sections for introduction, methodology, results, and conclusions. Key findings will be visualized using charts and graphs. A summarized PowerPoint presentation can also be prepared by highlighting major insights and recommendations. More details surrounding machine learning classification preocdecures and methods will be added as well. Additionally the organizational flow of information presented on this page has room for improvement as well.</p>
 </section>
 <section id="sources-used" class="level1">

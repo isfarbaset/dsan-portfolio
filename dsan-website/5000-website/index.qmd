@@ -13,7 +13,7 @@ The data question I'm seeking to explore is related to Electric Vehicles: their 
 
 To answer some of the questions arising from the gradual dominance of electric vehicles in the market, several data processing steps will be taken. The tabs on the left list out the steps of taken form the data storytelling jourey. I start off my doing some inital research to formulate questions to start off. The journals used for the inital research and the questions formed based on it, are listed below. Here's what to expect from each subsequent section in the report:
 
-**Data Gathering**: contains the various sources that were used to collect the relevant datasets to answer some of the questions. The data sources inclue *Yahoo Finance*, *Rapid API*, *Cars API*, *News API* and *Wikipedia*. Details of the text data and the record data from these sources are discussed in details.
+**Data Gathering**: contains the various sources that were used to collect the relevant datasets to answer some of the questions. The data sources inclue *Yahoo Finance*, *Rapid API*, *Cars API*, *News API* and *Wikipedia*. Details of the text data and the record data from these sources are discussed in details. This is the heart of the portfolio since it the source that leads to the insights that are eventually gained, allows performing the machine learning algoithms and helps in formulating solid conclusions.
 
 **Data Cleaning**: The data collected from the various sources were in raw structures. This tab details out the steps taken to shape the raw data files into a cleaner version which could then be used for analysis purposes. 
 
@@ -25,7 +25,7 @@ To answer some of the questions arising from the gradual dominance of electric v
 
 **Clustering**: Kmeans, dbscan and hierchical clustering algorithms carried out to understand the groupings present in the dataset based on the features. Keen on understanding if these mechanisms can take the feature set and clearly identify the distinct types of fuels (gas/electric) the cars have based on those.
 
-**Decision Trees**: The objective of this section of the project is to observe how classification and regression methologies can be used in text datasets. The classification decision tree was used to classify the different group of labels 'electric', 'hybrid' and 'gasoline' that exist in the automotive industry and the regression was used on the record dataset that contained information regarding cars' quantitative data. 
+**Decision Trees**: The objective of this section of the project is to observe how classification and regression methologies can be used in text datasets. The classification decision tree was used to classify the different group of labels 'electric', 'hybrid' and 'gasoline' that exist in the automotive industry and the regression was used on the record dataset that contained information regarding different cars' quantitative data. 
 
 **ARM**: The goal was to uncover the patterns found amongst different keywords present in news articles surrounding electric vehicles. The words that may be closely related can be indicative regarding the context within which the topic of EVs are used in. It can also provide insight into which words show up often while reporting on EVs, wheather these words have a positive or negative connotation and which direction the conversation needs to be steered to if needed.
 
