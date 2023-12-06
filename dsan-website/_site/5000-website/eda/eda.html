@@ -188,33 +188,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../5000-website/eda/yahoo.html" class="sidebar-item-text sidebar-link">
+  <a href="../../5000-website/data-gathering/yahoo.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Yahoo</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../5000-website/eda/rapid-api.html" class="sidebar-item-text sidebar-link">
+  <a href="../../5000-website/data-gathering/rapid-api.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Rapid API</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../5000-website/eda/cars-api.html" class="sidebar-item-text sidebar-link">
+  <a href="../../5000-website/data-gathering/cars-api.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Cars API</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../5000-website/eda/news-api.html" class="sidebar-item-text sidebar-link">
+  <a href="../../5000-website/data-gathering/news-api.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">News API</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../5000-website/data-gathering/wikipedia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Wikipedia</span></a>
   </div>
 </li>
       </ul>
   </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../5000-website/eda/data_cleaning.html" class="sidebar-item-text sidebar-link">
+  <a href="../../5000-website/data-cleaning/data_cleaning.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Data Cleaning</span></a>
   </div>
 </li>
@@ -226,7 +232,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../5000-website/eda/naive_bayes.html" class="sidebar-item-text sidebar-link">
+  <a href="../../5000-website/naive-bayes/naive_bayes.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Naïve Bayes</span></a>
   </div>
 </li>
@@ -272,7 +278,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#quick-look-at-the-data" id="toc-quick-look-at-the-data" class="nav-link active" data-scroll-target="#quick-look-at-the-data">Quick look at the data</a></li>
   <li><a href="#data-understanding" id="toc-data-understanding" class="nav-link" data-scroll-target="#data-understanding">Data Understanding</a></li>
-  <li><a href="#descriptive-statistics" id="toc-descriptive-statistics" class="nav-link" data-scroll-target="#descriptive-statistics">Descriptive Statistics</a></li>
+  <li><a href="#descriptive-statistics" id="toc-descriptive-statistics" class="nav-link" data-scroll-target="#descriptive-statistics">Descriptive Statistics</a>
+  <ul class="collapse">
+  <li><a href="#the-number-of-rows-and-columns" id="toc-the-number-of-rows-and-columns" class="nav-link" data-scroll-target="#the-number-of-rows-and-columns">The number of rows and columns</a></li>
+  <li><a href="#nan-values-in-all-columns" id="toc-nan-values-in-all-columns" class="nav-link" data-scroll-target="#nan-values-in-all-columns">NaN values in all columns</a></li>
+  <li><a href="#basic-statistics" id="toc-basic-statistics" class="nav-link" data-scroll-target="#basic-statistics">Basic Statistics</a></li>
+  </ul></li>
   <li><a href="#data-visualization" id="toc-data-visualization" class="nav-link" data-scroll-target="#data-visualization">Data visualization</a></li>
   <li><a href="#correlation-analysis" id="toc-correlation-analysis" class="nav-link" data-scroll-target="#correlation-analysis">Correlation Analysis</a></li>
   <li><a href="#hypothesis-generation" id="toc-hypothesis-generation" class="nav-link" data-scroll-target="#hypothesis-generation">Hypothesis Generation</a></li>
@@ -424,6 +435,8 @@ memory usage: 103.4+ KB</code></pre>
 </section>
 <section id="descriptive-statistics" class="level2">
 <h2 class="anchored" data-anchor-id="descriptive-statistics">Descriptive Statistics</h2>
+<section id="the-number-of-rows-and-columns" class="level3">
+<h3 class="anchored" data-anchor-id="the-number-of-rows-and-columns">The number of rows and columns</h3>
 <div class="cell" data-execution_count="41">
 <details>
 <summary>Code</summary>
@@ -435,6 +448,9 @@ memory usage: 103.4+ KB</code></pre>
 <pre><code>(210, 9)</code></pre>
 </div>
 </div>
+</section>
+<section id="nan-values-in-all-columns" class="level3">
+<h3 class="anchored" data-anchor-id="nan-values-in-all-columns">NaN values in all columns</h3>
 <div class="cell" data-execution_count="42">
 <details>
 <summary>Code</summary>
@@ -456,6 +472,9 @@ Dates    0
 dtype: int64</code></pre>
 </div>
 </div>
+</section>
+<section id="basic-statistics" class="level3">
+<h3 class="anchored" data-anchor-id="basic-statistics">Basic Statistics</h3>
 <div class="cell" data-execution_count="43">
 <details>
 <summary>Code</summary>
@@ -591,6 +610,7 @@ BASIC STATISTICS:
 </div>
 </div>
 </div>
+</section>
 </section>
 <section id="data-visualization" class="level2">
 <h2 class="anchored" data-anchor-id="data-visualization">Data visualization</h2>
