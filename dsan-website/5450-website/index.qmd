@@ -1,0 +1,26 @@
+---
+format: 
+    html: 
+        embed-resources: true
+        toc: true
+bibliography: reference.bib
+---
+
+This is a work in progress ⚠️ <br>
+Keep an eye out for updates!
+
+# Introduction
+
+# Literature Review
+
+[@AMAJEthics2023] <br>
+[@NAS2023BMI]
+
+# Data and Methods
+
+# Results
+
+# Policy Recommendation
+
+# References
+

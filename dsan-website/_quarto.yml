@@ -11,11 +11,14 @@ website:
       #   file: index.qmd
       # - text: "Tutorials"
       #   file: tutorials.qmd
-      - text: "DSAN 5000"
+      - text: "EV Analysis"
         file: 5000-website/index.qmd
 
-      - text: "DSAN 5100"
+      - text: "AQI Analysis"
         file: 5100-website/index.ipynb
+
+      - text: "Data Policy Whitepaper"
+        file: 5450-website/index.qmd
       # - text: "Fundamentals"
       #   file: fundamentals.qmd
       # - text: "Reference"
@@ -30,7 +33,7 @@ website:
     #     - tutorial-1.qmd
     #     - tutorial-2.qmd
 
-    - title: "DSAN 5000"
+    - title: "EV Analysis"
       contents:
         - text: Introduction
           file: 5000-website/index.qmd
@@ -100,7 +103,7 @@ website:
         - reference.qmd
         # navigation items
 
-    - title: "DSAN 5100"
+    - title: "AQI Analysis"
       contents:
         - text: Introduction
           file: 5100-website/index.ipynb
@@ -110,6 +113,11 @@ website:
 
         - text: EDA & Hypothesis Testing
           file: 5100-website/eda/eda.ipynb
+
+    # - title: "Data Policy Whitepaper"
+    #   contents:
+    #     - text: Introduction
+    #       file: 5450-website/index.ipynb
     
 format:
   html:
