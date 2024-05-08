@@ -22,6 +22,9 @@ website:
 
       - text: "Movies Analysis"
         href: "https://moovies.wmcgloin.com/"
+
+      - text: "Music Analysis"
+        file: 5300-website/Group37_Final_Report.qmd
       # - text: "Fundamentals"
       #   file: fundamentals.qmd
       # - text: "Reference"
