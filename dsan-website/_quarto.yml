@@ -19,6 +19,9 @@ website:
 
       - text: "Data Policy Whitepaper"
         file: 5450-website/index.qmd
+
+      - text: "Data Visualization"
+        href: "https://moovies.wmcgloin.com/"
       # - text: "Fundamentals"
       #   file: fundamentals.qmd
       # - text: "Reference"
