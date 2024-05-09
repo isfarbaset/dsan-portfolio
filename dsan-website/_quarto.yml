@@ -20,8 +20,8 @@ website:
       - text: "Data Policy Whitepaper"
         file: 5450-website/index.qmd
 
-      - text: "Movies Analysis"
-        href: "https://moovies.wmcgloin.com/"
+      # - text: "Movies Analysis"
+      #   href: "https://moovies.wmcgloin.com/"
 
       - text: "Music Analysis"
         file: 5300-website/Group37_Final_Report.qmd
