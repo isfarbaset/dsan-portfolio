@@ -11,19 +11,22 @@ website:
       #   file: index.qmd
       # - text: "Tutorials"
       #   file: tutorials.qmd
-      - text: "EV Analysis"
+      - text: "EV Insights"
         file: 5000-website/index.qmd
 
-      - text: "AQI Analysis"
+      - text: "Airy Tales"
         file: 5100-website/index.ipynb
 
-      - text: "Data Policy Whitepaper"
-        file: 5450-website/index.qmd
+      - text: "Temp Talk"
+        file: story-project/index.qmd
+
+      # - text: "Data Policy White Paper"
+      #   file: 5450-website/index.qmd
 
       # - text: "Movies Analysis"
       #   href: "https://moovies.wmcgloin.com/"
 
-      - text: "Music Analysis"
+      - text: "Beats & Bytes"
         file: 5300-website/Group37_Final_Report.qmd
       # - text: "Fundamentals"
       #   file: fundamentals.qmd
@@ -109,7 +112,7 @@ website:
         - reference.qmd
         # navigation items
 
-    - title: "AQI Analysis"
+    - title: "Airy Tales"
       contents:
         - text: Introduction
           file: 5100-website/index.ipynb
@@ -120,6 +123,30 @@ website:
         - text: EDA & Hypothesis Testing
           file: 5100-website/eda/eda.ipynb
 
+    - title: "Weather or Not"
+      contents:
+        - text: "Temperature Tales 🌡️"
+          file: story-project/index.qmd
+
+        - text: "Blazing Trends 🔥"
+          file: story-project/temp.qmd
+
+        - text: "Soil Sizzle 🍂"
+          file: story-project/soil.qmd
+
+        - text: "Evaporation Station 🌤️"
+          file: story-project/evap.qmd
+
+        - text: "Raindrops and Vapors 🌧️"
+          file: story-project/ppt.qmd
+
+        - text: "It's A Wrap 🌿"
+          file: story-project/conclusion.qmd
+
+    - title: "Beats & Bytes"
+      contents:
+        text: Harmony Through Numbers
+        file: 5300-website/Group37_Final_Report.qmd
     # - title: "Data Policy Whitepaper"
     #   contents:
     #     - text: Introduction

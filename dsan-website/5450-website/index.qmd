@@ -11,9 +11,12 @@ Keep an eye out for updates!
 
 # Introduction
 
+The high-level topic that I would like to focus on is the concept of “operationalization”. This involves defining complex concepts in measurable terms. The socially-important phenomenon I intend to address for which data exists, but may be measured in a misleading manner, is the use of BMI (Body Mass Index) as an indicator of health. BMI is a widely accepted metric to determine health in individuals, however, it does not distinguish between fat and muscle mass along with leaving out several factors which may contribute to an individual’s overall health. For instance, athletes with high muscle mass may be labeled as “overweight” whereas individuals labeled as “normal” may still have metabolic issues. This oversight can lead to inaccurate health assessments, potentially resulting in misguided health diagnoses.
+
+Body mass index (BMI) was introduced in the 19th century as a measure of weight relative to height [@AMAJEthics2023]. Before the late 20th century, overweight and obesity were not considered a population-wide health risk, but the advent of new weight loss drugs in the 1990s accelerated the medicalization of BMI [@AMAJEthics2023]. 
+
 # Literature Review
 
-[@AMAJEthics2023] <br>
 [@NAS2023BMI]
 
 # Data and Methods
