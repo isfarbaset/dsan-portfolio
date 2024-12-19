@@ -32,6 +32,8 @@ website:
       #   file: fundamentals.qmd
       # - text: "Reference"
       #   file: reference.qmd
+      - text: "US States Insights"
+        href: "https://isfarbaset.github.io/fall-2024-project-team-29/"
 
   sidebar:
     # - title: "Tutorials"
