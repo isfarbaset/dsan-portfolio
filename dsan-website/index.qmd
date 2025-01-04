@@ -1,6 +1,6 @@
 ---
-title: "👋🏼 Isfar Baset"
-image: ib4.png
+title: "Isfar Baset"
+image: ib.png
 page-layout: full
 about:
   template: marquee
@@ -19,12 +19,15 @@ about:
 ---
 
 <style>
-  /* body {
-  background-image: url("https://images.freeimages.com/image/previews/fa5/spiraling-abstract-backdrop-5690801.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-} */
-  
+  h1 {
+    text-align: center;
+  }
+  img {
+    max-width: 500px; /* Adjust size here */
+    height: auto; /* Maintain aspect ratio */
+    display: block;
+    margin: 0 auto; /* Center the image */
+  }
 </style>
 
 Hello! I’m originally from Dhaka, the vibrant capital city of Bangladesh. I came to the US in 2015 in pursuit of my bachelor's degree in Computer Science and lived in West Michigan before moving to Northern Virginia in 2022. Before joining Georgetown, I worked as a Computer Engineer, and then as a Data Analyst. 
@@ -33,43 +36,53 @@ I am currently pursuing a Master's of Science in Data Science & Analytics at Geo
 
 I love spending time in charming cafes and exploring new cuisines. During my downtime I enjoy reading, painting and watching movies/TV shows. 
 
-GU netID: iib2
+## 🎓 EDUCATION
 
-## 🎓 Education
+### Georgetown University (GU)  
+**Master of Science in Data Science and Analytics** | GPA: 4.0  
+**Washington, D.C.**  
+*Aug 2023 - May 2025*  
 
-**Masters of Science in Data Science & Analytics** <br>
-***Georgetown University, Washington, D.C.*** <br>
-*2023 - 2025*
+**Coursework:**  
+Probabilistic Modeling and Statistical Computing, Database Systems and SQL, Advanced Data Visualization, Data Ethics and Policy, Computational Linguistics, Machine Learning App Deployment, Digital Storytelling, Big Data and Cloud Computing (Teaching Assistant), Applied Generative AI (Teaching Assistant)
 
-**Bachelors of Science in Computer Science** <br>
-***Grand Valley State University, Grand Rapids, MI*** <br>
-*2015 - 2020*
+### Grand Valley State University (GVSU)  
+**Bachelor of Science in Computer Science**  
+**Grand Rapids, MI**  
+*Aug 2015 - May 2020*  
 
-## 💼 Experience
+---
 
-**Data Analyst** <br>
-***Shift Digital, Birmingham, MI*** <br>
-*2021 - 2023*
+## 💼 WORK EXPERIENCE
 
-✔️ Guided and directed data stewardship and consumption initiatives for two of the company’s largest clients. 
+### Shift Digital, Delivery and Software Team  
+**Data Analyst**  
+**Birmingham, MI**  
+*Nov 2021 - May 2023*  
+- Optimized big data ETL processes and quality checks, improving data accuracy by 25% across 10+ enterprise projects  
+- Designed scalable data architecture alongside C-level executives, reducing operational inefficiencies by 30%  
+- Automated billing data processing, saving 15 hours weekly and streamlining operations for 12 high-value clients  
+- Optimized Databricks data ingestion pipelines, boosting processing speed by 50% to meet KPI targets  
+- Crafted technical proposals achieving a near 100% customer approval rate, aligning project scope with business goals  
 
-✔️ Drove data architecture/design solutions for complex business problems and led data design and integration efforts alongside C-level executives.
+### Array of Engineers  
+**Computer Engineer**  
+**Grand Rapids, MI**  
+*Jul 2020 - Nov 2021*  
+- Verified Airbus A350 avionics software with DOORS and Ansys SCADE, ensuring aerospace compliance  
+- Enhanced client web app functionality using AngularJS, boosting user satisfaction by 25% and increasing retention rates  
+- Led GitHub code reviews across a multidisciplinary team to mitigate risks by improving early detection of critical issues  
+- Executed agile workflows driving process improvements cross-functionally, ensuring 98% on-time delivery  
 
-✔️ Applied emerging technology solutions to increase data processing efficiency and effectiveness by 50% using groundbreaking platforms such as Databricks. 
+---
 
-✔️ Created an automated framework to extract, transform, and load data across twelve different clients, resulting in a 15-hour-per-week reduction in company time spent on deriving key financial insights.
+## SKILLS
 
-Skills: Marketing Analytics · Business Process · PySpark · Data Analysis · Azure Databricks · Process Improvement · Python (Programming Language) · SQL <br><br> 
-
-
-**Computer Engineer** <br>
-***Array of Engineers, Grand Rapids, MI*** <br>
-*2020 - 2021*
-
-✔️ Generated software verification and validation procedures using Dynamic Object-Oriented Requirements System (DOORS) and Ansys SCADE Suite for a major aerospace client developing embedded avionic software for the Airbus 350.
-
-✔️ Achieved 100% completion of all assignments on or ahead of schedule by demonstrating a methodical, detail-oriented, and thorough approach while adhering to compressed timelines.
-
-✔️ Designed and developed features for web applications using the AngularJS framework.
-
-✔️ Participated in design and code reviews using GitHub to identify and eliminate problems early in the development process.
+**Programming:** Python, SQL, R, Java, C++  
+**Machine Learning:** Scikit-learn, TensorFlow, PyTorch, XGBoost  
+**Data Visualization:** Tableau, Plotly, Seaborn  
+**Big Data & Cloud:** Apache Spark, Databricks, AWS Sagemaker  
+**NLP:** spaCy, Hugging Face Transformers, BERT  
+**Databases:** MySQL, PostgreSQL, MongoDB, Snowflake  
+**Tools:** Docker, Flask, Git, Quarto, CI/CD pipelines  
+**Statistical Methods:** A/B Testing, Regression, Bayesian Analysis  
